@@ -2,7 +2,7 @@ package com.fredcomms.baziapp.logic
 
 enum class Polarity {YANG, YIN}
 
-enum class Element{FIRE, EARTH, METAL, WATER, WOOD}
+enum class Element {FIRE, EARTH, METAL, WATER, WOOD}
 
 enum class HeavenlyStem(val chinese: String, val element: Element, val polarity: Polarity){
     BING("丙", Element.FIRE, Polarity.YANG), 
