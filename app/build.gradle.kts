@@ -1,6 +1,6 @@
 plugins {
     id("com.android.application")
-    id("org.jetbrains.kotlin.android") version "1.9.20"
+    id("org.jetbrains.kotlin.android")
 }
 
 
@@ -46,7 +46,7 @@ buildFeatures {
 }
 
 composeOptions {
-    kotlinCompilerExtensionVersion = "1.5.4"
+    kotlinCompilerExtensionVersion = "1.9.20"
 }
 
 packaging {
