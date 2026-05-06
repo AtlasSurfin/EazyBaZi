@@ -56,7 +56,7 @@ fun isControlling(a: Element, b: Element) = (a == Element.WOOD && b == Element.E
 || (a == Element.FIRE && b == Element.METAL) 
 || (a == Element.METAL && b == Element.WOOD)
 
-fun findStem(name: String): HeavenlyStem {
+fun findStem(name: String): HeavenlyStem? {
     return try {
         HeavenlyStem.valueOf(name.trim().uppercase())
     } catch (e: Exception) {

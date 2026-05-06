@@ -1,4 +1,0 @@
-C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\main\java\com\fredcomms\baziapp\logic\Branches.kt
-C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\main\java\com\fredcomms\baziapp\ui\ZodiacScreen.kt
-C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\main\java\com\fredcomms\baziapp\logic\Logic.kt
-C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\main\java\com\fredcomms\baziapp\MainActivity.kt

@@ -12,8 +12,8 @@ import com.fredcomms.baziapp.logic.findStem
 
 @Composable
 fun ZodiacScreen() {
-    var stemInput by remember { mutableStateOf(HeavenlyStem.JIA) }
-    var branchInput by remember { mutableStateOf(HeavenlyStem.BING) }
+    var stemInput by remember { mutableStateOf("JIA") }
+    var branchInput by remember { mutableStateOf("BING") }
     var result by remember { mutableStateOf("Risultato: ---") }
 
     Column(
@@ -36,16 +36,16 @@ fun ZodiacScreen() {
         OutlinedTextField(
             value = stemInput,
             onValueChange = { stemInput = it },
-            label = { Text("Day Master (Tronco)") },
+            label = { Text("Day Master (Es. JIA)") },
             modifier = Modifier.fillMaxWidth()
         )
 
-        Spacer(modifier = Modifier.height(24.dp))
+        Spacer(modifier = Modifier.height(12.dp))
 
         OutlinedTextField(
             value = branchInput,
             onValueChange = { branchInput = it },
-            label = { Text("Ramo/Mese dell'Anno") },
+            label = { Text("Target (es. BING)") },
             modifier = Modifier.fillMaxWidth()
         )
 
