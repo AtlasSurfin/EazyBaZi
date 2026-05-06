@@ -1,8 +1,8 @@
 package com.fredcomms.baziapp.logic
 
-enum class Polarity {YANG, YIN}
-
 enum class Element {FIRE, EARTH, METAL, WATER, WOOD}
+
+enum class Polarity {YANG, YIN}
 
 enum class HeavenlyStem(val chinese: String, val element: Element, val polarity: Polarity){
     BING("丙", Element.FIRE, Polarity.YANG), 
@@ -46,7 +46,7 @@ fun getTenGods(dayMaster: HeavenlyStem, target: HeavenlyStem): String{
 
 fun isProducing(a: Element, b: Element) = (a == Element.WOOD && b == Element.FIRE)
 || (a == Element.FIRE && b == Element.EARTH) 
-|| (a == Element.EARTH && b.Element.METAL) 
+|| (a == Element.EARTH && b ==Element.METAL) 
 || (a == Element.METAL && b == Element.WATER) 
 || (a == Element.WATER && b == Element.WOOD)
 
@@ -56,6 +56,13 @@ fun isControlling(a: Element, b: Element) = (a == Element.WOOD && b == Element.E
 || (a == Element.FIRE && b == Element.METAL) 
 || (a == Element.METAL && b == Element.WOOD)
 
+fun findStem(name: String): HeavenlyStem {
+    return try {
+        HeavenlyStem.valueOf(name.trim().uppercase())
+    } catch (e: Exception) {
+        null
+    }
+}
 
 fun main() {
     val dm = HeavenlyStem.JIA // Legno Yang

@@ -6,12 +6,14 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.fredcomms.baziapp.logic.calculateTenGods
+import com.fredcomms.baziapp.logic.HeavenlyStem
+import com.fredcomms.baziapp.logic.getTenGods
+import com.fredcomms.baziapp.logic.findStem
 
 @Composable
 fun ZodiacScreen() {
-    var stemInput by remember { mutableStateOf("Jia") }
-    var branchInput by remember { mutableStateOf("Wu") }
+    var stemInput by remember { mutableStateOf(HeavenlyStem.JIA) }
+    var branchInput by remember { mutableStateOf(HeavenlyStem.BING) }
     var result by remember { mutableStateOf("Risultato: ---") }
 
     Column(
@@ -53,10 +55,17 @@ fun ZodiacScreen() {
         Button(
             onClick = {
                 try {
-                    val res = calculateTenGods(stemInput, branchInput)
-                    result = "Dieci Dei: $res"
-                } catch (e: Exception) {
-                    result = "Errore: Controlla i dati inseriti"
+                    val dm = findStem(stemInput)
+                    val target = findStem(branchInput)
+
+                    if(dm != null && target != null) {
+                        val res = getTenGods(dm, target)
+                        result = "Dieci Dei: $res"
+                    } else {
+                        result = "Errore: Inserisci nomi validi (es. Jia, Bing, etc.)"
+                    }
+            } catch (e: Exception) {
+                    result = "Errore: boh, qualcosa è andato storto"
                 }
             },
             modifier = Modifier.fillMaxWidth()
