@@ -1,4 +1,5 @@
 package com.fredcomms.baziapp.logic
+import com.nlf.calendar.Solar
 
 enum class Element {FIRE, EARTH, METAL, WATER, WOOD}
 
@@ -14,7 +15,40 @@ enum class HeavenlyStem(val chinese: String, val element: Element, val polarity:
     REN("壬", Element.WATER, Polarity.YANG), 
     GUI("癸", Element.WATER, Polarity.YIN), 
     JIA("甲", Element.WOOD, Polarity.YANG), 
-    YI("乙", Element.WOOD, Polarity.YIN) 
+    YI("乙", Element.WOOD, Polarity.YIN),
+    
+    companion object {
+        fun fromChinese(char: String): HeavenlyStem? =
+            values().find { it.chinese == char }
+    }
+}
+
+
+
+enum class EarthlyBranch(
+    val chinese: String,
+    val pinyin: String,
+    val element: Element,
+    val polarity: Polarity,
+    val zodiac: String
+){
+    ZI("子", "Zi", Element.WATER, Polarity.YANG, "Rat"),
+    CHOU("丑", "Chou", Element.EARTH, Polarity.YIN, "Ox"),
+    YIN("寅", "Yin", Element.WOOD, Polarity.YANG, "Tiger"),
+    MAO("卯", "Mao", Element.WOOD, Polarity.YIN, "Rabbit"),
+    CHEN("辰", "Chen", Element.EARTH, Polarity.YANG, "Dragon"),
+    SI("巳", "Si", Element.FIRE, Polarity.YIN, "Snake"),
+    WU("午", "Wu", Element.FIRE, Polarity.YANG, "Horse"),
+    WEI("未", "Wei", Element.EARTH, Polarity.YIN, "Goat"),
+    SHEN("申", "Shen", Element.METAL, Polarity.YANG, "Monkey"),
+    YOU("酉", "You", Element.METAL, Polarity.YIN, "Rooster"),
+    XU("戌", "Xu", Element.EARTH, Polarity.YANG, "Dog"),
+    HAI("亥", "Hai", Element.WATER, Polarity.YIN, "Pig"),
+
+    companion object {
+        fun fromChinese(char: String): EarthlyBranch? =
+            values().find { it.chinese == char }
+    }
 }
 
 fun getTenGods(dayMaster: HeavenlyStem, target: HeavenlyStem): String{
@@ -61,6 +95,23 @@ fun findStem(name: String): HeavenlyStem? {
         HeavenlyStem.valueOf(name.trim().uppercase())
     } catch (e: Exception) {
         null
+    }
+}
+
+fun getBaZiProfile(year: Int, month: Int, day: Int, hour: Int, minute: Int): String {
+    val solar = Solar.fromYmdHms(year, month, day, hour, minute, 0)
+    val lunar = solar.lunar
+
+    val dayStemChar = Lunar.dayGan
+    val dayBranchChar = Lunar.dayZhi
+
+    val dayStem = HeavenlyStem.fromChinese(dayStemChar)
+    val dayBranch = EarthlyBranch.fromChinese(dayBranchChar)
+
+    return if (dayStem != null && dayBranch != null){
+        "Day Pillar: ${dayStem.name} ${dayBranch.name} (${dayBranch.zodiac})"
+    }else{
+        "Error in mapping chinese characters: $dayStemChar$dayBranchChar"
     }
 }
 
