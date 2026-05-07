@@ -11,70 +11,82 @@ import com.fredcomms.baziapp.logic.getTenGods
 import com.fredcomms.baziapp.logic.findStem
 
 @Composable
-fun ZodiacScreen() {
-    var stemInput by remember { mutableStateOf("JIA") }
-    var branchInput by remember { mutableStateOf("BING") }
-    var result by remember { mutableStateOf("Risultato: ---") }
+fun BaZiScreen() {
+    var day by remember { mutableStateOf("1") }
+    var month by remember { mutableStateOf("1") }
+    var year by remember { mutableStateOf("1990") }
+    var hour by remember { mutableStateOf("12") }
+    var result by remember { mutableStateOf("Inserisci i dati e calcola il tuo BaZi")}
 
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .padding(24.dp),
-            horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.Center
+            .padding(20.dp),
+            verticalArrangement = Arrangement.spacedBy(16.dp)
     ) {
         Text(
-            text = "EaziBaZi Calculator",
-            style = MaterialTheme.typography.headlineMedium,
+            text = "EaziBaZi Calculator 2.0",
+            style = MaterialTheme.typography.headlineLarge,
             color = MaterialTheme.colorScheme.primary
         )
 
 
-        Spacer(modifier = Modifier.height(24.dp))
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.spacedBy(8.dp)
+        ){
+            OutlinedTextField(
+                value = day,
+                onValueChange = { day = it },
+                label = { Text("DD") },
+                modifier = Modifier.weight(1f)
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
+            )
+            OutlinedTextField(
+                value = month,
+                onValueChange = { month = it },
+                label = { Text("MM") },
+                modifier = Modifier.weight(1f)
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
+            )
+            OutlinedTextField(
+                value = year,
+                onValueChange = { year = it },
+                label = { Text("YYYY") },
+                modifier = Modifier.weight(1.5f)
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
+            )
+        }
 
-        //campo per Heavenly Stem
-        OutlinedTextField(
-            value = stemInput,
-            onValueChange = { stemInput = it },
-            label = { Text("Day Master (Es. JIA)") },
-            modifier = Modifier.fillMaxWidth()
-        )
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.spacedBy(8.dp)
+        ){
+            OutlinedTextField(
+                value = hour,
+                onValueChange = { hour = it },
+                label = { Text("Hour (0-23)") },
+                modifier = Modifier.weight(1f)
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
+            )
 
-        Spacer(modifier = Modifier.height(12.dp))
-
-        OutlinedTextField(
-            value = branchInput,
-            onValueChange = { branchInput = it },
-            label = { Text("Target (es. BING)") },
-            modifier = Modifier.fillMaxWidth()
-        )
-
-        Spacer(modifier = Modifier.height(24.dp))
-
+            Box(modifier = Modifier.weight(1f))
+        }
 
         Button(
             onClick = {
-                try {
-                    val dm = findStem(stemInput)
-                    val target = findStem(branchInput)
-
-                    if(dm != null && target != null) {
-                        val res = getTenGods(dm, target)
-                        result = "Dieci Dei: $res"
-                    } else {
-                        result = "Errore: Inserisci nomi validi (es. Jia, Bing, etc.)"
-                    }
-            } catch (e: Exception) {
-                    result = "Errore: boh, qualcosa è andato storto"
-                }
+                result = getBaZiProfile(
+                    year.toIntOrNull() ?: 1990,
+                    month.toIntOrNull() ?: 1,
+                    day.toIntOrNull() ?: 1,
+                    hour.toIntOrNull() ?: 12,
+                    0
+                )
             },
             modifier = Modifier.fillMaxWidth()
         ) {
-            Text("Calcola")
+            Text("Calcola Pilastro del Giorno (DM)")
         }
-
-        Spacer(modifier = Modifier.height(32.dp))
-
 
         //Area Risultato
         Card(
