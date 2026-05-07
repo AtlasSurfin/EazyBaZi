@@ -1,5 +1,6 @@
 package com.fredcomms.baziapp.logic
 import com.nlf.calendar.Solar
+import com.nlf.calendar.Lunar
 
 enum class Element {FIRE, EARTH, METAL, WATER, WOOD}
 
@@ -15,7 +16,7 @@ enum class HeavenlyStem(val chinese: String, val element: Element, val polarity:
     REN("壬", Element.WATER, Polarity.YANG), 
     GUI("癸", Element.WATER, Polarity.YIN), 
     JIA("甲", Element.WOOD, Polarity.YANG), 
-    YI("乙", Element.WOOD, Polarity.YIN),
+    YI("乙", Element.WOOD, Polarity.YIN);
     
     companion object {
         fun fromChinese(char: String): HeavenlyStem? =
@@ -43,7 +44,7 @@ enum class EarthlyBranch(
     SHEN("申", "Shen", Element.METAL, Polarity.YANG, "Monkey"),
     YOU("酉", "You", Element.METAL, Polarity.YIN, "Rooster"),
     XU("戌", "Xu", Element.EARTH, Polarity.YANG, "Dog"),
-    HAI("亥", "Hai", Element.WATER, Polarity.YIN, "Pig"),
+    HAI("亥", "Hai", Element.WATER, Polarity.YIN, "Pig");
 
     companion object {
         fun fromChinese(char: String): EarthlyBranch? =
@@ -99,19 +100,23 @@ fun findStem(name: String): HeavenlyStem? {
 }
 
 fun getBaZiProfile(year: Int, month: Int, day: Int, hour: Int, minute: Int): String {
-    val solar = Solar.fromYmdHms(year, month, day, hour, minute, 0)
+    return try {
+    val solar = Solar(year, month, day, hour, minute, 0)
     val lunar = solar.lunar
 
-    val dayStemChar = Lunar.dayGan
-    val dayBranchChar = Lunar.dayZhi
+    val dayStemChar = lunar.dayGan
+    val dayBranchChar = lunar.dayZhi
 
     val dayStem = HeavenlyStem.fromChinese(dayStemChar)
     val dayBranch = EarthlyBranch.fromChinese(dayBranchChar)
 
-    return if (dayStem != null && dayBranch != null){
+    if (dayStem != null && dayBranch != null){
         "Day Pillar: ${dayStem.name} ${dayBranch.name} (${dayBranch.zodiac})"
     }else{
-        "Error in mapping chinese characters: $dayStemChar$dayBranchChar"
+        "Data: $dayStemChar $dayBranchChar non trovata."
+    }
+    } catch (e: Exception) {
+        "Errore nel calcolo del BaZi: ${e.message}"
     }
 }
 
