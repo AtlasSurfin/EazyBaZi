@@ -1,14 +1,17 @@
 package com.fredcomms.baziapp.ui
 
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.text.input.KeyboardType
 import com.fredcomms.baziapp.logic.HeavenlyStem
 import com.fredcomms.baziapp.logic.getTenGods
 import com.fredcomms.baziapp.logic.findStem
+import com.fredcomms.baziapp.logic.getBaZiProfile
 
 @Composable
 fun BaZiScreen() {
@@ -20,9 +23,9 @@ fun BaZiScreen() {
 
     Column(
         modifier = Modifier
-            .fillMaxSize()
-            .padding(20.dp),
-            verticalArrangement = Arrangement.spacedBy(16.dp)
+            .fillMaxSize(),
+            .padding(16.dp),
+            verticalArrangement = Arrangement.spacedBy(10.dp)
     ) {
         Text(
             text = "EaziBaZi Calculator 2.0",
@@ -39,21 +42,21 @@ fun BaZiScreen() {
                 value = day,
                 onValueChange = { day = it },
                 label = { Text("DD") },
-                modifier = Modifier.weight(1f)
+                modifier = Modifier.weight(1f),
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
             )
             OutlinedTextField(
                 value = month,
                 onValueChange = { month = it },
                 label = { Text("MM") },
-                modifier = Modifier.weight(1f)
+                modifier = Modifier.weight(1f),
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
             )
             OutlinedTextField(
                 value = year,
                 onValueChange = { year = it },
                 label = { Text("YYYY") },
-                modifier = Modifier.weight(1.5f)
+                modifier = Modifier.weight(1.5f),
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
             )
         }
@@ -66,11 +69,9 @@ fun BaZiScreen() {
                 value = hour,
                 onValueChange = { hour = it },
                 label = { Text("Hour (0-23)") },
-                modifier = Modifier.weight(1f)
+                modifier = Modifier.weight(1f),
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
             )
-
-            Box(modifier = Modifier.weight(1f))
         }
 
         Button(
@@ -85,7 +86,7 @@ fun BaZiScreen() {
             },
             modifier = Modifier.fillMaxWidth()
         ) {
-            Text("Calcola Pilastro del Giorno (DM)")
+            Text("Calculate BaZi")
         }
 
         //Area Risultato
