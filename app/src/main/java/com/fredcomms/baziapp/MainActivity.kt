@@ -1,5 +1,6 @@
 package com.fredcomms.baziapp
-import com.fredcomms.baziapp.ui.ZodiacScreen
+
+import com.fredcomms.baziapp.ui.BaZiScreen
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -18,7 +19,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MaterialTheme {
                 Surface(color = MaterialTheme.colorScheme.background) {
-                    ZodiacScreen()
+                    BaZiScreen()
                 }
             }
         }

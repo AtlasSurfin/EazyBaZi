@@ -1,6 +1,7 @@
 package com.fredcomms.baziapp.logic
 import com.nlf.calendar.Solar
 import com.nlf.calendar.Lunar
+import androidx.compose.ui.graphics.Color
 
 enum class Element {FIRE, EARTH, METAL, WATER, WOOD}
 
@@ -117,6 +118,16 @@ fun getBaZiProfile(year: Int, month: Int, day: Int, hour: Int, minute: Int): Str
     }
     } catch (e: Exception) {
         "Errore nel calcolo del BaZi: ${e.message}"
+    }
+}
+
+fun getElementColor(element: Element): Color {
+    return when (element) {
+        Element.FIRE -> Color(0xFFEF5350)
+        Element.EARTH -> Color(0xFFFFCA28)
+        Element.WOOD -> Color(0xFF66BB6A)
+        Element.WATER -> Color(0xFF42A5F5)
+        Element.METAL -> Color(0xFFBDBDBD)
     }
 }
 

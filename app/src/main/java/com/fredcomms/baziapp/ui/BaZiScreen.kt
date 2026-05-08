@@ -1,17 +1,20 @@
 package com.fredcomms.baziapp.ui
 
+import androidx.compose.ui.graphics.Color
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.text.input.KeyboardType
 import com.fredcomms.baziapp.logic.HeavenlyStem
 import com.fredcomms.baziapp.logic.getTenGods
 import com.fredcomms.baziapp.logic.findStem
 import com.fredcomms.baziapp.logic.getBaZiProfile
+import com.fredcomms.baziapp.logic.Element
+import com.fredcomms.baziapp.logic.getElementColor
 
 @Composable
 fun BaZiScreen() {
@@ -23,7 +26,7 @@ fun BaZiScreen() {
 
     Column(
         modifier = Modifier
-            .fillMaxSize(),
+            .fillMaxSize()
             .padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(10.dp)
     ) {
@@ -100,5 +103,18 @@ fun BaZiScreen() {
                 style = MaterialTheme.typography.bodyLarge
             )
         }
+    }
+}
+
+@Composable
+fun PillarDisplay(stem: HeavenlyStem?, branch: EarthlyBranch?){
+    Column(
+        horizontalAlignment = Alignment.CenterHorizontally,
+        modifier = Modifier.padding(16.dp)
+    ) {
+        //Tronco Celeste (Sopra)
+        Card(
+            modifier = Modifier.size(120.dp),
+        )
     }
 }
