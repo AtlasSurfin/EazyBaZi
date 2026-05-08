@@ -25,6 +25,10 @@ enum class HeavenlyStem(val chinese: String, val element: Element, val polarity:
     }
 }
 
+data class BaZiResult(
+    val stem: HeavenlyStem?,
+    val branch: EarthlyBranch?
+)
 
 
 enum class EarthlyBranch(
@@ -100,34 +104,26 @@ fun findStem(name: String): HeavenlyStem? {
     }
 }
 
-fun getBaZiProfile(year: Int, month: Int, day: Int, hour: Int, minute: Int): String {
+fun getBaZiData(year: Int, month: Int, day: Int, hour: Int, minute: Int): BaZiResult {
     return try {
-    val solar = Solar(year, month, day, hour, minute, 0)
-    val lunar = solar.lunar
-
-    val dayStemChar = lunar.dayGan
-    val dayBranchChar = lunar.dayZhi
-
-    val dayStem = HeavenlyStem.fromChinese(dayStemChar)
-    val dayBranch = EarthlyBranch.fromChinese(dayBranchChar)
-
-    if (dayStem != null && dayBranch != null){
-        "Day Pillar: ${dayStem.name} ${dayBranch.name} (${dayBranch.zodiac})"
-    }else{
-        "Data: $dayStemChar $dayBranchChar non trovata."
-    }
+        val solar = Solar(year, month, day, hour, minute, 0)
+        val lunar = solar.lunar
+        BaZiResult(
+            stem = HeavenlyStem.fromChinese(lunar.dayGan),
+            branch = EarthlyBranch.fromChinese(lunar.dayZhi)
+        )
     } catch (e: Exception) {
-        "Errore nel calcolo del BaZi: ${e.message}"
+        BaZiResult(stem = null, branch = null)
     }
 }
 
-fun getElementColor(element: Element): Color {
+fun getElementColor(element: Element): Long {
     return when (element) {
-        Element.FIRE -> Color(0xFFEF5350)
-        Element.EARTH -> Color(0xFFFFCA28)
-        Element.WOOD -> Color(0xFF66BB6A)
-        Element.WATER -> Color(0xFF42A5F5)
-        Element.METAL -> Color(0xFFBDBDBD)
+        Element.FIRE -> 0xFFEF5350
+        Element.EARTH -> 0xFFFFCA28
+        Element.WOOD -> 0xFF66BB6A
+        Element.WATER -> 0xFF42A5F5
+        Element.METAL -> 0xFFBDBDBD
     }
 }
 
