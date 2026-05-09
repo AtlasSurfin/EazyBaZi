@@ -25,7 +25,7 @@ enum class HeavenlyStem(val chinese: String, val element: Element, val polarity:
     }
 }
 
-data class BaZiResult(
+data class Pillar(
     val stem: HeavenlyStem?,
     val branch: EarthlyBranch?
 )
@@ -54,6 +54,40 @@ enum class EarthlyBranch(
     companion object {
         fun fromChinese(char: String): EarthlyBranch? =
             values().find { it.chinese == char }
+    }
+}
+
+data class FullBaZiChart(
+    val year: Pillar,
+    val month: Pillar,
+    val day: Pillar,
+    val hour: Pillar
+)
+
+fun getPillar(stem: HeavenlyStem?, branch: EarthlyBranch?): Pillar {
+    return Pillar(stem, branch)}
+
+fun getTrueSolarTime(hour: Int, minute: Int, longitude: Double): Pair<Int, Int> {
+    val timezoneMeridian = 15.0
+    val diffMinutes = ((longitude - timezoneMeridian) * 4).toInt()
+
+    var totalMinutes = hour * 60 + minute + diffMinutes
+
+    //Gestione overflow/underflow delle 24 ore
+    if(totalMinutes < 0) totalMinutes += 1440
+    if(totalMinutes >= 1440 ) totalMinutes -= 1440
+
+    return Pair(totalMinutes / 60, totalMinutes % 60)
+}
+
+fun getTimezoneForCountry(countryCode: String): Double{
+    return when (countryCode){
+        "IT", "FR", "DE", "ES" -> 1.0 //Central European Time
+        "US" -> -5.0 //Eastern Standard Time
+        "CN" -> 8.0 //China Standard Time
+        "GB", "PT" -> 0.0 //Greenwich Mean Time
+        "JP", "KR" -> 9.0 //Japan Standard Time
+        else -> 1.0 //Default to CET
     }
 }
 
@@ -104,16 +138,21 @@ fun findStem(name: String): HeavenlyStem? {
     }
 }
 
-fun getBaZiData(year: Int, month: Int, day: Int, hour: Int, minute: Int): BaZiResult {
+fun getFullBaZi(year: Int, month: Int, day: Int, hour: Int, minute: Int, longitude: Double, countryCode: String): FullBaZiChart {
     return try {
-        val solar = Solar(year, month, day, hour, minute, 0)
-        val lunar = solar.lunar
-        BaZiResult(
-            stem = HeavenlyStem.fromChinese(lunar.dayGan),
-            branch = EarthlyBranch.fromChinese(lunar.dayZhi)
+        val tz = getTimezoneForCountry(countryCode)
+
+        val (solarH, solarM) = getTrueSolarTime(hour, minute, longitude, tz)
+
+        return FullBaZiChart(
+            year = getPillar(Library.getYearStem(year), Library.getYearBranch(year)),
+            month = getPillar(Library.getMonthStem(year, month), Library.getMonthBranch(year, month)),
+            day = getPillar(Library.getDayStem(year, month, day), Library.getDayBranch(year, month, day)),
+            hour = getPillar(Library.getHourStem(solarH, day), Library.getHourBranch(solarH))
         )
+
     } catch (e: Exception) {
-        BaZiResult(stem = null, branch = null)
+        Pillar(stem = null, branch = null)
     }
 }
 

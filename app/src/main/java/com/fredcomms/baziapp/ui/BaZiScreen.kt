@@ -19,7 +19,7 @@ fun BaZiScreen() {
     var months = (1..12).map { it.toString()}
     var days = (1..31).map { it.toString()}
     var hours = (0..23).map { it.toString().padStart(2, '0')}
-    var minutes = (0..59).map { it.toString().padStart(2, '0')}
+    var minutes = (0..55 step 5).map { it.toString().padStart(2, '0')}
 
     var currentYear = Calendar.getInstance().get(Calendar.YEAR).toString()
     var selectedDay by remember { mutableStateOf("1") }
@@ -39,7 +39,7 @@ fun BaZiScreen() {
             horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            text = "EaziBaZi Calculator 2.0",
+            text = "EaziBaZi Calculator 2.5",
             style = MaterialTheme.typography.headlineLarge,
             color = MaterialTheme.colorScheme.primary
         )
