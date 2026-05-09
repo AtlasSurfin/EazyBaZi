@@ -36,7 +36,7 @@ enum class EarthlyBranch(
     val pinyin: String,
     val element: Element,
     val polarity: Polarity,
-    val zodiac: String
+    val name: String
 ){
     ZI("子", "Zi", Element.WATER, Polarity.YANG, "Rat"),
     CHOU("丑", "Chou", Element.EARTH, Polarity.YIN, "Ox"),
@@ -148,14 +148,18 @@ fun getFullBaZi(year: Int, month: Int, day: Int, hour: Int, minute: Int, longitu
         val lunar = solar.lunar
         val baZi = lunar.baZi
 
-        fun extractPillar
+        fun extractPillar(baziPair: String): Pillar {
+            val s = HeavenlyStem.fromChinese(baziPair.substring(0,1))
+            val b = EarthlyBranch.fromChinese(baziPair.substring(1,2))
+            return Pillar(s, b)
+        }
 
-        val yearP = getPillar(HeavenlyStem.fromChinese(baZi[0].substring(0,1)), EarthlyBranch.fromChinese(baZi[0].substring(1,2))),
-        val monthP = getPillar(HeavenlySteam.fromChinese(baZi[1].substring(0,1)), EarthlyBranch.fromChinese(baZi[1].substring(1,2))),
-        val dayP = getPillar(HeavenlySteam.fromChinese(baZi[2].substring(0,1)), EarthlyBranch.fromChinese(baZi[2].substring(1,2))),
-        val hourP = getPillar(HeavenlySteam.fromChinese(baZi[3].substring(0,1)), EarthlyBranch.fromChinese(baZi[3].substring(1,2)))
-
-        FullBaZiChart(yearP, monthP, dayP, hourP)
+        FullBaZiChart(
+            year = extractPillar(baZi[0]),
+            month = extractPillar(baZi[1]),
+            day = extractPillar(baZi[2]),
+            hour = extractPillar(baZi[3])
+        )
     } catch (e: Exception) {
         val emptyPillar = Pillar(null, null)
         FullBaZiChart(emptyPillar, emptyPillar, emptyPillar, emptyPillar)

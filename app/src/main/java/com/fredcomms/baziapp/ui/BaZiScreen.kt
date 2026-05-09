@@ -3,6 +3,8 @@ package com.fredcomms.baziapp.ui
 import java.util.Calendar
 import androidx.compose.ui.graphics.Color
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.horizontalScroll
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -27,18 +29,78 @@ fun BaZiScreen() {
     var selectedYear by remember { mutableStateOf(currentYear)}
     var selectedHour by remember { mutableStateOf("12") }
     var selectedMinute by remember { mutableStateOf("00") }
-    var selectedCity by remember { mutableStateOf("IT")}
+    
+
+    var citySearchText by remember { mutableStateOf("") }
+    var selectedCity by remember { mutableStateOf<CityData?>(null) }
+    var expandedCityDropdown by remember { mutableStateOf(false) }
+
+    val filteredCities = remember(citySearchText, selectedCountry){
+        val allCitiesInCountry = dbNazioni[selectedCountry] ?: emptyList()
+        if(citySearchText.length >= 2){
+            allCitiesInCountry.filter { it.n.contains(citySearchText, ignoreCase = true) }.take(10)
+        }else {
+            emptyList()
+        }
+    }
+
+    ExposedDropdownMenuBox(
+        expanded = expandedCityDropdown && filteredCities.isNotEmpty(),
+        onExpandedChange = { expandedCityDropdown = it}
+    ){
+        OutlinedTextField(
+            value = citySearchText,
+            onValueChange = {
+                citySearchText = it
+                expandedCityDropdown = true
+            },
+            label = { Text("Cerca Città") },
+            modifier = Modifier.fillMaxWidth().menuAnchor(),
+            trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expandedCityDropdown) },
+            colors = ExposedDropdownMenuDefaults.outlinedTextFieldColors()
+        )
+
+
+        ExposedDropdownMenu(
+            expanded = expandedCityDropdown && filteredCities.isNotEmpty(),
+            onDismissRequest = { expandedCityDropdown = false }
+        ){
+            filteredCities.forEach { city ->
+                DropdownMenuItem(
+                    text = { Text(city.n ) },
+                    onClick = {
+                        selectedCity = city
+                        citySearchText = city.n
+                        expandedCityDropdown = false
+                    }
+                )
+            }
+        }
+    }
 
     var baziChart by remember { mutableStateOf<FullBaZiChart?>(null)}
-    
+
+    var citySearchText by remember { mutableStateOf("")}
+    var selectedCity by remember { mutableStateOf<CityData?>(null)}
+    var expandedCityDropdown by remember { mutableStateOf(false)}
+
+    //Filtro città in tempo reale
+    val filteredCities = remember(citySearchText, selectedCountry){
+        val allCitiesInCountry = dbNazioni[selectedCountry] ?: emptyList()
+        if (citySearchText.length >= 2){
+            allCitiesInCountry.filter { it.n.contains(citySearchText, ignoreCase = true) }.take(10)
+        } else {
+            emptyList()
+        }
+    }
 
     Column(
         modifier = Modifier
             .fillMaxSize()
             .padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(16.dp),
-            horizontalAlignment = Alignment.CenterHorizontally
-    ) {
+            ) {
+        horizontalAlignment = Alignment.CenterHorizontally
         Text(
             text = "EaziBaZi Calculator 2.5",
             style = MaterialTheme.typography.headlineLarge,
@@ -66,35 +128,46 @@ fun BaZiScreen() {
 
         Button(
             onClick = {
-                selectedCity?.let {city ->
+                val lon = selectedCity?.ln ?: 12.49
                     baziChart = getFullBaZi(
                         selectedYear.toInt(),
                         selectedMonth.toInt(),
                         selectedDay.toInt(),
                         selectedHour.toInt(),
                         selectedMinute.toInt(),
-                        city.ln,
+                        lon,
                         selectedCountry        
                     )
-                }
-            },
-            modifier = Modifier.fillMaxWidth()
+                },
+                enabled = selectedCity != null,
+                modifier = Modifier.fillMaxWidth().padding(top = 16.dp)
         ) {
             Text("Calculate BaZi Birth Chart")
         }
 
+        if(selectedCity != null) {
+            Text(
+                text = "Coordinate: ${selectedCity?.ln}° Longitudine",
+                style = MaterialTheme.typography.bodySmall,
+                color = Color.Gray
+            )
+        }
+
         baziChart?.let { chart ->
+            Spacer(modifier = Modifier.height(24.dp))
+
+
             Row(
                 modifier = Modifier
                 .fillMaxWidth()
                 .horizontalScroll(rememberScrollState())
-                .padding(top = 20.dp),
+                .padding(top = 16.dp),
                 horizontalArrangement = Arrangement.spacedBy(8.dp, Alignment.CenterHorizontally)
             ){
-                PillarDisplay("Ora", chart.hour)
-                PillarDisplay("Giorno", chart.month)
-                PillarDisplay("Mese", chart.day)
-                PillarDisplay("Anno", chart.year)
+                PillarDisplay("Ora", chart.hour, chart.day.stem)
+                PillarDisplay("Giorno", chart.month, chart.day.stem)
+                PillarDisplay("Mese", chart.day, chart.day.stem)
+                PillarDisplay("Anno", chart.year, chart.day.stem)
             }
         }
     }
@@ -112,31 +185,34 @@ fun BaZiDropdown(
     var expanded by remember { mutableStateOf(false)}
 
     ExposedDropdownMenuBox(
-        expanded = expanded,
-        onExpandedChange = { expanded = !expanded },
-        modifier = modifier
+        expanded = expandedCityDropdown && filteredCities.isNotEmpty(),
+        onExpandedChange = { expanded = expandedCityDropdown = it },
+        modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp)
     ){
         OutlinedTextField(
-            value = selectedOption,
-            onValueChange = {},
-            readOnly = true,
-            label = { Text(label) },
-            trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expanded) },
-            modifier = Modifier.menuAnchor(),
+            value = citySearchText,
+            onValueChange = {
+                citySearchText = it
+                expandedCityDropdown = true
+                selectedCity = null
+            },
+            label = { Text("Cerca Città") },
+            trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expandedCityDropdown) },
+            modifier = Modifier.fillMaxWidth().menuAnchor(),
             colors = ExposedDropdownMenuDefaults.outlinedTextFieldColors()
         )
         ExposedDropdownMenu(
             expanded = expanded,
-            onDismissRequest = { expanded = false}
+            onDismissRequest = { expanded = false }
         ){
-            options.forEach {selectionOption ->
+            filteredCities.forEach { city -> 
                 DropdownMenuItem(
-                    text = { Text(text = selectionOption)},
+                    text = { Text(city.n) },
                     onClick = {
-                        onOptionSelected(selectionOption)
-                        expanded = false
-                    },
-                    contentPadding = ExposedDropdownMenuDefaults.ItemContentPadding
+                        selectedCity = city
+                        citySearchText = city.n
+                        expandedCityDropdown = false
+                    }
                 )
             }
         }
@@ -144,53 +220,55 @@ fun BaZiDropdown(
 }
 
 @Composable
-fun PillarDisplay(stem: HeavenlyStem?, branch: EarthlyBranch?){
+fun PillarDisplay(label: String, pillar: Pillar, dayMaster: HeavenlyStem?){
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
-        modifier = Modifier.padding(16.dp)
-    ) {
-        //Heavenly Stem (Sopra)
-        Card(
-            modifier = Modifier.size(120.dp),
-            colors = CardDefaults.cardColors(
-                containerColor = Color(
-                    stem?.element?.let { getElementColor(it) } ?: 0xFF9E9E9E
-                )
-            ),
-            elevation = CardDefaults.cardElevation(8.dp)
+        modifier = Modifier.padding(horizontal = 4.dp)
+    ){
+        //Etichetta del Pilastro
+        Text(text = label, style = MaterialTheme.typography.labelMedium)
+
+        //Calcolo e visualizzazione del Ten God
+        val tenGod = if (dayMaster != null && pillar.stem != null){
+            getTenGodName(dayMaster.element, pillar.stem.element, dayMaster.polarity, pillar.stem.polarity)
+        }else ""
+
+        Text(
+            text = tenGod,
+            style = MaterialTheme.typography.labelSmall,
+            color = MaterialTheme.colorScheme.secondary,
+            modifier = Modifier.height(16.dp)
+        )
+
+
+        Spacer(modifier = Modifier.height(4.dp))
+
+        //Tronco Celeste (Heavenly Stem)
+        BaZiCard(pillar.stem?.chinese, pillar.stem?.name, pillar.stem?.element)
+
+        Spacer(modifier = Modifier.height(8.dp))
+
+        //Ramo Terrestre (Earthly Branch)
+        BaZiCard(pillar.branch?.chinese, pillar.branch?.name, pillar.branch?.element)
+    }
+}
+
+@Composable
+fun BaZiCard(chinese: String?, subText: String?, element: Element?){
+    Card(
+        modifier = Modifier.size(90.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = Color(element?.let { getElementColor(it) } ?: 0xFFE0E0E0)
+        ),
+        elevation = CardDefaults.cardElevation(defaultElevation = 4.dp)
+    ){
+        Column(
+            modifier = Modifier.fillMaxSize(),
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally
         ){
-            Column(
-                modifier = Modifier.fillMaxSize(),
-                verticalArrangement = Arrangement.Center,
-                horizontalAlignment = Alignment.CenterHorizontally
-            ){
-                Text(text = stem?.chinese ?: "?", style = MaterialTheme.typography.displayMedium)
-                Text(text = stem?.name ?: "", style = MaterialTheme.typography.titleMedium)
-                Text(text = stem?.element?.name ?: "", style = MaterialTheme.typography.labelSmall)
-            }
-        }
-
-        Spacer(modifier = Modifier.height(16.dp))
-
-
-        //Earthly Branch (Sotto)
-        Card(
-            modifier = Modifier.size(120.dp),
-            colors = CardDefaults.cardColors(
-                containerColor = Color(
-                    branch?.element?.let { getElementColor(it) } ?: 0xFF9E9E9E)
-            ),
-            elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
-        ){
-            Column(
-                modifier = Modifier.fillMaxSize(),
-                verticalArrangement = Arrangement.Center,
-                horizontalAlignment = Alignment.CenterHorizontally
-            ){
-                Text(text = branch?.chinese ?: "?", style = MaterialTheme.typography.displayMedium)
-                Text(text = branch?.pinyin ?: "", style = MaterialTheme.typography.titleMedium)
-                Text(text = branch?.zodiac ?: "", style = MaterialTheme.typography.labelSmall)
-            }
+            Text(text = chinese ?: "?", style = MaterialTheme.typography.headlineMedium)
+            Text(text = subText ?: "", style = MaterialTheme.typography.bodySmall)
         }
     }
 }
