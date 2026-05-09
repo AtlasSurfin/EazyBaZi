@@ -97,7 +97,7 @@ fun getTenGods(dayMaster: HeavenlyStem, target: HeavenlyStem): String{
     return when{
         //Output
         isProducing(dayMaster.element, target.element) ->
-            if(isSamePolarity) "Eating God (Pian Shi)" else "Hurting Officer (Shang Guan)"
+            if(isSamePolarity) "Hurting Officer (Shang Guan)" else "Eating God (Pian Shi)"
         //Wealth
         isControlling(dayMaster.element, target.element) ->
             if(isSamePolarity) "Indirect Wealth (Pian Cai)" else "Direct Wealth (Zheng Cai)"
@@ -144,15 +144,37 @@ fun getFullBaZi(year: Int, month: Int, day: Int, hour: Int, minute: Int, longitu
 
         val (solarH, solarM) = getTrueSolarTime(hour, minute, longitude, tz)
 
-        return FullBaZiChart(
-            year = getPillar(Library.getYearStem(year), Library.getYearBranch(year)),
-            month = getPillar(Library.getMonthStem(year, month), Library.getMonthBranch(year, month)),
-            day = getPillar(Library.getDayStem(year, month, day), Library.getDayBranch(year, month, day)),
-            hour = getPillar(Library.getHourStem(solarH, day), Library.getHourBranch(solarH))
-        )
+        val solar = Solar.fromYmdHms(year, month, day, solarH, solarM, 0)
+        val lunar = solar.lunar
+        val baZi = lunar.baZi
 
+        fun extractPillar
+
+        val yearP = getPillar(HeavenlyStem.fromChinese(baZi[0].substring(0,1)), EarthlyBranch.fromChinese(baZi[0].substring(1,2))),
+        val monthP = getPillar(HeavenlySteam.fromChinese(baZi[1].substring(0,1)), EarthlyBranch.fromChinese(baZi[1].substring(1,2))),
+        val dayP = getPillar(HeavenlySteam.fromChinese(baZi[2].substring(0,1)), EarthlyBranch.fromChinese(baZi[2].substring(1,2))),
+        val hourP = getPillar(HeavenlySteam.fromChinese(baZi[3].substring(0,1)), EarthlyBranch.fromChinese(baZi[3].substring(1,2)))
+
+        FullBaZiChart(yearP, monthP, dayP, hourP)
     } catch (e: Exception) {
-        Pillar(stem = null, branch = null)
+        val emptyPillar = Pillar(null, null)
+        FullBaZiChart(emptyPillar, emptyPillar, emptyPillar, emptyPillar)
+    }
+}
+
+fun getTenGodName(dayMaster: Element, target: Element, dayMasterPolarity: Polarity, targetPolarity: Polarity): String{
+    return when{
+        dayMaster == target && dayMasterPolarity == targetPolarity -> "Friends"
+        dayMaster == target && dayMasterPolarity != targetPolarity -> "Rob Wealth"
+        isProducing(dayMaster, target) && dayMasterPolarity == targetPolarity -> "Hurting Officer"
+        isProducing(dayMaster, target) && dayMasterPolarity != targetPolarity -> "Eating God"
+        isProducing(target, dayMaster) && dayMasterPolarity == targetPolarity -> "Indirect Resource"
+        isProducing(target, dayMaster) && dayMasterPolarity != targetPolarity -> "Direct Resource"
+        isControlling(dayMaster, target) && dayMasterPolarity == targetPolarity -> "Indirect Wealth"
+        isControlling(dayMaster, target) && dayMasterPolarity != targetPolarity -> "Direct Wealth"
+        isControlling(target, dayMaster) && dayMasterPolarity == targetPolarity -> "7 Killings"
+        isControlling(target, dayMaster) && dayMasterPolarity != targetPolarity -> "Direct Officer"
+        else -> ""
     }
 }
 

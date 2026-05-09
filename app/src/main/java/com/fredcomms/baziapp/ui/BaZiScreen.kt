@@ -27,8 +27,9 @@ fun BaZiScreen() {
     var selectedYear by remember { mutableStateOf(currentYear)}
     var selectedHour by remember { mutableStateOf("12") }
     var selectedMinute by remember { mutableStateOf("00") }
+    var selectedCity by remember { mutableStateOf("IT")}
 
-    var baziData by remember { mutableStateOf<BaZiResult?>(null)}
+    var baziChart by remember { mutableStateOf<FullBaZiChart?>(null)}
     
 
     Column(
@@ -65,21 +66,36 @@ fun BaZiScreen() {
 
         Button(
             onClick = {
-                baziData = getBaZiData(
-                    selectedYear.toInt(),
-                    selectedMonth.toInt(),
-                    selectedDay.toInt(),
-                    selectedHour.toInt(),
-                    selectedMinute.toInt()
-                )
+                selectedCity?.let {city ->
+                    baziChart = getFullBaZi(
+                        selectedYear.toInt(),
+                        selectedMonth.toInt(),
+                        selectedDay.toInt(),
+                        selectedHour.toInt(),
+                        selectedMinute.toInt(),
+                        city.ln,
+                        selectedCountry        
+                    )
+                }
             },
             modifier = Modifier.fillMaxWidth()
         ) {
-            Text("Calculate BaZi Pillar")
+            Text("Calculate BaZi Birth Chart")
         }
 
-        baziData?.let { data ->
-            PillarDisplay(data.stem, data.branch)
+        baziChart?.let { chart ->
+            Row(
+                modifier = Modifier
+                .fillMaxWidth()
+                .horizontalScroll(rememberScrollState())
+                .padding(top = 20.dp),
+                horizontalArrangement = Arrangement.spacedBy(8.dp, Alignment.CenterHorizontally)
+            ){
+                PillarDisplay("Ora", chart.hour)
+                PillarDisplay("Giorno", chart.month)
+                PillarDisplay("Mese", chart.day)
+                PillarDisplay("Anno", chart.year)
+            }
         }
     }
 }
