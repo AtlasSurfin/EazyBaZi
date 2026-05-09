@@ -1146,8 +1146,797 @@
     {"n": "Trindade", "ln": 6.7333},
     {"n": "Santa Catarina", "ln": 6.7333},
     {"n": "Cantagalo", "ln": 6.7333}
-    ]        
+    ],
 
+    "CN": [
+    {"n": "Beijing", "ln": 116.4074},
+    {"n": "Shanghai", "ln": 121.4737},
+    {"n": "Guangzhou", "ln": 113.2644},
+    {"n": "Shenzhen", "ln": 114.0579},
+    {"n": "Chengdu", "ln": 104.0665},
+    {"n": "Xi'an", "ln": 108.9398}
+    ],
 
+    "HK": [
+    {"n": "Hong Kong", "ln": 114.1095},
+    {"n": "Kowloon", "ln": 114.1095},
+    {"n": "New Territories", "ln": 114.1095},
+    {"n": "Lantau Island", "ln": 114.1095},
+    {"n": "Cheung Chau", "ln": 114.1095},
+    {"n": "Lamma Island", "ln": 114.1095}
+    ],
 
+    "VN": [
+    {"n": "Hanoi", "ln": 105.8542},
+    {"n": "Ho Chi Minh City", "ln": 106.6297},
+    {"n": "Da Nang", "ln": 108.2022},
+    {"n": "Hai Phong", "ln": 106.6881},
+    {"n": "Can Tho", "ln": 105.7808},
+    {"n": "Nha Trang", "ln": 109.1940}
+    ],
+
+    "ID": [
+    {"n": "Jakarta", "ln": 106.8456},
+    {"n": "Surabaya", "ln": 112.7521},
+    {"n": "Bandung", "ln": 107.6098},
+    {"n": "Medan", "ln": 98.6722},
+    {"n": "Semarang", "ln": 110.4203},
+    {"n": "Palembang", "ln": 104.7454}
+    ],
+
+    "PH": [
+    {"n": "Manila", "ln": 120.9842},
+    {"n": "Quezon City", "ln": 121.0509},
+    {"n": "Caloocan", "ln": 120.9822},
+    {"n": "Davao City", "ln": 125.6131},
+    {"n": "Cebu City", "ln": 123.8854},
+    {"n": "Zamboanga City", "ln": 122.0708}
+    ],
+
+    "TH": [
+    {"n": "Bangkok", "ln": 100.5018},
+    {"n": "Nonthaburi", "ln": 100.5131},
+    {"n": "Nakhon Ratchasima", "ln": 102.1000},
+    {"n": "Chiang Mai", "ln": 98.9817},
+    {"n": "Hat Yai", "ln": 100.4761},
+    {"n": "Udon Thani", "ln": 102.8167}
+    ],
+
+    "SA": [
+    {"n": "Riyadh", "ln": 46.6753},
+    {"n": "Jeddah", "ln": 39.1979},
+    {"n": "Mecca", "ln": 39.8262},
+    {"n": "Medina", "ln": 39.5692},
+    {"n": "Dammam", "ln": 50.0000},
+    {"n": "Khobar", "ln": 50.0000}
+    ],
+
+    "UAE": [
+    {"n": "Abu Dhabi", "ln": 54.3773},
+    {"n": "Dubai", "ln": 55.2708},
+    {"n": "Sharjah", "ln": 55.9300},
+    {"n": "Al Ain", "ln": 55.8000},
+    {"n": "Ajman", "ln": 55.5136},
+    {"n": "Ras Al Khaimah", "ln": 55.9333}
+    ],
+
+    "TW": [
+    {"n": "Taipei", "ln": 121.5654},
+    {"n": "Kaohsiung", "ln": 120.6660},
+    {"n": "Taichung", "ln": 120.6736},
+    {"n": "Tainan", "ln": 120.1551},
+    {"n": "Hsinchu", "ln": 120.9675},
+    {"n": "Keelung", "ln": 121.7419}
+    ],
+
+    "MN": [
+    {"n": "Ulaanbaatar", "ln": 106.9057},
+    {"n": "Erdenet", "ln": 109.9900},
+    {"n": "Darkhan", "ln": 104.2500},
+    {"n": "Choibalsan", "ln": 114.5000},
+    {"n": "Mörön", "ln": 100.6000},
+    {"n": "Zuunmod", "ln": 106.9000}
+    ],
+
+    "BD": [
+    {"n": "Dhaka", "ln": 90.4125},
+    {"n": "Chittagong", "ln": 91.7832},
+    {"n": "Khulna", "ln": 89.5560},
+    {"n": "Rajshahi", "ln": 88.6042},
+    {"n": "Sylhet", "ln": 91.8700},
+    {"n": "Barisal", "ln": 90.3667}
+    ],
+
+    "SG": [
+    {"n": "Singapore", "ln": 103.8198},
+    {"n": "Jurong East", "ln": 103.7430},
+    {"n": "Woodlands", "ln": 103.7850},
+    {"n": "Tampines", "ln": 103.9450},
+    {"n": "Ang Mo Kio", "ln": 103.8490},
+    {"n": "Bukit Timah", "ln": 103.7760}
+    ],
+
+    "IR": [
+    {"n": "Tehran", "ln": 51.3890},
+    {"n": "Mashhad", "ln": 59.6062},
+    {"n": "Isfahan", "ln": 51.6776},
+    {"n": "Karaj", "ln": 50.8389},
+    {"n": "Tabriz", "ln": 46.2919},
+    {"n": "Shiraz", "ln": 52.5833}
+    ],
+
+    "IQ": [
+    {"n": "Baghdad", "ln": 44.3661},
+    {"n": "Basra", "ln": 47.8167},
+    {"n": "Mosul", "ln": 43.1500},
+    {"n": "Erbil", "ln": 44.0088},
+    {"n": "Kirkuk", "ln": 44.3922},
+    {"n": "Najaf", "ln": 44.3167}
+    ],
+
+    "AF": [
+    {"n": "Kabul", "ln": 69.2075},
+    {"n": "Kandahar", "ln": 65.7372},
+    {"n": "Herat", "ln": 62.1833},
+    {"n": "Mazar-i-Sharif", "ln": 61.6833},
+    {"n": "Jalalabad", "ln": 70.4500},
+    {"n": "Kunduz", "ln": 68.8667}
+    ],
+
+    "QA": [
+    {"n": "Doha", "ln": 51.5310},
+    {"n": "Al Rayyan", "ln": 51.5310},
+    {"n": "Al Wakrah", "ln": 51.5310},
+    {"n": "Umm Salal", "ln": 51.5310},
+    {"n": "Al Khor", "ln": 51.5310},
+    {"n": "Al Daayen", "ln": 51.5310}
+    ],
+
+    "KW": [
+    {"n": "Kuwait City", "ln": 47.9774},
+    {"n": "Al Ahmadi", "ln": 47.5000},
+    {"n": "Hawalli", "ln": 48.0000},
+    {"n": "Salmiya", "ln": 48.0000},
+    {"n": "Jabriya", "ln": 48.0000},
+    {"n": "Fahaheel", "ln": 48.0000}
+    ],
+
+    "BH": [
+    {"n": "Manama", "ln": 50.5861},
+    {"n": "Riffa", "ln": 50.5861},
+    {"n": "Muharraq", "ln": 50.5861},
+    {"n": "Hamala", "ln": 50.5861},
+    {"n": "Sitrah", "ln": 50.5861},
+    {"n": "A'ali", "ln": 50.5861}
+    ],
+
+    "PK": [
+    {"n": "Islamabad", "ln": 73.0551},
+    {"n": "Karachi", "ln": 67.0099},
+    {"n": "Lahore", "ln": 74.3587},
+    {"n": "Faisalabad", "ln": 73.0667},
+    {"n": "Rawalpindi", "ln": 73.0551},
+    {"n": "Multan", "ln": 71.4750}
+    ],
+
+    "NP": [
+    {"n": "Kathmandu", "ln": 85.3240},
+    {"n": "Pokhara", "ln": 83.9856},
+    {"n": "Lalitpur", "ln": 85.3240},
+    {"n": "Biratnagar", "ln": 87.2692},
+    {"n": "Birgunj", "ln": 84.8667},
+    {"n": "Dharan", "ln": 87.2833}
+    ],
+
+    "LK": [
+    {"n": "Colombo", "ln": 79.8612},
+    {"n": "Kandy", "ln": 80.6337},
+    {"n": "Galle", "ln": 80.2167},
+    {"n": "Jaffna", "ln": 80.0167},
+    {"n": "Negombo", "ln": 79.8300},
+    {"n": "Anuradhapura", "ln": 80.4000}
+    ],
+
+    "BT": [
+    {"n": "Thimphu", "ln": 89.6419},
+    {"n": "Paro", "ln": 89.4167},
+    {"n": "Punakha", "ln": 89.7500},
+    {"n": "Phuntsholing", "ln": 88.7833},
+    {"n": "Wangdue Phodrang", "ln": 89.9000},
+    {"n": "Trongsa", "ln": 90.5000}
+    ],
+
+    "MM": [
+    {"n": "Yangon", "ln": 96.1497},
+    {"n": "Mandalay", "ln": 96.0833},
+    {"n": "Naypyidaw", "ln": 96.1000},
+    {"n": "Bago", "ln": 96.3667},
+    {"n": "Taunggyi", "ln": 97.0333},
+    {"n": "Mawlamyine", "ln": 97.6000}
+    ],
+
+    "LA": [
+    {"n": "Vientiane", "ln": 102.4955},
+    {"n": "Luang Prabang", "ln": 102.1333},
+    {"n": "Savannakhet", "ln": 104.7667},
+    {"n": "Pakse", "ln": 106.6333},
+    {"n": "Thakhek", "ln": 104.8000},
+    {"n": "Xam Neua", "ln": 104.1000}
+    ],
+
+    "MY": [
+    {"n": "Kuala Lumpur", "ln": 101.6869},
+    {"n": "George Town", "ln": 100.3333},
+    {"n": "Ipoh", "ln": 101.0833},
+    {"n": "Shah Alam", "ln": 101.5000},
+    {"n": "Petaling Jaya", "ln": 101.6500},
+    {"n": "Kota Kinabalu", "ln": 116.0724}
+    ],
+
+    "KH": [
+    {"n": "Phnom Penh", "ln": 104.8885},
+    {"n": "Siem Reap", "ln": 103.8667},
+    {"n": "Battambang", "ln": 103.2000},
+    {"n": "Sihanoukville", "ln": 102.6167},
+    {"n": "Kampong Cham", "ln": 105.0000},
+    {"n": "Kampong Speu", "ln": 104.5000}
+    ],
+
+    "BN": [
+    {"n": "Bandar Seri Begawan", "ln": 114.9410},
+    {"n": "Seria", "ln": 114.4000},
+    {"n": "Kuala Belait", "ln": 114.4000},
+    {"n": "Tutong", "ln": 114.4000},
+    {"n": "Bangar", "ln": 114.4000},
+    {"n": "Pekan Tutong", "ln": 114.4000}
+    ],
+
+    "TL": [
+    {"n": "Dili", "ln": 125.5636},
+    {"n": "Baucau", "ln": 126.5000},
+    {"n": "Maliana", "ln": 125.5667},
+    {"n": "Liquiçá", "ln": 125.5667},
+    {"n": "Viqueque", "ln": 126.5000},
+    {"n": "Lospalos", "ln": 126.5000}
+    ],
+
+    "KG": [
+    {"n": "Bishkek", "ln": 74.6122},
+    {"n": "Osh", "ln": 72.8000},
+    {"n": "Jalal-Abad", "ln": 73.0000},
+    {"n": "Karakol", "ln": 78.5000},
+    {"n": "Tokmok", "ln": 75.0000},
+    {"n": "Naryn", "ln": 77.0000}
+    ],
+
+    "KZ": [
+    {"n": "Nur-Sultan", "ln": 71.4278},
+    {"n": "Almaty", "ln": 76.9458},
+    {"n": "Shymkent", "ln": 69.5901},
+    {"n": "Karaganda", "ln": 73.0965},
+    {"n": "Aktobe", "ln": 57.1667},
+    {"n": "Pavlodar", "ln": 76.9500}
+    ],
+
+    "TJ": [
+    {"n": "Dushanbe", "ln": 68.7800},
+    {"n": "Khujand", "ln": 68.8000},
+    {"n": "Kulob", "ln": 69.0000},
+    {"n": "Khorugh", "ln": 71.5000},
+    {"n": "Istaravshan", "ln": 69.0000},
+    {"n": "Panjakent", "ln": 67.5000}
+    ],
+
+    "UZ": [
+    {"n": "Tashkent", "ln": 69.2163},
+    {"n": "Samarkand", "ln": 66.9749},
+    {"n": "Bukhara", "ln": 64.4167},
+    {"n": "Andijan", "ln": 72.3500},
+    {"n": "Namangan", "ln": 71.6667},
+    {"n": "Fergana", "ln": 71.6667}
+    ],
+
+    "TM": [
+    {"n": "Ashgabat", "ln": 58.3833},
+    {"n": "Turkmenabat", "ln": 63.6667},
+    {"n": "Dashoguz", "ln": 59.9667},
+    {"n": "Mary", "ln": 61.8333},
+    {"n": "Balkanabat", "ln": 54.3667},
+    {"n": "Tejen", "ln": 61.5000}
+    ],
+
+    "SY": [
+    {"n": "Damascus", "ln": 36.2913},
+    {"n": "Aleppo", "ln": 37.1591},
+    {"n": "Homs", "ln": 36.7167},
+    {"n": "Latakia", "ln": 35.7833},
+    {"n": "Deir ez-Zor", "ln": 40.1500},
+    {"n": "Raqqa", "ln": 39.0000}
+    ],
+
+    "LB": [
+    {"n": "Beirut", "ln": 35.5018},
+    {"n": "Tripoli", "ln": 35.8500},
+    {"n": "Sidon", "ln": 35.3833},
+    {"n": "Tyre", "ln": 35.2000},
+    {"n": "Jounieh", "ln": 35.5000},
+    {"n": "Zahle", "ln": 35.9000}
+    ],
+
+    "IL": [
+    {"n": "Jerusalem", "ln": 35.2137},
+    {"n": "Tel Aviv", "ln": 34.7818},
+    {"n": "Haifa", "ln": 34.9896},
+    {"n": "Rishon LeZion", "ln": 34.7818},
+    {"n": "Petah Tikva", "ln": 34.7818},
+    {"n": "Ashdod", "ln": 34.6500}
+    ],
+
+    "PS": [
+    {"n": "Ramallah", "ln": 35.2000},
+    {"n": "Gaza", "ln": 34.2500},
+    {"n": "Hebron", "ln": 35.1000},
+    {"n": "Nablus", "ln": 35.2000},
+    {"n": "Bethlehem", "ln": 35.2000},
+    {"n": "Jenin", "ln": 35.3000}
+     ],
+
+    "JO": [
+    {"n": "Amman", "ln": 35.9300},
+    {"n": "Zarqa", "ln": 36.1000},
+    {"n": "Irbid", "ln": 35.8500},
+    {"n": "Russeifa", "ln": 36.0000},
+    {"n": "Aqaba", "ln": 35.0000},
+    {"n": "Madaba", "ln": 35.8000}
+    ],
+
+    "YE": [
+    {"n": "Sana'a", "ln": 44.2067},
+    {"n": "Aden", "ln": 45.0000},
+    {"n": "Taiz", "ln": 44.3667},
+    {"n": "Al Hudaydah", "ln": 42.9667},
+    {"n": "Ibb", "ln": 44.1833},
+    {"n": "Dhamar", "ln": 44.3667}
+    ],
+
+    "OM": [
+    {"n": "Muscat", "ln": 58.3829},
+    {"n": "Salalah", "ln": 54.0833},
+    {"n": "Sohar", "ln": 56.5833},
+    {"n": "Nizwa", "ln": 57.5333},
+    {"n": "Sur", "ln": 59.5333},
+    {"n": "Buraimi", "ln": 55.0000}
+    ],
+
+    "MV": [
+        {"n": "Malé", "ln": 73.5093},
+        {"n": "Addu City", "ln": 73.0000},
+        {"n": "Fuvahmulah", "ln": 73.0000},
+        {"n": "Kulhudhuffushi", "ln": 73.0000},
+        {"n": "Thinadhoo", "ln": 73.0000},
+        {"n": "Hithadhoo", "ln": 73.0000}
+    ],
+
+    "EC": [
+    {"n": "Quito", "ln": -78.4678},
+    {"n": "Guayaquil", "ln": -79.8862},
+    {"n": "Cuenca", "ln": -79.0000},
+    {"n": "Santo Domingo", "ln": -79.0000},
+    {"n": "Machala", "ln": -79.0000},
+    {"n": "Durán", "ln": -79.0000}
+    ],
+
+    "GY": [
+    {"n": "Georgetown", "ln": -58.1551},
+    {"n": "Linden", "ln": -58.1551},
+    {"n": "New Amsterdam", "ln": -58.1551},
+    {"n": "Bartica", "ln": -58.1551},
+    {"n": "Skeldon", "ln": -58.1551},
+    {"n": "Anna Regina", "ln": -58.1551}
+    ],
+
+    "VE": [
+    {"n": "Caracas", "ln": -66.9036},
+    {"n": "Maracaibo", "ln": -71.6400},
+    {"n": "Valencia", "ln": -68.0000},
+    {"n": "Barquisimeto", "ln": -69.3000},
+    {"n": "Maracay", "ln": -67.6000},
+    {"n": "Ciudad Guayana", "ln": -62.0000}
+    ],
+
+    "CO": [
+    {"n": "Bogotá", "ln": -74.0721},
+    {"n": "Medellín", "ln": -75.5670},
+    {"n": "Cali", "ln": -76.5000},
+    {"n": "Barranquilla", "ln": -74.8000},
+    {"n": "Cartagena", "ln": -75.5000},
+    {"n": "Cúcuta", "ln": -72.5000}
+    ],
+
+    "GF": [
+    {"n": "Cayenne", "ln": -52.3350},
+    {"n": "Matoury", "ln": -52.3350},
+    {"n": "Rémire-Montjoly", "ln": -52.3350},
+    {"n": "Kourou", "ln": -52.3350},
+    {"n": "Macouria", "ln": -52.3350},
+    {"n": "Mana", "ln": -52.3350}
+    ],
+    
+    "SR": [
+    {"n": "Paramaribo", "ln": -55.2038},
+    {"n": "Lelydorp", "ln": -55.2038},
+    {"n": "Nieuw Nickerie", "ln": -55.2038},
+    {"n": "Moengo", "ln": -55.2038},
+    {"n": "Albina", "ln": -55.2038},
+    {"n": "Marowijne", "ln": -55.2038}
+    ],
+    
+    "PE": [
+    {"n": "Lima", "ln": -77.0428},
+    {"n": "Arequipa", "ln": -71.5375},
+    {"n": "Trujillo", "ln": -79.0280},
+    {"n": "Chiclayo", "ln": -79.8400},
+    {"n": "Piura", "ln": -80.6500},
+    {"n": "Iquitos", "ln": -73.2500}
+    ],
+
+    "BO": [
+    {"n": "La Paz", "ln": -68.1193},
+    {"n": "Santa Cruz", "ln": -63.1800},
+    {"n": "Cochabamba", "ln": -66.1500},
+    {"n": "Oruro", "ln": -67.1000},
+    {"n": "Sucre", "ln": -65.2619},
+    {"n": "Potosí", "ln": -65.7500}
+    ],
+
+    "CL": [
+    {"n": "Santiago", "ln": -70.6693},
+    {"n": "Valparaíso", "ln": -71.6127},
+    {"n": "Concepción", "ln": -73.0500},
+    {"n": "La Serena", "ln": -71.2500},
+    {"n": "Antofagasta", "ln": -70.4000},
+    {"n": "Temuco", "ln": -72.6500}
+    ],
+
+    "PY": [
+    {"n": "Asunción", "ln": -57.5759},
+    {"n": "Ciudad del Este", "ln": -54.6167},
+    {"n": "San Lorenzo", "ln": -57.5759},
+    {"n": "Luque", "ln": -57.5759},
+    {"n": "Capiatá", "ln": -57.5759},
+    {"n": "Lambaré", "ln": -57.5759}
+    ],
+
+    "UY": [
+    {"n": "Montevideo", "ln": -56.1645},
+    {"n": "Salto", "ln": -57.9667},
+    {"n": "Paysandú", "ln": -58.0667},
+    {"n": "Las Piedras", "ln": -56.1645},
+    {"n": "Rivera", "ln": -55.5667},
+    {"n": "Maldonado", "ln": -54.9500}
+    ],
+
+    "GT": [
+    {"n": "Guatemala City", "ln": -90.5069},
+    {"n": "Mixco", "ln": -90.5069},
+    {"n": "Villa Nueva", "ln": -90.5069},
+    {"n": "Quetzaltenango", "ln": -91.5167},
+    {"n": "Escuintla", "ln": -90.7833},
+    {"n": "Petapa", "ln": -90.5069}
+    ],
+
+    "CU": [
+    {"n": "Havana", "ln": -82.3666},
+    {"n": "Santiago de Cuba", "ln": -75.8333},
+    {"n": "Camagüey", "ln": -77.9167},
+    {"n": "Holguín", "ln": -76.2500},
+    {"n": "Santa Clara", "ln": -79.9667},
+    {"n": "Guantánamo", "ln": -75.2000}
+    ],
+
+    "BZ": [
+    {"n": "Belize City", "ln": -88.1979},
+    {"n": "San Ignacio", "ln": -89.0667},
+    {"n": "Belmopan", "ln": -88.7667},
+    {"n": "Orange Walk", "ln": -88.5667},
+    {"n": "Corozal", "ln": -88.3667},
+    {"n": "Dangriga", "ln": -88.1500}
+    ],
+
+    "SV": [
+    {"n": "San Salvador", "ln": -89.2182},
+    {"n": "Santa Ana", "ln": -89.5667},
+    {"n": "San Miguel", "ln": -88.1833},
+    {"n": "Mejicanos", "ln": -89.2182},
+    {"n": "Soyapango", "ln": -89.2182},
+    {"n": "Apopa", "ln": -89.2182}
+    ],
+
+    "HN": [
+    {"n": "Tegucigalpa", "ln": -87.2167},
+    {"n": "San Pedro Sula", "ln": -88.0333},
+    {"n": "Choloma", "ln": -88.0333},
+    {"n": "La Ceiba", "ln": -86.7833},
+    {"n": "El Progreso", "ln": -88.0333},
+    {"n": "Puerto Cortés", "ln": -87.9333}
+    ],
+
+    "NI": [
+    {"n": "Managua", "ln": -86.2514},
+    {"n": "León", "ln": -86.8667},
+    {"n": "Masaya", "ln": -86.1000},
+    {"n": "Chinandega", "ln": -87.1500},
+    {"n": "Estelí", "ln": -86.3500},
+    {"n": "Matagalpa", "ln": -85.9667}
+    ],
+
+    "CR": [
+    {"n": "San José", "ln": -84.0907},
+    {"n": "Alajuela", "ln": -84.0833},
+    {"n": "Cartago", "ln": -83.9167},
+    {"n": "Heredia", "ln": -84.1167},
+    {"n": "Liberia", "ln": -85.4333},
+    {"n": "Puntarenas", "ln": -84.8333}
+    ],
+
+    "PA": [
+    {"n": "Panama City", "ln": -79.5167},
+    {"n": "San Miguelito", "ln": -79.5167},
+    {"n": "Tocumen", "ln": -79.5167},
+    {"n": "Colón", "ln": -79.9000},
+    {"n": "David", "ln": -82.4333},
+    {"n": "La Chorrera", "ln": -79.7500}
+    ],
+
+    "JM": [
+    {"n": "Kingston", "ln": -76.7936},
+    {"n": "Montego Bay", "ln": -77.9167},
+    {"n": "Spanish Town", "ln": -76.9667},
+    {"n": "Portmore", "ln": -76.9667},
+    {"n": "Mandeville", "ln": -77.5000},
+    {"n": "May Pen", "ln": -77.0000}
+    ],
+
+    "HT": [
+    {"n": "Port-au-Prince", "ln": -72.3341},
+    {"n": "Cap-Haïtien", "ln": -72.2000},
+    {"n": "Gonaïves", "ln": -72.6833},
+    {"n": "Les Cayes", "ln": -73.7667},
+    {"n": "Jacmel", "ln": -72.5333},
+    {"n": "Petionville", "ln": -72.3000}
+    ],
+
+    "DO": [
+    {"n": "Santo Domingo", "ln": -69.9000},
+    {"n": "Santiago de los Caballeros", "ln": -70.7000},
+    {"n": "La Romana", "ln": -68.9667},
+    {"n": "San Pedro de Macorís", "ln": -69.3000},
+    {"n": "Higüey", "ln": -68.7000},
+    {"n": "Puerto Plata", "ln": -70.7000}
+    ],
+
+    "BS": [
+    {"n": "Nassau", "ln": -77.3500},
+    {"n": "Freeport", "ln": -78.3333},
+    {"n": "West End", "ln": -78.3333},
+    {"n": "Marsh Harbour", "ln": -76.6667},
+    {"n": "Coopers Town", "ln": -76.6667},
+    {"n": "Rock Sound", "ln": -76.6667}
+    ],
+
+    "BM": [
+    {"n": "Hamilton", "ln": -64.7833},
+    {"n": "St. George's", "ln": -64.7833},
+    {"n": "Somerset Village", "ln": -64.7833},
+    {"n": "St. David's Island", "ln": -64.7833},
+    {"n": "St. John's Island", "ln": -64.7833},
+    {"n": "Boaz Island", "ln": -64.7833}
+    ],
+
+    "TC": [
+    {"n": "Cockburn Town", "ln": -71.1378},
+    {"n": "Grand Turk", "ln": -71.1378},
+    {"n": "South Caicos", "ln": -71.1378},
+    {"n": "North Caicos", "ln": -71.1378},
+    {"n": "Middle Caicos", "ln": -71.1378},
+    {"n": "Salt Cay", "ln": -71.1378}
+    ],
+
+    "PR": [
+    {"n": "San Juan", "ln": -66.1057},
+    {"n": "Bayamón", "ln": -66.1057},
+    {"n": "Carolina", "ln": -66.1057},
+    {"n": "Ponce", "ln": -66.6000},
+    {"n": "Caguas", "ln": -66.1057},
+    {"n": "Arecibo", "ln": -66.7000}
+    ],
+
+    "AU": [
+    {"n": "Sydney", "ln": 151.2093},
+    {"n": "Melbourne", "ln": 144.9631},
+    {"n": "Brisbane", "ln": 153.0251},
+    {"n": "Perth", "ln": 115.8575},
+    {"n": "Adelaide", "ln": 138.6007},
+    {"n": "Gold Coast", "ln": 153.4000}
+    ],
+
+    "NZ": [
+    {"n": "Auckland", "ln": 174.7633},
+    {"n": "Wellington", "ln": 174.7762},
+    {"n": "Christchurch", "ln": 172.6362},
+    {"n": "Hamilton", "ln": 175.2793},
+    {"n": "Tauranga", "ln": 176.1651},
+    {"n": "Dunedin", "ln": 170.5028}
+    ],
+
+    "PG": [
+    {"n": "Port Moresby", "ln": 147.1803},
+    {"n": "Lae", "ln": 146.7250},
+    {"n": "Arawa", "ln": 155.0000},
+    {"n": "Mount Hagen", "ln": 144.0000},
+    {"n": "Madang", "ln": 145.8000},
+    {"n": "Kokopo", "ln": 152.0000}
+    ],
+
+    "NC": [
+    {"n": "Nouméa", "ln": 166.4500},
+    {"n": "Mont-Dore", "ln": 166.4500},
+    {"n": "Dumbéa", "ln": 166.4500},
+    {"n": "Païta", "ln": 166.4500},
+    {"n": "La Foa", "ln": 166.4500},
+    {"n": "Bourail", "ln": 166.4500}
+    ],
+
+    "VU": [
+    {"n": "Port Vila", "ln": 168.3273},
+    {"n": "Luganville", "ln": 167.2000},
+    {"n": "Norsup", "ln": 167.2000},
+    {"n": "Sola", "ln": 167.2000},
+    {"n": "Tanna", "ln": 167.2000},
+    {"n": "Mele", "ln": 167.2000}
+    ],
+
+    "FJ": [
+    {"n": "Suva", "ln": 178.4419},
+    {"n": "Nadi", "ln": 177.4500},
+    {"n": "Lautoka", "ln": 177.4500},
+    {"n": "Labasa", "ln": 178.0000},
+    {"n": "Ba", "ln": 177.4500},
+    {"n": "Savusavu", "ln": 178.0000}
+    ],
+
+    "TV": [
+    {"n": "Funafuti", "ln": 179.1940},
+    {"n": "Vaitupu", "ln": 179.1940},
+    {"n": "Nukufetau", "ln": 179.1940},
+    {"n": "Nui", "ln": 179.1940},
+    {"n": "Nanumanga", "ln": 179.1940},
+    {"n": "Niutao", "ln": 179.1940}
+    ],
+
+    "SB": [
+    {"n": "Honiara", "ln": 159.9490},
+    {"n": "Gizo", "ln": 156.8500},
+    {"n": "Auki", "ln": 159.0000},
+    {"n": "Munda", "ln": 156.8500},
+    {"n": "Noro", "ln": 156.8500},
+    {"n": "Kirakira", "ln": 160.0000}
+    ],
+
+    "NR": [
+    {"n": "Yaren", "ln": 166.9167},
+    {"n": "Denigomodu", "ln": 166.9167},
+    {"n": "Uaboe", "ln": 166.9167},
+    {"n": "Boe", "ln": 166.9167},
+    {"n": "Meneng", "ln": 166.9167},
+    {"n": "Nibok", "ln": 166.9167}
+    ],
+
+    "KI": [
+    {"n": "South Tarawa", "ln": 173.0000},
+    {"n": "Betio", "ln": 173.0000},
+    {"n": "Bairiki", "ln": 173.0000},
+    {"n": "Teaoraereke", "ln": 173.0000},
+    {"n": "Eita", "ln": 173.0000},
+    {"n": "Bikenibeu", "ln": 173.0000}
+    ],
+
+    "PW": [
+    {"n": "Ngerulmud", "ln": 134.6200},
+    {"n": "Koror", "ln": 134.6200},
+    {"n": "Melekeok", "ln": 134.6200},
+    {"n": "Airai", "ln": 134.6200},
+    {"n": "Babeldaob", "ln": 134.6200},
+    {"n": "Peleliu", "ln": 134.6200}
+    ],
+
+    "MH": [
+    {"n": "Majuro", "ln": 171.3800},
+    {"n": "Ebeye", "ln": 171.3800},
+    {"n": "Arno Atoll", "ln": 171.3800},
+    {"n": "Rongelap Atoll", "ln": 171.3800},
+    {"n": "Ailuk Atoll", "ln": 171.3800},
+    {"n": "Wotje Atoll", "ln": 171.3800}
+    ],
+
+    "FM": [
+    {"n": "Palikir", "ln": 158.1490},
+    {"n": "Weno", "ln": 153.0000},
+    {"n": "Yap", "ln": 138.0000},
+    {"n": "Kosrae", "ln": 163.0000},
+    {"n": "Pohnpei", "ln": 158.0000},
+    {"n": "Chuuk", "ln": 153.0000}
+    ],
+
+    "PF": [
+    {"n": "Papeete", "ln": -149.5667},
+    {"n": "Faaa", "ln": -149.5667},
+    {"n": "Pirae", "ln": -149.5667},
+    {"n": "Mahina", "ln": -149.5667},
+    {"n": "Arue", "ln": -149.5667},
+    {"n": "Punaauia", "ln": -149.5667}
+    ],
+
+    "TK": [
+    {"n": "Fakaofo", "ln": -172.0000},
+    {"n": "Nukunonu", "ln": -171.0000},
+    {"n": "Atafu", "ln": -173.0000},
+    {"n": "Tokelau", "ln": -172.0000},
+    {"n": "Teafualiki", "ln": -172.0000},
+    {"n": "Fale", "ln": -172.0000}
+    ],
+
+    "WS": [
+    {"n": "Apia", "ln": -171.7514},
+    {"n": "Vaitele", "ln": -171.7514},
+    {"n": "Faleula", "ln": -171.7514},
+    {"n": "Leulumoega", "ln": -171.7514},
+    {"n": "Satupa'itea", "ln": -171.7514},
+    {"n": "Saleimoa", "ln": -171.7514}
+    ],
+
+    "WF": [
+    {"n": "Mata-Utu", "ln": -176.1667},
+    {"n": "Alofi", "ln": -169.9167},
+    {"n": "Liku", "ln": -176.1667},
+    {"n": "Hihifo", "ln": -176.1667},
+    {"n": "Hahake", "ln": -176.1667},
+    {"n": "Mua", "ln": -176.1667}
+    ],
+
+    "AS": [
+    {"n": "Pago Pago", "ln": -170.7020},
+    {"n": "Fagatogo", "ln": -170.7020},
+    {"n": "Utulei", "ln": -170.7020},
+    {"n": "Pava'ia'i", "ln": -170.7020},
+    {"n": "Aua", "ln": -170.7020},
+    {"n": "Vaitogi", "ln": -170.7020}
+    ],
+
+    "TO": [
+    {"n": "Nuku'alofa", "ln": -175.1982},
+    {"n": "Neiafu", "ln": -173.9833},
+    {"n": "Haveluloto", "ln": -175.1982},
+    {"n": "Pangai", "ln": -174.0000},
+    {"n": "Vaini", "ln": -175.1982},
+    {"n": "Houma", "ln": -175.1982}
+    ],
+
+    "NU": [
+    {"n": "Alofi", "ln": -169.9167},
+    {"n": "Hikutavake", "ln": -169.9167},
+    {"n": "Makefu", "ln": -169.9167},
+    {"n": "Mutalau", "ln": -169.9167},
+    {"n": "Tuapa", "ln": -169.9167},
+    {"n": "Liku", "ln": -169.9167}
+    ],
+
+    "CK": [
+    {"n": "Avarua", "ln": -159.7667},
+    {"n": "Arutanga", "ln": -159.7667},
+    {"n": "Kavera", "ln": -159.7667},
+    {"n": "Titikaveka", "ln": -159.7667},
+    {"n": "Matavera", "ln": -159.7667},
+    {"n": "Ngatangiia", "ln": -159.7667}
+    ]
 }
