@@ -1,0 +1,1153 @@
+{
+    "IT": [
+            {"n": "Roma", "ln": 12.4964},
+            {"n": "Milano", "ln": 9.1900},
+            {"n": "Napoli", "ln": 14.2681},
+            {"n": "Torino", "ln": 7.6667},
+            {"n": "Palermo", "ln": 13.3600},
+            {"n": "Genova", "ln": 9.1900},
+            {"n": "Bologna", "ln": 11.3426},
+            {"n": "Firenze", "ln": 11.2558},
+            {"n": "Bari", "ln": 16.8719},
+            {"n": "Catania", "ln": 15.0873},
+            {"n": "Venezia", "ln": 12.3155},
+            {"n": "Verona", "ln": 10.9916},
+            {"n": "Messina", "ln": 15.5500},
+            {"n": "Padova", "ln": 11.8768},
+            {"n": "Trieste", "ln": 13.7768},
+            {"n": "Taranto", "ln": 17.2381},
+            {"n": "Brescia", "ln": 10.2118},
+            {"n": "Prato", "ln": 11.0960},
+            {"n": "Parma", "ln": 10.3279},
+            {"n": "Modena", "ln": 10.9252},
+            {"n": "Reggio di Calabria", "ln": 15.6500},
+            {"n": "Perugia", "ln": 12.3891},
+            {"n": "Livorno", "ln": 10.3089},
+            {"n": "Ravenna", "ln": 12.2035},
+            {"n": "Cagliari", "ln": 9.0750},
+            {"n": "Foggia", "ln": 15.5450},
+            {"n": "Rimini", "ln": 12.5695},
+            {"n": "Salerno", "ln": 14.7828},
+            {"n": "Ferrara", "ln": 11.6208},
+            {"n": "Sassari", "ln": 8.5600},
+            {"n": "Catanzaro", "ln": 16.5879},
+            {"n": "Cosenza", "ln": 16.2538},
+            {"n": "Crotone", "ln": 17.1348},
+            {"n": "Vibo Valentia", "ln": 16.1000},
+            {"n": "Trapani", "ln": 12.5100},
+            {"n": "Enna", "ln": 14.2833},
+            {"n": "Agrigento", "ln": 13.5760},
+            {"n": "Caltanissetta", "ln": 14.0625},
+            {"n": "Siracusa", "ln": 15.2866},
+            {"n": "Ragusa", "ln": 14.0170},
+            {"n": "Brindisi", "ln": 17.9450},
+            {"n": "Lecce", "ln": 18.1700},
+            {"n": "Barletta", "ln": 16.5333},
+            {"n": "Andria", "ln": 16.3167},
+            {"n": "Trani", "ln": 16.3000},
+            {"n": "Nuoro", "ln": 9.3300},
+            {"n": "Oristano", "ln": 8.5900},
+            {"n": "Sud Sardegna", "ln": 9.0000},
+            {"n": "Matera", "ln": 16.6000},
+            {"n": "Potenza", "ln": 15.8000},
+            {"n": "Benevento", "ln": 14.7833},
+            {"n": "Avellino", "ln": 14.7833},
+            {"n": "Caserta", "ln": 14.3333},
+            {"n": "Isernia", "ln": 14.2333},
+            {"n": "Campobasso", "ln": 16.5667},
+            {"n": "L'Aquila", "ln": 13.3984},
+            {"n": "Teramo", "ln": 13.7035},
+            {"n": "Pescara", "ln": 14.2167},
+            {"n": "Chieti", "ln": 14.1667},
+            {"n": "Viterbo", "ln": 11.8500},
+            {"n": "Rieti", "ln": 12.8500},
+            {"n": "Latina", "ln": 13.0000},
+            {"n": "Frosinone", "ln": 13.3500},
+            {"n": "Macerata", "ln": 13.4500},
+            {"n": "Ancona", "ln": 13.5000},
+            {"n": "Fermo", "ln": 13.7000},
+            {"n": "Ascoli Piceno", "ln": 13.9000},
+            {"n": "Pesaro e Urbino", "ln": 13.9000},
+            {"n": "Terni", "ln": 12.6167},
+            {"n": "Massa-Carrara", "ln": 10.0500},
+            {"n": "Lucca", "ln": 10.5000},
+            {"n": "Pisa", "ln": 10.4000},
+            {"n": "Siena", "ln": 11.3300},
+            {"n": "Grosseto", "ln": 11.1000},
+            {"n": "Pistoia", "ln": 10.9000},
+            {"n": "Arezzo", "ln": 11.9000},
+            {"n": "Forli-Cesena", "ln": 12.0000},
+            {"n": "Piacenza", "ln": 9.7000},
+            {"n": "Reggio Emilia", "ln": 10.7000},
+            {"n": "La Spezia", "ln": 9.8333},
+            {"n": "Savona", "ln": 8.5000},
+            {"n": "Imperia", "ln": 8.0000},
+            {"n": "Pordenone", "ln": 12.6500},
+            {"n": "Udine", "ln": 13.2333},
+            {"n": "Gorizia", "ln": 13.6000},
+            {"n": "Bolzano", "ln": 11.3500},
+            {"n": "Trento", "ln": 11.1500},
+            {"n": "Belluno", "ln": 12.2167},
+            {"n": "Vicenza", "ln": 11.5500},
+            {"n": "Rovigo", "ln": 11.8000},
+            {"n": "Treviso", "ln": 12.2000},
+            {"n": "Bergamo", "ln": 9.7000},
+            {"n": "Monza e Brianza", "ln": 9.2500},
+            {"n": "Como", "ln": 9.0833},
+            {"n": "Lecco", "ln": 9.4000},
+            {"n": "Sondrio", "ln": 9.9000},
+            {"n": "Varese", "ln": 8.8333},
+            {"n": "Lodi", "ln": 9.5000},
+            {"n": "Cremona", "ln": 10.0000},
+            {"n": "Pavia", "ln": 9.1500},
+            {"n": "Mantova", "ln": 10.8000},
+            {"n": "Novara", "ln": 8.6000},
+            {"n": "Vercelli", "ln": 8.4000},
+            {"n": "Biella", "ln": 8.0500},
+            {"n": "Verbano-Cusio-Ossola", "ln": 8.5000},
+            {"n": "Asti", "ln": 8.2000},
+            {"n": "Alessandria", "ln": 8.6167},
+            {"n": "Cuneo", "ln": 7.5500},
+            {"n": "Biella", "ln": 8.0500},
+            {"n": "Aosta", "ln": 7.3167}
+
+        ],
+
+    "US": [
+        {"n": "New York", "ln": -74.0060},
+        {"n": "Los Angeles", "ln": -118.2437},
+        {"n": "Chicago", "ln": -87.6298},
+        {"n": "Houston", "ln": -95.3698},
+        {"n": "Phoenix", "ln": -112.0740},
+        {"n": "Philadelphia", "ln": -75.1652},
+        {"n": "San Antonio", "ln": -98.4936},
+        {"n": "San Diego", "ln": -117.1611},
+        {"n": "Dallas", "ln": -96.7970},
+        {"n": "San Jose", "ln": -121.8863}
+    ],
+
+    "FR": [
+        {"n": "Paris", "ln": 2.3522},
+        {"n": "Marseille", "ln": 5.3698},
+        {"n": "Lyon", "ln": 4.8357},
+        {"n": "Toulouse", "ln": 1.4442},
+        {"n": "Nice", "ln": 7.2619},
+        {"n": "Nantes", "ln": -1.5536},
+        {"n": "Strasbourg", "ln": 7.7521},
+        {"n": "Montpellier", "ln": 3.8767},
+        {"n": "Bordeaux", "ln": -0.5792},
+        {"n": "Lille", "ln": 3.0573}
+    ],
+
+    "ES": [
+        {"n": "Madrid", "ln": -3.7038},
+        {"n": "Barcelona", "ln": 2.1734},
+        {"n": "Valencia", "ln": -0.3763},
+        {"n": "Seville", "ln": -5.9845},
+        {"n": "Zaragoza", "ln": -0.8877},
+        {"n": "Málaga", "ln": -4.4214},
+        {"n": "Murcia", "ln": -1.1307},
+        {"n": "Palma de Mallorca", "ln": 2.6502},
+        {"n": "Las Palmas de Gran Canaria", "ln": -15.4135},
+        {"n": "Bilbao", "ln": -2.9349}
+    ],
+
+    "DE": [
+        {"n": "Berlin", "ln": 13.4050},
+        {"n": "Hamburg", "ln": 9.9937},
+        {"n": "Munich", "ln": 11.5820},
+        {"n": "Cologne", "ln": 6.9603},
+        {"n": "Frankfurt", "ln": 8.6821},
+        {"n": "Stuttgart", "ln": 9.1829},
+        {"n": "Düsseldorf", "ln": 6.7735},
+        {"n": "Dortmund", "ln": 7.4653},
+        {"n": "Essen", "ln": 7.0123},
+        {"n": "Leipzig", "ln": 12.3731}
+    ],
+
+    "ZH": [
+        {"n": "Shanghai", "ln": 121.4737},
+        {"n": "Beijing", "ln": 116.4074},
+        {"n": "Chongqing", "ln": 106.5516},
+        {"n": "Tianjin", "ln": 117.3616},
+        {"n": "Guangzhou", "ln": 113.2644},
+        {"n": "Shenzhen", "ln": 114.0579},
+        {"n": "Chengdu", "ln": 104.0665},
+        {"n": "Nanjing", "ln": 118.7969},
+        {"n": "Wuhan", "ln": 114.3054},
+        {"n": "Xi'an", "ln": 108.9398}
+    ],
+
+    "PT": [
+        {"n": "Lisbon", "ln": -9.1393},
+        {"n": "Porto", "ln": -8.6110},
+        {"n": "Vila Nova de Gaia", "ln": -8.6110},
+        {"n": "Amadora", "ln": -9.2300},
+        {"n": "Braga", "ln": -8.4200},
+        {"n": "Coimbra", "ln": -8.4300},
+        {"n": "Funchal", "ln": -16.9000},
+        {"n": "Setúbal", "ln": -8.8900},
+        {"n": "Agualva-Cacém", "ln": -9.2300},
+        {"n": "Queluz", "ln": -9.2300}
+    ],
+
+    "RO": [
+        {"n": "Bucharest", "ln": 26.1025},
+        {"n": "Cluj-Napoca", "ln": 23.6236},
+        {"n": "Timișoara", "ln": 21.2231},
+        {"n": "Iași", "ln": 27.5739},
+        {"n": "Constanța", "ln": 28.6342},
+        {"n": "Craiova", "ln": 23.7949},
+        {"n": "Brașov", "ln": 25.6012},
+        {"n": "Galați", "ln": 28.0168},
+        {"n": "Ploiești", "ln": 26.0200},
+        {"n": "Oradea", "ln": 21.9211}
+    ],
+
+    "RU": [
+        {"n": "Moscow", "ln": 37.6173},
+        {"n": "Saint Petersburg", "ln": 30.3351},
+        {"n": "Novosibirsk", "ln": 82.9204},
+        {"n": "Yekaterinburg", "ln": 60.6122},
+        {"n": "Nizhny Novgorod", "ln": 44.0020},
+        {"n": "Kazan", "ln": 49.1064},
+        {"n": "Chelyabinsk", "ln": 61.4025},
+        {"n": "Omsk", "ln": 73.3686},
+        {"n": "Samara", "ln": 50.1167},
+        {"n": "Rostov-on-Don", "ln": 39.7015}
+    ],
+
+    "UK": [
+        {"n": "London", "ln": -0.1276},
+        {"n": "Birmingham", "ln": -1.8986},
+        {"n": "Glasgow", "ln": -4.2518},
+        {"n": "Liverpool", "ln": -2.9779},
+        {"n": "Bristol", "ln": -2.5879},
+        {"n": "Manchester", "ln": -2.2426},
+        {"n": "Sheffield", "ln": -1.4701},
+        {"n": "Leeds", "ln": -1.5491},
+        {"n": "Edinburgh", "ln": -3.1883},
+        {"n": "Leicester", "ln": -1.1295}
+    ],
+
+    "UKR": [
+        {"n": "Kyiv", "ln": 30.5234},
+        {"n": "Kharkiv", "ln": 36.2527},
+        {"n": "Odesa", "ln": 30.7326},
+        {"n": "Dnipro", "ln": 35.0456},
+        {"n": "Donetsk", "ln": 37.8028},
+        {"n": "Zaporizhzhia", "ln": 35.1910},
+        {"n": "Lviv", "ln": 24.0311},
+        {"n": "Kryvyi Rih", "ln": 33.3800},
+        {"n": "Mykolaiv", "ln": 31.9673},
+        {"n": "Mariupol", "ln": 37.5500}
+    ],
+    
+    "BE": [
+        {"n": "Brussels", "ln": 4.3517},
+        {"n": "Antwerp", "ln": 4.4025},
+        {"n": "Ghent", "ln": 3.7200},
+        {"n": "Charleroi", "ln": 4.4442},
+        {"n": "Liège", "ln": 5.5678},
+        {"n": "Bruges", "ln": 3.2247},
+        {"n": "Namur", "ln": 4.8675},
+        {"n": "Leuven", "ln": 4.7000},
+        {"n": "Mons", "ln": 3.9500},
+        {"n": "Aalst", "ln": 4.0350}
+    ],
+
+    "CH": [
+        {"n": "Zurich", "ln": 8.5417},
+        {"n": "Geneva", "ln": 6.1432},
+        {"n": "Basel", "ln": 7.5886},
+        {"n": "Bern", "ln": 7.4474},
+        {"n": "Lausanne", "ln": 6.6323},
+        {"n": "Lucerne", "ln": 8.3050},
+        {"n": "St. Gallen", "ln": 9.3767},
+        {"n": "Lugano", "ln": 8.9511},
+        {"n": "Biel/Bienne", "ln": 7.2460},
+        {"n": "Thun", "ln": 7.6150}
+    ],
+
+    "BR": [
+        {"n": "São Paulo", "ln": -46.6333},
+        {"n": "Rio de Janeiro", "ln": -43.1729},
+        {"n": "Brasília", "ln": -47.8825},
+        {"n": "Salvador", "ln": -38.5014},
+        {"n": "Fortaleza", "ln": -38.5247},
+        {"n": "Belo Horizonte", "ln": -43.9378},
+        {"n": "Manaus", "ln": -60.0217},
+        {"n": "Curitiba", "ln": -49.2644},
+        {"n": "Recife", "ln": -34.8813},
+        {"n": "Porto Alegre", "ln": -51.2177}
+    ],
+
+    "NL": [
+        {"n": "Amsterdam", "ln": 4.9041},
+        {"n": "Rotterdam", "ln": 4.4777},
+        {"n": "The Hague", "ln": 4.3007},
+        {"n": "Utrecht", "ln": 5.1214},
+        {"n": "Eindhoven", "ln": 5.4697},
+        {"n": "Tilburg", "ln": 5.0897},
+        {"n": "Groningen", "ln": 6.5665},
+        {"n": "Almere", "ln": 5.2190},
+        {"n": "Breda", "ln": 4.7800},
+        {"n": "Nijmegen", "ln": 5.8528}
+    ],
+
+    "PL": [
+        {"n": "Warsaw", "ln": 21.0122},
+        {"n": "Kraków", "ln": 19.9445},
+        {"n": "Łódź", "ln": 19.4550},
+        {"n": "Wrocław", "ln": 17.0385},
+        {"n": "Poznań", "ln": 16.9252},
+        {"n": "Gdańsk", "ln": 18.6466},
+        {"n": "Szczecin", "ln": 14.5528},
+        {"n": "Bydgoszcz", "ln": 18.0000},
+        {"n": "Lublin", "ln": 22.5667},
+        {"n": "Białystok", "ln": 23.1688}
+    ],
+
+    "JP": [
+        {"n": "Tokyo", "ln": 139.6917},
+        {"n": "Yokohama", "ln": 139.6380},
+        {"n": "Osaka", "ln": 135.5022},
+        {"n": "Nagoya", "ln": 136.9066},
+        {"n": "Sapporo", "ln": 141.3545},
+        {"n": "Fukuoka", "ln": 130.4017},
+        {"n": "Kobe", "ln": 135.1955},
+        {"n": "Kyoto", "ln": 135.7681},
+        {"n": "Sendai", "ln": 140.8694},
+        {"n": "Hiroshima", "ln": 132.4553}
+    ],
+
+    "KR": [
+        {"n": "Seoul", "ln": 126.9780},
+        {"n": "Busan", "ln": 129.0756},
+        {"n": "Incheon", "ln": 126.7052},
+        {"n": "Daegu", "ln": 128.6014},
+        {"n": "Daejeon", "ln": 127.3845},
+        {"n": "Gwangju", "ln": 126.8526},
+        {"n": "Suwon", "ln": 127.0286},
+        {"n": "Ulsan", "ln": 129.3114},
+        {"n": "Changwon", "ln": 128.6811},
+        {"n": "Seongnam", "ln": 127.1379}
+    ],
+
+    "NKR": [
+        {"n": "Pyongyang", "ln": 125.7625},
+        {"n": "Hamhung", "ln": 127.5100},
+        {"n": "Chongjin", "ln": 129.7850},
+        {"n": "Nampo", "ln": 125.4500},
+        {"n": "Wonsan", "ln": 127.7500},
+        {"n": "Sinuiju", "ln": 124.4000},
+        {"n": "Kaesong", "ln": 126.5500},
+        {"n": "Rason", "ln": 130.6000},
+        {"n": "Hyesan", "ln": 128.1500},
+        {"n": "Kanggye", "ln": 126.6000}
+    ],
+
+    "AR": [
+        {"n": "Buenos Aires", "ln": -58.3816},
+        {"n": "Córdoba", "ln": -64.1811},
+        {"n": "Rosario", "ln": -60.6393},
+        {"n": "Mendoza", "ln": -68.1193},
+        {"n": "La Plata", "ln": -57.9545},
+        {"n": "San Miguel de Tucumán", "ln": -65}
+    ],
+
+    "SI": [
+        {"n": "Ljubljana", "ln": 14.5058},
+        {"n": "Maribor", "ln": 15.6469},
+        {"n": "Celje", "ln": 15.2672},
+        {"n": "Kranj", "ln": 14.3556},
+        {"n": "Velenje", "ln": 15.1100},
+        {"n": "Novo Mesto", "ln": 15.1675}
+    ],
+
+    "HR": [
+        {"n": "Zagreb", "ln": 15.9819},
+        {"n": "Split", "ln": 16.4402},
+        {"n": "Rijeka", "ln": 14.4415},
+        {"n": "Osijek", "ln": 18.6939},
+        {"n": "Zadar", "ln": 15.2314},
+        {"n": "Pula", "ln": 13.8496}
+    ],
+
+    "MA": [
+        {"n": "Casablanca", "ln": -7.5898},
+        {"n": "Rabat", "ln": -6.8498},
+        {"n": "Fes", "ln": -4.9770},
+        {"n": "Marrakech", "ln": -8.0089},
+        {"n": "Agadir", "ln": -9.5981},
+        {"n": "Tangier", "ln": -5.8090}
+    ],
+
+    "XK": [
+        {"n": "Pristina", "ln": 21.1655},
+        {"n": "Peja", "ln": 20.2900},
+        {"n": "Prizren", "ln": 20.7500},
+        {"n": "Ferizaj", "ln": 21.1500},
+        {"n": "Gjilan", "ln": 21.4500},
+        {"n": "Mitrovica", "ln": 20.9000}
+    ],
+
+    "MK": [
+        {"n": "Skopje", "ln": 21.4314},
+        {"n": "Bitola", "ln": 21.3400},
+        {"n": "Kumanovo", "ln": 21.7200},
+        {"n": "Prilep", "ln": 21.5500},
+        {"n": "Tetovo", "ln": 20.9700},
+        {"n": "Ohrid", "ln": 20.8000}
+    ],
+
+    "GR": [
+        {"n": "Athens", "ln": 23.7275},
+        {"n": "Thessaloniki", "ln": 22.9444},
+        {"n": "Patras", "ln": 21.7333},
+        {"n": "Heraklion", "ln": 25.1442},
+        {"n": "Larissa", "ln": 22.4200},
+        {"n": "Volos", "ln": 22.9425}
+    ],
+
+    "BG": [
+        {"n": "Sofia", "ln": 23.3219},
+        {"n": "Plovdiv", "ln": 24.7453},
+        {"n": "Varna", "ln": 27.9167},
+        {"n": "Burgas", "ln": 27.4833},
+        {"n": "Ruse", "ln": 25.9667},
+        {"n": "Stara Zagora", "ln": 25.6333}
+    ],
+
+    "HU": [
+        {"n": "Budapest", "ln": 19.0402},
+        {"n": "Debrecen", "ln": 21.6273},
+        {"n": "Szeged", "ln": 20.1498},
+        {"n": "Miskolc", "ln": 20.7833},
+        {"n": "Pécs", "ln": 18.2284},
+        {"n": "Győr", "ln": 17.6350}
+    ],
+
+    "IE": [
+        {"n": "Dublin", "ln": -6.2603},
+        {"n": "Cork", "ln": -8.4863},
+        {"n": "Limerick", "ln": -8.6305},
+        {"n": "Galway", "ln": -9.0500},
+        {"n": "Waterford", "ln": -7.1100},
+        {"n": "Drogheda", "ln": -6.3500}
+    ],
+
+    "RS": [
+        {"n": "Belgrade", "ln": 20.4573},
+        {"n": "Novi Sad", "ln": 19.8335},
+        {"n": "Niš", "ln": 21.8958},
+        {"n": "Kragujevac", "ln": 20.9189},
+        {"n": "Subotica", "ln": 19.6800},
+        {"n": "Zrenjanin", "ln": 20.4000}
+    ],
+
+    "CA": [
+        {"n": "Toronto", "ln": -79.3832},
+        {"n": "Montreal", "ln": -73.5673},
+        {"n": "Vancouver", "ln": -123.1207},
+        {"n": "Calgary", "ln": -114.0719},
+        {"n": "Edmonton", "ln": -113.4909},
+        {"n": "Ottawa", "ln": -75.6972}
+    ],
+
+    "MT": [
+        {"n": "Valletta", "ln": 14.5146},
+        {"n": "Birkirkara", "ln": 14.4500},
+        {"n": "Mosta", "ln": 14.4500},
+        {"n": "Qormi", "ln": 14.4500},
+        {"n": "Sliema", "ln": 14.5000},
+        {"n": "St. Julian's", "ln": 14.5000}
+    ],
+
+    "SM": [
+        {"n": "San Marino", "ln": 12.4578},
+        {"n": "Serravalle", "ln": 12.4500},
+        {"n": "Borgo Maggiore", "ln": 12.4500},
+        {"n": "Domagnano", "ln": 12.4500},
+        {"n": "Faetano", "ln": 12.4500},
+        {"n": "Fiorentino", "ln": 12.4500}
+    ],
+
+    "IS": [
+        {"n": "Reykjavik", "ln": -21.8278},
+        {"n": "Kopavogur", "ln": -21.9000},
+        {"n": "Hafnarfjordur", "ln": -21.9500},
+        {"n": "Akureyri", "ln": -18.0000},
+        {"n": "Reykjanesbær", "ln": -22.0000},
+        {"n": "Garðabær", "ln": -21.9000}
+    ],
+
+    "SWD": [
+        {"n": "Stockholm", "ln": 18.0686},
+        {"n": "Gothenburg", "ln": 11.9714},
+        {"n": "Malmö", "ln": 13.0038},
+        {"n": "Uppsala", "ln": 17.6389},
+        {"n": "Västerås", "ln": 16.5448},
+        {"n": "Örebro", "ln": 15.2134}
+    ],
+    
+    "NW": [
+        {"n": "Oslo", "ln": 10.7522},
+        {"n": "Bergen", "ln": 5.3221},
+        {"n": "Trondheim", "ln": 10.3951},
+        {"n": "Stavanger", "ln": 5.7331},
+        {"n": "Kristiansand", "ln": 7.9956},
+        {"n": "Tromsø", "ln": 18.9553}
+    ],
+
+    "FN": [
+        {"n": "Helsinki", "ln": 24.9410},
+        {"n": "Espoo", "ln": 24.6559},
+        {"n": "Tampere", "ln": 23.7610},
+        {"n": "Vantaa", "ln": 24.8722},
+        {"n": "Oulu", "ln": 25.4651},
+        {"n": "Turku", "ln": 22.2666}
+    ],
+
+    "DM": [
+        {"n": "Copenhagen", "ln": 12.5683},
+        {"n": "Aarhus", "ln": 10.2039},
+        {"n": "Odense", "ln": 10.3883},
+        {"n": "Aalborg", "ln": 9.9294},
+        {"n": "Esbjerg", "ln": 8.4500},
+        {"n": "Randers", "ln": 10.0333}
+    ],
+
+    "LT": [
+        {"n": "Vilnius", "ln": 25.2797},
+        {"n": "Kaunas", "ln": 23.8813},
+        {"n": "Klaipėda", "ln": 21.0122},
+        {"n": "Šiauliai", "ln": 23.3167},
+        {"n": "Panevėžys", "ln": 24.3500},
+        {"n": "Alytus", "ln": 24.0500}
+    ],
+
+    "LV": [
+        {"n": "Riga", "ln": 24.1052},
+        {"n": "Daugavpils", "ln": 26.5036},
+        {"n": "Liepāja", "ln": 21.0108},
+        {"n": "Jelgava", "ln": 23.7281},
+        {"n": "Jūrmala", "ln": 23.7500},
+        {"n": "Ventspils", "ln": 21.5600}
+    ],
+
+    "EST": [
+        {"n": "Tallinn", "ln": 24.7536},
+        {"n": "Tartu", "ln": 26.7220},
+        {"n": "Narva", "ln": 28.1900},
+        {"n": "Pärnu", "ln": 24.5000},
+        {"n": "Kohtla-Järve", "ln": 27.5000},
+        {"n": "Viljandi", "ln": 25.5900}
+    ],
+
+    "AD": [
+        {"n": "Andorra la Vella", "ln": 1.5218},
+        {"n": "Escaldes-Engordany", "ln": 1.5333},
+        {"n": "Encamp", "ln": 1.5833},
+        {"n": "Sant Julià de Lòria", "ln": 1.5000},
+        {"n": "La Massana", "ln": 1.5500},
+        {"n": "Ordino", "ln": 1.5333}
+    ],
+
+    "AT": [
+        {"n": "Vienna", "ln": 16.3738},
+        {"n": "Graz", "ln": 15.4395},
+        {"n": "Linz", "ln": 14.2858},
+        {"n": "Salzburg", "ln": 13.0450},
+        {"n": "Innsbruck", "ln": 11.4041},
+        {"n": "Klagenfurt", "ln": 14.3054}
+    ],
+
+    "LU": [
+        {"n": "Luxembourg City", "ln": 6.1319},
+        {"n": "Esch-sur-Alzette", "ln": 5.9800},
+        {"n": "Differdange", "ln": 5.9000},
+        {"n": "Dudelange", "ln": 6.0000},
+        {"n": "Bettembourg", "ln": 6.0000},
+        {"n": "Pétange", "ln": 5.9000}
+    ],
+
+    "AL": [
+        {"n": "Tirana", "ln": 19.8189},
+        {"n": "Durrës", "ln": 19.4414},
+        {"n": "Vlorë", "ln": 19.4894},
+        {"n": "Shkodër", "ln": 19.5126},
+        {"n": "Fier", "ln": 19.5667},
+        {"n": "Elbasan", "ln": 20.0822}
+    ],
+
+    "AM": [
+        {"n": "Yerevan", "ln": 44.5136},
+        {"n": "Gyumri", "ln": 43.7945},
+        {"n": "Vanadzor", "ln": 44.4894},
+        {"n": "Vagharshapat", "ln": 44.2950},
+        {"n": "Hrazdan", "ln": 44.7500},
+        {"n": "Abovyan", "ln": 44.5500}
+    ],
+
+    "GE": [
+        {"n": "Tbilisi", "ln": 44.8271},
+        {"n": "Kutaisi", "ln": 42.2662},
+        {"n": "Batumi", "ln": 41.6168},
+        {"n": "Rustavi", "ln": 45.0000},
+        {"n": "Zugdidi", "ln": 41.8700},
+        {"n": "Gori", "ln": 44.1100}
+    ],
+
+    "MD": [
+        {"n": "Chișinău", "ln": 28.8638},
+        {"n": "Tiraspol", "ln": 29.6300},
+        {"n": "Bălți", "ln": 27.9500},
+        {"n": "Bender", "ln": 28.8300},
+        {"n": "Rîbnița", "ln": 29.0000},
+        {"n": "Cahul", "ln": 28.2000}
+    ],
+
+    "MC": [
+        {"n": "Monaco", "ln": 7.4246},
+        {"n": "Monte Carlo", "ln": 7.4246},
+        {"n": "La Condamine", "ln": 7.4246},
+        {"n": "Fontvieille", "ln": 7.4246},
+        {"n": "Moneghetti", "ln": 7.4246},
+        {"n": "Larvotto", "ln": 7.4246}
+    ],
+
+    "ME": [
+        {"n": "Podgorica", "ln": 19.2594},
+        {"n": "Nikšić", "ln": 18.9400},
+        {"n": "Herceg Novi", "ln": 18.5000},
+        {"n": "Pljevlja", "ln": 19.3500},
+        {"n": "Bar", "ln": 19.1000},
+        {"n": "Ulcinj", "ln": 19.2000}
+    ],
+
+    "AZ": [
+        {"n": "Baku", "ln": 49.8671},
+        {"n": "Ganja", "ln": 46.3600},
+        {"n": "Sumqayit", "ln": 49.5944},
+        {"n": "Mingachevir", "ln": 47.0500},
+        {"n": "Lankaran", "ln": 48.8500},
+        {"n": "Shirvan", "ln": 48.9333}
+    ],
+
+    "BA": [
+        {"n": "Sarajevo", "ln": 18.4131},
+        {"n": "Banja Luka", "ln": 17.1910},
+        {"n": "Tuzla", "ln": 18.6736},
+        {"n": "Zenica", "ln": 17.9084},
+        {"n": "Mostar", "ln": 17.8081},
+        {"n": "Bijeljina", "ln": 19.2167}
+    ],
+
+    "TR": [
+        {"n": "Istanbul", "ln": 28.9784},
+        {"n": "Ankara", "ln": 32.8597},
+        {"n": "Izmir", "ln": 27.1450},
+        {"n": "Bursa", "ln": 29.0625},
+        {"n": "Adana", "ln": 35.3213},
+        {"n": "Gaziantep", "ln": 37.0662}
+    ],
+
+    "CY": [
+        {"n": "Nicosia", "ln": 33.3823},
+        {"n": "Limassol", "ln": 34.7071},
+        {"n": "Larnaca", "ln": 33.6232},
+        {"n": "Famagusta", "ln": 33.9333},
+        {"n": "Paphos", "ln": 32.4290},
+        {"n": "Kyrenia", "ln": 34.3000}
+    ],
+
+    "CZ": [
+        {"n": "Prague", "ln": 14.4378},
+        {"n": "Brno", "ln": 16.6068},
+        {"n": "Ostrava", "ln": 18.2625},
+        {"n": "Plzeň", "ln": 13.3776},
+        {"n": "Liberec", "ln": 15.0562},
+        {"n": "Olomouc", "ln": 17.2518}
+    ],
+    
+    "LI": [
+        {"n": "Vaduz", "ln": 9.5167},
+        {"n": "Schaan", "ln": 9.5333},
+        {"n": "Triesen", "ln": 9.5333},
+        {"n": "Balzers", "ln": 9.5333},
+        {"n": "Eschen", "ln": 9.5333},
+        {"n": "Gamprin", "ln": 9.5333}
+    ],
+
+    "MX": [
+        {"n": "Mexico City", "ln": -99.1332},
+        {"n": "Guadalajara", "ln": -103.3496},
+        {"n": "Monterrey", "ln": -100.3161},
+        {"n": "Puebla", "ln": -98.2063},
+        {"n": "Tijuana", "ln": -117.0382},
+        {"n": "León", "ln": -101.6869}
+    ],
+
+    "LY": [
+        {"n": "Tripoli", "ln": 13.1875},
+        {"n": "Benghazi", "ln": 20.0667},
+        {"n": "Misrata", "ln": 15.2900},
+        {"n": "Bayda", "ln": 21.7500},
+        {"n": "Zawiya", "ln": 12.8500},
+        {"n": "Al Khums", "ln": 14.2500}
+    ],
+
+    "DZ": [
+        {"n": "Algiers", "ln": 3.0588},
+        {"n": "Oran", "ln": -0.6298},
+        {"n": "Constantine", "ln": 6.6147},
+        {"n": "Annaba", "ln": 7.7500},
+        {"n": "Blida", "ln": 2.8333},
+        {"n": "Batna", "ln": 6.1700}
+    ],
+
+    "EG": [
+        {"n": "Cairo", "ln": 31.2357},
+        {"n": "Alexandria", "ln": 29.9187},
+        {"n": "Giza", "ln": 31.1313},
+        {"n": "Shubra El Kheima", "ln": 31.2500},
+        {"n": "Port Said", "ln": 32.2656},
+        {"n": "Suez", "ln": 32.5498}
+    ],
+
+    "ET": [
+        {"n": "Addis Ababa", "ln": 38.7578},
+        {"n": "Dire Dawa", "ln": 41.8661},
+        {"n": "Mekelle", "ln": 39.4700},
+        {"n": "Gondar", "ln": 37.4667},
+        {"n": "Bahir Dar", "ln": 37.3167},
+        {"n": "Adama", "ln": 39.2667}
+    ],
+
+    "ML": [
+        {"n": "Bamako", "ln": -8.0029},
+        {"n": "Sikasso", "ln": -5.6667},
+        {"n": "Mopti", "ln": -4.0000},
+        {"n": "Kayes", "ln": -11.4000},
+        {"n": "Segou", "ln": -6.0000},
+        {"n": "Gao", "ln": 0.0500}
+    ],
+
+    "NG": [
+        {"n": "Lagos", "ln": 3.3792},
+        {"n": "Kano", "ln": 8.5244},
+        {"n": "Ibadan", "ln": 3.9270},
+        {"n": "Abuja", "ln": 7.4951},
+        {"n": "Port Harcourt", "ln": 7.0134},
+        {"n": "Benin City", "ln": 5.6148}
+    ],
+
+    "KE": [
+        {"n": "Nairobi", "ln": 36.8219},
+        {"n": "Mombasa", "ln": 39.6682},
+        {"n": "Kisumu", "ln": 34.7617},
+        {"n": "Nakuru", "ln": 36.0800},
+        {"n": "Eldoret", "ln": 35.2833},
+        {"n": "Thika", "ln": 37.0833}
+    ],
+
+    "ZA": [
+        {"n": "Johannesburg", "ln": 28.0473},
+        {"n": "Cape Town", "ln": 18.4241},
+        {"n": "Durban", "ln": 31.0218},
+        {"n": "Pretoria", "ln": 28.2293},
+        {"n": "Port Elizabeth", "ln": 25.6022},
+        {"n": "Bloemfontein", "ln": 26.2167}
+    ],
+
+    "SN": [
+        {"n": "Dakar", "ln": -17.4739},
+        {"n": "Touba", "ln": -14.9167},
+        {"n": "Thiès", "ln": -16.9667},
+        {"n": "Saint-Louis", "ln": -16.5833},
+        {"n": "Kaolack", "ln": -15.9667},
+        {"n": "Ziguinchor", "ln": -16.2833}
+    ],
+
+    "AO": [
+        {"n": "Luanda", "ln": 13.2344},
+        {"n": "N'dalatando", "ln": 15.0000},
+        {"n": "Huambo", "ln": 15.7500},
+        {"n": "Lubango", "ln": 14.9167},
+        {"n": "Benguela", "ln": 13.4000},
+        {"n": "Kuito", "ln": 16.9333}
+    ],
+
+    "SO": [
+        {"n": "Mogadishu", "ln": 45.3182},
+        {"n": "Hargeisa", "ln": 44.0636},
+        {"n": "Bosaso", "ln": 49.1800},
+        {"n": "Kismayo", "ln": 42.5450},
+        {"n": "Baidoa", "ln": 43.6500},
+        {"n": "Galkayo", "ln": 46.7500}
+    ],
+
+    "TN": [
+        {"n": "Tunis", "ln": 10.1658},
+        {"n": "Sfax", "ln": 10.7603},
+        {"n": "Sousse", "ln": 10.6403},
+        {"n": "Ettadhamen", "ln": 10.1658},
+        {"n": "Kairouan", "ln": 10.0963},
+        {"n": "Bizerte", "ln": 9.8739}
+    ],
+
+    "SD": [
+        {"n": "Khartoum", "ln": 32.5599},
+        {"n": "Omdurman", "ln": 32.5599},
+        {"n": "Port Sudan", "ln": 36.1400},
+        {"n": "Kassala", "ln": 36.4500},
+        {"n": "Nyala", "ln": 24.9000},
+        {"n": "Al-Fashir", "ln": 25.3500}
+    ],
+
+    "TD": [
+        {"n": "N'Djamena", "ln": 15.0500},
+        {"n": "Moundou", "ln": 16.0500},
+        {"n": "Sarh", "ln": 18.4000},
+        {"n": "Abéché", "ln": 20.8333},
+        {"n": "Koumra", "ln": 16.4000},
+        {"n": "Pala", "ln": 14.9833}
+    ],
+
+    "NE": [
+        {"n": "Niamey", "ln": 2.1164},
+        {"n": "Zinder", "ln": 8.9833},
+        {"n": "Maradi", "ln": 7.1000},
+        {"n": "Agadez", "ln": 7.9833},
+        {"n": "Dosso", "ln": 3.1833},
+        {"n": "Tahoua", "ln": 5.2667}
+    ],
+
+    "BF": [
+        {"n": "Ouagadougou", "ln": -1.5197},
+        {"n": "Bobo-Dioulasso", "ln": -4.2900},
+        {"n": "Koudougou", "ln": -2.3700},
+        {"n": "Banfora", "ln": -4.7600},
+        {"n": "Ouahigouya", "ln": -2.3700},
+        {"n": "Dédougou", "ln": -3.4500}
+        ],
+
+    "MR": [
+    {"n": "Nouakchott", "ln": -15.9690},
+    {"n": "Nouadhibou", "ln": -17.0333},
+    {"n": "Rosso", "ln": -14.4167},
+    {"n": "Kaédi", "ln": -13.5000},
+    {"n": "Atar", "ln": -11.9667},
+    {"n": "Kiffa", "ln": -11.4000}
+    ],
+
+    "IN": [
+    {"n": "New Delhi", "ln": 77.2090},
+    {"n": "Mumbai", "ln": 72.8777},
+    {"n": "Bangalore", "ln": 77.5946},
+    {"n": "Hyderabad", "ln": 78.4867},
+    {"n": "Ahmedabad", "ln": 72.5714},
+    {"n": "Chennai", "ln": 80.2707}
+    ],
+
+    "CM": [
+    {"n": "Yaoundé", "ln": 11.5021},
+    {"n": "Douala", "ln": 9.7679},
+    {"n": "Garoua", "ln": 13.4833},
+    {"n": "Kousséri", "ln": 15.0500},
+    {"n": "Bamenda", "ln": 10.1500},
+    {"n": "Maroua", "ln": 14.3500}
+    ],
+
+    "CI": [
+    {"n": "Abidjan", "ln": -4.0083},
+    {"n": "Bouaké", "ln": -5.0333},
+    {"n": "Daloa", "ln": -6.4500},
+    {"n": "Yamoussoukro", "ln": -5.2833},
+    {"n": "San Pedro", "ln": -6.6417},
+    {"n": "Gagnoa", "ln": -6.1333}
+    ],
+
+    "GN": [
+    {"n": "Conakry", "ln": -13.7000},
+    {"n": "Nzérékoré", "ln": -8.5000},
+    {"n": "Kankan", "ln": -9.3000},
+    {"n": "Kindia", "ln": -12.8500},
+    {"n": "Labé", "ln": -12.4333},
+    {"n": "Mamou", "ln": -12.1000}
+    ],
+
+    "GM": [
+    {"n": "Banjul", "ln": -16.5780},
+    {"n": "Serekunda", "ln": -16.6500},
+    {"n": "Brikama", "ln": -16.6500},
+    {"n": "Bakau", "ln": -16.6500},
+    {"n": "Farafenni", "ln": -15.4000},
+    {"n": "Basse Santa Su", "ln": -14.2333}
+    ],
+
+    "CD": [
+    {"n": "Kinshasa", "ln": 15.2663},
+    {"n": "Lubumbashi", "ln": 27.4833},
+    {"n": "Mbuji-Mayi", "ln": 23.6000},
+    {"n": "Kisangani", "ln": 25.2000},
+    {"n": "Kananga", "ln": 22.4000},
+    {"n": "Bukavu", "ln": 28.8500}
+    ],
+
+    "MZ": [
+    {"n": "Maputo", "ln": 32.5732},
+    {"n": "Matola", "ln": 32.4667},
+    {"n": "Nampula", "ln": 39.2667},
+    {"n": "Beira", "ln": 34.8500},
+    {"n": "Chimoio", "ln": 33.4500},
+    {"n": "Quelimane", "ln": 36.8500}
+    ],
+
+    "MG": [
+    {"n": "Antananarivo", "ln": 47.5162},
+    {"n": "Toamasina", "ln": 49.3833},
+    {"n": "Antsirabe", "ln": 47.0333},
+    {"n": "Fianarantsoa", "ln": 47.0833},
+    {"n": "Mahajanga", "ln": 46.3167},
+    {"n": "Toliara", "ln": 43.6500}
+    ],
+
+    "GH": [
+    {"n": "Accra", "ln": -0.186964},
+    {"n": "Kumasi", "ln": -1.6244},
+    {"n": "Tamale", "ln": -0.8393},
+    {"n": "Takoradi", "ln": -1.7600},
+    {"n": "Ashaiman", "ln": -0.0167},
+    {"n": "Tema", "ln": -0.0167}
+    ],
+
+    "ER": [
+    {"n": "Asmara", "ln": 38.9333},
+    {"n": "Keren", "ln": 38.4500},
+    {"n": "Massawa", "ln": 39.4500},
+    {"n": "Assab", "ln": 42.0000},
+    {"n": "Mendefera", "ln": 38.9000},
+    {"n": "Barentu", "ln": 37.5000}
+    ],
+
+    "UG": [
+    {"n": "Kampala", "ln": 32.5825},
+    {"n": "Entebbe", "ln": 32.4556},
+    {"n": "Gulu", "ln": 32.2667},
+    {"n": "Lira", "ln": 32.9000},
+    {"n": "Mbarara", "ln": 30.6581},
+    {"n": "Mbale", "ln": 34.1750}
+    ],
+
+    "SS": [
+    {"n": "Juba", "ln": 31.6000},
+    {"n": "Malakal", "ln": 32.5500},
+    {"n": "Wau", "ln": 27.9833},
+    {"n": "Bor", "ln": 31.5500},
+    {"n": "Rumbek", "ln": 29.6800},
+    {"n": "Aweil", "ln": 27.4000}
+    ],
+
+    "ZW" : [
+    {"n": "Harare", "ln": 31.0542},
+    {"n": "Bulawayo", "ln": 28.5869},
+    {"n": "Chitungwiza", "ln": 31.0542},
+    {"n": "Mutare", "ln": 32.6400},
+    {"n": "Gweru", "ln": 29.8167},
+    {"n": "Kwekwe", "ln": 29.8167}
+    ],
+
+    "BW": [
+    {"n": "Gaborone", "ln": 25.9201},
+    {"n": "Francistown", "ln": 27.5000},
+    {"n": "Molepolole", "ln": 25.0000},
+    {"n": "Selebi-Phikwe", "ln": 27.5000},
+    {"n": "Maun", "ln": 23.4167},
+    {"n": "Serowe", "ln": 26.7000}
+    ],
+
+    "GA": [
+    {"n": "Libreville", "ln": 9.4294},
+    {"n": "Port-Gentil", "ln": 8.7800},
+    {"n": "Franceville", "ln": 13.5833},
+    {"n": "Oyem", "ln": 11.5833},
+    {"n": "Moanda", "ln": 13.2000},
+    {"n": "Mouila", "ln": 10.1500}
+    ],
+
+    "ZM": [
+    {"n": "Lusaka", "ln": 28.2833},
+    {"n": "Ndola", "ln": 28.6333},
+    {"n": "Kitwe", "ln": 27.8500},
+    {"n": "Kabwe", "ln": 29.4500},
+    {"n": "Chingola", "ln": 27.8500},
+    {"n": "Mufulira", "ln": 28.2500}
+    ],
+
+    "RW": [
+    {"n": "Kigali", "ln": 30.0588},
+    {"n": "Butare", "ln": 29.6100},
+    {"n": "Gisenyi", "ln": 29.2500},
+    {"n": "Ruhengeri", "ln": 29.3500},
+    {"n": "Cyangugu", "ln": 28.9000},
+    {"n": "Kibuye", "ln": 29.3500}
+    ],
+
+    "BI": [
+    {"n": "Bujumbura", "ln": 29.3617},
+    {"n": "Gitega", "ln": 29.9300},
+    {"n": "Ngozi", "ln": 29.8300},
+    {"n": "Rumonge", "ln": 29.4500},
+    {"n": "Muyinga", "ln": 30.3500},
+    {"n": "Ruyigi", "ln": 30.3500}
+    ],
+
+    "SL": [
+    {"n": "Freetown", "ln": -13.2344},
+    {"n": "Bo", "ln": -11.7500},
+    {"n": "Kenema", "ln": -10.8500},
+    {"n": "Makeni", "ln": -11.7500},
+    {"n": "Koidu", "ln": -10.6000},
+    {"n": "Moyamba", "ln": -12.3500}
+    ],
+
+    "LR": [
+    {"n": "Monrovia", "ln": -10.7969},
+    {"n": "Gbarnga", "ln": -9.5000},
+    {"n": "Bensonville", "ln": -10.5000},
+    {"n": "Harper", "ln": -9.0000},
+    {"n": "Zwedru", "ln": -8.1500},
+    {"n": "Buchanan", "ln": -10.1500}
+    ],
+
+    "CG": [
+    {"n": "Brazzaville", "ln": 15.2663},
+    {"n": "Pointe-Noire", "ln": 16.0667},
+    {"n": "Dolisie", "ln": 12.6667},
+    {"n": "Nkayi", "ln": 14.7500},
+    {"n": "Ouesso", "ln": 16.0333},
+    {"n": "Owando", "ln": 15.1000}
+    ],
+
+    "GW": [
+    {"n": "Bissau", "ln": -15.5981},
+    {"n": "Bafatá", "ln": -14.6667},
+    {"n": "Gabú", "ln": -14.0000},
+    {"n": "Cacheu", "ln": -16.5833},
+    {"n": "Bissorã", "ln": -15.5833},
+    {"n": "Bolama", "ln": -23.0000}
+    ],
+
+    "CF": [
+    {"n": "Bangui", "ln": 18.5582},
+    {"n": "Bimbo", "ln": 18.5582},
+    {"n": "Berberati", "ln": 15.8667},
+    {"n": "Carnot", "ln": 15.8667},
+    {"n": "Nola", "ln": 16.0000},
+    {"n": "Bouar", "ln": 15.8500}
+    ],
+
+    "DJ": [
+    {"n": "Djibouti", "ln": 43.1456},
+    {"n": "Ali Sabieh", "ln": 42.7000},
+    {"n": "Tadjoura", "ln": 42.9000},
+    {"n": "Obock", "ln": 43.3000},
+    {"n": "Dikhil", "ln": 42.4500},
+    {"n": "Arta", "ln": 42.1500}
+    ],
+
+    "BJ": [
+    {"n": "Porto-Novo", "ln": 2.6289},
+    {"n": "Cotonou", "ln": 2.4386},
+    {"n": "Parakou", "ln": 2.6000},
+    {"n": "Djougou", "ln": 1.6667},
+    {"n": "Bohicon", "ln": 2.0667},
+    {"n": "Abomey-Calavi", "ln": 2.3500}
+    ],
+
+    "TG": [
+    {"n": "Lomé", "ln": 1.2314},
+    {"n": "Sokodé", "ln": 1.1333},
+    {"n": "Kara", "ln": 0.9333},
+    {"n": "Kpalimé", "ln": 0.7167},
+    {"n": "Atakpamé", "ln": 1.1500},
+    {"n": "Dapaong", "ln": 0.0500}
+    ],
+
+    "TZ": [
+    {"n": "Dodoma", "ln": 35.7419},
+    {"n": "Dar es Salaam", "ln": 39.2083},
+    {"n": "Mwanza", "ln": 32.9000},
+    {"n": "Arusha", "ln": 36.6833},
+    {"n": "Mbeya", "ln": 33.4500},
+    {"n": "Morogoro", "ln": 37.6500}
+    ],
+
+    "MW": [
+    {"n": "Lilongwe", "ln": 33.7833},
+    {"n": "Blantyre", "ln": 35.0000},
+    {"n": "Mzuzu", "ln": 34.0000},
+    {"n": "Zomba", "ln": 35.3333},
+    {"n": "Kasungu", "ln": 33.5000},
+    {"n": "Mangochi", "ln": 35.2667}
+    ],
+
+    "SC": [
+    {"n": "Victoria", "ln": 55.4550},
+    {"n": "Anse Boileau", "ln": 55.4500},
+    {"n": "Anse Royale", "ln": 55.4500},
+    {"n": "Anse Etoile", "ln": 55.4500},
+    {"n": "Anse aux Pins", "ln": 55.4500},
+    {"n": "Anse à la Mouche", "ln": 55.4500}
+    ],
+
+    "KM": [
+    {"n": "Moroni", "ln": 43.2551},
+    {"n": "Moutsamoudou", "ln": 43.2500},
+    {"n": "Fomboni", "ln": 43.2500},
+    {"n": "Domoni", "ln": 43.2500},
+    {"n": "Iconi", "ln": 43.2500},
+    {"n": "Ouani", "ln": 43.2500}
+    ],
+
+    "GQ": [
+    {"n": "Malabo", "ln": 8.7833},
+    {"n": "Bata", "ln": 9.7500},
+    {"n": "Ebebiyin", "ln": 11.3167},
+    {"n": "Mongomo", "ln": 11.3167},
+    {"n": "Aconibe", "ln": 11.3167},
+    {"n": "Anisoc", "ln": 11.3167}
+    ],
+
+    "EH": [
+    {"n": "Laayoune", "ln": -13.1618},
+    {"n": "Smara", "ln": -11.6833},
+    {"n": "Dakhla", "ln": -14.7167},
+    {"n": "Boujdour", "ln": -14.4500},
+    {"n": "Es Semara", "ln": -10.1500},
+    {"n": "Tarfaya", "ln": -12.9000}
+    ],
+
+    "CV": [
+    {"n": "Praia", "ln": -23.5087},
+    {"n": "Mindelo", "ln": -25.0667},
+    {"n": "Santa Maria", "ln": -22.9333},
+    {"n": "Assomada", "ln": -23.7000},
+    {"n": "São Filipe", "ln": -24.5000},
+    {"n": "Sal Rei", "ln": -22.9000}
+    ],
+
+    "ST": [
+    {"n": "São Tomé", "ln": 6.7333},
+    {"n": "Santo António", "ln": 6.7333},
+    {"n": "Neves", "ln": 6.7333},
+    {"n": "Trindade", "ln": 6.7333},
+    {"n": "Santa Catarina", "ln": 6.7333},
+    {"n": "Cantagalo", "ln": 6.7333}
+    ]        
+
+
+
+}
