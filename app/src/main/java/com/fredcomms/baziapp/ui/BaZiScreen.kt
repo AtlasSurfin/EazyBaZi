@@ -1,22 +1,24 @@
 package com.fredcomms.baziapp.ui
 
 import java.util.Calendar
-import androidx.compose.ui.graphics.Color
+
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.Alignment
-import androidx.compose.ui.unit.dp
-import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.*
 import com.fredcomms.baziapp.logic.*
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun BaZiScreen() {
+
+    val context = LocalContext.current
+    //Carico db delle nazioni
+    val dbNazioni = remember { CityLoader.loadCitiesByCountry(context) }
+    
     var years = (1900..2070).map { it.toString() }.reversed()
     var months = (1..12).map { it.toString()}
     var days = (1..31).map { it.toString()}
@@ -30,6 +32,12 @@ fun BaZiScreen() {
     var selectedHour by remember { mutableStateOf("12") }
     var selectedMinute by remember { mutableStateOf("00") }
     
+    var selectedCountry by remember { mutableStateOf("IT") }
+    var baziChart by remember { mutableStateOf<FullBaZiChart?>(null)}
+    
+    var selectedCountry by remember { mutableStateOf("IT")}
+    var expandedCountryDropdown by remember {mutableStateOf(false)}
+    val countries = remember { dbNazioni.keys.toList().sorted() }
 
     var citySearchText by remember { mutableStateOf("") }
     var selectedCity by remember { mutableStateOf<CityData?>(null) }
@@ -78,29 +86,13 @@ fun BaZiScreen() {
         }
     }
 
-    var baziChart by remember { mutableStateOf<FullBaZiChart?>(null)}
-
-    var citySearchText by remember { mutableStateOf("")}
-    var selectedCity by remember { mutableStateOf<CityData?>(null)}
-    var expandedCityDropdown by remember { mutableStateOf(false)}
-
-    //Filtro città in tempo reale
-    val filteredCities = remember(citySearchText, selectedCountry){
-        val allCitiesInCountry = dbNazioni[selectedCountry] ?: emptyList()
-        if (citySearchText.length >= 2){
-            allCitiesInCountry.filter { it.n.contains(citySearchText, ignoreCase = true) }.take(10)
-        } else {
-            emptyList()
-        }
-    }
-
     Column(
         modifier = Modifier
             .fillMaxSize()
             .padding(16.dp),
-            verticalArrangement = Arrangement.spacedBy(16.dp),
-            ) {
+            .verticalScroll(rememberScrollState()),
         horizontalAlignment = Alignment.CenterHorizontally
+    ) {
         Text(
             text = "EaziBaZi Calculator 2.5",
             style = MaterialTheme.typography.headlineLarge,
@@ -126,47 +118,114 @@ fun BaZiScreen() {
             BaZiDropdown("Minute", minutes, selectedMinute, { selectedMinute = it }, Modifier.weight(1f))
         }
 
+        Spacer(modifier = Modifier.height(16.dp))
+
+        //Selettore nazione
+        Text(text = "Nazione di Nascita", style = MaterialTheme.typography.labelMedium)
+        ExposedDropdownMenuBox(
+            expanded = expandedCountryDropdown,
+            onExpandedChange = { expandedCountryDropdown = it},
+            modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp)
+        ){
+            OutlinedTextField(
+                value = selectedCountry,
+                onValueChange = {},
+                readOnly = true,
+                label = { Text("Seleziona Nazione") },
+                modifier = Modifier.fillMaxWidth().menuAnchor(),
+                trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expandedCountryDropdown) }
+            )
+
+            ExposedDropdownMenu(
+                expanded = expandedCountryDropdown,
+                onDismissRequest = { expandedCountryDropdown = false }
+            ){
+                countries.forEach { countryCode ->
+                    DropdownMenuItem(
+                        text = { Text(countryCode) },
+                        onClick = {
+                            selectedCountry = countryCode
+                            expandedCountryDropdown = false
+                            citySearchText = ""
+                            selectedCity = null
+                        }
+                    )
+                }
+            }
+        }
+
+        Spacer(modifier = Modifier.height(8.dp))
+
+        //Nuovo sistema ricerca città
+        Text(text = "Città di Nascita", style = MaterialTheme.typography.labelMedium)
+        ExposedDropdownMenuBox(
+            expanded = expandedCityDropdown && filteredCities.isNotEmpty()
+            onExpandedChange = { expandedCityDropdown = it}
+        ){
+            OutlinedTextField(
+                value = citySearchText,
+                onValueChange = {
+                    citySearchText = it
+                    expandedCityDropdown = true
+                    selectedCity = null
+                },
+                label = {Text("Cerca città...") },
+                modifier = Modifier.fillMaxWidth().menuAnchor(),
+                trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expandedCityDropdown)}
+            )
+
+            ExposedDropdownMenu(
+                expanded = expandedCityDropdown && filteredCities.isNotEmpty(),
+                onDismissRequest = { expandedCityDropdown = false }
+            ){
+                filteredCities.forEach { city ->
+                    DropdownMenuItem(
+                        text = { Text(city.n) },
+                        onClick = {
+                            selectedCity = city
+                            citySearchText = city.n
+                            expandedCityDropdown = false
+                        }
+                    )
+                }   
+            }
+        }
+
+        //Tasto Calcola
         Button(
             onClick = {
-                val lon = selectedCity?.ln ?: 12.49
+                selectedCity?.let { city ->
                     baziChart = getFullBaZi(
                         selectedYear.toInt(),
                         selectedMonth.toInt(),
                         selectedDay.toInt(),
                         selectedHour.toInt(),
                         selectedMinute.toInt(),
-                        lon,
-                        selectedCountry        
+                        city.ln,
+                        selectedCountry
                     )
-                },
-                enabled = selectedCity != null,
-                modifier = Modifier.fillMaxWidth().padding(top = 16.dp)
-        ) {
-            Text("Calculate BaZi Birth Chart")
-        }
-
-        if(selectedCity != null) {
-            Text(
-                text = "Coordinate: ${selectedCity?.ln}° Longitudine",
-                style = MaterialTheme.typography.bodySmall,
-                color = Color.Gray
-            )
+                }
+            },
+            enabled = selectedCity != null,
+            modifier = Modifier.fillMaxWidth().padding(top = 16.dp)
+        ){
+            Text("Calcola Mappa")
         }
 
         baziChart?.let { chart ->
-            Spacer(modifier = Modifier.height(24.dp))
+            Spacer(modifier = Modifier.height(32.dp))
 
-
+            //4 Pillars
             Row(
                 modifier = Modifier
-                .fillMaxWidth()
-                .horizontalScroll(rememberScrollState())
-                .padding(top = 16.dp),
-                horizontalArrangement = Arrangement.spacedBy(8.dp, Alignment.CenterHorizontally)
+                    .fillMaxWidth()
+                    .horizontalScroll(rememberScrollState())
+                    .padding(vertical = 16.dp)
+                horizontalArrangement = Arrangement.spacedBy(12.dp, Alignment.CenterHorizontally)
             ){
                 PillarDisplay("Ora", chart.hour, chart.day.stem)
-                PillarDisplay("Giorno", chart.month, chart.day.stem)
-                PillarDisplay("Mese", chart.day, chart.day.stem)
+                PillarDisplay("Giorno", chart.day, chart.day.stem)
+                PillarDisplay("Mese", chart.month, chart.day.stem)
                 PillarDisplay("Anno", chart.year, chart.day.stem)
             }
         }
