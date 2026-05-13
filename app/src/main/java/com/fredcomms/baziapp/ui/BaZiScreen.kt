@@ -1,31 +1,33 @@
 package com.fredcomms.baziapp.ui
 
 import java.util.Calendar
-
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.*
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.unit.dp
 import com.fredcomms.baziapp.logic.*
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun BaZiScreen() {
-
     val context = LocalContext.current
-    //Carico db delle nazioni
     val dbNazioni = remember { CityLoader.loadCitiesByCountry(context) }
     
-    var years = (1900..2070).map { it.toString() }.reversed()
-    var months = (1..12).map { it.toString()}
-    var days = (1..31).map { it.toString()}
-    var hours = (0..23).map { it.toString().padStart(2, '0')}
-    var minutes = (0..55 step 5).map { it.toString().padStart(2, '0')}
+    var years = remember { (1900..2070).map { it.toString() }.reversed() }
+    var months = remember { (1..12).map { it.toString()} }
+    var days = remember { (1..31).map { it.toString()} }
+    var hours = remember { (0..23).map { it.toString().padStart(2, '0')} }
+    var minutes = remember { (0..55 step 5).map { it.toString().padStart(2, '0')} }
 
     var currentYear = Calendar.getInstance().get(Calendar.YEAR).toString()
+
     var selectedDay by remember { mutableStateOf("1") }
     var selectedMonth by remember { mutableStateOf("1") }
     var selectedYear by remember { mutableStateOf(currentYear)}
@@ -33,15 +35,14 @@ fun BaZiScreen() {
     var selectedMinute by remember { mutableStateOf("00") }
     
     var selectedCountry by remember { mutableStateOf("IT") }
-    var baziChart by remember { mutableStateOf<FullBaZiChart?>(null)}
-    
-    var selectedCountry by remember { mutableStateOf("IT")}
-    var expandedCountryDropdown by remember {mutableStateOf(false)}
+    var expandedCountryDropdown by remember { mutableStateOf(false) }
     val countries = remember { dbNazioni.keys.toList().sorted() }
 
     var citySearchText by remember { mutableStateOf("") }
     var selectedCity by remember { mutableStateOf<CityData?>(null) }
     var expandedCityDropdown by remember { mutableStateOf(false) }
+
+    var baziChart by remember { mutableStateOf<FullBaZiChart?>(null)}
 
     val filteredCities = remember(citySearchText, selectedCountry){
         val allCitiesInCountry = dbNazioni[selectedCountry] ?: emptyList()
@@ -49,40 +50,6 @@ fun BaZiScreen() {
             allCitiesInCountry.filter { it.n.contains(citySearchText, ignoreCase = true) }.take(10)
         }else {
             emptyList()
-        }
-    }
-
-    ExposedDropdownMenuBox(
-        expanded = expandedCityDropdown && filteredCities.isNotEmpty(),
-        onExpandedChange = { expandedCityDropdown = it}
-    ){
-        OutlinedTextField(
-            value = citySearchText,
-            onValueChange = {
-                citySearchText = it
-                expandedCityDropdown = true
-            },
-            label = { Text("Cerca Città") },
-            modifier = Modifier.fillMaxWidth().menuAnchor(),
-            trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expandedCityDropdown) },
-            colors = ExposedDropdownMenuDefaults.outlinedTextFieldColors()
-        )
-
-
-        ExposedDropdownMenu(
-            expanded = expandedCityDropdown && filteredCities.isNotEmpty(),
-            onDismissRequest = { expandedCityDropdown = false }
-        ){
-            filteredCities.forEach { city ->
-                DropdownMenuItem(
-                    text = { Text(city.n ) },
-                    onClick = {
-                        selectedCity = city
-                        citySearchText = city.n
-                        expandedCityDropdown = false
-                    }
-                )
-            }
         }
     }
 
@@ -154,6 +121,42 @@ fun BaZiScreen() {
             }
         }
 
+
+    ExposedDropdownMenuBox(
+        expanded = expandedCityDropdown && filteredCities.isNotEmpty(),
+        onExpandedChange = { expandedCityDropdown = it}
+    ){
+        OutlinedTextField(
+            value = citySearchText,
+            onValueChange = {
+                citySearchText = it
+                expandedCityDropdown = true
+            },
+            label = { Text("Cerca Città") },
+            modifier = Modifier.fillMaxWidth().menuAnchor(),
+            trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expandedCityDropdown) },
+            colors = ExposedDropdownMenuDefaults.outlinedTextFieldColors()
+        )
+
+        
+        ExposedDropdownMenu(
+            expanded = expandedCityDropdown && filteredCities.isNotEmpty(),
+            onDismissRequest = { expandedCityDropdown = false }
+        ){
+            filteredCities.forEach { city ->
+                DropdownMenuItem(
+                    text = { Text(city.n ) },
+                    onClick = {
+                        selectedCity = city
+                        citySearchText = city.n
+                        expandedCityDropdown = false
+                    }
+                )
+            }
+        }
+    }
+
+    
         Spacer(modifier = Modifier.height(8.dp))
 
         //Nuovo sistema ricerca città
