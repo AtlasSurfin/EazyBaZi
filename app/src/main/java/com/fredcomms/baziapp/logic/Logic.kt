@@ -21,7 +21,7 @@ enum class HeavenlyStem(val chinese: String, val element: Element, val polarity:
     
     companion object {
         fun fromChinese(char: String): HeavenlyStem? =
-            values().find { it.chinese == char }
+            entries().find { it.chinese == char }
     }
 }
 
@@ -53,7 +53,7 @@ enum class EarthlyBranch(
 
     companion object {
         fun fromChinese(char: String): EarthlyBranch? =
-            values().find { it.chinese == char }
+            entries().find { it.chinese == char }
     }
 }
 
@@ -63,6 +63,23 @@ data class FullBaZiChart(
     val day: Pillar,
     val hour: Pillar
 )
+
+data class CityData(
+    val n: String,
+    val ln: Double,
+    val nt: String
+)
+
+object CityLoader{
+    fun loadCitiesByCountry(context: android.content.Context): Map<String, List<CityData>> {
+        return try {
+            val jsonString = context.assets.open("cities.json").bufferedReader().use { it.readText() }
+            emptyMap()
+        } catch (e: Exception){
+            emptyMap()
+        }
+    }
+}
 
 fun getPillar(stem: HeavenlyStem?, branch: EarthlyBranch?): Pillar {
     return Pillar(stem, branch)}
@@ -138,15 +155,13 @@ fun findStem(name: String): HeavenlyStem? {
     }
 }
 
-fun getFullBaZi(year: Int, month: Int, day: Int, hour: Int, minute: Int, longitude: Double, countryCode: String): FullBaZiChart {
+fun getFullBaZi(year: Int, month: Int, day: Int, hour: Int, minute: Int, longitude: Double): FullBaZiChart {
     return try {
-        val tz = getTimezoneForCountry(countryCode)
 
         val (solarH, solarM) = getTrueSolarTime(hour, minute, longitude)
 
         val solar = Solar.fromYmdHms(year, month, day, solarH, solarM, 0)
-        val lunar = solar.lunar
-        val baZi = lunar.baZi
+        val baZi = solar.lunar.baZi
 
         fun extractPillar(baziPair: String): Pillar {
             val s = HeavenlyStem.fromChinese(baziPair.substring(0,1))

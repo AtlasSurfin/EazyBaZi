@@ -131,13 +131,13 @@ fun BaZiScreen() {
         Text(text = "Città di Nascita", style = MaterialTheme.typography.labelMedium)
         ExposedDropdownMenuBox(
             expanded = expandedCityDropdown && filteredCities.isNotEmpty(),
-            onExpandedChange = { expandedCityDropdown = it}
+            onExpandedChange = { expandedCityDropdown = it},
             modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp)
         ){
             OutlinedTextField(
                 value = citySearchText,
-                onValueChange = {
-                    citySearchText = it
+                onValueChange = { typedText ->
+                    citySearchText = typedText
                     expandedCityDropdown = true
                     selectedCity = null
                 },
@@ -162,8 +162,6 @@ fun BaZiScreen() {
             }
         }
 
-    
-        
 
         //Tasto Calcola
         Button(
@@ -175,8 +173,7 @@ fun BaZiScreen() {
                         selectedDay.toInt(),
                         selectedHour.toInt(),
                         selectedMinute.toInt(),
-                        city.ln,
-                        selectedCountry
+                        city.ln
                     )
                 }
             },
@@ -196,7 +193,7 @@ fun BaZiScreen() {
                     .fillMaxWidth()
                     .horizontalScroll(rememberScrollState())
                     .padding(vertical = 16.dp)
-                horizontalArrangement = Arrangement.spacedBy(12.dp, Arrangement.CenterHorizontally)
+                horizontalArrangement = Arrangement.spacedBy(12.dp, Alignment.CenterHorizontally)
             ){
                 PillarDisplay("Ora", chart.hour, chart.day.stem)
                 PillarDisplay("Giorno", chart.day, chart.day.stem)
