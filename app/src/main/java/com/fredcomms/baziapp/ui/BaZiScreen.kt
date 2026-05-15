@@ -15,6 +15,7 @@ import androidx.compose.ui.*
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.Alignment
 import com.fredcomms.baziapp.logic.CityData
 import com.fredcomms.baziapp.logic.CityLoader
 
@@ -192,8 +193,8 @@ fun BaZiScreen() {
                 modifier = Modifier
                     .fillMaxWidth()
                     .horizontalScroll(rememberScrollState())
-                    .padding(vertical = 16.dp)
-                horizontalArrangement = Arrangement.spacedBy(12.dp, Arrangement.Center)
+                    .padding(vertical = 16.dp),
+                horizontalArrangement = Arrangement.Center
             ){
                 PillarDisplay("Ora", chart.hour, chart.day.stem)
                 PillarDisplay("Giorno", chart.day, chart.day.stem)
