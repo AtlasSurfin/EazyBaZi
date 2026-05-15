@@ -61,19 +61,37 @@ fun BaZiScreen() {
     }
 
 
-    ExposedDropdownMenu(
+    ExposedDropdownMenuBox(
         expanded = expandedCityDropdown && filteredCities.isNotEmpty(),
-        onDismissRequest = { expandedCityDropdown = false }
+        onExpandedChange = { expandedCityDropdown = it },
+        modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp)
     ){
-        filteredCities.forEach{ city ->
-            DropdownMenuItem(
-                text = { Text("${city.n} (Long: ${city.ln})") },
-                onClick = {
-                    selectedCity = city
-                    citySearchText = city.n
-                    expandedCityDropdown = false
-                }
-            )
+        OutlinedTextField(
+            value = citySearchText,
+            onValueChange = {
+                citySearchText = it
+                expandedCityDropdown = true
+                selectedCity = null
+            },
+            label = { Text("Cerca Città...") },
+            modifier = Modifier.fillMaxWidth().menuAnchor(),
+            trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expandedCityDropdown) }
+        )
+
+        ExposedDropdownMenu(
+            expanded = expandedCityDropdown && filteredCities.isNotEmpty(),
+            onDismissRequest = { expandedCityDropdown = false }
+        ){
+            filteredCities.forEach{ city ->
+                DropdownMenuItem(
+                    text = { Text("${city.n} (Long: ${city.ln})") },
+                    onClick = {
+                        selectedCity = city
+                        citySearchText = city.n
+                        expandedCityDropdown = false
+                    }
+                )
+            }
         }
     }
 
@@ -126,7 +144,7 @@ fun BaZiScreen() {
                 readOnly = true,
                 label = { Text("Seleziona Nazione") },
                 modifier = Modifier.fillMaxWidth().menuAnchor()
-                            .clickable { expanded = !expanded },
+                            .clickable { expanded = !expanded},
                 trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expandedCountryDropdown) }
             )
             ExposedDropdownMenu(
