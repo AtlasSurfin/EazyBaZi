@@ -2,6 +2,10 @@ package com.fredcomms.baziapp.logic
 import com.nlf.calendar.Solar
 import com.nlf.calendar.Lunar
 import androidx.compose.ui.graphics.Color
+import android.location.Geocoder
+import android.content.Context
+import java.util.Locale
+import com.google.android.gms.location.LocationServices
 
 enum class Element {FIRE, EARTH, METAL, WATER, WOOD}
 
@@ -74,8 +78,10 @@ object CityLoader{
     fun loadCitiesByCountry(context: android.content.Context): Map<String, List<CityData>> {
         return try {
             val jsonString = context.assets.open("cities.json").bufferedReader().use { it.readText() }
-            emptyMap()
-        } catch (e: Exception){
+            val type = object : com.google.xml.reflect.TypeToken<Map<String, List<CityData>>>() {}.type
+            com.google.gson.Gson().fromJson(jsonString, type)
+        } catch (e: Exception) {
+            e.printStackTrace()
             emptyMap()
         }
     }
@@ -95,17 +101,6 @@ fun getTrueSolarTime(hour: Int, minute: Int, longitude: Double): Pair<Int, Int> 
     if(totalMinutes >= 1440 ) totalMinutes -= 1440
 
     return Pair(totalMinutes / 60, totalMinutes % 60)
-}
-
-fun getTimezoneForCountry(countryCode: String): Double{
-    return when (countryCode){
-        "IT", "FR", "DE", "ES" -> 1.0 //Central European Time
-        "US" -> -5.0 //Eastern Standard Time
-        "CN" -> 8.0 //China Standard Time
-        "GB", "PT" -> 0.0 //Greenwich Mean Time
-        "JP", "KR" -> 9.0 //Japan Standard Time
-        else -> 1.0 //Default to CET
-    }
 }
 
 fun getTenGods(dayMaster: HeavenlyStem, target: HeavenlyStem): String{
@@ -148,11 +143,7 @@ fun isControlling(a: Element, b: Element) = (a == Element.WOOD && b == Element.E
 || (a == Element.METAL && b == Element.WOOD)
 
 fun findStem(name: String): HeavenlyStem? {
-    return try {
-        HeavenlyStem.valueOf(name.trim().uppercase())
-    } catch (e: Exception) {
-        null
-    }
+    return HeavenlyStem.valueOf(name.trim().uppercase())
 }
 
 fun getFullBaZi(year: Int, month: Int, day: Int, hour: Int, minute: Int, longitude: Double): FullBaZiChart {
@@ -207,10 +198,37 @@ fun getElementColor(element: Element): Long {
     }
 }
 
-fun main() {
-    val dm = HeavenlyStem.JIA // Legno Yang
-    val anno = HeavenlyStem.BING // Fuoco Yang
-    println("la relazione è  ${getTenGods(dm, anno)}")
+fun getCoordinatesFromName(context: Context, cityName: String, onResult: (CityData?) -> Unit) {
+    try{
+        val geocoder = Geocoder(context, Locale.getDefault())
+        val addresses = geocoder.getFromLocationName(cityName, 1)
+        if(!addresses.isNullOrEmpty()) {
+            val addr = addresses[0]
+            onResult(CityData(n = addr.location ?: cityName, ln = addr.longitude))
+        }else{
+            onResult(null)
+        }
+    } catch (e: Exception) {
+        onResult(null)
+    }
+}
+
+fun getCurrentLocation(context: Context, onLocationFetched: (CityData) -> Unit){
+    val fusedLocationClient = LocationServices.getFusedLocationProviderClient(context)
+    try {
+        fusedLocationClient.lastLocation.addOnSuccessListener { location ->
+            if(location != null){
+                val geocoder = Geocoder(context, Locale.getDefault())
+                val addresses = geocoder.getFromLocation(location.latitude, location.longitude, 1)
+                val cityName = if (!addresses.isNullOrEmpty()) addresses[0].location ?: "Posizione GPS" else "Posizione GPS"
+
+                onLocationFetched(CityData(n = cityName, ln = location.longitude))
+            }
+        }
+    } catch (e: SecurityException){
+        //Gestione mancanza permessi
+    }
+}
     
 
-}
+fun main(){}
