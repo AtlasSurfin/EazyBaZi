@@ -204,7 +204,7 @@ fun getCoordinatesFromName(context: Context, cityName: String, onResult: (CityDa
         val addresses = geocoder.getFromLocationName(cityName, 1)
         if(!addresses.isNullOrEmpty()) {
             val addr = addresses[0]
-            onResult(CityData(n = addr.location ?: cityName, ln = addr.longitude))
+            onResult(CityData(n = addr.locality ?: cityName, ln = addr.longitude))
         }else{
             onResult(null)
         }
@@ -220,7 +220,7 @@ fun getCurrentLocation(context: Context, onLocationFetched: (CityData) -> Unit){
             if(location != null){
                 val geocoder = Geocoder(context, Locale.getDefault())
                 val addresses = geocoder.getFromLocation(location.latitude, location.longitude, 1)
-                val cityName = if (!addresses.isNullOrEmpty()) addresses[0].location ?: "Posizione GPS" else "Posizione GPS"
+                val cityName = if (!addresses.isNullOrEmpty()) addresses[0].locality ?: "Posizione GPS" else "Posizione GPS"
 
                 onLocationFetched(CityData(n = cityName, ln = location.longitude))
             }
