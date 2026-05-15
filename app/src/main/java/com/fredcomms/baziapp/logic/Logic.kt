@@ -21,7 +21,7 @@ enum class HeavenlyStem(val chinese: String, val element: Element, val polarity:
     
     companion object {
         fun fromChinese(char: String): HeavenlyStem? =
-            entries().find { it.chinese == char }
+            entries.find { it.chinese == char }
     }
 }
 
@@ -53,7 +53,7 @@ enum class EarthlyBranch(
 
     companion object {
         fun fromChinese(char: String): EarthlyBranch? =
-            entries().find { it.chinese == char }
+            entries.find { it.chinese == char }
     }
 }
 
