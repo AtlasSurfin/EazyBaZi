@@ -193,7 +193,7 @@ fun BaZiScreen() {
                     .fillMaxWidth()
                     .horizontalScroll(rememberScrollState())
                     .padding(vertical = 16.dp)
-                horizontalArrangement = Arrangement.spacedBy(12.dp, Alignment.CenterHorizontally)
+                horizontalArrangement = Arrangement.spacedBy(12.dp, Arrangement.Center)
             ){
                 PillarDisplay("Ora", chart.hour, chart.day.stem)
                 PillarDisplay("Giorno", chart.day, chart.day.stem)
