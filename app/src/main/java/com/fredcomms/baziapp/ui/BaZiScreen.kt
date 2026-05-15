@@ -66,14 +66,16 @@ fun BaZiScreen() {
             color = MaterialTheme.colorScheme.primary
         )
 
+        Spacer(modifier = Modifier.height(16.dp))
+
         //RIGA DATA
         Row(
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.spacedBy(8.dp)
         ){
-            BaZiDropdown("Day", days, selectedDay, { selectedDay = it }, Modifier.weight(1f))
-            BaZiDropdown("Month", months, selectedMonth, { selectedMonth = it }, Modifier.weight(1f))
-            BaZiDropdown("Year", years, selectedYear, { selectedYear = it }, Modifier.weight(1.5f))
+            BaZiDropdown("Giorno", days, selectedDay, { selectedDay = it }, Modifier.weight(1f))
+            BaZiDropdown("Mese", months, selectedMonth, { selectedMonth = it }, Modifier.weight(1f))
+            BaZiDropdown("Anno", years, selectedYear, { selectedYear = it }, Modifier.weight(1.5f))
         }
 
         //RIGA ORA
@@ -81,8 +83,8 @@ fun BaZiScreen() {
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.spacedBy(8.dp)
         ){
-            BaZiDropdown("Hour", hours, selectedHour, { selectedHour = it }, Modifier.weight(1f))
-            BaZiDropdown("Minute", minutes, selectedMinute, { selectedMinute = it }, Modifier.weight(1f))
+            BaZiDropdown("Ora", hours, selectedHour, { selectedHour = it }, Modifier.weight(1f))
+            BaZiDropdown("Minuti", minutes, selectedMinute, { selectedMinute = it }, Modifier.weight(1f))
         }
 
         Spacer(modifier = Modifier.height(16.dp))
@@ -102,16 +104,15 @@ fun BaZiScreen() {
                 modifier = Modifier.fillMaxWidth().menuAnchor(),
                 trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expandedCountryDropdown) }
             )
-
             ExposedDropdownMenu(
                 expanded = expandedCountryDropdown,
                 onDismissRequest = { expandedCountryDropdown = false }
             ){
-                countries.forEach { countryCode ->
+                countries.forEach { code ->
                     DropdownMenuItem(
-                        text = { Text(countryCode) },
+                        text = { Text(code) },
                         onClick = {
-                            selectedCountry = countryCode
+                            selectedCountry = code
                             expandedCountryDropdown = false
                             citySearchText = ""
                             selectedCity = null
@@ -121,49 +122,12 @@ fun BaZiScreen() {
             }
         }
 
-
-    ExposedDropdownMenuBox(
-        expanded = expandedCityDropdown && filteredCities.isNotEmpty(),
-        onExpandedChange = { expandedCityDropdown = it}
-    ){
-        OutlinedTextField(
-            value = citySearchText,
-            onValueChange = {
-                citySearchText = it
-                expandedCityDropdown = true
-            },
-            label = { Text("Cerca Città") },
-            modifier = Modifier.fillMaxWidth().menuAnchor(),
-            trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expandedCityDropdown) },
-            colors = ExposedDropdownMenuDefaults.outlinedTextFieldColors()
-        )
-
-        
-        ExposedDropdownMenu(
-            expanded = expandedCityDropdown && filteredCities.isNotEmpty(),
-            onDismissRequest = { expandedCityDropdown = false }
-        ){
-            filteredCities.forEach { city ->
-                DropdownMenuItem(
-                    text = { Text(city.n ) },
-                    onClick = {
-                        selectedCity = city
-                        citySearchText = city.n
-                        expandedCityDropdown = false
-                    }
-                )
-            }
-        }
-    }
-
-    
-        Spacer(modifier = Modifier.height(8.dp))
-
-        //Nuovo sistema ricerca città
+        //Ricerca Città
         Text(text = "Città di Nascita", style = MaterialTheme.typography.labelMedium)
         ExposedDropdownMenuBox(
-            expanded = expandedCityDropdown && filteredCities.isNotEmpty()
+            expanded = expandedCityDropdown && filteredCities.isNotEmpty(),
             onExpandedChange = { expandedCityDropdown = it}
+            modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp)
         ){
             OutlinedTextField(
                 value = citySearchText,
@@ -172,27 +136,29 @@ fun BaZiScreen() {
                     expandedCityDropdown = true
                     selectedCity = null
                 },
-                label = {Text("Cerca città...") },
+                label = { Text("Cerca Città...") },
                 modifier = Modifier.fillMaxWidth().menuAnchor(),
-                trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expandedCityDropdown)}
+                trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expandedCityDropdown) },
             )
-
             ExposedDropdownMenu(
                 expanded = expandedCityDropdown && filteredCities.isNotEmpty(),
                 onDismissRequest = { expandedCityDropdown = false }
             ){
                 filteredCities.forEach { city ->
                     DropdownMenuItem(
-                        text = { Text(city.n) },
+                        text = { Text(city.n ) },
                         onClick = {
                             selectedCity = city
                             citySearchText = city.n
                             expandedCityDropdown = false
                         }
                     )
-                }   
+                }
             }
         }
+
+    
+        
 
         //Tasto Calcola
         Button(
@@ -215,6 +181,7 @@ fun BaZiScreen() {
             Text("Calcola Mappa")
         }
 
+        //Mostra Risultati
         baziChart?.let { chart ->
             Spacer(modifier = Modifier.height(32.dp))
 
@@ -247,33 +214,28 @@ fun BaZiDropdown(
     var expanded by remember { mutableStateOf(false)}
 
     ExposedDropdownMenuBox(
-        expanded = expandedCityDropdown && filteredCities.isNotEmpty(),
-        onExpandedChange = { expanded = expandedCityDropdown = it },
-        modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp)
+        expanded = expanded,
+        onExpandedChange = { expanded = it },
+        modifier = modifier
     ){
         OutlinedTextField(
-            value = citySearchText,
-            onValueChange = {
-                citySearchText = it
-                expandedCityDropdown = true
-                selectedCity = null
-            },
-            label = { Text("Cerca Città") },
-            trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expandedCityDropdown) },
-            modifier = Modifier.fillMaxWidth().menuAnchor(),
-            colors = ExposedDropdownMenuDefaults.outlinedTextFieldColors()
+            value = selectedOption,
+            onValueChange = {},
+            readOnly = true,
+            label = { Text(label) },
+            trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expanded) },
+            modifier = Modifier.menuAnchor()
         )
         ExposedDropdownMenu(
             expanded = expanded,
             onDismissRequest = { expanded = false }
         ){
-            filteredCities.forEach { city -> 
+            options.forEach { option ->
                 DropdownMenuItem(
-                    text = { Text(city.n) },
+                    text = { Text(option) },
                     onClick = {
-                        selectedCity = city
-                        citySearchText = city.n
-                        expandedCityDropdown = false
+                        onOptionSelected(option)
+                        expanded = false
                     }
                 )
             }
@@ -302,14 +264,10 @@ fun PillarDisplay(label: String, pillar: Pillar, dayMaster: HeavenlyStem?){
             modifier = Modifier.height(16.dp)
         )
 
-
         Spacer(modifier = Modifier.height(4.dp))
-
         //Tronco Celeste (Heavenly Stem)
         BaZiCard(pillar.stem?.chinese, pillar.stem?.name, pillar.stem?.element)
-
         Spacer(modifier = Modifier.height(8.dp))
-
         //Ramo Terrestre (Earthly Branch)
         BaZiCard(pillar.branch?.chinese, pillar.branch?.name, pillar.branch?.element)
     }
