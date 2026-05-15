@@ -36,7 +36,7 @@ enum class EarthlyBranch(
     val pinyin: String,
     val element: Element,
     val polarity: Polarity,
-    val name: String
+    val stemName: String
 ){
     ZI("子", "Zi", Element.WATER, Polarity.YANG, "Rat"),
     CHOU("丑", "Chou", Element.EARTH, Polarity.YIN, "Ox"),
@@ -142,7 +142,7 @@ fun getFullBaZi(year: Int, month: Int, day: Int, hour: Int, minute: Int, longitu
     return try {
         val tz = getTimezoneForCountry(countryCode)
 
-        val (solarH, solarM) = getTrueSolarTime(hour, minute, longitude, tz)
+        val (solarH, solarM) = getTrueSolarTime(hour, minute, longitude)
 
         val solar = Solar.fromYmdHms(year, month, day, solarH, solarM, 0)
         val lunar = solar.lunar

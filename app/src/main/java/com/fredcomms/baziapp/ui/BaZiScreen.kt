@@ -1,5 +1,6 @@
 package com.fredcomms.baziapp.ui
 
+import com.fredcomms.baziapp.logic.*
 import java.util.Calendar
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.horizontalScroll
@@ -8,11 +9,15 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.*
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
-import com.fredcomms.baziapp.logic.*
+import com.fredcomms.baziapp.logic.CityData
+import com.fredcomms.baziapp.logic.CityLoader
+
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -56,7 +61,7 @@ fun BaZiScreen() {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .padding(16.dp),
+            .padding(16.dp)
             .verticalScroll(rememberScrollState()),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
@@ -191,7 +196,7 @@ fun BaZiScreen() {
                     .fillMaxWidth()
                     .horizontalScroll(rememberScrollState())
                     .padding(vertical = 16.dp)
-                horizontalArrangement = Arrangement.spacedBy(12.dp, Alignment.CenterHorizontally)
+                horizontalArrangement = Arrangement.spacedBy(12.dp, Arrangement.CenterHorizontally)
             ){
                 PillarDisplay("Ora", chart.hour, chart.day.stem)
                 PillarDisplay("Giorno", chart.day, chart.day.stem)
