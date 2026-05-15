@@ -26,7 +26,7 @@ fun BaZiScreen() {
     val context = LocalContext.current
     val dbNazioni = remember { CityLoader.loadCitiesByCountry(context) }
     
-    var years = remember { (1900..2070).map { it.toString() }.reversed() }
+    var years = remember { (1900..2040).map { it.toString() }.reversed() }
     var months = remember { (1..12).map { it.toString()} }
     var days = remember { (1..31).map { it.toString()} }
     var hours = remember { (0..23).map { it.toString().padStart(2, '0')} }
