@@ -50,12 +50,30 @@ fun BaZiScreen() {
 
     var baziChart by remember { mutableStateOf<FullBaZiChart?>(null)}
 
-    val filteredCities = remember(citySearchText, selectedCountry){
+    val filteredCities = remember(citySearchText, selectedCountry) {
         val allCitiesInCountry = dbNazioni[selectedCountry] ?: emptyList()
         if(citySearchText.length >= 2){
-            allCitiesInCountry.filter { it.n.contains(citySearchText, ignoreCase = true) }.take(10)
+            allCitiesInCountry.filter { it.n.contains(citySearchText, ignoreCase = true) }
+                .take(15)
         }else {
             emptyList()
+        }
+    }
+
+
+    ExposedDropdownMenu(
+        expanded = expandedCityDropdown && filteredCities.isNotEmpty(),
+        onDismissRequest = { expandedCityDropdown = false }
+    ){
+        filteredCities.forEach{ city ->
+            DropdownMenuItem(
+                text = { Text("${city.n} (Long: ${city.ln})") },
+                onClick = {
+                    selectedCity = city
+                    citySearchText = city.n
+                    expandedCityDropdown = false
+                }
+            )
         }
     }
 
@@ -107,7 +125,8 @@ fun BaZiScreen() {
                 onValueChange = {},
                 readOnly = true,
                 label = { Text("Seleziona Nazione") },
-                modifier = Modifier.fillMaxWidth().menuAnchor(),
+                modifier = Modifier.fillMaxWidth().menuAnchor()
+                            .clickable { expanded = !expanded },
                 trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expandedCountryDropdown) }
             )
             ExposedDropdownMenu(
