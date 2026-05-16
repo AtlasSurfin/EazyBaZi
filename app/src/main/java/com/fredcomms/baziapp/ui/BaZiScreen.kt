@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -46,54 +47,10 @@ fun BaZiScreen() {
 
     var citySearchText by remember { mutableStateOf("") }
     var selectedCity by remember { mutableStateOf<CityData?>(null) }
-    var expandedCityDropdown by remember { mutableStateOf(false) }
 
     var baziChart by remember { mutableStateOf<FullBaZiChart?>(null)}
+    var gpsError by remember { mutableStateOf(false) }
 
-    val filteredCities = remember(citySearchText, selectedCountry) {
-        val allCitiesInCountry = dbNazioni[selectedCountry] ?: emptyList()
-        if(citySearchText.length >= 2){
-            allCitiesInCountry.filter { it.n.contains(citySearchText, ignoreCase = true) }
-                .take(15)
-        }else {
-            emptyList()
-        }
-    }
-
-
-    ExposedDropdownMenuBox(
-        expanded = expandedCityDropdown && filteredCities.isNotEmpty(),
-        onExpandedChange = { expandedCityDropdown = it },
-        modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp)
-    ){
-        OutlinedTextField(
-            value = citySearchText,
-            onValueChange = {
-                citySearchText = it
-                expandedCityDropdown = true
-                selectedCity = null
-            },
-            label = { Text("Cerca Città...") },
-            modifier = Modifier.fillMaxWidth().menuAnchor(),
-            trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expandedCityDropdown) }
-        )
-
-        ExposedDropdownMenu(
-            expanded = expandedCityDropdown && filteredCities.isNotEmpty(),
-            onDismissRequest = { expandedCityDropdown = false }
-        ){
-            filteredCities.forEach{ city ->
-                DropdownMenuItem(
-                    text = { Text("${city.n} (Long: ${city.ln})") },
-                    onClick = {
-                        selectedCity = city
-                        citySearchText = city.n
-                        expandedCityDropdown = false
-                    }
-                )
-            }
-        }
-    }
 
     Column(
         modifier = Modifier
@@ -120,6 +77,8 @@ fun BaZiScreen() {
             BaZiDropdown("Anno", years, selectedYear, { selectedYear = it }, Modifier.weight(1.5f))
         }
 
+        Spacer(modifier = Modifier.height(8.dp))
+
         //RIGA ORA
         Row(
             modifier = Modifier.fillMaxWidth(),
@@ -143,8 +102,7 @@ fun BaZiScreen() {
                 onValueChange = {},
                 readOnly = true,
                 label = { Text("Seleziona Nazione") },
-                modifier = Modifier.fillMaxWidth().menuAnchor()
-                            .clickable { expanded = !expanded},
+                modifier = Modifier.fillMaxWidth().menuAnchor(),    
                 trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expandedCountryDropdown) }
             )
             ExposedDropdownMenu(
@@ -166,42 +124,78 @@ fun BaZiScreen() {
         }
 
         //Ricerca Città
-        Text(text = "Città di Nascita", style = MaterialTheme.typography.labelMedium)
-        ExposedDropdownMenuBox(
-            expanded = expandedCityDropdown && filteredCities.isNotEmpty(),
-            onExpandedChange = { expandedCityDropdown = it},
-            modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp)
+        Text(text = "Luogo di Nascita", style = MaterialTheme.typography.labelMedium)
+
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(vertical = 8.dp),
+            verticalArrangement = Alignment.CenterVertically
         ){
             OutlinedTextField(
                 value = citySearchText,
                 onValueChange = { typedText ->
                     citySearchText = typedText
-                    expandedCityDropdown = true
-                    selectedCity = null
+                    if(typedText.isEmpty()) selectedCity = null
                 },
                 label = { Text("Cerca Città...") },
-                modifier = Modifier.fillMaxWidth().menuAnchor(),
-                trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expandedCityDropdown) },
-            )
-            ExposedDropdownMenu(
-                expanded = expandedCityDropdown && filteredCities.isNotEmpty(),
-                onDismissRequest = { expandedCityDropdown = false }
-            ){
-                filteredCities.forEach { city ->
-                    DropdownMenuItem(
-                        text = { Text(city.n ) },
-                        onClick = {
-                            selectedCity = city
-                            citySearchText = city.n
-                            expandedCityDropdown = false
+                modifier = Modifier.weight(1f),
+                trailingIcon = { 
+                    IconButton(onClick = {
+                        if(citySearchText.length >= 2) {
+                            getCoordinatesFromName(context, citySearchText) { city ->
+                                if(city != null){
+                                    selectedCity = city
+                                    citySearchText = city.n
+                                    gpsError = false
+                                }
+                            }
                         }
-                    )
+                    }) {
+                        Text("🔍")
+                    }
                 }
+            )
+
+            Spacer(modifier = Modifier.width(8.dp))
+
+            Button(
+                onClick = {
+                    getCurrentLocation(context) { gpsCity ->
+                        if(gpsCity != null) {
+                            selectedCity = gpsCity
+                            citySearchText = gpsCity.n
+                            gpsError = false
+                        } else {
+                            gpsError = true
+                        }
+                    }
+                },
+                modifier = Modifier.height(56.dp)
+            ){
+                Text("📍 GPS")
             }
         }
 
+        if(gpsError){
+            Text(
+                text = "Permesso GPS negato o GPS spento. Attivalo nelle impostazioni.",
+                style = MaterialTheme.typography.bodySmall
+                color = MaterialTheme.colorScheme.error,
+                modifier = Modifier.padding(top = 4.dp)
+            )
+        }
 
-        //Tasto Calcola
+        if(selectedCity != null){
+            Text(
+                text = "Selezionato: ${selectedCity?.n} (Longitude: ${selectedCity?.ln})",
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.primary,
+                modifier = Modifier.padding(top = 4.dp)
+            )
+        }
+
+        //Tasto Calcola, attivo solo se la città è stata selezionata
         Button(
             onClick = {
                 selectedCity?.let { city ->
@@ -264,7 +258,7 @@ fun BaZiDropdown(
             readOnly = true,
             label = { Text(label) },
             trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expanded) },
-            modifier = Modifier.menuAnchor()
+            modifier = Modifier.fillMaxWidth().menuAnchor()
         )
         ExposedDropdownMenu(
             expanded = expanded,

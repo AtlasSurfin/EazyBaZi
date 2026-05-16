@@ -216,17 +216,23 @@ fun getCoordinatesFromName(context: Context, cityName: String, onResult: (CityDa
 fun getCurrentLocation(context: Context, onLocationFetched: (CityData) -> Unit){
     val fusedLocationClient = LocationServices.getFusedLocationProviderClient(context)
     try {
-        fusedLocationClient.lastLocation.addOnSuccessListener { location ->
-            if(location != null){
+        fusedLocationClient.lastLocation.addOnSuccessListener { gpsLocation ->
+            if(gpsLocation != null){
                 val geocoder = Geocoder(context, Locale.getDefault())
-                val addresses = geocoder.getFromLocation(location.latitude, location.longitude, 1)
-                val cityName = if (!addresses.isNullOrEmpty()) addresses[0].locality ?: "Posizione GPS" else "Posizione GPS"
+                val addresses = geocoder.getFromLocation(gpsLocation.latitude, gpsLocation.longitude, 1)
+                val cityName = if (!addresses.isNullOrEmpty()){
+                    addresses[0].locality ?: "Posizione GPS"
+                }else{
+                    "Posizione GPS"
+                }
 
-                onLocationFetched(CityData(n = cityName, ln = location.longitude))
+                onLocationFetched(CityData(n = cityName, ln = gpsLocation.longitude))
+            }else{
+                onLocationFetched(null)
             }
         }
     } catch (e: SecurityException){
-        //Gestione mancanza permessi
+        onLocationFetched(null)
     }
 }
     
