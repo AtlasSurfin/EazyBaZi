@@ -211,14 +211,16 @@ fun PillarDisplay(label: String, pillar: Pillar, dayMaster: HeavenlyStem?){
         Text(text = label, style = MaterialTheme.typography.labelMedium)
 
         //Calcolo e visualizzazione del Ten God
-        val tenGod = if (dayMaster != null && pillar.stem != null){
+        val tenGod = if (label == "Giorno"){
+            "Day Master"
+        } else if (dayMaster != null && pillar.stem != null){
             getTenGodName(dayMaster.element, pillar.stem.element, dayMaster.polarity, pillar.stem.polarity)
         }else ""
 
         Text(
             text = tenGod,
             style = MaterialTheme.typography.labelSmall,
-            color = MaterialTheme.colorScheme.secondary,
+            color = if(label == "Giorno") MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.secondary,
             modifier = Modifier.height(16.dp)
         )
 
