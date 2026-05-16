@@ -90,39 +90,6 @@ fun BaZiScreen() {
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        //Selettore nazione
-        Text(text = "Nazione di Nascita", style = MaterialTheme.typography.labelMedium)
-        ExposedDropdownMenuBox(
-            expanded = expandedCountryDropdown,
-            onExpandedChange = { expandedCountryDropdown = it},
-            modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp)
-        ){
-            OutlinedTextField(
-                value = selectedCountry,
-                onValueChange = {},
-                readOnly = true,
-                label = { Text("Seleziona Nazione") },
-                modifier = Modifier.fillMaxWidth().menuAnchor(),    
-                trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expandedCountryDropdown) }
-            )
-            ExposedDropdownMenu(
-                expanded = expandedCountryDropdown,
-                onDismissRequest = { expandedCountryDropdown = false }
-            ){
-                countries.forEach { code ->
-                    DropdownMenuItem(
-                        text = { Text(code) },
-                        onClick = {
-                            selectedCountry = code
-                            expandedCountryDropdown = false
-                            citySearchText = ""
-                            selectedCity = null
-                        }
-                    )
-                }
-            }
-        }
-
         //Ricerca Città
         Text(text = "Luogo di Nascita", style = MaterialTheme.typography.labelMedium)
 
@@ -281,7 +248,7 @@ fun BaZiDropdown(
 fun PillarDisplay(label: String, pillar: Pillar, dayMaster: HeavenlyStem?){
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
-        modifier = Modifier.padding(horizontal = 4.dp)
+        modifier = Modifier.padding(horizontal = 0.dp)
     ){
         //Etichetta del Pilastro
         Text(text = label, style = MaterialTheme.typography.labelMedium)
@@ -300,17 +267,30 @@ fun PillarDisplay(label: String, pillar: Pillar, dayMaster: HeavenlyStem?){
 
         Spacer(modifier = Modifier.height(4.dp))
         //Tronco Celeste (Heavenly Stem)
-        BaZiCard(pillar.stem?.chinese, pillar.stem?.name, pillar.stem?.element)
-        Spacer(modifier = Modifier.height(8.dp))
+        val stemDescription = if (pillar.stem != null) {
+            "(${pillar.stem.element.name} ${pillar.stem.polarity.name})"
+        } else ""
+
+        BaZiCard(
+            chinese = pillar.stem?.chinese, 
+            subText = pillar.stem?.name,
+            extendedText = stemDescription,
+            element = pillar.stem?.element)
+        Spacer(modifier = Modifier.height(4.dp))
         //Ramo Terrestre (Earthly Branch)
-        BaZiCard(pillar.branch?.chinese, pillar.branch?.name, pillar.branch?.element)
+        BaZiCard(
+            chinese = pillar.branch?.chinese, 
+            subText = pillar.branch?.name,
+            extendedText = "", 
+            element = pillar.branch?.element
+        )
     }
 }
 
 @Composable
 fun BaZiCard(chinese: String?, subText: String?, element: Element?){
     Card(
-        modifier = Modifier.size(90.dp),
+        modifier = Modifier.size(width = 90.dp, height = 110.dp),
         colors = CardDefaults.cardColors(
             containerColor = Color(element?.let { getElementColor(it) } ?: 0xFFE0E0E0)
         ),
@@ -323,6 +303,14 @@ fun BaZiCard(chinese: String?, subText: String?, element: Element?){
         ){
             Text(text = chinese ?: "?", style = MaterialTheme.typography.headlineMedium)
             Text(text = subText ?: "", style = MaterialTheme.typography.bodySmall)
+
+            if(!extendedText.isNullOrEmpty()) {
+                Text(
+                    text = extendedText,
+                    style = MaterialTheme.typography.labelSmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+            }
         }
     }
 }
