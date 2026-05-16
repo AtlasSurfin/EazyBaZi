@@ -244,4 +244,8 @@ fun getCurrentLocation(context: Context, onLocationFetched: (CityData?) -> Unit)
         onLocationFetched(null)
     }
 }
-    
+
+
+fun formatToLowercase(text: String): String {
+    return text.lowercase().replaceFirstChar {it.uppercase()}
+}

@@ -148,7 +148,6 @@ fun BaZiScreen() {
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .horizontalScroll(rememberScrollState())
                     .padding(vertical = 16.dp),
                 horizontalArrangement = Arrangement.Center
             ){
@@ -224,22 +223,38 @@ fun PillarDisplay(label: String, pillar: Pillar, dayMaster: HeavenlyStem?){
         )
 
         Spacer(modifier = Modifier.height(4.dp))
+
         //Tronco Celeste (Heavenly Stem)
         val stemDescription = if (pillar.stem != null) {
-            "(${pillar.stem.element.name} ${pillar.stem.polarity.name})"
+            val elemStr = formatToLowercase(pillar.stem.element.name)
+            val polStr = formatToLowercase(pillar.stem.polarity.name)
+            "($elemStr $polStr)"
         } else ""
+
+        val stemSubText = pillar.stem?.name?.let { formatToLowercase(it) } ?: ""
 
         BaZiCard(
             chinese = pillar.stem?.chinese, 
-            subText = pillar.stem?.name,
+            subText = stemSubText,
             extendedText = stemDescription,
-            element = pillar.stem?.element)
+            element = pillar.stem?.element
+        )
+
         Spacer(modifier = Modifier.height(4.dp))
+
         //Ramo Terrestre (Earthly Branch)
+        val branchSubText = pillar.branch?.stemName ?: ""
+
+        val branchDescription = if (pillar.branch != null) {
+            val elemStr = formatToLowercase(pillar.branch.element.name)
+            val polStr = formatToLowercase(pillar.branch.polarity.name)
+            "($elemStr $polStr)"
+        }else ""
+        
         BaZiCard(
             chinese = pillar.branch?.chinese, 
-            subText = pillar.branch?.name,
-            extendedText = "", 
+            subText = branchSubText,
+            extendedText = branchDescription, 
             element = pillar.branch?.element
         )
     }
@@ -248,7 +263,7 @@ fun PillarDisplay(label: String, pillar: Pillar, dayMaster: HeavenlyStem?){
 @Composable
 fun BaZiCard(chinese: String?, subText: String?, extendedText: String?, element: Element?){
     Card(
-        modifier = Modifier.size(width = 90.dp, height = 110.dp),
+        modifier = Modifier.size(width = 80.dp, height = 115.dp),
         colors = CardDefaults.cardColors(
             containerColor = Color(element?.let { getElementColor(it) } ?: 0xFFE0E0E0)
         ),
