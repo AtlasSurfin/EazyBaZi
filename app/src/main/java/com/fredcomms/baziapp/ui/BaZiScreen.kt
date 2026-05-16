@@ -25,7 +25,6 @@ import com.fredcomms.baziapp.logic.CityLoader
 @Composable
 fun BaZiScreen() {
     val context = LocalContext.current
-    val dbNazioni = remember { CityLoader.loadCitiesByCountry(context) }
     
     var years = remember { (1920..2040).map { it.toString() }.reversed() }
     var months = remember { (1..12).map { it.toString()} }
@@ -40,10 +39,7 @@ fun BaZiScreen() {
     var selectedYear by remember { mutableStateOf(currentYear)}
     var selectedHour by remember { mutableStateOf("12") }
     var selectedMinute by remember { mutableStateOf("00") }
-    
-    var selectedCountry by remember { mutableStateOf("IT") }
-    var expandedCountryDropdown by remember { mutableStateOf(false) }
-    val countries = remember { dbNazioni.keys.toList().sorted() }
+
 
     var citySearchText by remember { mutableStateOf("") }
     var selectedCity by remember { mutableStateOf<CityData?>(null) }
@@ -106,7 +102,7 @@ fun BaZiScreen() {
                     if(typedText.isEmpty()) selectedCity = null
                 },
                 label = { Text("Cerca Città...") },
-                modifier = Modifier.weight(1f),
+                modifier = Modifier.fillMaxWidth(),
                 trailingIcon = { 
                     IconButton(onClick = {
                         if(citySearchText.length >= 2) {
@@ -114,7 +110,6 @@ fun BaZiScreen() {
                                 if(city != null){
                                     selectedCity = city
                                     citySearchText = city.n
-                                    gpsError = false
                                 }
                             }
                         }
@@ -122,43 +117,6 @@ fun BaZiScreen() {
                         Text("🔍")
                     }
                 }
-            )
-
-            Spacer(modifier = Modifier.width(8.dp))
-
-            Button(
-                onClick = {
-                    getCurrentLocation(context) { gpsCity ->
-                        if(gpsCity != null) {
-                            selectedCity = gpsCity
-                            citySearchText = gpsCity.n
-                            gpsError = false
-                        } else {
-                            gpsError = true
-                        }
-                    }
-                },
-                modifier = Modifier.height(56.dp)
-            ){
-                Text("📍 GPS")
-            }
-        }
-
-        if(gpsError){
-            Text(
-                text = "Permesso GPS negato o GPS spento. Attivalo nelle impostazioni.",
-                style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.error,
-                modifier = Modifier.padding(top = 4.dp)
-            )
-        }
-
-        if(selectedCity != null){
-            Text(
-                text = "Selezionato: ${selectedCity?.n} (Longitude: ${selectedCity?.ln})",
-                style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.primary,
-                modifier = Modifier.padding(top = 4.dp)
             )
         }
 
@@ -288,7 +246,7 @@ fun PillarDisplay(label: String, pillar: Pillar, dayMaster: HeavenlyStem?){
 }
 
 @Composable
-fun BaZiCard(chinese: String?, subText: String?, element: Element?){
+fun BaZiCard(chinese: String?, subText: String?, extendedText: String?, element: Element?){
     Card(
         modifier = Modifier.size(width = 90.dp, height = 110.dp),
         colors = CardDefaults.cardColors(

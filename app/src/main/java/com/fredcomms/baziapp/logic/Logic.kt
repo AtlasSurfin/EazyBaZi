@@ -226,8 +226,11 @@ fun getCurrentLocation(context: Context, onLocationFetched: (CityData?) -> Unit)
             if(gpsLocation != null){
                 val geocoder = Geocoder(context, Locale.getDefault())
                 val addresses = geocoder.getFromLocation(gpsLocation.latitude, gpsLocation.longitude, 1)
-                val cityName = if (!addresses.isNullOrEmpty()){
-                    addresses[0].locality ?: "Posizione GPS"
+                val fullName = if (!addresses.isNullOrEmpty()) {
+                    val address = addresses[0]
+                    val localita = address.locality ?: address.subAdminArea ?: "Posizione GPS"
+                    val nazione = address.countryName ?: ""
+                    if(nazione.isNotEmpty()) "$localita, $nazione" else localita
                 }else{
                     "Posizione GPS"
                 }
