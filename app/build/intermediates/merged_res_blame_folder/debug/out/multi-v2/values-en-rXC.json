@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.fredcomms.baziapp-mergeDebugResources-38:/values-en-rXC/values-en-rXC.xml",
+            "outputFile": "com.fredcomms.baziapp-mergeDebugResources-41:/values-en-rXC/values-en-rXC.xml",
             "map": [
                 {
                     "source": "C:\\Users\\User\\.gradle\\caches\\transforms-4\\07cbe75e55df13aaecfa39d3d3ee85d9\\transformed\\jetified-material3-1.1.2\\res\\values-en-rXC\\values-en-rXC.xml",

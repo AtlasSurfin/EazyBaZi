@@ -130,7 +130,7 @@ fun BaZiScreen() {
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(vertical = 8.dp),
-            verticalArrangement = Alignment.CenterVertically
+            verticalAlignment = Alignment.CenterVertically
         ){
             OutlinedTextField(
                 value = citySearchText,
@@ -180,7 +180,7 @@ fun BaZiScreen() {
         if(gpsError){
             Text(
                 text = "Permesso GPS negato o GPS spento. Attivalo nelle impostazioni.",
-                style = MaterialTheme.typography.bodySmall
+                style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.error,
                 modifier = Modifier.padding(top = 4.dp)
             )

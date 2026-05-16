@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.fredcomms.baziapp-mergeDebugResources-38:/values-en-rIN/values-en-rIN.xml",
+            "outputFile": "com.fredcomms.baziapp-mergeDebugResources-41:/values-en-rIN/values-en-rIN.xml",
             "map": [
                 {
                     "source": "C:\\Users\\User\\.gradle\\caches\\transforms-4\\084b0560c8b79a7a21062f908a54b1cb\\transformed\\jetified-ui-release\\res\\values-en-rIN\\values-en-rIN.xml",

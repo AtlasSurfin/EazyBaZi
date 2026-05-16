@@ -6,6 +6,8 @@ import android.location.Geocoder
 import android.content.Context
 import java.util.Locale
 import com.google.android.gms.location.LocationServices
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 
 enum class Element {FIRE, EARTH, METAL, WATER, WOOD}
 
@@ -70,18 +72,16 @@ data class FullBaZiChart(
 
 data class CityData(
     val n: String,
-    val ln: Double,
-    val nt: String
+    val ln: Double
 )
 
 object CityLoader{
-    fun loadCitiesByCountry(context: android.content.Context): Map<String, List<CityData>> {
+    fun loadCitiesByCountry(context: Context): Map<String, List<CityData>> {
         return try {
             val jsonString = context.assets.open("cities.json").bufferedReader().use { it.readText() }
-            val type = object : com.google.xml.reflect.TypeToken<Map<String, List<CityData>>>() {}.type
-            com.google.gson.Gson().fromJson(jsonString, type)
+            val type = object : TypeToken<Map<String, List<CityData>>>() {}.type
+            Gson().fromJson(jsonString, type)
         } catch (e: Exception) {
-            e.printStackTrace()
             emptyMap()
         }
     }
@@ -213,7 +213,7 @@ fun getCoordinatesFromName(context: Context, cityName: String, onResult: (CityDa
     }
 }
 
-fun getCurrentLocation(context: Context, onLocationFetched: (CityData) -> Unit){
+fun getCurrentLocation(context: Context, onLocationFetched: (CityData?) -> Unit){
     val fusedLocationClient = LocationServices.getFusedLocationProviderClient(context)
     try {
         fusedLocationClient.lastLocation.addOnSuccessListener { gpsLocation ->
