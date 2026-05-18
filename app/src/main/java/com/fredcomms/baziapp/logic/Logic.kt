@@ -1,8 +1,10 @@
 package com.fredcomms.baziapp.logic
 import com.nlf.calendar.Solar
 import com.nlf.calendar.Lunar
+import android.os.Build
 import androidx.compose.ui.graphics.Color
 import android.location.Geocoder
+import android.location.Address
 import android.content.Context
 import java.util.Locale
 import com.google.android.gms.location.LocationServices
@@ -75,6 +77,27 @@ data class CityData(
     val ln: Double
 )
 
+enum class BaZiRole{
+    FRIEND,
+    ROB_WEALTH,
+    OUTPUT,
+    WEALTH,
+    OFFICER,
+    RESOURCE
+}
+
+data class RoleScores(
+    val friend: Int = 0,
+    val robWealth: Int = 0,
+    val output: Int = 0,
+    val wealth: Int = 0,
+    val officer: Int = 0,
+    val resource: Int = 0
+){
+    val companionTot: Int get() = friend + robWealth
+    val total: Int get() = companionTot + output + wealth + officer + resource
+}
+
 object CityLoader{
     fun loadCitiesByCountry(context: Context): Map<String, List<CityData>> {
         return try {
@@ -146,6 +169,7 @@ fun findStem(name: String): HeavenlyStem? {
     return HeavenlyStem.valueOf(name.trim().uppercase())
 }
 
+
 fun getFullBaZi(year: Int, month: Int, day: Int, hour: Int, minute: Int, longitude: Double): FullBaZiChart {
     return try {
 
@@ -201,19 +225,78 @@ fun getElementColor(element: Element): Long {
 fun getCoordinatesFromName(context: Context, cityName: String, onResult: (CityData?) -> Unit) {
     try{
         val geocoder = Geocoder(context, Locale.getDefault())
-        val addresses = geocoder.getFromLocationName(cityName, 1)
+        val processAddress:  (Address?) -> Unit = { address ->
+            if(address != null) {
+                val localita = address.locality ?: address.subAdminArea ?: cityName
+                val nazione = address.countryName ?: ""
+                val regioneStato = address.adminArea
+                val provincia = address.subAdminArea
 
-        if(!addresses.isNullOrEmpty()) {
-            val address = addresses[0]
-            val localita = address.locality ?: address.subAdminArea ?: cityName
-            val nazione = address.countryName ?: ""
+                val fullName = when {
+                    nazione.equals("Italia", ignoreCase = true) -> {
+                        val siglaProvincia = when {
+                            provincia == null -> ""
+                            provincia.contains("Roma", ignoreCase = true) -> "RM"
+                            provincia.contains("Torino", ignoreCase = true) -> "TO"
+                            provincia.contains("Milano", ignoreCase = true) -> "MI"
+                            provincia.contains("Napoli", ignoreCase = true) -> "NA"
+                            else -> {
+                                val pulita = provincia.replace("Provincia di ", "", ignoreCase = true)
+                                                     .replace("Città Metropolitana di ", "", ignoreCase = true)
+                                if (pulita.length <= 3) pulita.uppercase() else pulita
+                            }
+                        }
+                        if(siglaProvincia.isNotEmpty()) "$localita ($siglaProvincia), $nazione" else "$localita, $nazione"
+                    }
 
-            val fullName = if (nazione.isNotEmpty()) "$localita, $nazione" else localita
 
-            onResult(CityData(n = fullName, ln = address.longitude))
+                        nazione.equals("United States", ignoreCase = true) || nazione.equals("Stati Uniti", ignoreCase = true) -> {
+                            if(!regioneStato.isNullOrEmpty()) "$localita, $regioneStato, USA" else "$localita, USA"
+                        }
+
+                        else ->{
+                            if(!regioneStato.isNullOrEmpty() && regioneStato != localita){
+                                "$localita, $regioneStato, $nazione"
+                            } else if(nazione.isNotEmpty()) {
+                                "$localita, $nazione"
+                            }else{
+                                localita
+                            }
+                        }
+                    }
+                    onResult(CityData(n = fullName, ln = address.longitude))
+                else{
+                    onResult(null)
+                }
+            }
+
+        
+        //Blocco per versioni Android
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU){
+            //Per Android 13 o versioni superiori
+            geocoder.getFromLocationName(cityName, 1, object : Geocoder.GeocodeListener {
+                override fun onGeocode(addresses: MutableList<Address>){
+                    if(addresses.isNotEmpty()) {
+                        processAddress(addresses[0])
+                    }else{
+                        onResult(null)
+                    }
+                }
+                override fun onError(errorMessage: String?){
+                    onResult(null)
+                }
+            })
         }else{
-            onResult(null)
+            //Logica legacy per Android 12 o inferiori
+            @Suppress("DEPRECATION")
+            val addresses = geocoder.getFromLocationName(cityName, 1)
+            if (!addresses.isNullOrEmpty()) {
+                processAddress(addresses[0])
+            } else {
+                onResult(null)
+            }
         }
+
     } catch (e: Exception) {
         onResult(null)
     }
@@ -243,6 +326,54 @@ fun getCurrentLocation(context: Context, onLocationFetched: (CityData?) -> Unit)
     } catch (e: SecurityException){
         onLocationFetched(null)
     }
+}
+
+fun calculateRoleScores(chart: FullBaZiChart): RoleScores? {
+    val dmStem = chart.day.stem ?: return null
+    val dmElement = dmStem.element
+    val dmPolarity = dmStem.polarity
+
+    var friend = 0
+    var robWealth = 0
+    var output = 0
+    var wealth = 0
+    var officer = 0
+    var resource = 0
+    
+    val components = listOf(
+        chart.year.stem, chart.year.branch,
+        chart.month.stem, chart.month.branch,
+        chart.day.stem, chart.day.branch,
+        chart.hour.stem, chart.hour.branch
+    )
+
+    for(comp in components) {
+        if (comp == null) continue
+
+        val element = comp.element
+        val polarity = comp.polarity
+        val isSamePolarity = (polarity == dmPolarity)
+
+        when {
+            element == dmElement -> {
+                if (isSamePolarity) friend++ else robWealth++
+            }
+
+            isProducing(dmElement, element) -> output++
+            isControlling(dmElement, element) -> wealth++
+            isProducing(element, dmElement) -> resource++
+            isControlling(element, dmElement) -> officer++
+        }
+    }
+
+    return RoleScores(
+        friend = friend,
+        robWealth = robWealth,
+        output = output,
+        wealth = wealth,
+        resource = resource,
+        officer = officer
+    )
 }
 
 
