@@ -19,9 +19,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.Alignment
-import com.fredcomms.baziapp.logic.CityData
-import com.fredcomms.baziapp.logic.CityLoader
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.delay
 
 enum class AppTab {CHART, GRAPH, LEARN}
 enum class ChartStep {INPUT, LOADING, RESULTS}
@@ -54,7 +53,6 @@ fun BaZiScreen() {
     var selectedYear by remember { mutableStateOf(currentYear)}
     var selectedHour by remember { mutableStateOf("12") }
     var selectedMinute by remember { mutableStateOf("00") }
-
 
     var citySearchText by remember { mutableStateOf("") }
     var selectedCity by remember { mutableStateOf<CityData?>(null) }
@@ -160,7 +158,7 @@ fun BaZiScreen() {
                                                     selectedMinute.toInt(),
                                                     city.ln
                                                 )
-                                                kotlinx.coroutines.delay(1500) //1.5 sec di caricamento
+                                                delay(1500) //1.5 sec di caricamento
                                                 currentChartStep = ChartStep.RESULTS
                                             }
                                         }
@@ -288,7 +286,7 @@ fun BaZiDropdown(
     ExposedDropdownMenuBox(
         expanded = expanded,
         onExpandedChange = { expanded = it },
-        modifier = modifier
+        modifier = modifier.menuAnchor()
     ){
         OutlinedTextField(
             value = selectedOption,
@@ -296,7 +294,7 @@ fun BaZiDropdown(
             readOnly = true,
             label = { Text(label) },
             trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expanded) },
-            modifier = Modifier.fillMaxWidth().menuAnchor()
+            modifier = Modifier.fillMaxWidth()
         )
         ExposedDropdownMenu(
             expanded = expanded,
@@ -390,8 +388,8 @@ fun BaZiCard(chinese: String?, subText: String?, extendedText: String?, element:
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ){
-            Text(text = chinese ?: "?", style = MaterialTheme.typography.headlineMedium)
-            Text(text = subText ?: "", style = MaterialTheme.typography.bodySmall)
+            Text(text = chinese ?: "?", style = MaterialTheme.typography.headlineMedium, color = Color.Black)
+            Text(text = subText ?: "", style = MaterialTheme.typography.bodySmall, color = Color.DarkGray)
 
             if(!extendedText.isNullOrEmpty()) {
                 Text(
