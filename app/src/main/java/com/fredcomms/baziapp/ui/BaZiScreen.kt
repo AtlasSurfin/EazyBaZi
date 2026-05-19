@@ -19,11 +19,21 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.Alignment
+import androidx.compose.animation.animateContentSize
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.delay
 
 enum class AppTab {CHART, GRAPH, LEARN}
 enum class ChartStep {INPUT, LOADING, RESULTS}
+
+data class ExtendedLearnItem(
+    val category: String,
+    val title: String,
+    val subtitle: String = "",
+    val description: String,
+    val details: String = "",
+    val emoji: String
+)
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -288,7 +298,126 @@ fun BaZiScreen() {
                     }
                 }
                 AppTab.LEARN -> {
-                    Text("Scheda LEARN attiva", color = Color.White, modifier = Modifier.align(Alignment.Center))
+                    var expandedTitle by remember { mutableStateOf<String?>(null) }
+
+                    val glossary = listOf(
+
+                        //Tronchi Celesti
+                        ExtendedLearnItem(
+                            category = "I 10 Tronchi Celesti (Heavenly Stems)",
+                            title = "Jia (甲) - Legno Yang",
+                            subtitle = "L'Albero Secolare - Leader Nato",
+                            description = """Rappresenta un grande albero robusto. Le persone Jia sono idealiste, progressiste,
+                            testarde ma estremamente protettive verso gli altri. Hanno una crescita costante e non amano essere
+                            controllate.""".trimIndent(),
+                            details = "Elemento: Legno | Polarità: Yang | Direzione: Est",
+                            emoji = "🌲"
+                        ),
+                        
+                        ExtendedLearnItem(
+                            category = "I 10 Tronchi Celesti (Heavenly Stems)",
+                            title = "Yi (乙) - Legno Yin",
+                            subtitle = "L'Edera o l'Erba - Il Sopravvissuto",
+                            description = """Rappresenta piante flessibili, fiori o rampicanti. Le persone Yi sono diplomatiche,
+                            incredibilmente resilienti, e sanno adattarsi a qualsiasi situazione per sopravvivere.
+                            Ottimi strateghi dietro le quinte. """.trimIndent(),
+                            details = "Elemento: Legno | Polarità: Yin | Direzione: Est",
+                            emoji = "🌱"
+                        ),
+                        //Rami Terrestri
+                        ExtendedLearnItem(
+                            category = "I 12 Rami Terrestri (Zodiaco Cinese)",
+                            title = "Zi (子) - Il Topo (The Rat)",
+                            subtitle = "Acqua Yang - L'Iniziatore",
+                            description = """Il primo segno dello zodiaco. Rappresenta l'energia dell'inverno profondo e della notte.
+                            Le persone nate con questo ramo sono intuitive, astute, piene di risorse e possiedono una saggezza nascosta.""".trimIndent(),
+                            details = "Elemento Principale: Acqua | Contiene la Radice Nascosta: Gui (Acqua Yin)",
+                            emoji = ""
+                        ),
+                        //Concetti Avanzati
+
+                        ExtendedLearnItem(
+                            category = "Tronchi Celesti Nascosti (Hidden Stems)",
+                            title = "Le Radici dei Rami Terrestri",
+                            subtitle = "Il potenziale nascosto dentro di te",
+                            description = """In occidente siamo abituati a vedere un solo segno zodiacale. Nel BaZi, ogni animale nasconde sotto terra
+                            (nelle sue radici) da 1 a 3 Tronchi Celesti. Rappresentano i tuoi talenti nascosti, i desideri segreti e ciò che si
+                            attiverà solo in determinati momenti della tua vita.""".trimIndent(),
+                            emoji = "🕳️"
+                        ),
+
+                        ExtendedLearnItem(
+                            category = "Na Yin (Astrologia Melodica)",
+                            title = "Na Yin: Il Suono degli Elementi",
+                            subtitle = "I 60 Cicli d'oro",
+                            description = """Mentre il BaZI classico analizza gli elementi singoli, il Na Yin combina il Tronco Celeste ed il
+                            Ramo Terrestre per creare un 'Elemento Melodico' unico (Es: 'Fuoco della Lampada', 'Legno del Melograno').
+                            Definisce l'atmosfera psicologica profonda e l'aura spirituale della persona.""".trimIndent(),
+                            emoji = "🎵"
+                        ),
+
+                        ExtendedLearnItem(
+                            category = "Fasi del Qi (Qi Phase) / 12 Life Stages",
+                            title = "Le 12 Fasi di Forza del Day Master",
+                            subtitle = "Dalla Nascita all'Imperatore, fino alla Tomba",
+                            description = """Questo concetto misura quanto il tuo Day Master si sente forte nel Ramo Terrestre di un pilastro.
+                            Va dalla fase di Nascita (piena di entusiasmo), alla fase 'Imperatore' (massimo potere) fino alla fase 'Tomba'
+                            (energia di accumulo ed introspezione). Rivela se le tue azioni avranno un impatto immediato o avranno bisogno
+                            di tempo.""".trimIndent(),
+                            emoji = "📈"
+                        )
+                    )
+
+                    val groupedItems = glossary.groupBy { it = category }
+
+
+                    Column(
+                        modifier = Modifier
+                            .fillMaxSize()
+                            .padding(horizontal = 16.dp)
+                    ){
+                        Spacer(modifier = Modifier.height(16.dp))
+                        Text(
+                            text = "Manuale BaZi Interattivo",
+                            style = MaterialTheme.typography.headlineMedium,
+                            color = accentColor
+                        )
+                        Text(
+                            text = "Tocca un argomento per espandere la spiegazione guidata.",
+                            style = MaterialTheme.typography.bodyMedium,
+                            color = Color.Gray,
+                            modifier = Modifier.padding(bottom = 16.dp)
+                        )
+
+                        LazyColumn(
+                            modifier = Modifier.fillMaxWidth(),
+                            verticalArrangement = Arrangement.spacedBy(8.dp),
+                            contentPadding = PaddingValues(bottom = 32.dp)
+                        ){
+                            groupedItems.forEach { (categoryName, itemsInCategory) ->
+                                item {
+                                    Text(
+                                        text = categoryName.uppercase(),
+                                        style = MaterialTheme.typography.labelMedium,
+                                        color = accentColor,
+                                        modifier = Modifier.padding(top = 12.dp, bottom = 4.dp)
+                                    )
+                                }
+
+                                items(itemsInCategory) { item ->
+                                    val isExpanded = expandedTitle == item.title
+
+                                    InteractiveLearnCard (
+                                        item = item,
+                                        isExpanded = isExpanded,
+                                        onClick = {
+                                            expandedTitle = if (isExpanded) null else item.title
+                                        }
+                                    )
+                                }
+                            } 
+                        }
+                    }
                 }
             }
         }
@@ -561,3 +690,86 @@ fun RoleRow(label: String, count: Int, max: Int, color: Color){
         )
     }
 }
+
+@Composable
+fun InteractiveLearnCard(
+    item: ExtendedLearnItem,
+    isExpanded: Boolean,
+    onClick: () -> Unit,
+){
+    Card(
+        modifier = Modifier
+            .fillMaxWidth()
+            .animateContentSize(),
+        colors = CardDefaults.cardColors(containerColor = Color(0xFF1E1E1E)),
+        shape = RoundedCornerShape(12.dp),
+        onClick = onClick
+    ){
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp),
+            verticalAlignment = Alignment.Top
+        ){
+            Text(
+                text = item.emoji,
+                style = MaterialTheme.typography.headlineSmall,
+                modifier = Modifier.padding(end = 12.dp)
+            )
+
+            Column(modifier = Modifier.weight(1f)){
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ){
+                    Text(
+                        text = item.title,
+                        style = MaterialTheme.typography.titleMedium,
+                        color = Color.White
+                    )
+
+                    Text(
+                        text = if (isExpanded) "🔼" else "🔽",
+                        style = MaterialTheme.typography.labelSmall
+                    )
+                }
+
+                if(item.subtitle.isNotEmpty()){
+                    Text(
+                        text = item.subtitle,
+                        style = MaterialTheme.typography.labelSmall,
+                        color = Color(0xFFFFCA28)
+                    )
+                }
+
+                if(isExpanded){
+                    Spacer(modifier = Modifier.height(12.dp))
+
+                    Text(
+                        text = item.description,
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = Color.LightGray
+                    )
+
+                    if(item.details.isNotEmpty()){
+                        Spacer(modifier = Modifier.height(12.dp))
+                        Box(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .background(Color.Black.copy(alpha = 0.3f), RoundedCornerShape(6.dp))
+                                .padding(8.dp)
+                        ){
+                            Text(
+                                text = item.details,
+                                style = MaterialTheme.typography.bodySmall,
+                                color = Color(0xFF66BB6A)
+                            )
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
