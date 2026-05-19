@@ -162,7 +162,7 @@ fun BaZiScreen() {
                                                 currentChartStep = ChartStep.RESULTS
                                             }
                                         }
-                                    },
+
                                     enabled = selectedCity != null,
                                     colors = ButtonDefaults.buttonColors(containerColor = accentColor),
                                     modifier = Modifier.fillMaxWidth().padding(top = 16.dp)
@@ -217,7 +217,75 @@ fun BaZiScreen() {
                     }
                 }
                 AppTab.GRAPH -> {
-                    Text("Scheda GRAPH attiva", color = Color.White, modifier = Modifier.align(Alignment.Center))
+                    val scores = baziChart?.let { calculateRoleScores(it) }
+
+                    if(scores == null || scores.total == 0){
+                        //se manca la mappa, invito a calcolarla
+                        Box(
+                            modifier = Modifier
+                                .fillMaxSize()
+                                .padding(24.dp),
+                            contentAlignment = Alignment.Center
+                        ){
+                            Column(horizontalAlignment = Alignment.CenterHorizontally){
+                                Text("⚠️", style = MaterialTheme.typography.run { headlineLarge })
+                                Spacer(modifier = Modifier.height(16.dp))
+                                Text(
+                                    text = "Nessun dato disponibile.\n Calcola prima la tua mappa !",
+                                    style = MaterialTheme.typography.bodyLarge,
+                                    color = Color.Gray,
+                                    textAlign = TextAlign.Center
+                                )
+                            }
+                        }
+                    }else{
+                        val dmElement = baziChart?.day?.stem?.element ?: Element.WOOD
+
+
+                        Column(
+                            modifier = Modifier
+                                .fillMaxSize()
+                                .padding(16.dp)
+                                .verticalScroll(rememberScrollState()),
+                            horizontalAlignment = Alignment.CenterHorizontally
+                        ){
+                            Text(
+                                text = "I 5 fattori di Vita",
+                                style = MaterialTheme.typography.headlineMedium,
+                                color = accentColor
+                            )
+                            Text(
+                                text = "Analisi energetica basata su Day Master (DM)",
+                                style = MaterialTheme.typography.bodyMedium,
+                                color = Color.Gray,
+                                modifier = Modifier.padding(bottom = 24.dp)
+                            )
+
+                            BaZiPieChart(scores = scores, dayMasterElement = dmElement)
+
+                            Spacer(modifier = Modifier.height(32.dp))
+
+                            Text(
+                                text = "Dettaglio delle Relazioni",
+                                style = MaterialTheme.typography.titleMedium,
+                                color = Color.White,
+                                modifier = Modifier.align(Alignment.Start).padding(bottom = 8.dp)
+                            )
+
+
+                            val outElement = Element.entries.find { isProducing(dmElement, it) } ?: dmElement
+                            val wthElement = Element.entries.find { isControlling(dmElement, it) } ?: dmElement
+                            val offElement = Element.entries.find { isControlling(it, dmElement) } ?: dmElement
+                            val rscElement = Element.entries.find { isProducing(it, dmElement) } ?: dmElement
+
+                            RoleRow(label = "Self / Friends (Bi Jian)", count = scores.friend, max = scores.total, color = Color(getElementColor(dmElement)))
+                            RoleRow(label = "Rob Wealth (Jie Cai)", count = scores.robWealth, max = scores.total, color = Color(getElementColor(dmElement)).copy(alpha = 0.6f))
+                            RoleRow(label = "Output (Espressione/Intelletto)", count = scores.output, max = scores.total, color = Color(getElementColor(outElement)))
+                            RoleRow(label = "Wealth (Finanze/Obiettivi)", count = scores.wealth, max = scores.total, color = Color(getElementColor(wthElement)))
+                            RoleRow(label = "Officer (Disciplina/Status)", count = scores.officer, max = scores.total, color = Color(getElementColor(offElement)))
+                            RoleRow(label = "Resource (Studio/Mente)", count = scores.resource, max = scores.total, color = Color(getElementColor(rscElement)))
+                        }
+                    }
                 }
                 AppTab.LEARN -> {
                     Text("Scheda LEARN attiva", color = Color.White, modifier = Modifier.align(Alignment.Center))
@@ -424,6 +492,72 @@ fun RowScope.NavBarItem(
             text = title,
             style = MaterialTheme.typography.labelMedium,
             color = if(isSelected) accentColor else Color.Gray
+        )
+    }
+}
+
+@Composable
+fun BaZiPieChart(scores: RoleScores, dayMasterElement: Element){
+    val outElement = Element.entries.find { isProducing(dmElement, it) } ?: dmElement
+    val wthElement = Element.entries.find { isControlling(dmElement, it) } ?: dmElement
+    val offElement = Element.entries.find { isControlling(it, dmElement) } ?: dmElement
+    val rscElement = Element.entries.find { isProducing(it, dmElement) } ?: dmElement 
+
+    val slices =  listOf(
+        Pair(scores.companionTot, Color(getElementColor(dayMasterElement))),
+        Pair(scores.output, Color(getElementColor(outElement))),
+        Pair(scores.wealth, Color(getElementColor(wthElement))),
+        Pair(scores.officer, Color(getElementColor(offElement))),
+        Pair(scores.resource, Color(getElementColor(rscElement)))
+    )
+
+    val total = scores.total.toFloat()
+    val startAngle = -90f
+
+    Box(
+        modifier = Modifier.size(220.dp),
+        contentAlignment = Alignment.Center
+    ){
+        Canvas(modifier = Modifier.fillMaxSize()){
+            slices.forEach { slice ->
+                if(slice.first > 0){
+                    val sweepAngle = (slice.first/ total) * 360f
+                    drawArc(
+                        color = slice.second,
+                        startAngle = startAngle,
+                        sweepAngle = sweepAngle,
+                        useCenter = true
+                    )
+                    startAngle += sweepAngle
+                }
+            }
+        }
+
+        Canvas(modifier = Modifier.size(100.dp)){
+            drawCircle(color = Color(0xFF121212))
+        }
+    }
+}
+
+@Composable
+fun RoleRow(label: String, count: Int, max: Int, color: Color){
+    val percentage = if (max > 0) (count.toFloat() / max.toFloat() * 100).toInt() else 0
+
+    Column(modifier = Modifier.fillMaxWidth().padding(vertical = 6.dp)){
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceBetween
+        ){
+            Text(text = label, style = MaterialTheme.typography.bodyMedium, color = Color.White)
+            Text(text = "$count Caratteri ($percentage%)", style = MaterialTheme.typography.bodySmall, color = Color.LightGray)
+        }
+
+        Spacer(modifier = Modifier.height(4.dp))
+        LinearProgressIndicator(
+            progress = { if (max > 0) count.toFloat() / max.toFloat() else 0f},
+            modifier = Modifier.fillMaxWidth().height(8.dp),
+            color = color,
+            trackColor = Color.DarkGray
         )
     }
 }
