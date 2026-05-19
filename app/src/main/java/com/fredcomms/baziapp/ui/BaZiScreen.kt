@@ -10,6 +10,7 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.background
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.Canvas
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.runtime.getValue
@@ -271,7 +272,7 @@ fun BaZiScreen() {
                                 modifier = Modifier.padding(bottom = 24.dp)
                             )
 
-                            BaZiPieChart(scores = scores, dayMasterElement = dmElement)
+                            BaZiPieChart(scores = scores, dmElement = dmElement)
 
                             Spacer(modifier = Modifier.height(32.dp))
 
@@ -368,7 +369,7 @@ fun BaZiScreen() {
                         )
                     )
 
-                    val groupedItems = glossary.groupBy { it = category }
+                    val groupedItems = glossary.groupBy { it.category }
 
 
                     Column(
@@ -626,14 +627,14 @@ fun RowScope.NavBarItem(
 }
 
 @Composable
-fun BaZiPieChart(scores: RoleScores, dayMasterElement: Element){
+fun BaZiPieChart(scores: RoleScores, dmElement: Element){
     val outElement = Element.entries.find { isProducing(dmElement, it) } ?: dmElement
     val wthElement = Element.entries.find { isControlling(dmElement, it) } ?: dmElement
     val offElement = Element.entries.find { isControlling(it, dmElement) } ?: dmElement
     val rscElement = Element.entries.find { isProducing(it, dmElement) } ?: dmElement 
 
     val slices =  listOf(
-        Pair(scores.companionTot, Color(getElementColor(dayMasterElement))),
+        Pair(scores.companionTot, Color(getElementColor(dmElement))),
         Pair(scores.output, Color(getElementColor(outElement))),
         Pair(scores.wealth, Color(getElementColor(wthElement))),
         Pair(scores.officer, Color(getElementColor(offElement))),
@@ -641,7 +642,7 @@ fun BaZiPieChart(scores: RoleScores, dayMasterElement: Element){
     )
 
     val total = scores.total.toFloat()
-    val startAngle = -90f
+    var startAngle = -90f
 
     Box(
         modifier = Modifier.size(220.dp),
@@ -696,6 +697,7 @@ fun InteractiveLearnCard(
     item: ExtendedLearnItem,
     isExpanded: Boolean,
     onClick: () -> Unit,
+    modifier = Modifier = Modifier
 ){
     Card(
         modifier = Modifier
@@ -711,11 +713,14 @@ fun InteractiveLearnCard(
                 .padding(16.dp),
             verticalAlignment = Alignment.Top
         ){
-            Text(
+            if(item.emoji.isNotEmpty()){
+                Text(
                 text = item.emoji,
                 style = MaterialTheme.typography.headlineSmall,
                 modifier = Modifier.padding(end = 12.dp)
-            )
+                )
+            }
+            
 
             Column(modifier = Modifier.weight(1f)){
                 Row(
