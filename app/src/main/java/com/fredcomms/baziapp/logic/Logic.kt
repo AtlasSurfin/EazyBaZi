@@ -250,27 +250,34 @@ fun getCoordinatesFromName(context: Context, cityName: String, onResult: (CityDa
                     }
 
 
-                        nazione.equals("United States", ignoreCase = true) || nazione.equals("Stati Uniti", ignoreCase = true) -> {
-                            if(!regioneStato.isNullOrEmpty()) "$localita, $regioneStato, USA" else "$localita, USA"
-                        }
+                    nazione.equals("United States", ignoreCase = true) || nazione.equals("Stati Uniti", ignoreCase = true) -> {
+                        if(!regioneStato.isNullOrEmpty()) "$localita, $regioneStato, USA" else "$localita, USA"
+                    }
 
-                        else ->{
-                            if(!regioneStato.isNullOrEmpty() && regioneStato != localita){
-                                "$localita, $regioneStato, $nazione"
-                            } else if(nazione.isNotEmpty()) {
-                                "$localita, $nazione"
-                            }else{
-                                localita
-                            }
+                    else -> {
+                        if (!regioneStato.isNullOrEmpty() && regioneStato != localita){
+                            "$localita, $regioneStato, $nazione"
+                        } else if (nazione.isNotEmpty()) {
+                            "$localita, $nazione"
+                        } else {
+                            localita
                         }
                     }
-                    onResult(CityData(n = fullName, ln = address.longitude))
-                else{
-                    onResult(null)
                 }
-            }
 
-        
+                onResult(CityData(n = fullName, ln = address.longitude))
+            } else {
+                    onResult(null)
+            }
+        }
+
+        val addresses = geocoder.getFromLocationName(cityName, 1)
+        if(!addresses.isNullOrEmpty()) {
+            processAddress(addresses[0])
+        }else{
+            onResult(null)
+        }
+
         //Blocco per versioni Android
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU){
             //Per Android 13 o versioni superiori
