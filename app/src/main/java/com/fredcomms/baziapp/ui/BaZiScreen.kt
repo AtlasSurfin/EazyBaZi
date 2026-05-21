@@ -173,7 +173,7 @@ fun BaZiScreen() {
                                                 currentChartStep = ChartStep.RESULTS
                                             }
                                         }
-
+                                    }
                                     enabled = selectedCity != null,
                                     colors = ButtonDefaults.buttonColors(containerColor = accentColor),
                                     modifier = Modifier.fillMaxWidth().padding(top = 16.dp)
@@ -181,6 +181,7 @@ fun BaZiScreen() {
                                     Text("Calcola Mappa", color = Color.Black)
                                 }
                             }
+                            
 
                             ChartStep.LOADING -> {
                                 Box(

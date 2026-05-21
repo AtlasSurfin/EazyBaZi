@@ -15,7 +15,16 @@ enum class Element {FIRE, EARTH, METAL, WATER, WOOD}
 
 enum class Polarity {YANG, YIN}
 
-enum class HeavenlyStem(val chinese: String, val element: Element, val polarity: Polarity){
+interface BaZiComponent {
+    val element: Element
+    val polarity: Polarity
+}
+
+enum class Stem(
+    val chinese: String,
+    override val element: Element,
+    override val polarity: Polarity
+) : BaZiComponent {
     BING("丙", Element.FIRE, Polarity.YANG), 
     DING("丁", Element.FIRE, Polarity.YIN), 
     WU("戊", Element.EARTH, Polarity.YANG), 
@@ -28,24 +37,18 @@ enum class HeavenlyStem(val chinese: String, val element: Element, val polarity:
     YI("乙", Element.WOOD, Polarity.YIN);
     
     companion object {
-        fun fromChinese(char: String): HeavenlyStem? =
+        fun fromChinese(char: String): Stem? =
             entries.find { it.chinese == char }
     }
 }
 
-data class Pillar(
-    val stem: HeavenlyStem?,
-    val branch: EarthlyBranch?
-)
-
-
-enum class EarthlyBranch(
+enum class Branch(
     val chinese: String,
     val pinyin: String,
-    val element: Element,
-    val polarity: Polarity,
-    val stemName: String
-){
+    override val element: Element,
+    override val polarity: Polarity,
+    val branchName: String
+) : BaZiComponent {
     ZI("子", "Zi", Element.WATER, Polarity.YANG, "Rat"),
     CHOU("丑", "Chou", Element.EARTH, Polarity.YIN, "Ox"),
     YIN("寅", "Yin", Element.WOOD, Polarity.YANG, "Tiger"),
@@ -60,10 +63,15 @@ enum class EarthlyBranch(
     HAI("亥", "Hai", Element.WATER, Polarity.YIN, "Pig");
 
     companion object {
-        fun fromChinese(char: String): EarthlyBranch? =
+        fun fromChinese(char: String): Branch? =
             entries.find { it.chinese == char }
     }
 }
+
+data class Pillar(
+    val stem: Stem?,
+    val branch: Branch?
+)
 
 data class FullBaZiChart(
     val year: Pillar,
@@ -110,7 +118,7 @@ object CityLoader{
     }
 }
 
-fun getPillar(stem: HeavenlyStem?, branch: EarthlyBranch?): Pillar {
+fun getPillar(stem: Stem?, branch: Branch?): Pillar {
     return Pillar(stem, branch)}
 
 fun getTrueSolarTime(hour: Int, minute: Int, longitude: Double): Pair<Int, Int> {
@@ -126,7 +134,7 @@ fun getTrueSolarTime(hour: Int, minute: Int, longitude: Double): Pair<Int, Int> 
     return Pair(totalMinutes / 60, totalMinutes % 60)
 }
 
-fun getTenGods(dayMaster: HeavenlyStem, target: HeavenlyStem): String{
+fun getTenGods(dayMaster: Stem, target: Stem): String{
     val isSamePolarity = dayMaster.polarity == target.polarity
 
     return when{
@@ -165,8 +173,8 @@ fun isControlling(a: Element, b: Element) = (a == Element.WOOD && b == Element.E
 || (a == Element.FIRE && b == Element.METAL) 
 || (a == Element.METAL && b == Element.WOOD)
 
-fun findStem(name: String): HeavenlyStem? {
-    return HeavenlyStem.valueOf(name.trim().uppercase())
+fun findStem(name: String): Stem? {
+    return Stem.valueOf(name.trim().uppercase())
 }
 
 
@@ -179,8 +187,8 @@ fun getFullBaZi(year: Int, month: Int, day: Int, hour: Int, minute: Int, longitu
         val baZi = solar.lunar.baZi
 
         fun extractPillar(baziPair: String): Pillar {
-            val s = HeavenlyStem.fromChinese(baziPair.substring(0,1))
-            val b = EarthlyBranch.fromChinese(baziPair.substring(1,2))
+            val s = Stem.fromChinese(baziPair.substring(0,1))
+            val b = Branch.fromChinese(baziPair.substring(1,2))
             return Pillar(s, b)
         }
 
@@ -347,7 +355,7 @@ fun calculateRoleScores(chart: FullBaZiChart): RoleScores? {
     var officer = 0
     var resource = 0
     
-    val components = listOf(
+    val components = listOfNotNull(
         chart.year.stem, chart.year.branch,
         chart.month.stem, chart.month.branch,
         chart.day.stem, chart.day.branch,
@@ -355,7 +363,6 @@ fun calculateRoleScores(chart: FullBaZiChart): RoleScores? {
     )
 
     for(comp in components) {
-        if (comp == null) continue
 
         val element = comp.element
         val polarity = comp.polarity
