@@ -3,6 +3,9 @@ package com.fredcomms.baziapp.ui
 import com.fredcomms.baziapp.logic.*
 import java.util.Calendar
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
@@ -13,12 +16,21 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.material3.*
 import androidx.compose.material3.ExposedDropdownMenuBox
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.DropdownMenu
+import androidx.compose.material3.DropdownMenuItem
+import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.OutlinedTextFieldDefaults
+import androidx.compose.material3.Text
 import androidx.compose.runtime.*
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.setValue
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.*
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
@@ -26,6 +38,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.animation.animateContentSize
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.delay
@@ -477,7 +490,6 @@ fun BaZiScreen() {
     
     
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun BaZiDropdown(
     label: String,
@@ -488,24 +500,27 @@ fun BaZiDropdown(
 ){
     var expanded by remember { mutableStateOf(false)}
 
-    ExposedDropdownMenuBox(
-        expanded = expanded,
-        onExpandedChange = { expanded = it },
-        modifier = modifier
-    ){
+    Box(modifier = modifier){
         OutlinedTextField(
             value = selectedOption,
             onValueChange = {},
             readOnly = true,
+            enabled = true,
             label = { Text(label) },
-            trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expanded) },
+            trailingIcon = { 
+                Text(if (expanded) "🔼" else "🔽", modifier = Modifier.padding(end = 8.dp))
+            },
             modifier = Modifier
-            .fillMaxWidth()
-            .menuAnchor(MenuAnchorType.PrimaryEditable, true)
+                .fillMaxWidth()
+                .pointerInput(Unit){
+                    detectTapGestures(onTap = { expanded = true })
+                }
         )
-        ExposedDropdownMenu(
+
+        DropdownMenu(
             expanded = expanded,
-            onDismissRequest = { expanded = false }
+            onDismissRequest = { expanded = false },
+            modifier = Modifier.fillMaxWidth(0.85f)
         ){
             options.forEach { option ->
                 DropdownMenuItem(
@@ -693,7 +708,7 @@ fun RoleRow(label: String, count: Int, max: Int, color: Color){
 
         Spacer(modifier = Modifier.height(4.dp))
         LinearProgressIndicator(
-            progress = { if (max > 0) count.toFloat() / max.toFloat() else 0f},
+            progress =  if (max > 0) count.toFloat() / max.toFloat() else 0f,
             modifier = Modifier.fillMaxWidth().height(8.dp),
             color = color,
             trackColor = Color.DarkGray
