@@ -22,6 +22,7 @@ import androidx.compose.material3.ExposedDropdownMenuBox
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
+import androidx.compose.material3.MenuDefaults
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.Text
@@ -33,12 +34,14 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.*
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.animation.animateContentSize
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.delay
@@ -142,7 +145,7 @@ fun BaZiScreen() {
 
                                 Spacer(modifier = Modifier.height(16.dp))
 
-                                Text(text = "Luogo di Nascita", style = MaterialTheme.typography.labelMedium, color = Color.Gray)
+                                Text(text = "Luogo di Nascita", style = MaterialTheme.typography.labelMedium, color = Color.LightGray)
 
                                 Row(
                                     modifier = Modifier
@@ -171,7 +174,16 @@ fun BaZiScreen() {
                                             }) {
                                                 Text ("🔍")
                                             }
-                                        }
+                                        },
+                                        colors = TextFieldDefaults.outlinedTextFieldColors(
+                                            focusedTextColor = Color.White,
+                                            unfocusedTextColor = Color.White,
+                                            disabledTextColor = Color.LightGray,
+                                            focusedLabelColor = Color.LightGray,
+                                            unfocusedLabelColor = Color.Gray,
+                                            focusedBorderColor = accentColor,
+                                            unfocusedBorderColor = Color.Gray
+                                        )
                                     )
                                 }
 
@@ -194,10 +206,15 @@ fun BaZiScreen() {
                                         }
                                     },
                                     enabled = selectedCity != null,
-                                    colors = ButtonDefaults.buttonColors(containerColor = accentColor),
+                                    colors = ButtonDefaults.buttonColors(
+                                        containerColor = accentColor,
+                                        contentColor = Color.Black,
+                                        disabledContainerColor = Color(0xFF333333),
+                                        disabledContentColor = Color.LightGray
+                                    ),
                                     modifier = Modifier.fillMaxWidth().padding(top = 16.dp)
                                 ){
-                                    Text("Calcola Mappa", color = Color.Black)
+                                    Text("Calcola Mappa")
                                 }
                             }
                             
@@ -499,6 +516,7 @@ fun BaZiDropdown(
     modifier: Modifier = Modifier
 ){
     var expanded by remember { mutableStateOf(false)}
+    var textFieldWidth by remember { mutableStateOf(0) }
 
     Box(modifier = modifier){
         OutlinedTextField(
@@ -510,7 +528,11 @@ fun BaZiDropdown(
             trailingIcon = { 
                 Text(if (expanded) "🔼" else "🔽", modifier = Modifier.padding(end = 8.dp))
             },
-            modifier = Modifier.fillMaxWidth(),
+            modifier = Modifier
+                .fillMaxWidth()
+                .onGloballyPositioned { coordinates ->
+                    textFieldWidth = coordinates.size.width
+                },
             colors = OutlinedTextFieldDefaults.colors(
                 focusedTextColor = Color.White,
                 unfocusedTextColor = Color.White,
@@ -532,15 +554,24 @@ fun BaZiDropdown(
         DropdownMenu(
             expanded = expanded,
             onDismissRequest = { expanded = false },
-            modifier = Modifier.fillMaxWidth(0.85f)
+            modifier = Modifier
+                .width(with(LocalDensity.current){ textFieldWidth.toDp() })
+                .background(Color(0xFF1E1E1E))
         ){
             options.forEach { option ->
                 DropdownMenuItem(
-                    text = { Text(option, color = Color.White) },
+                    text = { 
+                        Text(
+                            text = option, 
+                            color = Color.White,
+                            modifier = Modifier.padding(vertical = 4.dp)
+                        ) 
+                    },
                     onClick = {
                         onOptionSelected(option)
                         expanded = false
-                    }
+                    },
+                    modifier = Modifier.background(Color(0xFF1E1E1E))
                 )
             }
         }
