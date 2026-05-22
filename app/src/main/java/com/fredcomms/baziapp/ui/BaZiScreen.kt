@@ -360,7 +360,71 @@ fun BaZiScreen() {
                             incredibilmente resilienti, e sanno adattarsi a qualsiasi situazione per sopravvivere.
                             Ottimi strateghi dietro le quinte. """.trimIndent(),
                             details = "Elemento: Legno | Polarità: Yin | Direzione: Est",
+                            emoji = "🌸"
+                        ),
+                        ExtendedLearnItem(
+                            category = "I 10 Tronchi Celesti (Heavenly Stems)",
+                            title = "Wu (戊) - Terra Yang",
+                            subtitle = "La Montagna o la Roccia - Il Protettore",
+                            description = """ """.trimIndent(),
+                            details = "Elemento: Terra | Polarità: Yang | Direzione: Centro",
+                            emoji = "⛰️"
+                        ),
+                        ExtendedLearnItem(
+                            category = "I 10 Tronchi Celesti (Heavenly Stems)",
+                            title = "Ji (己) - Terra Yin",
+                            subtitle = "Il Giardino o la Terra Fertile - Il Nutritore",
+                            description = """ """.trimIndent(),
+                            details = "Elemento: Terra | Polarità: Yin | Direzione: Centro",
                             emoji = "🌱"
+                        ),
+                        ExtendedLearnItem(
+                            category = "I 10 Tronchi Celesti (Heavenly Stems)",
+                            title = "Ren (壬) - Acqua Yang",
+                            subtitle = "L'Oceano o il Fiume - Il Visionario",
+                            description = """ """.trimIndent(),
+                            details = "Elemento: Acqua | Polarità: Yang | Direzione: Nord",
+                            emoji = "🌊"
+                        ),
+                        ExtendedLearnItem(
+                            category = "I 10 Tronchi Celesti (Heavenly Stems)",
+                            title = "Gui (癸) - Acqua Yin",
+                            subtitle = "La Rugiada o la Pioggia Leggera - L'Intuitivo",
+                            description = """ """.trimIndent(),
+                            details = "Elemento: Acqua | Polarità: Yin | Direzione: Nord",
+                            emoji = "💧"
+                        ),
+                        ExtendedLearnItem(
+                            category = "I 10 Tronchi Celesti (Heavenly Stems)",
+                            title = "Bing (丙) - Fuoco Yang",
+                            subtitle = "Il Sole - Il Magnanimo",
+                            description = """ """.trimIndent(),
+                            details = "Elemento: Fuoco | Polarità: Yang | Direzione: Sud",
+                            emoji = "☀️"
+                        ),
+                        ExtendedLearnItem(
+                            category = "I 10 Tronchi Celesti (Heavenly Stems)",
+                            title = "Ding (丙) - Fuoco Yin",
+                            subtitle = "La Candela o la Lanterna - Il Mentore",
+                            description = """ """.trimIndent(),
+                            details = "Elemento: Fuoco | Polarità: Yin | Direzione: Sud",
+                            emoji = "🏮"
+                        ),
+                        ExtendedLearnItem(
+                            category = "I 10 Tronchi Celesti (Heavenly Stems)",
+                            title = "Geng (庚) - Metallo Yang",
+                            subtitle = "La Spada o il Ferro Grezzo - Il Giusto",
+                            description = """ """.trimIndent(),
+                            details = "Elemento: Metallo | Polarità: Yang | Direzione: Ovest",
+                            emoji = "🗡️"
+                        ),
+                        ExtendedLearnItem(
+                            category = "I 10 Tronchi Celesti (Heavenly Stems)",
+                            title = "Xin (辛) - Metallo Yin",
+                            subtitle = "Il Gioiello o lo Spillo - L'Esteta",
+                            description = """ """.trimIndent(),
+                            details = "Elemento: Metallo | Polarità: Yin | Direzione: Ovest",
+                            emoji = "💍"
                         ),
                         //Rami Terrestri
                         ExtendedLearnItem(
@@ -370,7 +434,95 @@ fun BaZiScreen() {
                             description = """Il primo segno dello zodiaco. Rappresenta l'energia dell'inverno profondo e della notte.
                             Le persone nate con questo ramo sono intuitive, astute, piene di risorse e possiedono una saggezza nascosta.""".trimIndent(),
                             details = "Elemento Principale: Acqua | Contiene la Radice Nascosta: Gui (Acqua Yin)",
-                            emoji = ""
+                            emoji = "🐭"
+                        ),
+                        ExtendedLearnItem(
+                            category = "I 12 Rami Terrestri (Zodiaco Cinese)",
+                            title = "Chou (丑) - Il Bue (The Ox)",
+                            subtitle = "Terra Yin - Lo Stoico",
+                            description = """.""".trimIndent(),
+                            details = "Elemento Principale: Terra | Contiene la Radice Nascosta: Ji (Terra Yin)",
+                            emoji = "🐮"
+                        ),
+                        ExtendedLearnItem(
+                            category = "I 12 Rami Terrestri (Zodiaco Cinese)",
+                            title = "Yin (寅) - La Tigre (The Tiger)",
+                            subtitle = "Legno Yang - Il Conquistatore",
+                            description = """.""".trimIndent(),
+                            details = "Elemento Principale: Legno | Contiene la Radice Nascosta: Jia (Legno Yang)",
+                            emoji = "🐯"
+                        ),
+                        ExtendedLearnItem(
+                            category = "I 12 Rami Terrestri (Zodiaco Cinese)",
+                            title = "Mao (卯) - Il Coniglio (The Rabbit)",
+                            subtitle = "Legno Yin - Il Diplomatico",
+                            description = """.""".trimIndent(),
+                            details = "Elemento Principale: Legno | Contiene la Radice Nascosta: Yi (Legno Yin)",
+                            emoji = "🐰"
+                        ),
+                        ExtendedLearnItem(
+                            category = "I 12 Rami Terrestri (Zodiaco Cinese)",
+                            title = "Chen (辰) - Il Drago (The Dragon)",
+                            subtitle = "Terra Yang - Il Magnate",
+                            description = """.""".trimIndent(),
+                            details = "Elemento Principale: Terra | Contiene la Radice Nascosta: Wu (Terra Yang)",
+                            emoji = "🐲"
+                        ),
+                        ExtendedLearnItem(
+                            category = "I 12 Rami Terrestri (Zodiaco Cinese)",
+                            title = "Si (巳) - Il Serpente (The Snake)",
+                            subtitle = "Fuoco Yin - Il Filosofo",
+                            description = """.""".trimIndent(),
+                            details = "Elemento Principale: Fuoco | Contiene la Radice Nascosta: Ding (Fuoco Yin)",
+                            emoji = "🐍"
+                        ),
+                        ExtendedLearnItem(
+                            category = "I 12 Rami Terrestri (Zodiaco Cinese)",
+                            title = "Wu (午) - Il Cavallo (The Horse)",
+                            subtitle = "Fuoco Yang - Il Pioniere",
+                            description = """.""".trimIndent(),
+                            details = "Elemento Principale: Fuoco | Contiene la Radice Nascosta: Bing (Fuoco Yang)",
+                            emoji = "🐴"
+                        ),
+                        ExtendedLearnItem(
+                            category = "I 12 Rami Terrestri (Zodiaco Cinese)",
+                            title = "Wei (未) - La Capra (The Goat)",
+                            subtitle = "Terra Yin - L'Artista",
+                            description = """.""".trimIndent(),
+                            details = "Elemento Principale: Terra | Contiene la Radice Nascosta: Ji (Terra Yin)",
+                            emoji = "🐐"
+                        ),
+                        ExtendedLearnItem(
+                            category = "I 12 Rami Terrestri (Zodiaco Cinese)",
+                            title = "Shen (申) - La Scimmia (The Monkey)",
+                            subtitle = "Metallo Yang - L'Innovatore",
+                            description = """.""".trimIndent(),
+                            details = "Elemento Principale: Metallo | Contiene la Radice Nascosta: Geng (Metallo Yang)",
+                            emoji = "🐵"
+                        ),
+                        ExtendedLearnItem(
+                            category = "I 12 Rami Terrestri (Zodiaco Cinese)",
+                            title = "You (酉) - Il Gallo (The Rooster)",
+                            subtitle = "Metallo Yin - Il Perfezionista",
+                            description = """.""".trimIndent(),
+                            details = "Elemento Principale: Metallo | Contiene la Radice Nascosta: Xin (Metallo Yin)",
+                            emoji = "🐔"
+                        ),
+                        ExtendedLearnItem(
+                            category = "I 12 Rami Terrestri (Zodiaco Cinese)",
+                            title = "Xu (戌) - Il Cane (The Dog)",
+                            subtitle = "Terra Yang - Il Custode",
+                            description = """.""".trimIndent(),
+                            details = "Elemento Principale: Terra | Contiene la Radice Nascosta: Wu (Terra Yang)",
+                            emoji = "🐶"
+                        ),
+                        ExtendedLearnItem(
+                            category = "I 12 Rami Terrestri (Zodiaco Cinese)",
+                            title = "Hai (亥) - Il Maiale (The Pig)",
+                            subtitle = "Acqua Yin - Il Filantropo",
+                            description = """.""".trimIndent(),
+                            details = "Elemento Principale: Acqua | Contiene la Radice Nascosta: Gui (Acqua Yin)",
+                            emoji = "🐷"
                         ),
                         //Concetti Avanzati
 
