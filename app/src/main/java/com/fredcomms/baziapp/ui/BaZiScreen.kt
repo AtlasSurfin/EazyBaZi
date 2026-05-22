@@ -510,11 +510,23 @@ fun BaZiDropdown(
             trailingIcon = { 
                 Text(if (expanded) "🔼" else "🔽", modifier = Modifier.padding(end = 8.dp))
             },
+            modifier = Modifier.fillMaxWidth(),
+            colors = OutlinedTextFieldDefaults.colors(
+                focusedTextColor = Color.White,
+                unfocusedTextColor = Color.White,
+                focusedLabelColor = Color.LightGray,
+                unfocusedLabelColor = Color.LightGray,
+                focusedBorderColor = Color(0xFFFFCA28),
+                unfocusedBorderColor = Color.Gray,
+                focusedTrailingIconColor = Color.White,
+                unfocusedTrailingIconColor = Color.Gray
+            )
+        )
+
+        Box(
             modifier = Modifier
-                .fillMaxWidth()
-                .pointerInput(Unit){
-                    detectTapGestures(onTap = { expanded = true })
-                }
+                .matchParentSize()
+                .clickable { expanded = true }
         )
 
         DropdownMenu(
@@ -524,7 +536,7 @@ fun BaZiDropdown(
         ){
             options.forEach { option ->
                 DropdownMenuItem(
-                    text = { Text(option) },
+                    text = { Text(option, color = Color.White) },
                     onClick = {
                         onOptionSelected(option)
                         expanded = false
