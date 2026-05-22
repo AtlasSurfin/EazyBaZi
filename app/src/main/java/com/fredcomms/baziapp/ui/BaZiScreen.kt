@@ -11,7 +11,11 @@ import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.background
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.*
+import androidx.compose.material3.ExposedDropdownMenuBox
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.runtime.*
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.setValue
@@ -20,6 +24,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.Modifier
 import androidx.compose.animation.animateContentSize
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.delay
@@ -173,7 +179,7 @@ fun BaZiScreen() {
                                                 currentChartStep = ChartStep.RESULTS
                                             }
                                         }
-                                    }
+                                    },
                                     enabled = selectedCity != null,
                                     colors = ButtonDefaults.buttonColors(containerColor = accentColor),
                                     modifier = Modifier.fillMaxWidth().padding(top = 16.dp)
@@ -485,7 +491,7 @@ fun BaZiDropdown(
     ExposedDropdownMenuBox(
         expanded = expanded,
         onExpandedChange = { expanded = it },
-        modifier = modifier.menuAnchor()
+        modifier = modifier
     ){
         OutlinedTextField(
             value = selectedOption,
@@ -493,7 +499,9 @@ fun BaZiDropdown(
             readOnly = true,
             label = { Text(label) },
             trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expanded) },
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier
+            .fillMaxWidth()
+            .menuAnchor(MenuAnchorType.PrimaryEditable, true)
         )
         ExposedDropdownMenu(
             expanded = expanded,
@@ -513,7 +521,7 @@ fun BaZiDropdown(
 }
 
 @Composable
-fun PillarDisplay(label: String, pillar: Pillar, dayMaster: HeavenlyStem?){
+fun PillarDisplay(label: String, pillar: Pillar, dayMaster: Stem?){
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier.padding(horizontal = 0.dp)
@@ -556,13 +564,13 @@ fun PillarDisplay(label: String, pillar: Pillar, dayMaster: HeavenlyStem?){
         Spacer(modifier = Modifier.height(4.dp))
 
         //Ramo Terrestre (Earthly Branch)
-        val branchSubText = pillar.branch?.stemName ?: ""
+        val branchSubText = pillar.branch?.branchName ?: ""
 
         val branchDescription = if (pillar.branch != null) {
             val elemStr = formatToLowercase(pillar.branch.element.name)
             val polStr = formatToLowercase(pillar.branch.polarity.name)
             "($elemStr $polStr)"
-        }else ""
+        } else ""
         
         BaZiCard(
             chinese = pillar.branch?.chinese, 
@@ -586,7 +594,7 @@ fun BaZiCard(chinese: String?, subText: String?, extendedText: String?, element:
             modifier = Modifier.fillMaxSize(),
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
-        ){
+            ){
             Text(text = chinese ?: "?", style = MaterialTheme.typography.headlineMedium, color = Color.Black)
             Text(text = subText ?: "", style = MaterialTheme.typography.bodySmall, color = Color.DarkGray)
 
@@ -651,7 +659,7 @@ fun BaZiPieChart(scores: RoleScores, dmElement: Element){
     ){
         Canvas(modifier = Modifier.fillMaxSize()){
             slices.forEach { slice ->
-                if(slice.first > 0){
+                if(slice.first > 0 && total > 0f){
                     val sweepAngle = (slice.first/ total) * 360f
                     drawArc(
                         color = slice.second,
@@ -698,15 +706,15 @@ fun InteractiveLearnCard(
     item: ExtendedLearnItem,
     isExpanded: Boolean,
     onClick: () -> Unit,
-    modifier = Modifier = Modifier
+    modifier: Modifier = Modifier
 ){
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .animateContentSize(),
+            .animateContentSize()
+            .clickable { onClick() },
         colors = CardDefaults.cardColors(containerColor = Color(0xFF1E1E1E)),
-        shape = RoundedCornerShape(12.dp),
-        onClick = onClick
+        shape = RoundedCornerShape(12.dp)
     ){
         Row(
             modifier = Modifier
