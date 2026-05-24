@@ -345,9 +345,7 @@ fun BaZiScreen() {
                             category = "I 10 Tronchi Celesti (Heavenly Stems)",
                             title = "Jia (甲) - Legno Yang",
                             subtitle = "L'Albero Secolare - Leader Nato",
-                            description = """Rappresenta un grande albero robusto. Le persone Jia sono idealiste, progressiste,
-                            testarde ma estremamente protettive verso gli altri. Hanno una crescita costante e non amano essere
-                            controllate.""".trimIndent(),
+                            description = "Rappresenta un grande albero robusto. Le persone Jia sono idealiste, progressiste, testarde ma estremamente protettive verso gli altri. Hanno una crescita costante e non amano essere controllate. ",
                             details = "Elemento: Legno | Polarità: Yang | Direzione: Est",
                             emoji = "🌲"
                         ),
@@ -356,9 +354,7 @@ fun BaZiScreen() {
                             category = "I 10 Tronchi Celesti (Heavenly Stems)",
                             title = "Yi (乙) - Legno Yin",
                             subtitle = "L'Edera o l'Erba - Il Sopravvissuto",
-                            description = """Rappresenta piante flessibili, fiori o rampicanti. Le persone Yi sono diplomatiche,
-                            incredibilmente resilienti, e sanno adattarsi a qualsiasi situazione per sopravvivere.
-                            Ottimi strateghi dietro le quinte. """.trimIndent(),
+                            description = "Rappresenta piante flessibili, fiori o rampicanti. Le persone Yi sono diplomatiche, incredibilmente resilienti, e sanno adattarsi a qualsiasi situazione per sopravvivere. Ottimi strateghi dietro le quinte. ",
                             details = "Elemento: Legno | Polarità: Yin | Direzione: Est",
                             emoji = "🌸"
                         ),
@@ -366,7 +362,7 @@ fun BaZiScreen() {
                             category = "I 10 Tronchi Celesti (Heavenly Stems)",
                             title = "Wu (戊) - Terra Yang",
                             subtitle = "La Montagna o la Roccia - Il Protettore",
-                            description = """ """.trimIndent(),
+                            description = "",
                             details = "Elemento: Terra | Polarità: Yang | Direzione: Centro",
                             emoji = "⛰️"
                         ),
@@ -374,7 +370,7 @@ fun BaZiScreen() {
                             category = "I 10 Tronchi Celesti (Heavenly Stems)",
                             title = "Ji (己) - Terra Yin",
                             subtitle = "Il Giardino o la Terra Fertile - Il Nutritore",
-                            description = """ """.trimIndent(),
+                            description = "",
                             details = "Elemento: Terra | Polarità: Yin | Direzione: Centro",
                             emoji = "🌱"
                         ),
@@ -382,7 +378,7 @@ fun BaZiScreen() {
                             category = "I 10 Tronchi Celesti (Heavenly Stems)",
                             title = "Ren (壬) - Acqua Yang",
                             subtitle = "L'Oceano o il Fiume - Il Visionario",
-                            description = """ """.trimIndent(),
+                            description = "",
                             details = "Elemento: Acqua | Polarità: Yang | Direzione: Nord",
                             emoji = "🌊"
                         ),
@@ -390,7 +386,7 @@ fun BaZiScreen() {
                             category = "I 10 Tronchi Celesti (Heavenly Stems)",
                             title = "Gui (癸) - Acqua Yin",
                             subtitle = "La Rugiada o la Pioggia Leggera - L'Intuitivo",
-                            description = """ """.trimIndent(),
+                            description = "",
                             details = "Elemento: Acqua | Polarità: Yin | Direzione: Nord",
                             emoji = "💧"
                         ),
@@ -398,7 +394,7 @@ fun BaZiScreen() {
                             category = "I 10 Tronchi Celesti (Heavenly Stems)",
                             title = "Bing (丙) - Fuoco Yang",
                             subtitle = "Il Sole - Il Magnanimo",
-                            description = """ """.trimIndent(),
+                            description = "",
                             details = "Elemento: Fuoco | Polarità: Yang | Direzione: Sud",
                             emoji = "☀️"
                         ),
@@ -406,7 +402,7 @@ fun BaZiScreen() {
                             category = "I 10 Tronchi Celesti (Heavenly Stems)",
                             title = "Ding (丙) - Fuoco Yin",
                             subtitle = "La Candela o la Lanterna - Il Mentore",
-                            description = """ """.trimIndent(),
+                            description = "",
                             details = "Elemento: Fuoco | Polarità: Yin | Direzione: Sud",
                             emoji = "🏮"
                         ),
@@ -414,7 +410,7 @@ fun BaZiScreen() {
                             category = "I 10 Tronchi Celesti (Heavenly Stems)",
                             title = "Geng (庚) - Metallo Yang",
                             subtitle = "La Spada o il Ferro Grezzo - Il Giusto",
-                            description = """ """.trimIndent(),
+                            description = "",
                             details = "Elemento: Metallo | Polarità: Yang | Direzione: Ovest",
                             emoji = "🗡️"
                         ),
@@ -422,7 +418,7 @@ fun BaZiScreen() {
                             category = "I 10 Tronchi Celesti (Heavenly Stems)",
                             title = "Xin (辛) - Metallo Yin",
                             subtitle = "Il Gioiello o lo Spillo - L'Esteta",
-                            description = """ """.trimIndent(),
+                            description = "",
                             details = "Elemento: Metallo | Polarità: Yin | Direzione: Ovest",
                             emoji = "💍"
                         ),
@@ -431,97 +427,96 @@ fun BaZiScreen() {
                             category = "I 12 Rami Terrestri (Zodiaco Cinese)",
                             title = "Zi (子) - Il Topo (The Rat)",
                             subtitle = "Acqua Yang - L'Iniziatore",
-                            description = """Il primo segno dello zodiaco. Rappresenta l'energia dell'inverno profondo e della notte.
-                            Le persone nate con questo ramo sono intuitive, astute, piene di risorse e possiedono una saggezza nascosta.""".trimIndent(),
-                            details = "Elemento Principale: Acqua | Contiene la Radice Nascosta: Gui (Acqua Yin)",
-                            emoji = "🐭"
+                            description = "Il primo segno dello zodiaco. Rappresenta l'energia dell'inverno profondo e della notte. Le persone nate con questo ramo sono intuitive, astute, piene di risorse e possiedono una saggezza nascosta.",
+                            details = "Elemento: Acqua | Radice Nascosta: Gui (Acqua Yin)",
+                            emoji = "🐭",
                         ),
                         ExtendedLearnItem(
                             category = "I 12 Rami Terrestri (Zodiaco Cinese)",
                             title = "Chou (丑) - Il Bue (The Ox)",
                             subtitle = "Terra Yin - Lo Stoico",
-                            description = """.""".trimIndent(),
-                            details = "Elemento Principale: Terra | Contiene la Radice Nascosta: Ji (Terra Yin)",
+                            description = "",
+                            details = "Elemento: Terra | Radice Nascosta: Ji (Terra Yin)",
                             emoji = "🐮"
                         ),
                         ExtendedLearnItem(
                             category = "I 12 Rami Terrestri (Zodiaco Cinese)",
                             title = "Yin (寅) - La Tigre (The Tiger)",
                             subtitle = "Legno Yang - Il Conquistatore",
-                            description = """.""".trimIndent(),
-                            details = "Elemento Principale: Legno | Contiene la Radice Nascosta: Jia (Legno Yang)",
+                            description = "",
+                            details = "Elemento: Legno | Radice Nascosta: Jia (Legno Yang)",
                             emoji = "🐯"
                         ),
                         ExtendedLearnItem(
                             category = "I 12 Rami Terrestri (Zodiaco Cinese)",
                             title = "Mao (卯) - Il Coniglio (The Rabbit)",
                             subtitle = "Legno Yin - Il Diplomatico",
-                            description = """.""".trimIndent(),
-                            details = "Elemento Principale: Legno | Contiene la Radice Nascosta: Yi (Legno Yin)",
+                            description = "",
+                            details = "Elemento: Legno | Radice Nascosta: Yi (Legno Yin)",
                             emoji = "🐰"
                         ),
                         ExtendedLearnItem(
                             category = "I 12 Rami Terrestri (Zodiaco Cinese)",
                             title = "Chen (辰) - Il Drago (The Dragon)",
                             subtitle = "Terra Yang - Il Magnate",
-                            description = """.""".trimIndent(),
-                            details = "Elemento Principale: Terra | Contiene la Radice Nascosta: Wu (Terra Yang)",
+                            description = "",
+                            details = "Elemento: Terra | Radice Nascosta: Wu (Terra Yang)",
                             emoji = "🐲"
                         ),
                         ExtendedLearnItem(
                             category = "I 12 Rami Terrestri (Zodiaco Cinese)",
                             title = "Si (巳) - Il Serpente (The Snake)",
                             subtitle = "Fuoco Yin - Il Filosofo",
-                            description = """.""".trimIndent(),
-                            details = "Elemento Principale: Fuoco | Contiene la Radice Nascosta: Ding (Fuoco Yin)",
+                            description = "",
+                            details = "Elemento: Fuoco | Radice Nascosta: Ding (Fuoco Yin)",
                             emoji = "🐍"
                         ),
                         ExtendedLearnItem(
                             category = "I 12 Rami Terrestri (Zodiaco Cinese)",
                             title = "Wu (午) - Il Cavallo (The Horse)",
                             subtitle = "Fuoco Yang - Il Pioniere",
-                            description = """.""".trimIndent(),
-                            details = "Elemento Principale: Fuoco | Contiene la Radice Nascosta: Bing (Fuoco Yang)",
+                            description = "",
+                            details = "Elemento: Fuoco | Radice Nascosta: Bing (Fuoco Yang)",
                             emoji = "🐴"
                         ),
                         ExtendedLearnItem(
                             category = "I 12 Rami Terrestri (Zodiaco Cinese)",
                             title = "Wei (未) - La Capra (The Goat)",
                             subtitle = "Terra Yin - L'Artista",
-                            description = """.""".trimIndent(),
-                            details = "Elemento Principale: Terra | Contiene la Radice Nascosta: Ji (Terra Yin)",
+                            description = "",
+                            details = "Elemento: Terra | Radice Nascosta: Ji (Terra Yin)",
                             emoji = "🐐"
                         ),
                         ExtendedLearnItem(
                             category = "I 12 Rami Terrestri (Zodiaco Cinese)",
                             title = "Shen (申) - La Scimmia (The Monkey)",
                             subtitle = "Metallo Yang - L'Innovatore",
-                            description = """.""".trimIndent(),
-                            details = "Elemento Principale: Metallo | Contiene la Radice Nascosta: Geng (Metallo Yang)",
+                            description = "",
+                            details = "Elemento: Metallo | Radice Nascosta: Geng (Metallo Yang)",
                             emoji = "🐵"
                         ),
                         ExtendedLearnItem(
                             category = "I 12 Rami Terrestri (Zodiaco Cinese)",
                             title = "You (酉) - Il Gallo (The Rooster)",
                             subtitle = "Metallo Yin - Il Perfezionista",
-                            description = """.""".trimIndent(),
-                            details = "Elemento Principale: Metallo | Contiene la Radice Nascosta: Xin (Metallo Yin)",
+                            description = "",
+                            details = "Elemento: Metallo | Radice Nascosta: Xin (Metallo Yin)",
                             emoji = "🐔"
                         ),
                         ExtendedLearnItem(
                             category = "I 12 Rami Terrestri (Zodiaco Cinese)",
                             title = "Xu (戌) - Il Cane (The Dog)",
                             subtitle = "Terra Yang - Il Custode",
-                            description = """.""".trimIndent(),
-                            details = "Elemento Principale: Terra | Contiene la Radice Nascosta: Wu (Terra Yang)",
+                            description = "",
+                            details = "Elemento: Terra | Radice Nascosta: Wu (Terra Yang)",
                             emoji = "🐶"
                         ),
                         ExtendedLearnItem(
                             category = "I 12 Rami Terrestri (Zodiaco Cinese)",
                             title = "Hai (亥) - Il Maiale (The Pig)",
                             subtitle = "Acqua Yin - Il Filantropo",
-                            description = """.""".trimIndent(),
-                            details = "Elemento Principale: Acqua | Contiene la Radice Nascosta: Gui (Acqua Yin)",
+                            description = "",
+                            details = "Elemento: Acqua | Radice Nascosta: Gui (Acqua Yin)",
                             emoji = "🐷"
                         ),
                         //Concetti Avanzati
@@ -530,34 +525,44 @@ fun BaZiScreen() {
                             category = "Tronchi Celesti Nascosti (Hidden Stems)",
                             title = "Le Radici dei Rami Terrestri",
                             subtitle = "Il potenziale nascosto dentro di te",
-                            description = """In occidente siamo abituati a vedere un solo segno zodiacale. Nel BaZi, ogni animale nasconde sotto terra
-                            (nelle sue radici) da 1 a 3 Tronchi Celesti. Rappresentano i tuoi talenti nascosti, i desideri segreti e ciò che si
-                            attiverà solo in determinati momenti della tua vita.""".trimIndent(),
-                            emoji = "🕳️"
-                        ),
-
-                        ExtendedLearnItem(
-                            category = "Na Yin (Astrologia Melodica)",
-                            title = "Na Yin: Il Suono degli Elementi",
-                            subtitle = "I 60 Cicli d'oro",
-                            description = """Mentre il BaZI classico analizza gli elementi singoli, il Na Yin combina il Tronco Celeste ed il
-                            Ramo Terrestre per creare un 'Elemento Melodico' unico (Es: 'Fuoco della Lampada', 'Legno del Melograno').
-                            Definisce l'atmosfera psicologica profonda e l'aura spirituale della persona.""".trimIndent(),
-                            emoji = "🎵"
+                            description = "In occidente siamo abituati a vedere un solo segno zodiacale. Nel BaZi, ogni animale nasconde sotto terra (nelle sue radici) da 1 a 3 Tronchi Celesti. Rappresentano i tuoi talenti nascosti, i desideri segreti e ciò che si attiverà solo in determinati momenti della tua vita.",
+                            emoji = "🕳️",
                         ),
 
                         ExtendedLearnItem(
                             category = "Fasi del Qi (Qi Phase) / 12 Life Stages",
                             title = "Le 12 Fasi di Forza del Day Master",
                             subtitle = "Dalla Nascita all'Imperatore, fino alla Tomba",
-                            description = """Questo concetto misura quanto il tuo Day Master si sente forte nel Ramo Terrestre di un pilastro.
-                            Va dalla fase di Nascita (piena di entusiasmo), alla fase 'Imperatore' (massimo potere) fino alla fase 'Tomba'
-                            (energia di accumulo ed introspezione). Rivela se le tue azioni avranno un impatto immediato o avranno bisogno
-                            di tempo.""".trimIndent(),
-                            emoji = "📈"
+                            description = "Questo concetto misura quanto il tuo Day Master si sente forte nel Ramo Terrestre di un pilastro. Va dalla fase di Nascita (piena di entusiasmo), alla fase 'Imperatore' (massimo potere) fino alla fase 'Tomba' (energia di accumulo ed introspezione). Rivela se le tue azioni avranno un impatto immediato o avranno bisogno di tempo.",
+                            emoji = "☯︎",
+                        ),
+
+                        
+                        ExtendedLearnItem(
+                            category = "Na Yin (Astrologia Melodica)",
+                            title = "Na Yin: Il Suono degli Elementi",
+                            subtitle = "I 60 Cicli d'oro",
+                            description = "Mentre il BaZI classico analizza gli elementi singoli, il Na Yin combina il Tronco Celeste ed il Ramo Terrestre per creare un 'Elemento Melodico' unico (Es: 'Fuoco della Lampada', 'Legno del Melograno'). Definisce l'atmosfera psicologica profonda e l'aura spirituale della persona.",
+                            emoji = "🎵",
+                        ),
+
+                        
+                        ExtendedLearnItem(
+                            category = "Na Yin (Astrologia Melodica)",
+                            title = "Na Yin: La Matematica dei 5 elementi",
+                            subtitle = "Il calcolo dell'elemento",
+                            description = "Come si calcola con esattezza il Na Yin di un pilastro ? Il calcolo si basa sull'antica numerologia cinese, in particolare sull'antico testo 'Suen Tzu Suan Ching' e sul ciclo sessagesimale cinese. Si assegnano dei valori numerici ad ogni Tronco e ad ogni Ramo.\n\nEs:\nLegno: 1\nFuoco: 2\nTerra: 3\nMetallo: 4\nAcqua: 5\n\nInvece i Rami sono valutati nel seguente modo:\n\nEs:\nTopo/Bue/Cavallo/Capra: 1\nTigre/Coniglio/Scimmia/Gallo: 2\nDrago/Serpente/Cane/Maiale: 3\n\nSi sommano i valori del Tronco e del Ramo, sottraendo 5 se la somma è maggiore o uguale a 5 fino ad ottenere uno dei 5 resti (0, 1, 2, 3, 4). Il numero finale indica l'elemento del Na Yin secondo questo ordine:\n\nNumeri NaYin:\n1 = Legno\n2 = Metallo\n3 = Acqua\n4 = Fuoco\n0 = Terra",
+                            emoji = "🌀",
+                        ),
+                        
+                        ExtendedLearnItem(
+                            category = "Na Yin (Astrologia Melodica)",
+                            title = "Na Yin: Le Combinazioni Tronco/Ramo",
+                            subtitle = "Il nome del NaYin",
+                            description = "Combinando un Tronco definito con un Ramo si possono ottenere in totale 30 combinazioni diverse, ognuna con un nome unico che ne riassume la profondità psicologica, caratteriale e le qualità. Le 30 combinazioni del Na Yin sono le seguenti:\n\nTronco:\u2003Ramo:\u2003Na Yin:\u2003Descrizione:\n\n\nJia\u2003Shen\u2003Acqua della Primavera",
+                            emoji = "✨",
                         )
                     )
-
                     val groupedItems = glossary.groupBy { it.category }
 
 
@@ -919,55 +924,62 @@ fun InteractiveLearnCard(
     modifier: Modifier = Modifier
 ){
     Card(
-        modifier = Modifier
+        modifier = modifier
             .fillMaxWidth()
             .animateContentSize()
             .clickable { onClick() },
         colors = CardDefaults.cardColors(containerColor = Color(0xFF1E1E1E)),
         shape = RoundedCornerShape(12.dp)
     ){
-        Row(
+
+        Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(16.dp),
-            verticalAlignment = Alignment.Top
+                .padding(16.dp)
         ){
-            if(item.emoji.isNotEmpty()){
-                Text(
-                text = item.emoji,
-                style = MaterialTheme.typography.headlineSmall,
-                modifier = Modifier.padding(end = 12.dp)
-                )
-            }
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                verticalAlignment = Alignment.CenterVertically
+            ){
+                if(item.emoji.isNotEmpty()){
+                    Text(
+                        text = item.emoji,
+                        style = MaterialTheme.typography.headlineSmall,
+                        modifier = Modifier.padding(end = 12.dp)
+                    )
+                }
             
 
-            Column(modifier = Modifier.weight(1f)){
-                Row(
-                    modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.SpaceBetween,
-                    verticalAlignment = Alignment.CenterVertically
-                ){
-                    Text(
-                        text = item.title,
-                        style = MaterialTheme.typography.titleMedium,
-                        color = Color.White
-                    )
+                Column(modifier = Modifier.weight(1f)){
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically
+                    ){
+                        Text(
+                            text = item.title,
+                            style = MaterialTheme.typography.titleMedium,
+                            color = Color.White
+                        )
 
-                    Text(
-                        text = if (isExpanded) "🔼" else "🔽",
-                        style = MaterialTheme.typography.labelSmall
-                    )
+                        Text(
+                            text = if (isExpanded) "🔼" else "🔽",
+                            style = MaterialTheme.typography.labelSmall
+                        )
+                    }
+
+                    if(item.subtitle.isNotEmpty()){
+                        Text(
+                            text = item.subtitle,
+                            style = MaterialTheme.typography.labelSmall,
+                            color = Color(0xFFFFCA28)
+                        )
+                    }
                 }
+            }
 
-                if(item.subtitle.isNotEmpty()){
-                    Text(
-                        text = item.subtitle,
-                        style = MaterialTheme.typography.labelSmall,
-                        color = Color(0xFFFFCA28)
-                    )
-                }
-
-                if(isExpanded){
+            if(isExpanded){
+                if(item.description.isNotEmpty()){
                     Spacer(modifier = Modifier.height(12.dp))
 
                     Text(
@@ -975,21 +987,21 @@ fun InteractiveLearnCard(
                         style = MaterialTheme.typography.bodyMedium,
                         color = Color.LightGray
                     )
+                }
 
-                    if(item.details.isNotEmpty()){
-                        Spacer(modifier = Modifier.height(12.dp))
-                        Box(
-                            modifier = Modifier
-                                .fillMaxWidth()
-                                .background(Color.Black.copy(alpha = 0.3f), RoundedCornerShape(6.dp))
-                                .padding(8.dp)
-                        ){
-                            Text(
-                                text = item.details,
-                                style = MaterialTheme.typography.bodySmall,
-                                color = Color(0xFF66BB6A)
-                            )
-                        }
+                if(item.details.isNotEmpty()){
+                    Spacer(modifier = Modifier.height(12.dp))
+                    Box(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .background(Color.Black.copy(alpha = 0.3f), RoundedCornerShape(6.dp))
+                            .padding(8.dp)
+                    ){
+                        Text(
+                            text = item.details,
+                            style = MaterialTheme.typography.bodySmall,
+                            color = Color(0xFF66BB6A)
+                        )
                     }
                 }
             }
