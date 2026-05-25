@@ -345,7 +345,8 @@ fun BaZiScreen() {
                             category = "I 10 Tronchi Celesti (Heavenly Stems)",
                             title = "Jia (甲) - Legno Yang",
                             subtitle = "L'Albero Secolare - Leader Nato",
-                            description = "Rappresenta un grande albero robusto. Le persone Jia sono idealiste, progressiste, testarde ma estremamente protettive verso gli altri. Hanno una crescita costante e non amano essere controllate. ",
+                            description = "Rappresenta un grande albero robusto. Le persone Jia sono idealiste, progressiste, testarde ma estremamente protettive" + 
+                            "verso gli altri. Hanno una crescita costante e non amano essere controllate. ",
                             details = "Elemento: Legno | Polarità: Yang | Direzione: Est",
                             emoji = "🌲"
                         ),
@@ -354,7 +355,8 @@ fun BaZiScreen() {
                             category = "I 10 Tronchi Celesti (Heavenly Stems)",
                             title = "Yi (乙) - Legno Yin",
                             subtitle = "L'Edera o l'Erba - Il Sopravvissuto",
-                            description = "Rappresenta piante flessibili, fiori o rampicanti. Le persone Yi sono diplomatiche, incredibilmente resilienti, e sanno adattarsi a qualsiasi situazione per sopravvivere. Ottimi strateghi dietro le quinte. ",
+                            description = "Rappresenta piante flessibili, fiori o rampicanti. Le persone Yi sono diplomatiche, incredibilmente resilienti," + 
+                            "e sanno adattarsi a qualsiasi situazione per sopravvivere. Ottimi strateghi dietro le quinte. ",
                             details = "Elemento: Legno | Polarità: Yin | Direzione: Est",
                             emoji = "🌸"
                         ),
@@ -362,7 +364,8 @@ fun BaZiScreen() {
                             category = "I 10 Tronchi Celesti (Heavenly Stems)",
                             title = "Wu (戊) - Terra Yang",
                             subtitle = "La Montagna o la Roccia - Il Protettore",
-                            description = "",
+                            description = "Rappresenta una montagna maestosa o una roccia imponente. Le persone Wu sono stabili, affidabili, protettive e agiscono " +
+                            "come un punto di riferimento per la comunità. Possono risultare lente al cambiamento ma sono incrollabili.",
                             details = "Elemento: Terra | Polarità: Yang | Direzione: Centro",
                             emoji = "⛰️"
                         ),
@@ -370,7 +373,8 @@ fun BaZiScreen() {
                             category = "I 10 Tronchi Celesti (Heavenly Stems)",
                             title = "Ji (己) - Terra Yin",
                             subtitle = "Il Giardino o la Terra Fertile - Il Nutritore",
-                            description = "",
+                            description = "Rappresenta il terreno fertile dei campi o il giardino coltivato. Le persone Ji sono tolleranti, creative, capaci di accudire" +
+                            "gli altri e dotate di una memoria eccezionale. Trovano la propria forza nel coltivare talenti e relazioni.",
                             details = "Elemento: Terra | Polarità: Yin | Direzione: Centro",
                             emoji = "🌱"
                         ),
@@ -378,7 +382,8 @@ fun BaZiScreen() {
                             category = "I 10 Tronchi Celesti (Heavenly Stems)",
                             title = "Ren (壬) - Acqua Yang",
                             subtitle = "L'Oceano o il Fiume - Il Visionario",
-                            description = "",
+                            description = "Rappresenta le acque dell'oceano, dei grandi fiumi o delle cascate. Le persone Ren sono dinamiche, amano la libertà, " +
+                            "possiedono un'intelligenza fluida e sono in continuo movimento. Hanno una grande influenza sul proprio ambiente.",
                             details = "Elemento: Acqua | Polarità: Yang | Direzione: Nord",
                             emoji = "🌊"
                         ),
@@ -386,7 +391,8 @@ fun BaZiScreen() {
                             category = "I 10 Tronchi Celesti (Heavenly Stems)",
                             title = "Gui (癸) - Acqua Yin",
                             subtitle = "La Rugiada o la Pioggia Leggera - L'Intuitivo",
-                            description = "",
+                            description = "Rappresenta la pioggia leggera, la rugiada mattutina o i ruscelli di montagna. Le persone Gui sono introspettive, intuitive, " + 
+                            "gentili ma capaci di infiltrarsi ovunque con costanza. Possiedono una spiccata sensibilità psicologica.",
                             details = "Elemento: Acqua | Polarità: Yin | Direzione: Nord",
                             emoji = "💧"
                         ),
@@ -394,7 +400,8 @@ fun BaZiScreen() {
                             category = "I 10 Tronchi Celesti (Heavenly Stems)",
                             title = "Bing (丙) - Fuoco Yang",
                             subtitle = "Il Sole - Il Magnanimo",
-                            description = "",
+                            description = "Rappresenta la luce e il calore del sole nel cielo. Le persone Bing sono generose, passionali, piene di entusiasmo " +
+                            "e amano illuminare la vita altrui. Hanno un forte bisogno di espressione e trasparenza.",
                             details = "Elemento: Fuoco | Polarità: Yang | Direzione: Sud",
                             emoji = "☀️"
                         ),
@@ -402,7 +409,8 @@ fun BaZiScreen() {
                             category = "I 10 Tronchi Celesti (Heavenly Stems)",
                             title = "Ding (丙) - Fuoco Yin",
                             subtitle = "La Candela o la Lanterna - Il Mentore",
-                            description = "",
+                            description = "Rappresenta la fiamma di una candela, una lanterna o un focolare. Le persone Ding sono meticolose, guidate dall'intuito, " +
+                            "profondamente stabili ma capaci di infiammarsi improvvisamente. Sono leader motivatori stabili nel tempo.",
                             details = "Elemento: Fuoco | Polarità: Yin | Direzione: Sud",
                             emoji = "🏮"
                         ),
@@ -410,7 +418,8 @@ fun BaZiScreen() {
                             category = "I 10 Tronchi Celesti (Heavenly Stems)",
                             title = "Geng (庚) - Metallo Yang",
                             subtitle = "La Spada o il Ferro Grezzo - Il Giusto",
-                            description = "",
+                            description = "Rappresenta il metallo grezzo, la spada o l'ascia d'acciaio. Le persone Geng sono governate dal senso di giustizia, "+ 
+                            "sono determinate, amano le sfide e affrontano i problemi in modo diretto. Crescono attraverso le avversità.",
                             details = "Elemento: Metallo | Polarità: Yang | Direzione: Ovest",
                             emoji = "🗡️"
                         ),
@@ -418,7 +427,8 @@ fun BaZiScreen() {
                             category = "I 10 Tronchi Celesti (Heavenly Stems)",
                             title = "Xin (辛) - Metallo Yin",
                             subtitle = "Il Gioiello o lo Spillo - L'Esteta",
-                            description = "",
+                            description = "Rappresenta l'oro lavorato, i gioielli preziosi o i metalli fini. Le persone Xin sono eleganti, sensibili ai dettagli, " +
+                            "amano risplendere e cercano la perfezione estetica. Hanno una mente acuta come uno spillo.",
                             details = "Elemento: Metallo | Polarità: Yin | Direzione: Ovest",
                             emoji = "💍"
                         ),
@@ -427,96 +437,109 @@ fun BaZiScreen() {
                             category = "I 12 Rami Terrestri (Zodiaco Cinese)",
                             title = "Zi (子) - Il Topo (The Rat)",
                             subtitle = "Acqua Yang - L'Iniziatore",
-                            description = "Il primo segno dello zodiaco. Rappresenta l'energia dell'inverno profondo e della notte. Le persone nate con questo ramo sono intuitive, astute, piene di risorse e possiedono una saggezza nascosta.",
-                            details = "Elemento: Acqua | Radice Nascosta: Gui (Acqua Yin)",
+                            description = "Il primo segno dello zodiaco. Rappresenta l'energia dell'inverno profondo e della notte." +
+                            "Le persone nate con questo ramo sono intuitive, astute, piene di risorse e possiedono una saggezza nascosta.",
+                            details = "Elemento: Acqua | Radice: Gui (Acqua Yin)",
                             emoji = "🐭",
                         ),
                         ExtendedLearnItem(
                             category = "I 12 Rami Terrestri (Zodiaco Cinese)",
                             title = "Chou (丑) - Il Bue (The Ox)",
                             subtitle = "Terra Yin - Lo Stoico",
-                            description = "",
-                            details = "Elemento: Terra | Radice Nascosta: Ji (Terra Yin)",
+                            description = "Il secondo segno dello zodiaco. Rappresenta l'energia della fine dell'inverno e " +
+                            "l'ora che precede l'alba. Le persone nate con questo ramo sono resilienti, metodiche, costanti e custodi " +
+                            "di una determinazione incrollabile.",
+                            details = "Elemento: Terra | Radice: Ji (Terra Yin)",
                             emoji = "🐮"
                         ),
                         ExtendedLearnItem(
                             category = "I 12 Rami Terrestri (Zodiaco Cinese)",
                             title = "Yin (寅) - La Tigre (The Tiger)",
                             subtitle = "Legno Yang - Il Conquistatore",
-                            description = "",
-                            details = "Elemento: Legno | Radice Nascosta: Jia (Legno Yang)",
+                            description = "Il terzo segno dello zodiaco. Rappresenta l'energia dell'inizio della primavera e del risveglio " +
+                            "mattutino. Le persone nate con questo ramo sono audaci, indipendenti, passionali e animate da un forte spirito di leadership.",
+                            details = "Elemento: Legno | Radice: Jia (Legno Yang)",
                             emoji = "🐯"
                         ),
                         ExtendedLearnItem(
                             category = "I 12 Rami Terrestri (Zodiaco Cinese)",
                             title = "Mao (卯) - Il Coniglio (The Rabbit)",
                             subtitle = "Legno Yin - Il Diplomatico",
-                            description = "",
-                            details = "Elemento: Legno | Radice Nascosta: Yi (Legno Yin)",
+                            description = "Il quarto segno dello zodiaco. Rappresenta l'energia della primavera piena e del sorgere del sole. " +
+                            "Le persone nate con questo ramo sono pacifiche, sensibili, diplomatiche e dotate di uno spiccato senso artistico ed estetico.",
+                            details = "Elemento: Legno | Radice: Yi (Legno Yin)",
                             emoji = "🐰"
                         ),
                         ExtendedLearnItem(
                             category = "I 12 Rami Terrestri (Zodiaco Cinese)",
                             title = "Chen (辰) - Il Drago (The Dragon)",
                             subtitle = "Terra Yang - Il Magnate",
-                            description = "",
-                            details = "Elemento: Terra | Radice Nascosta: Wu (Terra Yang)",
+                            description = "Il quinto segno dello zodiaco. Rappresenta l'energia della fine della primavera e della prima mattinata. " +
+                            "Le persone nate con questo ramo sono carismatiche, piene di vitalità, ambiziose e mostrano un forte magnetismo ideale.",
+                            details = "Elemento: Terra | Radice: Wu (Terra Yang)",
                             emoji = "🐲"
                         ),
                         ExtendedLearnItem(
                             category = "I 12 Rami Terrestri (Zodiaco Cinese)",
                             title = "Si (巳) - Il Serpente (The Snake)",
                             subtitle = "Fuoco Yin - Il Filosofo",
-                            description = "",
-                            details = "Elemento: Fuoco | Radice Nascosta: Ding (Fuoco Yin)",
+                            description = "Il sesto segno dello zodiaco. Rappresenta l'energia dell'inizio dell'estate e della mattinata inoltrata. " +
+                            "Le persone nate con questo ramo sono acute, riflessive, enigmatiche e dotate di una profonda intelligenza analitica.",
+                            details = "Elemento: Fuoco | Radice: Ding (Fuoco Yin)",
                             emoji = "🐍"
                         ),
                         ExtendedLearnItem(
                             category = "I 12 Rami Terrestri (Zodiaco Cinese)",
                             title = "Wu (午) - Il Cavallo (The Horse)",
                             subtitle = "Fuoco Yang - Il Pioniere",
-                            description = "",
-                            details = "Elemento: Fuoco | Radice Nascosta: Bing (Fuoco Yang)",
+                            description = "Il settimo segno dello zodiaco. Rappresenta l'energia dell'estate profonda e del mezzogiorno radioso. " +
+                            "Le persone nate con questo ramo sono solari, amano la libertà, sono espansive e costantemente proiettate verso l'azione.",
+                            details = "Elemento: Fuoco | Radice: Bing (Fuoco Yang)",
                             emoji = "🐴"
                         ),
                         ExtendedLearnItem(
                             category = "I 12 Rami Terrestri (Zodiaco Cinese)",
                             title = "Wei (未) - La Capra (The Goat)",
                             subtitle = "Terra Yin - L'Artista",
-                            description = "",
-                            details = "Elemento: Terra | Radice Nascosta: Ji (Terra Yin)",
+                            description = "L' ottavo segno dello zodiaco. Rappresenta l'energia della fine dell'estate e del primo pomeriggio. " +
+                            "Le persone nate con questo ramo sono empatiche, protettive, amano l'armonia e cercano stabilità nelle relazioni personali.",
+                            details = "Elemento: Terra | Radice: Ji (Terra Yin)",
                             emoji = "🐐"
                         ),
                         ExtendedLearnItem(
                             category = "I 12 Rami Terrestri (Zodiaco Cinese)",
                             title = "Shen (申) - La Scimmia (The Monkey)",
                             subtitle = "Metallo Yang - L'Innovatore",
-                            description = "",
-                            details = "Elemento: Metallo | Radice Nascosta: Geng (Metallo Yang)",
+                            description = "Il nono segno dello zodiaco. Rappresenta l'energia dell'inizio dell'autunno e del tardo pomeriggio. " +
+                            "Le persone nate con questo ramo sono poliedriche, inventive, ironiche e capaci di risolvere problemi complessi con rapidità.",
+                            details = "Elemento: Metallo | Radice: Geng (Metallo Yang)",
                             emoji = "🐵"
                         ),
                         ExtendedLearnItem(
                             category = "I 12 Rami Terrestri (Zodiaco Cinese)",
                             title = "You (酉) - Il Gallo (The Rooster)",
                             subtitle = "Metallo Yin - Il Perfezionista",
-                            description = "",
-                            details = "Elemento: Metallo | Radice Nascosta: Xin (Metallo Yin)",
+                            description = "Il decimo segno dello zodiaco. Rappresenta l'energia dell'autunno pieno e del tramonto. " +
+                            "Le persone nate con questo ramo sono precise, franche, organizzate e hanno un naturale talento per l'osservazione e il dettaglio.",
+                            details = "Elemento: Metallo | Radice: Xin (Metallo Yin)",
                             emoji = "🐔"
                         ),
                         ExtendedLearnItem(
                             category = "I 12 Rami Terrestri (Zodiaco Cinese)",
                             title = "Xu (戌) - Il Cane (The Dog)",
                             subtitle = "Terra Yang - Il Custode",
-                            description = "",
-                            details = "Elemento: Terra | Radice Nascosta: Wu (Terra Yang)",
+                            description = "L'undicesimo segno dello zodiaco. Rappresenta l'energia della fine dell'autunno e del crepuscolo serale. " +
+                            "Le persone nate con questo ramo sono leali, protettive, dotate di un forte senso etico e molto attente alla sicurezza dei propri cari.",
+                            details = "Elemento: Terra | Radice: Wu (Terra Yang)",
                             emoji = "🐶"
                         ),
                         ExtendedLearnItem(
                             category = "I 12 Rami Terrestri (Zodiaco Cinese)",
                             title = "Hai (亥) - Il Maiale (The Pig)",
                             subtitle = "Acqua Yin - Il Filantropo",
-                            description = "",
-                            details = "Elemento: Acqua | Radice Nascosta: Gui (Acqua Yin)",
+                            description = "Il dodicesimo segno dello zodiaco. Rappresenta l'energia dell'inizio dell'inverno e della prima serata. " +
+                            "Le persone nate con questo ramo sono generose, sincere, tolleranti e affrontano la vita con un ottimismo calmo e pacifico.",
+                            details = "Elemento: Acqua | Radice: Gui (Acqua Yin)",
                             emoji = "🐷"
                         ),
                         //Concetti Avanzati
@@ -534,7 +557,7 @@ fun BaZiScreen() {
                             title = "Le 12 Fasi di Forza del Day Master",
                             subtitle = "Dalla Nascita all'Imperatore, fino alla Tomba",
                             description = "Questo concetto misura quanto il tuo Day Master si sente forte nel Ramo Terrestre di un pilastro. Va dalla fase di Nascita (piena di entusiasmo), alla fase 'Imperatore' (massimo potere) fino alla fase 'Tomba' (energia di accumulo ed introspezione). Rivela se le tue azioni avranno un impatto immediato o avranno bisogno di tempo.",
-                            emoji = "☯︎",
+                            emoji = "☯️",
                         ),
 
                         
@@ -558,8 +581,11 @@ fun BaZiScreen() {
                         ExtendedLearnItem(
                             category = "Na Yin (Astrologia Melodica)",
                             title = "Na Yin: Le Combinazioni Tronco/Ramo",
-                            subtitle = "Il nome del NaYin",
-                            description = "Combinando un Tronco definito con un Ramo si possono ottenere in totale 30 combinazioni diverse, ognuna con un nome unico che ne riassume la profondità psicologica, caratteriale e le qualità. Le 30 combinazioni del Na Yin sono le seguenti:\n\nTronco:\u2003Ramo:\u2003Na Yin:\u2003Descrizione:\n\n\nJia\u2003Shen\u2003Acqua della Primavera",
+                            subtitle = "Il nome dei NaYin",
+                            description = "Combinando un Tronco definito con un Ramo si possono ottenere in totale 30 combinazioni diverse.\n\n" +
+                                        "Tronco\tRamo\tNa Yin (Nome)\n" +
+                                        "Jia (Legno Yang)\tShen (Scimmia)\tAcqua della Primavera\n",
+                            details = "Il calcolo si basa sul ciclo sessagesimale.",
                             emoji = "✨",
                         )
                     )
@@ -982,10 +1008,24 @@ fun InteractiveLearnCard(
                 if(item.description.isNotEmpty()){
                     Spacer(modifier = Modifier.height(12.dp))
 
+                    val tabellaStops = ParagraphStyle(
+                        tabStops = listOf(
+                            TabStop(110.sp),
+                            TabStop(210.sp)
+                        )
+                    )
+
+                    val testoFormattato = buildAnnotatedString{
+                        withStyle(style = tabellaStops){
+                            append(item.description)
+                        }
+                    }
+
                     Text(
-                        text = item.description,
+                        text = testoFormattato,
                         style = MaterialTheme.typography.bodyMedium,
-                        color = Color.LightGray
+                        color = Color.LightGray,
+                        modifier = Modifier.fillMaxWidth()
                     )
                 }
 
