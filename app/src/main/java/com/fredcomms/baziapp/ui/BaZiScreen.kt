@@ -1404,6 +1404,40 @@ fun BaZiScreen() {
                             "dell'individuo. ",
                             emoji = "✨"
                         ),
+
+                        ExtendedLearnItem(
+                            category = "Stelle del Fascino e del Romanticismo",
+                            title = "Nuvole Rosse (Hong Yan)",
+                            subtitle = "La stella del magnetismo e delle relazioni romantiche",
+                            description = "Rappresenta un fascino innato, empatia profonda e un forte potere di attrazione" +
+                            "verso gli altri. A differenza di altre stelle romantiche, questa stella indica una bellezza emotiva " +
+                            "e un magnetismo che punta a relazioni intense, sebbene a volte possa portare ad idealizzare troppo " +
+                            "il partner.",
+                            details = "Effetti: Forte carisma personale, sensualità e predisposizione alle arti espressive.",
+                            emoji = "🌹"
+                        ),
+                        ExtendedLearnItem(
+                            category = "Stelle di Ricchezza e Carriera",
+                            title = "Carro Dorato (Jin Yu)",
+                            subtitle = "La stella della prosperità e dello status sociale",
+                            description = "Tradizionalmente legata ai viaggi dei nobili su carrozze dorate, nel BaZi moderno indica il " +
+                            "supporto materiale, l'accesso a opportunità finanziarie di alto livello e uno stile di vita confortevole. " +
+                            "Spesso indica che la persona riceverà aiuti importanti nella carriera o nel matrimonio.",
+                            details = "Effetti: Attira mentori facoltosi, successo finanziario steso nel tempo e stabilità materiale.",
+                            emoji = "👑"
+                        ),
+                        ExtendedLearnItem(
+                            category = "Stelle di Protezione e Nobiltà",
+                            title = "Medico Celeste (Tian Yi)",
+                            subtitle = "La stella della guarigione e dell'intuito medico",
+                            description = "Tradizionalmente legata ai viaggi dei nobili su carrozze dorate, nel BaZi moderno indica il " +
+                            "supporto materiale, l'accesso a opportunità finanziarie di alto livello e uno stile di vita confortevole. " +
+                            "Spesso indica che la persona riceverà aiuti importanti nella carriera o nel matrimonio.",
+                            details = "Effetti: Capacità di autoguarigione, talento nelle professioni di cura ed empatia terapeutica.",
+                            emoji = "🏥"
+                        ),
+                        
+
                     )
                     val groupedItems = glossary.groupBy { it.category }
 
