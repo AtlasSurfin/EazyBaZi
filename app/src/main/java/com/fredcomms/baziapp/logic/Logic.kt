@@ -7,6 +7,13 @@ import android.location.Geocoder
 import android.location.Address
 import android.content.Context
 import java.util.Locale
+import java.util.TimeZone
+import java.time.Month
+import java.time.LocalDateTime
+import java.time.ZoneId
+import java.time.temporal.ChronoField
+import java.time.format.TextStyle
+import java.time.format.DateTimeFormatter
 import com.google.android.gms.location.LocationServices
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
@@ -47,20 +54,21 @@ enum class Branch(
     val pinyin: String,
     override val element: Element,
     override val polarity: Polarity,
-    val branchName: String
+    val branchName: String,
+    val timeRange: String
 ) : BaZiComponent {
-    ZI("子", "Zi", Element.WATER, Polarity.YANG, "Rat"),
-    CHOU("丑", "Chou", Element.EARTH, Polarity.YIN, "Ox"),
-    YIN("寅", "Yin", Element.WOOD, Polarity.YANG, "Tiger"),
-    MAO("卯", "Mao", Element.WOOD, Polarity.YIN, "Rabbit"),
-    CHEN("辰", "Chen", Element.EARTH, Polarity.YANG, "Dragon"),
-    SI("巳", "Si", Element.FIRE, Polarity.YIN, "Snake"),
-    WU("午", "Wu", Element.FIRE, Polarity.YANG, "Horse"),
-    WEI("未", "Wei", Element.EARTH, Polarity.YIN, "Goat"),
-    SHEN("申", "Shen", Element.METAL, Polarity.YANG, "Monkey"),
-    YOU("酉", "You", Element.METAL, Polarity.YIN, "Rooster"),
-    XU("戌", "Xu", Element.EARTH, Polarity.YANG, "Dog"),
-    HAI("亥", "Hai", Element.WATER, Polarity.YIN, "Pig");
+    ZI("子", "Zi", Element.WATER, Polarity.YANG, "Rat", "23:00 - 01:00"),
+    CHOU("丑", "Chou", Element.EARTH, Polarity.YIN, "Ox", "01:00 - 03:00"),
+    YIN("寅", "Yin", Element.WOOD, Polarity.YANG, "Tiger", "03:00 - 05:00"),
+    MAO("卯", "Mao", Element.WOOD, Polarity.YIN, "Rabbit", "05:00 - 07:00"),
+    CHEN("辰", "Chen", Element.EARTH, Polarity.YANG, "Dragon", "07:00 - 09:00"),
+    SI("巳", "Si", Element.FIRE, Polarity.YIN, "Snake", "09:00 - 11:00"),
+    WU("午", "Wu", Element.FIRE, Polarity.YANG, "Horse", "11:00 - 13:00"),
+    WEI("未", "Wei", Element.EARTH, Polarity.YIN, "Goat", "13:00 - 15:00"),
+    SHEN("申", "Shen", Element.METAL, Polarity.YANG, "Monkey", "15:00 - 17:00"),
+    YOU("酉", "You", Element.METAL, Polarity.YIN, "Rooster", "17:00 - 19:00"),
+    XU("戌", "Xu", Element.EARTH, Polarity.YANG, "Dog", "19:00 - 21:00"),
+    HAI("亥", "Hai", Element.WATER, Polarity.YIN, "Pig", "21:00 - 23:00");
 
     companion object {
         fun fromChinese(char: String): Branch? =
@@ -121,19 +129,6 @@ object CityLoader{
 fun getPillar(stem: Stem?, branch: Branch?): Pillar {
     return Pillar(stem, branch)}
 
-fun getTrueSolarTime(hour: Int, minute: Int, longitude: Double): Pair<Int, Int> {
-    val timezoneMeridian = 15.0
-    val diffMinutes = ((longitude - timezoneMeridian) * 4).toInt()
-
-    var totalMinutes = hour * 60 + minute + diffMinutes
-
-    //Gestione overflow/underflow delle 24 ore
-    if(totalMinutes < 0) totalMinutes += 1440
-    if(totalMinutes >= 1440 ) totalMinutes -= 1440
-
-    return Pair(totalMinutes / 60, totalMinutes % 60)
-}
-
 fun getTenGods(dayMaster: Stem, target: Stem): String{
     val isSamePolarity = dayMaster.polarity == target.polarity
 
@@ -181,9 +176,29 @@ fun findStem(name: String): Stem? {
 fun getFullBaZi(year: Int, month: Int, day: Int, hour: Int, minute: Int, longitude: Double): FullBaZiChart {
     return try {
 
-        val (solarH, solarM) = getTrueSolarTime(hour, minute, longitude)
+        val inputDateTime = LocalDateTime.of(year, month, day, hour, minute)
 
-        val solar = Solar.fromYmdHms(year, month, day, solarH, solarM, 0)
+        val tz = TimeZone.getDefault()
+        val rawOffsetMinutes = tz.getOffset(System.currentTimeMillis()) / 1000 / 60
+        val timezoneOffsetHours = rawOffsetMinutes / 60.0
+
+        val longitudeCorrectionMinutes = (longitude * 4) - (timezoneOffsetHours * 60)
+
+        val solarDateTime = if (longitudeCorrectionMinutes >= 0){
+            inputDateTime.plusMinutes(longitudeCorrectionMinutes.toLong())
+        }else{
+            inputDateTime.minusMinutes(Math.abs(longitudeCorrectionMinutes).toLong())
+        }
+
+        val solar = Solar.fromYmdHms(
+            solarDateTime.year,
+            solarDateTime.monthValue,
+            solarDateTime.dayOfMonth,
+            solarDateTime.hour,
+            solarDateTime.minute,
+            0
+        )
+
         val baZi = solar.lunar.baZi
 
         fun extractPillar(baziPair: String): Pillar {
@@ -390,6 +405,16 @@ fun calculateRoleScores(chart: FullBaZiChart): RoleScores? {
     )
 }
 
+fun getMonthNum(monthName: String): Int{
+    return try {
+        val formatter = DateTimeFormatter.ofPattern("MMMM", Locale.getDefault())
+
+        val temporalAccessor = formatter.parse(monthName.trim().replaceFirstChar { it.uppercase() })
+        temporalAccessor.get(ChronoField.MONTH_OF_YEAR)
+    }catch(e: Exception){
+            1 //if user input is invalid, fall back to default value (1 for Jan)
+    }
+}
 
 fun formatToLowercase(text: String): String {
     return text.lowercase().replaceFirstChar {it.uppercase()}
