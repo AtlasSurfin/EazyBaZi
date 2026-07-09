@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"EazyBaZi"</string>
+
+    <!-- Categoria Stelle-->
+    <string name="cat_protect">"Stelle di Protezione e Nobiltà"</string>
+    <string name="cat_career">"Stelle di Ricchezza e Carriera"</string>
+    <string name="cat_love">"Stelle di Fascino e Romanticismo"</string>
+
+    <!-- Nobile Celeste -->
+    <string name="star_noble_title">"Nobile Celeste (Tian Yi Gui Ren)"</string>
+    <string name="star_noble_subtitle">"Il Nobile Celeste - La Stella del Salvatore"</string>
+    <string name="star_noble_desc">"E' considerata la stella protettiva più potente del BaZi. Indica che nei momenti di massima
+    difficoltà apparirà sempre qualcuno (un mentore, un amico o uno sconosciuto) a tendere una mano."</string>
+    <string name="star_noble_details">"Effetti: Protezione dai pericoli, attrazione di mentori influenti e successo agevolato."</string>
+
+    <!-- Medico Celeste -->
+    <string name="star_doc_title">"Medico Celeste (Tian Yi)"</string>
+    <string name="star_doc_subtitle">"Il Medico Celeste - La Stella del Guaritore"</string>
+    <string name="star_doc_desc"></string>
+    <string name="star_doc_details"></string>
+
+    <!-- Carro Dorato-->
+    <string name="star_car_title">"Carro Dorato (Jin Yu)"</string>
+    <string name="star_car_subtitle">"Il Carro Dorato - La Stella della Prosperità"</string>
+    <string name="star_car_desc">"Tradizionalmente legata ai viaggi dei nobili su carrozze dorate, nel BaZi moderno indica il supporto
+    materiale, l'accesso ad opportunità finanziare di alto livello e uno stile di vita confortevole. Spesso indica che la persona riceverà
+    aiuti importanti nella carriera o nel matrimonio."</string>
+    <string name="star_car_details">"Effetti: Attira mentori facoltosi, successo finanziario steso nel tempo e stabilità materiale."</string>
+
+    <!-- Nuvole Rosse -->
+    <string name="star_rclouds_title">"Nuvole Rosse (Hong Yan)"</string>
+    <string name="star_rclouds_subtitle">"Le Nuvole Rosse - La Stella del Magnetismo"</string>
+    <string name="star_rclouds_desc">"Rappresenta un fascino innato, empatia profonda e un forte potere d'attrazione verso gli altri.
+    A differenza di altre stelle romantiche, questa stella indica una bellezza emotiva ed un magnetismo che punta a relazioni intense,
+    sebbene a volte possa portare ad idealizzare troppo il partner."</string>
+    <string name="star_rclouds_details">"Effetti: Forte carisma personale, sensualità e predisposizione alle arti espressive."</string>
+</resources>

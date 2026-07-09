@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EazyBaZi</string>
+
+    <string name="cat_nayin">"Na Yin (Astrologia Melodica)"</string>
+    <string name="cat_wood">"Na Yin del Legno"</string>
+    <string name="cat_earth">"Na Yin della Terra"</string>
+    <string name="cat_water">"Na Yin dell'Acqua"</string>
+    <string name="cat_fire">Na Yin del Fuoco</string>
+    <string name="cat_metal">Na Yin del Metallo</string>
+
+    <!-- Na Yin Intro -->
+    <string name="intro_title">"Na Yin: Il Suono degli Elementi"</string>
+    <string name="intro_subtitle">"I 60 Cicli d'oro"</string>
+    <string name="intro_desc">
+    "Mentre il BaZi classico analizza gli elementi singoli, il Na Yin combina il Tronco Celeste ed \n"
+    "il Ramo Terrestre per creare un 'Elemento Melodico' unico (Es: 'Fuoco della Lampada', 'Legno del Melograno').\n"
+    "Definisce l'atmosfera psicologica profonda e l'aura spirituale della persona.\n"
+    </string>
+
+    <!-- Na Yin Math -->
+    <string name="math_title">"Na Yin: La Matematica dei 5 Elementi"</string>
+    <string name="math_subtitle">"Il Calcolo dell'Elemento"</string>
+    <string name="math_desc">
+    "Come si calcola con esattezza il Na Yin di un Pilastro ? Il calcolo si basa sull'antica numerologia cinese, in particolare\n"
+    "sull'antico testo 'Suen Tzu Suan Ching' e sul ciclo sessagesimale cinese.\n"
+    "Si assegnano dei valori numerici ad ogni Tronco e ad ogni Ramo. Invece i Rami vengono raggruppati in gruppi di 4, dopodichè\n"
+    "si assegna ad ogni gruppo un valore numerico. Infine si sommano i valori di Tronco e Ramo, sottraendo 5 se la somma è maggiore\n"
+    "o uguale a 5, fino ad ottenere un valore da 0 a 4. Il numero finale indica l'elemento del Na Yin.\n\n"
+    "In figura: \n"
+    "Tronchi Celesti:\n\n"
+    "Legno: 1\n Fuoco: 2\nTerra: 3\nMetallo: 4\nAcqua: 5"
+    "Rami Terrestri:\n"
+    "Topo\Bue\Cavallo\Capra: 1\nTigre\Coniglio\Scimmia\Gallo: 2\nDrago\Serpente\Cane\Maiale: 3\n\n"
+    "Elemento Na Yin:\n"
+    "1 = Legno\n2 = Metallo \n3 = Acqua\n4 = Fuoco\n0 = Terra\n\n"
+    "Es: Topo + Ren (Acqua Yang) = 1 + 5 = 6 (- 5) = 1 cioè Legno, in questo caso si tratta di 'Legno di Gelso'\n"
+    </string>
+
+    <!-- Na Yin Metallo -->
+    <string name="ny_m1_title">"Oro del Mare (Hai Zhong Jin)"</string>
+    <string name="ny_m1_subtitle">"Il gioiello in fondo al mare"</string>
+    <string name="ny_m1_desc">
+    "Generato dai Pilastri Jia Zi (Legno Yang su Topo) e Yi Chou (Legno Yin su Bue).\n" 
+    "Rappresenta una natura profonda, flessibile e purificante come le profondità oceaniche. \n"  
+    "Le persone con questo Na Yin possiedono un carattere resiliente, capace di adattarsi alle tempeste della vita e \n" 
+    "di custodire una saggezza interiore, come un tesoro sommerso.\n"
+    </string>
+    <string name="ny_m1_details">"Jia + Zi / Yi + Chou = Oro del Mare"</string>
+
+    <string name="ny_m2_title">"Acciaio della Spada (Jian Feng Jin)"</string>
+    <string name="ny_m2_subtitle">La lama affilata"</string>
+    <string name="ny_m2_desc">
+    "Generato dai Pilastri Ren Shen (Acqua Yang su Scimmia) e Gui You (Acqua Yin su Gallo).\n" 
+    "Rappresenta una natura affilata, determinata e purissima, temprata per superare ogni ostacolo. \n"  
+    "Le persone con questo Na Yin possiedono un carattere risoluto e un forte senso di giustizia, capace di agire con \n" 
+    "estrema lucidità nei momenti di crisi e di tagliare i rami secchi per favorire l'evoluzione.\n"
+    </string>
+    <string name="ny_m2_details">"Ren + Shen / Gui + You = Acciaio della Spada"</string>
+
+    <string name="ny_m3_title">"Oro della Cera Bianca (Bai La Jin)"</string>
+    <string name="ny_m3_subtitle">"Il metallo puro e malleabile"</string>
+    <string name="ny_m3_desc">
+    "Generato dai Pilastri Geng Chen (Metallo Yang su Drago) e Xin Si (Metallo Yin su Serpente). \n"
+    "Rappresenta una natura pura, malleabile e in costante divenire, come l'oro nobile ancora liquido nel suo stampo. \n"
+    "Le persone con questo Na Yin possiedono un carattere idealista, sensibile e trasparente. Hanno talenti innati e una mente \n"
+    "brillante che necessitano però di disciplina, focus e delle giuste esperienze per essere pienamente forgiati.\n"
+    </string>
+    <string name="ny_m3_details">"Geng + Chen / Xin + Si = Oro della Cera Bianca"</string>
+
+    <string name="ny_m4_title">"Oro nella Sabbia (Sha Zhong Jin)"</string>
+    <string name="ny_m4_subtitle">"Nascosto nella terra"</string>
+    <string name="ny_m4_desc">
+    "Generato dai Pilastri Jia Wu (Legno Yang su Cavallo) e Yi Wei (Legno Yin su Capra). \n"
+    "Rappresenta una natura introspettiva, preziosa e nascosta, come le pagliuzze d'oro celate tra i granelli \n"
+    "di sabbia. Le persone con questo Na Yin possiedono un carattere riservato, umile e profondo. \n"
+    "Custodiscono un immenso valore interiore e talenti rari che richiedono tempo, isolamento e le giuste opportunità \n"
+    "per essere scoperti e valorizzati.\n"
+    </string>
+    <string name="ny_m4_details">"Jia + Wu / Yi + Wei = Oro nella Sabbia"</string>
+
+    <string name="ny_m5_title">"Oro del Gioiello (Jin Bo Jin)"</string>
+    <string name="ny_m5_subtitle">"La lamina preziosa"</string>
+    <string name="ny_m5_desc">
+    "Generato dai Pilastri Ren Yin (Acqua Yang su Tigre) e Gui Mao (Acqua Yin su Coniglio). \n"
+    "Rappresenta una natura raffinata, splendente e ornamentale, come un prezioso gioiello nato per date luce, fascino \n"
+    "e prestigio. Le persone con questo Na Yin possiedono un carattere carismatico, elegante e attento ai dettagli. \n"
+    "Hanno un talento naturale nel valorizzare chi sta intorno a loro, nel portare armonia estetica e nello splendere nei contesti sociali.\n"
+    </string>
+    <string name="ny_m5_details">"Ren + Yin / Gui + Mao = Oro del Gioiello"</string>
+
+    <string name="ny_m6_title">"Oro del Fermaglio Prezioso (Chai Chuan Jin)"</string>
+    <string name="ny_m6_subtitle">"Il gioiello raffinato ed elegante"</string>
+    <string name="ny_m6_desc">
+    "Generato dai Pilastri Geng Xu (Acqua Yang su Cane) e Xin Hai (Acqua Yin su Maiale). \n"
+    "Rappresenta una natura aggrazziata, preziosa e finimente rifinta, come un fermaglio d'oro nato per esaltare \n"
+    "la bellezza e lo status. Le persone con questo Na Yin possiedono un carattere magnetico, sensibile ed estetico. \n"
+    "Si distinguono per l'eleganza, il profondo senso della dignità e la capacità innata di portare armonia, stile e valore \n"
+    "nei loro legami e nel proprio ambiente.\n"
+    </string>
+    <string name="ny_m6_details">"Geng + Xu / Xin + Hai"</string>
+
+    <!-- Na Yin Acqua -->
+
+    <string name="ny_w1_title">"Acqua del Torrente (Jian Xia Shui)"</string>
+    <string name="ny_w1_subtitle">"L'acqua del ruscello di montagna"</string>
+    <string name="ny_w1_desc">
+    "Generato dai Pilastri Bing Zi (Fuoco Yang su Topo) e Ding Chou (Fuoco Yin su Bue). \n"
+    "Rappresenta una natura limpida, intuitiva e dinamica, come un torrente di montagna che scorre con determinazione tra le rocce. \n" 
+    "Le persone con questo Na Yin possiedono un carattere calmo ma risoluto, guidato da una profonda onestà e chiarezza mentale. \n"
+    "Hanno una spiccata capacità di fluire oltre gli ostacoli senza mai perdere la propria purezza e i propri valori originari.\n"
+    </string>
+    <string name="ny_w1_details">"Bing + Zi / Ding + Chou = Acqua del Torrente"</string>
+
+    <string name="ny_w2_title">"Acqua di Sorgente (Quan Zhong Shui)"</string>
+    <string name="ny_w2_subtitle">"L'acqua più pura"</string>
+    <string name="ny_w2_desc">
+    "Generato dai Pilastri Jia Shen (Legno Yang su Scimmia) e Yi You (Legno Yin su Gallo). \n"
+    "Rappresenta una natura generosa, limpida e inesauribile, come una fonte pura che sgorga per offrire nutrimento e volontà. \n"
+    "Le persone con questo Na Yin possiedono un carattere altruista, aperto e ricco di risorse. Si distinguono per la spiccata intelligenza. \n"
+    "la prontezza nel condividere le proprie idee e il talento naturale nel rigenerare gli ambienti in cui operano.\n"
+    </string>
+    <string name="ny_w2_details">"Jia + Shen / Yi + You = Spring Water"</string>
+
+    <string name="ny_w3_title">"Acqua del Lungo Fiume (Chang Liu Shui)"</string>
+    <string name="ny_w3_subtitle">"Il fiume che scorre verso l'oceano"</string>
+    <string name="ny_w3_desc">
+    "Generato dai Pilastri Ren Chen (Acqua Yang su Drago) e Gui Si (Acqua Yin su Serpente). \n"
+    "Rappresenta una natura vasta, inarrestabile e lungimirante, come un grande fiume che scorre verso l'oceano senza mai fermarsi. \n"
+    "Le persone con questo Na Yin possiedono un carattere tenace, ambizioso e dinamico. Guardano sempre al futuro con grande ampiezza di vedute, \n"
+    "possiedono una pazienza strategica e sanno guidare progetti a lungo termine verso il successo.\n"
+    </string>
+    <string name="ny_w3_details">"Ren + Chen / Gui + Si = Acqua del Lungo Fiume"</string>
+
+    <string name="ny_w4_title">"Acqua del Fiume Celeste (Tian He Shui)"</string>
+    <string name="ny_w4_subtitle">"La Via Lattea"</string>
+    <string name="ny_w4_desc">
+    "Generato dai Pilastri Bing Wu (Fuoco Yang su Cavallo) e Ding Wei (Fuoco Yin su Capra). \n"
+    "Rappresenta una natura spirituale, elevata e rigenerante, come la pioggia celeste che scende dall'alto \n"
+    "per nutrire la Terra. Le persone con questo Na Yin possiedono un carattere idealista, nobile e profondamente empatico. \n"
+    "Sono guidate da una grande visione umanitaria, amano elevare lo spirito altrui e portano sollievo e ispirazione ovunque si trovino. \n"
+    </string>
+    <string name="ny_w4_details">"Bing + Wu / Ding + Wei = Acqua del Fiume Celeste"</string>
+
+    <string name="ny_w5_title">"Acqua del Grande Torrente (Da Xi Shui)"</string>
+    <string name="ny_w5_subtitle">"Il grande torrente di montagna"</string>
+    <string name="ny_w5_desc">
+    "Generato dai Pilastri Jia Yin (Legno Yang su Tigre) e Yi Mao (Legno Yin su Coniglio). \n"
+    "Rappresenta una natura impetuosa, travolgente e vitale, come un grande torrente di valle che scende con forza ed energia. \n"
+    "Le persone con questo Na Yin possiedono un carattere appassionato, espressivo e carismatico. Hanno una leadership naturale, \n"
+    "comunicano con grande impatto e sanno muovere e motivare le masse verso un obiettivo comune.\n"
+    </string>
+    <string name="ny_w5_details">"Jia + Yin / Yi + Mao = Acqua del Grande Torrente"</string>
+
+    <string name="ny_w6_title">"Acqua del Grande Oceano (Da Hai Shui)"</string>
+    <string name="ny_w6_subtitle">"L'immenso Oceano"</string>
+    <string name="ny_w6_desc">
+    "Generato dai Pilastri Ren Xu (Acqua Yang su Cane) e Gui Hai (Acqua Yin su Maiale). \n"
+    "Rappresenta una natura immensa, profonda e omnicomprensiva, come un grande oceano che accoglie e custodisce ogni cosa. \n"
+    "Le persone con questo Na Yin possiedono un carattere magnetico, saggio e tollerante. Hanno una visione globale della vita, \n"
+    "una grandissima resilienza emotiva e una forza interiore capace di dominare le tempeste più grandi.\n"
+    </string>
+    <string name="ny_w6_details">"Ren + Xu / Gui + Hai = Acqua del Grande Oceano"</string>
+    
+    <!-- Na Yin Legno -->
+    <!-- Na Yin Fuoco -->
+    <!-- Na Yin Terra -->
+
+
+</resources>

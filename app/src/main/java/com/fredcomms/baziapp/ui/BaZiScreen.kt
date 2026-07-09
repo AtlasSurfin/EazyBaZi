@@ -1,5 +1,6 @@
 package com.fredcomms.baziapp.ui
 
+import com.fredcomms.baziapp.R
 import com.fredcomms.baziapp.logic.*
 import java.util.Calendar
 import androidx.compose.foundation.layout.*
@@ -36,6 +37,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.*
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -1406,14 +1408,11 @@ fun BaZiScreen() {
                         ),
 
                         ExtendedLearnItem(
-                            category = "Stelle del Fascino e del Romanticismo",
-                            title = "Nuvole Rosse (Hong Yan)",
-                            subtitle = "La stella del magnetismo e delle relazioni romantiche",
-                            description = "Rappresenta un fascino innato, empatia profonda e un forte potere di attrazione" +
-                            "verso gli altri. A differenza di altre stelle romantiche, questa stella indica una bellezza emotiva " +
-                            "e un magnetismo che punta a relazioni intense, sebbene a volte possa portare ad idealizzare troppo " +
-                            "il partner.",
-                            details = "Effetti: Forte carisma personale, sensualità e predisposizione alle arti espressive.",
+                            category = stringResource(R.string.cat_protect),
+                            title = stringResource(R.string.star_rclouds_title),
+                            subtitle = stringResource(R.string.star_rclouds_subtitle),
+                            description = stringResource(R.string.star_rclouds_desc),
+                            details = stringResource(R.string.star_rclouds_effects),
                             emoji = "🌹"
                         ),
                         ExtendedLearnItem(

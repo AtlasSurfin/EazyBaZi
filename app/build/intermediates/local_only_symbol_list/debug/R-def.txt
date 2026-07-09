@@ -1,2 +1,22 @@
 R_DEF: Internal format may change without notice
 local
+string app_name
+string cat_career
+string cat_love
+string cat_protect
+string star_car_desc
+string star_car_effects
+string star_car_subtitle
+string star_car_title
+string star_doc_desc
+string star_doc_effects
+string star_doc_subtitle
+string star_doc_title
+string star_noble_desc
+string star_noble_effects
+string star_noble_subtitle
+string star_noble_title
+string star_rclouds_desc
+string star_rclouds_effects
+string star_rclouds_subtitle
+string star_rclouds_title

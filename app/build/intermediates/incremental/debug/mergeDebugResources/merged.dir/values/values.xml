@@ -106,6 +106,7 @@
     <integer name="google_play_services_version">12451000</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <string name="androidx_startup" translatable="false">androidx.startup</string>
+    <string name="app_name">EazyBaZi</string>
     <string name="bottom_sheet_collapse_description">Collapse bottom sheet</string>
     <string name="bottom_sheet_dismiss_description">Dismiss bottom sheet</string>
     <string name="bottom_sheet_drag_handle_description">Drag handle</string>
@@ -117,6 +118,9 @@
     <string name="call_notification_incoming_text">Incoming call</string>
     <string name="call_notification_ongoing_text">Ongoing call</string>
     <string name="call_notification_screening_text">Screening an incoming call</string>
+    <string name="cat_career">Stelle di Ricchezza e Carriera</string>
+    <string name="cat_love">Stelle di Fascino e Romanticismo</string>
+    <string name="cat_protect">Stelle di Protezione e Nobiltà</string>
     <string name="close_drawer">"Close navigation menu"</string>
     <string name="close_sheet">"Close sheet"</string>
     <string name="collapsed">Collapsed</string>
@@ -190,6 +194,27 @@
     <string name="search_bar_search">Search</string>
     <string name="selected">Selected</string>
     <string name="snackbar_dismiss">Dismiss</string>
+    <string name="star_car_desc">"Tradizionalmente legata ai viaggi dei nobili su carrozze dorate, nel BaZi moderno indica il supporto
+    materiale, l'accesso ad opportunità finanziare di alto livello e uno stile di vita confortevole. Spesso indica che la persona riceverà
+    aiuti importanti nella carriera o nel matrimonio."</string>
+    <string name="star_car_effects">Effetti: Attira mentori facoltosi, successo finanziario steso nel tempo e stabilità materiale.</string>
+    <string name="star_car_subtitle">Il Carro Dorato - La Stella della Prosperità</string>
+    <string name="star_car_title">Carro Dorato (Jin Yu)</string>
+    <string name="star_doc_desc"/>
+    <string name="star_doc_effects"/>
+    <string name="star_doc_subtitle">Il Medico Celeste - La Stella del Guaritore</string>
+    <string name="star_doc_title">Medico Celeste (Tian Yi)</string>
+    <string name="star_noble_desc">"E' considerata la stella protettiva più potente del BaZi. Indica che nei momenti di massima
+    difficoltà apparirà sempre qualcuno (un mentore, un amico o uno sconosciuto) a tendere una mano."</string>
+    <string name="star_noble_effects">Effetti: Protezione dai pericoli, attrazione di mentori influenti e successo agevolato.</string>
+    <string name="star_noble_subtitle">Il Nobile Celeste - La Stella del Salvatore</string>
+    <string name="star_noble_title">Nobile Celeste (Tian Yi Gui Ren)</string>
+    <string name="star_rclouds_desc">"Rappresenta un fascino innato, empatia profonda e un forte potere d'attrazione verso gli altri.
+    A differenza di altre stelle romantiche, questa stella indica una bellezza emotiva ed un magnetismo che punta a relazioni intense,
+    sebbene a volte possa portare ad idealizzare troppo il partner."</string>
+    <string name="star_rclouds_effects">Effetti: Forte carisma personale, sensualità e predisposizione alle arti espressive.</string>
+    <string name="star_rclouds_subtitle">Le Nuvole Rosse - La Stella del Magnetismo</string>
+    <string name="star_rclouds_title">Nuvole Rosse (Hong Yan)</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="suggestions_available">Suggestions below</string>
     <string name="switch_role">Switch</string>
