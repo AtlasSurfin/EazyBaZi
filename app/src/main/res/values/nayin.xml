@@ -3,11 +3,11 @@
     <string name="app_name">EazyBaZi</string>
 
     <string name="cat_nayin">"Na Yin (Astrologia Melodica)"</string>
-    <string name="cat_wood">"Na Yin del Legno"</string>
-    <string name="cat_earth">"Na Yin della Terra"</string>
-    <string name="cat_water">"Na Yin dell'Acqua"</string>
-    <string name="cat_fire">Na Yin del Fuoco</string>
-    <string name="cat_metal">Na Yin del Metallo</string>
+    <string name="cat_ny_wood">"Na Yin del Legno"</string>
+    <string name="cat_ny_earth">"Na Yin della Terra"</string>
+    <string name="cat_ny_water">"Na Yin dell'Acqua"</string>
+    <string name="cat_ny_fire">Na Yin del Fuoco</string>
+    <string name="cat_ny_metal">Na Yin del Metallo</string>
 
     <!-- Na Yin Intro -->
     <string name="intro_title">"Na Yin: Il Suono degli Elementi"</string>
@@ -163,8 +163,188 @@
     <string name="ny_w6_details">"Ren + Xu / Gui + Hai = Acqua del Grande Oceano"</string>
     
     <!-- Na Yin Legno -->
-    <!-- Na Yin Fuoco -->
-    <!-- Na Yin Terra -->
 
+    <string name="ny_wd1_title">"Legno della Grande Foresta (Da Lin Mu)"</string>
+    <string name="ny_wd1_subtitle">"Il cuore della foresta millenaria"</string>
+    <string name="ny_wd1_desc">
+    "Generato dai Pilastri Wu Chen (Terra Yang su Drago) e Ji Si (Terra Yin su Serpente).\n"
+    "Rappresenta una natura solida, protettiva e rigogliosa, come una grande foresta che offre rifugio, stabilità e vita.\n"
+    "Le persone con questo Na Yin possiedono un carattere generoso, affidabile e orientato alla comunità. Si distinguono per\n"
+    "lo spirito di cooperazione, la resilienza di fronte alle avversità e il talento naturale nel sostenere e far crescere gli altri.\n"
+    </string>
+    <string name="ny_wd1_details">"Wu + Chen / Ji + Si = Legno della Grande Foresta"</string>
+
+    <string name="ny_wd2_title">"Legno del Salice Piangente (Yang Liu Mu)"</string>
+    <string name="ny_wd2_subtitle">"Si piega ma non si spezza"</string>
+    <string name="ny_wd2_desc">
+    "Generato dai Pilastri Ren Wu (Acqua Yang su Cavallo) e Gui Wei (Acqua Yin su Capra).\n"
+    "Rappresenta una natura flessibile, elegante e profondamente empatica, come un salice piangente che asseconda il vento\n"
+    "senza mai spezzarsi. Le persone con questo Na Yin possiedono un carattere dolce, diplomatico e intuitivo. Si distinguono per\n"
+    "l'eccezionale capacità di adattamento, la sensibilità emotiva e il talento nel riportare armonia e comprensione nei conflitti.\n"
+    </string>
+    <string name="ny_wd2_details">"Ren + Wu / Gui + Wei = Legno del Salice Piangente</string>
+
+    <string name="ny_wd3_title">"Legno di Pino e Cipresso (Song Bai Mu)"</string>
+    <string name="ny_wd3_subtitle">"Sempreverdi anche nel cuore dell'inverno"</string>
+    <string name="ny_wd3_desc">
+    "Generato dai Pilastri Geng Yin (Metallo Yang su Tigre) e Xin Mao (Metallo Yin su Coniglio). \n"
+    "Rappresenta una natura fiera, integra e profondamente resiliente, come il pino ed il cipresso che sfidano il gelo invernale. \n"
+    "Le persone con questo Na Yin possiedono un carattere forte, leale e di sani principi. Si distinguono per l'incrollabile tenacia, \n"
+    "la dignità personale e la capacità di rimanere un punto di riferimento saldo anche nei momenti più difficili.\n"
+    </string>
+    <string name="ny_wd3_details">"Geng + Yin / Xin + Mao = Legno di Pino e Cipresso"</string>
+
+    <string name="ny_wd4_title">"Legno della Pianura (Ping Di Mu)"</string>
+    <string name="ny_wd4_subtitle">"Tranquillo, rigoglioso e sicuro"</string>
+    <string name="ny_wd4_desc">
+    "Generato dai Pilastri Wu Xu (Terra Yang su Cane) e Ji Hai (Terra Yin su Maiale). \n"
+    "Rappresenta una natura giovane, fertile e ricca di potenziale, come la vegetazione rigogliosa della pianura. \n"
+    "Le persone con questo Na Yin possiedono un carattere genuino, gentile e laborioso. Si distinguono per l'onestà d'animo, la capacità \n"
+    "di apprendere rapidamente e un talento naturale nel seminare armonia e nuove idee.\n"
+    </string>
+    <string name="ny_wd4_details">"Wu + Xu / Ji + Hai = Legno della Pianura"</string>
+
+    <string name="ny_wd5_title">"Legno di Gelso (Sang Zhe Mu)"</string>
+    <string name="ny_wd5_subtitle">"Il Gelso trasforma le foglie in seta"</string>
+    <string name="ny_wd5_desc">
+    "Generato dai Pilastri Ren Zi (Acqua Yang su Topo) e Gui Chou (Acqua Yin su Bue). \n"
+    "Rappresenta una natura generosa, operosa e ricca di valore, come un albero di gelso che nutre e dà vita a frutti preziosi. \n"
+    "Le persone con questo Na Yin possiedono un carattere dedito, premuroso e concreto. Si distinguono per lo spirito di sacrificio, \n"
+    "la grande laboriosità e il talento innato nel trasformare risorse semplici in qualcosa di nobile.\n"
+    </string>
+    <string name="ny_wd5_details">"Ren + Zi / Gui + Chou = Legno di Gelso"</string>
+
+    <string name="ny_wd6_title">"Legno di Melograno (Shi Liu Mu)"</string>
+    <string name="ny_wd6_subtitle">"La fioritura vibrante e l'abbondanza interiore"</string>
+    <string name="ny_wd6_desc">
+    "Generato dai Pilastri Geng Shen (Metallo Yang su Scimmia) e Xin You (Metallo Yin su Gallo). \n"
+    "Rappresenta una natura tenace, vibrante e generosa, come un albero di melograno capace di fiorire e donare frutti preziosi \n"
+    "tra le rocce. Le persone con questo Na Yin possiedono un carattere determinato, creativo e appassionato. Si distinguono per \n"
+    "l'eccezionale forza di volontà, l'originalità delle proprie idee e la capacità di prosperare anche nelle avversità.\n"
+    </string>
+    <string name="ny_wd6_details">"Geng + Shen / Xin + You = Legno di Melograno"</string>
+
+    <!-- Na Yin Fuoco -->
+
+    <string name="ny_f1_title">"Fuoco della Fornace (Lu Zhong Huo)"</string>
+    <string name="ny_f1_subtitle">"La passione intesa ed il calore trasformativo"</string>
+    <string name="ny_f1_desc">
+    "Generato dai Pilastri Bing Yin (Fuoco Yang su Tigre) e Ding Mao (Fuoco Yin su Coniglio).\n"
+    "Rappresenta una natura ardente, concentrata e trasformatrice, come il fuoco di una fornace che tempra e forgia con costanza.\n"
+    "Le persone con questo Na Yin possiedono un carattere appasionato, resiliente e di grande intensità. Si distinguono per l'immens"
+    "forza di volontà, l'entusiasmo contagioso e il talento naturale nel guidare e finalizzare progetti complessi.\n"
+    </string>
+    <string name="ny_f1_details">"Bing + Yin / Ding + Mao = Fuoco della Fornace"</string>
+
+    <string name="ny_f2_title">"Fuoco sulla Cima della Montagna (Shan Tou Huo)"</string>
+    <string name="ny_f2_subtitle">"L'incendio visibile che illumina il cielo"</string>
+    <string name="ny_f2_desc">
+    "Generato dai Pilastri Jia Xu (Legno Yang su Cane) e Yi Hai (Legno Yin su Maiale). \n"
+    "Rappresenta una natura radiosa, carismatica e dirompente, come un fuoco che brilla sulla vetta illuminando l'orizzonte. \n"
+    "Le persone con questo Na Yin possiedono un carattere schietto, brillante e appassionato. Si distinguono per la rapidità d'azione,\n"
+    "la leadership naturale e il talento innato nell'ispirare gli altri e farsi notare.\n"
+    </string>
+    <string name="ny_f2_details">"Jia + Xu / Yi + Hai = Fuoco sulla Cima della Montagna"</string>
+
+    <string name="ny_f3_title">"Fuoco ai Piedi della Montagna (Shan Xia Huo)"</string>
+    <string name="ny_f3_subtitle">"La luce discreta che riscalda e protegge"</string>
+    <string name="ny_f3_desc">
+    "Generato dai Pilastri Bing Shen (Fuoco Yang su Scimmia) e Ding You (Fuoco Yin su Gallo).\n"
+    "Rappresenta una natura intima, strategica e pragmatica, come un fuoco di valle che riscalda la terra e cova con pazienza. \n"
+    "Le persone con questo Na Yin possiedono un carattere discreto, acuto e riflessivo. Sanno agire al momento opportuno,\n"
+    "coltivano relazioni profonde e autentiche e preferiscono i risultati concreti alla visibilità fine a se stessa.\n"
+    </string>
+    <string name="ny_f3_details">"Bing + Shen  / Ding + You = Fuoco ai Piedi della Montagna"</string>
+
+    <string name="ny_f4_title">"Fuoco del Fulmine (Pili Huo)"</string>
+    <string name="ny_f4_subtitle">"La saetta improvvisa e l'energia elettrica"</string>
+    <string name="ny_f4_desc">
+    "Generato dai Pilastri Wu Zi (Terra Yang su Topo) e Ji Chou (Terra Yin su Bue). \n"
+    "Rappresenta una natura dirompente, istantanea e imprevedibile, come un fulmine che squarcia il cielo e trasforma la realtà. \n"
+    "Le persone con questo Na Yin possiedono un carattere magnetico, impulsivo e geniale. Si distinguono per la straordinaria prontezza \n"
+    "mentale, il coraggio nelle emergenze e la capacità di rompere gli schemi con idee rivoluzionarie.\n"
+    </string>
+    <string name="ny_f4_details">"Wu + Zi / Ji + Chou = Fuoco del Fulmine"</string>
+
+    <string name="ny_f5_title">"Fuoco della Lampada (Fu Deng Huo)"</string>
+    <string name="ny_f5_subtitle">"La luce della saggezza che guida nell'oscurità"</string>
+    <string name="ny_f5_desc">
+    "Generato dai Pilastri Jia Chen (Terra Yang su Drago) e Yi Si (Terra Yin su Serpente). \n"
+    "Rappresenta una natura saggia, focalizzata e intellettuale, come una lampada che illumina l'oscurità e guida i passi nel buio. \n"
+    "Le persone con questo Na Yin possiedono un carattere profondo, intuitivo e riflessivo. Si distinguono per la sete di conoscenza, \n"
+    "l'eleganza di pensiero e il talento innato nel portare chiarezza, consiglio e ispirazione nei momenti di crisi.\n"
+    </string>
+    <string name="ny_f5_details">"Jia + Chen / Yi + Si = Fuoco della Lampada"</string>
+
+    <string name="ny_f6_title">"Fuoco del Sole (Tian Shang Huo)"</string>
+    <string name="ny_f6_subtitle">"La luce celestiale che illumina e dà la vita"</string>
+    <string name="ny_f6_desc">
+    "Generato dai Pilastri Wu Wu (Terra Yang su Cavallo) e Ji Wei (Terra Yin su Capra). \n"
+    "Rappresenta una natura sovrana, generosa e illuminante, come il sole nel cielo che riscalda e dà vita a tutto il mondo. \n"
+    "Le persone con questo Na Yin possiedono un carattere nobile, magnanimo e carismatico. Si distinguono per l'onestà incrollabile, \n"
+    "il profondo senso di giustizia e il talento naturale nel guidare, proteggere e ispirare le masse.\n"
+    </string>
+    <string name="ny_f6_details">"Wu + Wu / Ji + Wei = Fuoco del Sole"</string>
+
+    <!-- Na Yin Terra -->
+    <string name="ny_e1_title">"Terra del Ciglio della Strada (Lu Bian Tu)"</string>
+    <string name="ny_e1_subtitle">"La stabilità umile che sostiene il cammino"</string>
+    <string name="ny_e1_desc">
+    "Generato dai Pilastri Geng Wu (Metallo Yang su Cavallo) e Xin Wei (Metallo Yin su Capra). \n"
+    "Rappresenta una natura solida, accogliente e orientata al servizio, come la terra che costeggia e sostiene le grandi strade. \n"
+    "Le persone con questo Na Yin possiedono un carattere affidabile, paziente e pragmatico. Si distinguono per lo spirito di sacrificio, \n"
+    "la capacità di unire le persone e il talento naturale nel creare basi sicure per gli altri.\n"
+    </string>
+    <string name="ny_e1_details">"Geng + Wu / Xin + Wei = Terra del Ciglio della Strada"</string>
+
+    <string name="ny_e2_title">"Terra delle Mura della Città (Cheng Tou Tu)</string>
+    <string name="ny_e2_subtitle">"La fortezza interiore e lo scudo protettivo"</string>
+    <string name="ny_e2_desc">
+    "Generato dai Pilastri Wu Yin (Terra Yang su Tigre) e Ji Mao (Terra Yin su Coniglio). \n"
+    "Rappresenta una natura imponente, protettiva e incrollabile, come le mura di una città che difendono la civiltà e \n"
+    "resistono al tempo. Le persone con questo Na Yin possiedono un carattere fiero, stabile e di sani principi. Si distinguono per \n"
+    "il forte senso del dovere, l'istinto protettivo verso i propri cari e l'incrollabile capacità di mantenere la posizione nelle avversità.\n"
+    </string>
+    <string name="ny_e2_details">"Wu + Yin / Ji + Mao = Terra delle Mura della Città"</string>
+
+    <string name="ny_e3_title">"Terra del Tetto (Wu Shang Tu)"</string>
+    <string name="ny_e3_subtitle">"La protezione elevata che ripara dalle tempeste"</string>
+    <string name="ny_e3_desc">
+    "Generato dai Pilastri Bing Xu (Fuoco Yang su Cane) e Ding Hai (Fuoco Yin su Maiale). \n"
+    "Rappresenta una natura elevata, protettiva e resiliente, come le tegole di un tetto che offrono ripario dalle intemperie. \n"
+    "Le persone con questo Na Yin possiedono un carattere indipendente, fiero e coscienzioso. Si distinguono per il forte senso di \n"
+    "responsabilità verso la famiglia, la dignità personale e la capacità di sopportare grandi pesi per proteggere gli altri.\n"
+    </string>
+    <string name="ny_e3_details">"Bing + Xu / Ding + Hai = Terra del Tetto"</string>
+
+    <string name="ny_e4_title">"Terra della Parete (Bi Shang Tu)"</string>
+    <string name="ny_e4_subtitle">"Il calore domestico e la protezione dell'intimità"</string>
+    <string name="ny_e4_desc">
+    "Generato dai Pilastri Geng Zi (Metallo Yang su Topo) e Xin Chou (Metallo Yin su Bue). \n"
+    "Rappresenta una natura intima, coesiva e orientata all'armonia, come l'intonaco di una parete che unisce i materiali e abbellisce la casa. \n"
+    "Le persone con questo Na Yin possiedono un carattere sensibile, leale e costruttivo. Si distinguono per la capacità \n"
+    "di mediazione, il talento nel creare ambienti sereni e l'istinto profondo nel proteggere l'armonia familiare.\n"
+    </string>
+    <string name="ny_e4_details">"Geng + Zi / Xin + Chou = Terra della Parete"</string>
+
+    <string name="ny_e5_title">"Terra della Grande Autostrada (Da Yi Tu)"</string>
+    <string name="ny_e5_subtitle">"La vasta via di connessione e lo spirito d'espansione"</string>
+    <string name="ny_e5_desc">
+    "Generato dai Pilastri Wu Shen (Terra Yang su Scimmia) e Ji You (Terra Yin su Gallo). \n"
+    "Rappresenta una natura vasta, dinamica e cosmopolita, come una grande via di comunicazione che unisce mondi e culture diverse. \n"
+    "Le persone con questo Na Yin possiedono un carattere aperto, tollerante e lungimirante. Si distinguono per la grande adattabilità, \n"
+    "la passione per il movimento e il talento innato nel gestire ampi reti di relazioni.\n"
+    </string>
+    <string name="ny_e5_details">"Wu + Shen / Ji + You = Terra della Grande Autostrada"</string>
+
+    <string name="ny_e6_title">"Terra nella Sabbia (Sha Zhong Tu)"</string>
+    <string name="ny_e6_subtitle">"La fluidità dello spirito e l'intuito profondo"</string>
+    <string name="ny_e6_desc">
+    "Generato dai Pilastri Bing Chen (Fuoco Yang su Drago) e Ding Si (Fuoco Yin su Serpente). \n"
+    "Rappresenta una natura fluida, misteriosa e preziosa, come la sabbia che si adatta agli elementi e custodisce oro \n"
+    "nei suoi granelli. Le persone con questo Na Yin possiedono un carattere flessibile, intuitivo e profondo. Si distinguono per \n"
+    "la grande resilienza, l'eleganza nei modi e il talento innato nel far emergere il proprio valore unico con il tempo.\n"
+    </string>
+    <string name="ny_e6_details">"Bing + Chen / Ding + Si = Terra nella Sabbia"</string>
 
 </resources>

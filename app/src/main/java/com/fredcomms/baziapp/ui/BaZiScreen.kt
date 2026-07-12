@@ -1060,153 +1060,112 @@ fun BaZiScreen() {
                         ),
                         //Lista dei 30 Na Yin
                         ExtendedLearnItem(
-                            category = "Na Yin (Astrologia Melodica)",
-                            title = "Oro del Mare (Hai Zhong Jin)",
-                            subtitle = "Il gioiello in fondo al mare",
-                            description = "Generato dai Pilastri Jia Zi (Legno Yang su Topo) e Yi Chou (Legno Yin su Bue)." + 
-                            "Rappresenta una natura profonda, flessibile e purificante come le profondità oceaniche. " +  
-                            "Le persone con questo Na Yin possiedono un carattere resiliente, capace di adattarsi alle tempeste della vita e " + 
-                            "di custodire una saggezza interiore, come un tesoro sommerso.",
-                            details = "Jia + Zi / Yi + Chou = Oro del Mare",
+                            category = stringResource(R.string.cat_ny_metal),
+                            title = stringResource(R.string.ny_m1_title),
+                            subtitle = stringResource(R.string.ny_m1_subtitle),
+                            description = stringResource(R.string.ny_m1_desc),
+                            details = stringResource(R.string.ny_m1_details),
                             emoji = "🦪",
                         ),
 
                         ExtendedLearnItem(
-                            category = "Na Yin (Astrologia Melodica)",
-                            title = "Acciaio della Spada (Jian Feng Jin)",
-                            subtitle = "La lama affilata",
-                            description = "Generato dai Pilastri Ren Shen (Acqua Yang su Scimmia) e Gui You (Acqua Yin su Gallo)." + 
-                            "Rappresenta una natura affilata, determinata e purissima, temprata per superare ogni ostacolo. " +  
-                            "Le persone con questo Na Yin possiedono un carattere risoluto e un forte senso di giustizia, capace di agire con " + 
-                            "estrema lucidità nei momenti di crisi e di tagliare i rami secchi per favorire l'evoluzione.",
-                            details = "Ren + Shen / Gui + You = Acciaio della Spada",
+                            category = stringResource(R.string.cat_ny_metal),
+                            title = stringResource(R.string.ny_m2_title),
+                            subtitle = stringResource(R.string.ny_m2_subtitle),
+                            description = stringResource(R.string.ny_m2_desc),
+                            details = stringResource(R.string.ny_m2_details),
                             emoji = "⚔️",
                         ),
                         ExtendedLearnItem(
-                            category = "Na Yin (Astrologia Melodica)",
-                            title = "Oro della Cera Bianca (Bai La Jin)",
-                            subtitle = "Il metallo puro e malleabile",
-                            description = "Generato dai Pilastri Geng Chen (Metallo Yang su Drago) e Xin Si (Metallo Yin su Serpente). " +
-                            "Rappresenta una natura pura, malleabile e in costante divenire, come l'oro nobile ancora liquido nel suo stampo. " +
-                            "Le persone con questo Na Yin possiedono un carattere idealista, sensibile e trasparente. Hanno talenti innati e una mente " +
-                            "brillante che necessitano però di disciplina, focus e delle giuste esperienze per essere pienamente forgiati.",
-                            details = "Geng + Chen / Xin + Si = Oro della Cera Bianca",
+                            category = stringResource(R.string.cat_ny_metal),
+                            title = stringResource(R.string.ny_m3_title),
+                            subtitle = stringResource(R.string.ny_m3_subtitle),
+                            description = stringResource(R.string.ny_m3.desc),
+                            details = stringResource(R.string.ny_m3_details),
                             emoji = "🕯️",
                         ),
                         ExtendedLearnItem(
-                            category = "Na Yin (Astrologia Melodica)",
-                            title = "Oro nella Sabbia (Sha Zhong Jin)",
-                            subtitle = "Nascosto nella terra",
-                            description = "Generato dai Pilastri Jia Wu (Legno Yang su Cavallo) e Yi Wei (Legno Yin su Capra). " +
-                            "Rappresenta una natura introspettiva, preziosa e nascosta, come le pagliuzze d'oro celate tra i granelli " +
-                            "di sabbia. Le persone con questo Na Yin possiedono un carattere riservato, umile e profondo. " +
-                            "Custodiscono un immenso valore interiore e talenti rari che richiedono tempo, isolamento e le giuste opportunità " +
-                            "per essere scoperti e valorizzati.",
-                            details = "Jia + Wu / Yi + Wei = Oro nella Sabbia",
+                            category = stringResource(R.string.cat_ny_metal),
+                            title = stringResource(R.string.ny_m4_title),
+                            subtitle = stringResource(R.string.ny_m4_subtitle),
+                            description = stringResource(R.string.ny_m4_desc),
+                            details = stringResource(R.string.ny_m4_details),
                             emoji = "🏆",
                         ),
                         ExtendedLearnItem(
-                            category = "Na Yin (Astrologia Melodica)",
-                            title = "Oro del Gioiello (Jin Bo Jin)",
-                            subtitle = "La lamina preziosa",
-                            description = "Generato dai Pilastri Ren Yin (Acqua Yang su Tigre) e Gui Mao (Acqua Yin su Coniglio). " +
-                            "Rappresenta una natura raffinata, splendente e ornamentale, come un prezioso gioiello nato per date luce, fascino " +
-                            "e prestigio. Le persone con questo Na Yin possiedono un carattere carismatico, elegante e attento ai dettagli. " +
-                            "Hanno un talento naturale nel valorizzare chi sta intorno a loro, nel portare armonia estetica e nello splendere nei contesti sociali.",
-                            details = "Ren + Yin / Gui + Mao = Oro del Gioiello",
+                            category = stringResource(R.string.cat_ny_metal),
+                            title = stringResource(R.string.ny_m5_title),
+                            subtitle = stringResource(R.string.ny_m5_subtitle),
+                            description = stringResource(R.string.ny_m5_desc),
+                            details = stringResource(R.string.ny_m5_details),
                             emoji = "💎",
                         ),
                         ExtendedLearnItem(
-                            category = "Na Yin (Astrologia Melodica)",
-                            title = "Oro del Fermaglio Prezioso (Chai Chuan Jin)",
-                            subtitle = "Il gioiello raffinato ed elegante",
-                            description = "Generato dai Pilastri Geng Xu (Acqua Yang su Cane) e Xin Hai (Acqua Yin su Maiale). " +
-                            "Rappresenta una natura aggrazziata, preziosa e finimente rifinta, come un fermaglio d'oro nato per esaltare " +
-                            "la bellezza e lo status. Le persone con questo Na Yin possiedono un carattere magnetico, sensibile ed estetico. " +
-                            "Si distinguono per l'eleganza, il profondo senso della dignità e la capacità innata di portare armonia, stile e valore " +
-                            "nei loro legami e nel proprio ambiente.",
-                            details = "Geng + Xu / Xin + Hai",
+                            category = stringResource(R.string.cat_ny_metal),
+                            title = stringResource(R.string.ny_m6_title),
+                            subtitle = stringResource(R.string.ny_m6_subtitle),
+                            description = stringResource(R.string.ny_m6_desc),
+                            details = stringResource(R.string.ny_m6_details),
                             emoji = "📿",
                         ),
                         ExtendedLearnItem(
-                            category = "Na Yin (Astrologia Melodica)",
-                            title = "Acqua del Torrente (Jian Xia Shui)",
-                            subtitle = "L'acqua del ruscello di montagna",
-                            description = "Generato dai Pilastri Bing Zi (Fuoco Yang su Topo) e Ding Chou (Fuoco Yin su Bue). " +
-                            "Rappresenta una natura limpida, intuitiva e dinamica, come un torrente di montagna che scorre con determinazione tra le rocce. " + 
-                            "Le persone con questo Na Yin possiedono un carattere calmo ma risoluto, guidato da una profonda onestà e chiarezza mentale. " +
-                            "Hanno una spiccata capacità di fluire oltre gli ostacoli senza mai perdere la propria purezza e i propri valori originari.",
-                            details = "Bing + Zi / Ding + Chou = Acqua del Torrente",
+                            category = stringResource(R.string.cat_ny_water),
+                            title = stringResource(R.string.ny_w1_title),
+                            subtitle = stringResource(R.string.ny_w1_subtitle),
+                            description = stringResource(R.string.ny_w1_desc),
+                            details = stringResource(R.string.ny_w1_details),
                             emoji = "💧",
                         ),
                         ExtendedLearnItem(
-                            category = "Na Yin (Astrologia Melodica)",
-                            title = "Acqua di Sorgente (Quan Zhong Shui)",
-                            subtitle = "L'acqua più pura",
-                            description = "Generato dai Pilastri Jia Shen (Legno Yang su Scimmia) e Yi You (Legno Yin su Gallo). " +
-                            "Rappresenta una natura generosa, limpida e inesauribile, come una fonte pura che sgorga per offrire nutrimento e volontà. " +
-                            "Le persone con questo Na Yin possiedono un carattere altruista, aperto e ricco di risorse. Si distinguono per la spiccata intelligenza. " +
-                            "la prontezza nel condividere le proprie idee e il talento naturale nel rigenerare gli ambienti in cui operano.",
-                            details = "Jia + Shen / Yi + You = Spring Water",
+                            category = stringResource(R.string.cat_ny_water),
+                            title = stringResource(R.string.ny_w2_title),
+                            subtitle = stringResource(R.string.ny_w2_subtitle),
+                            description = stringResource(R.string.ny_w2_desc),
+                            details = stringResource(R.string.ny_w2_details),
                             emoji = "⛲",
                         ),
                         ExtendedLearnItem(
-                            category = "Na Yin (Astrologia Melodica)",
-                            title = "Acqua del Lungo Fiume (Chang Liu Shui)",
-                            subtitle = "Il fiume che scorre verso l'oceano",
-                            description = "Generato dai Pilastri Ren Chen (Acqua Yang su Drago) e Gui Si (Acqua Yin su Serpente). " +
-                            "Rappresenta una natura vasta, inarrestabile e lungimirante, come un grande fiume che scorre verso l'oceano senza mai fermarsi. " +
-                            "Le persone con questo Na Yin possiedono un carattere tenace, ambizioso e dinamico. Guardano sempre al futuro con grande ampiezza di vedute, " +
-                            "possiedono una pazienza strategica e sanno guidare progetti a lungo termine verso il successo.",
-                            details = "Ren + Chen / Gui + Si = Acqua del Lungo Fiume",
+                            category = stringResource(R.string.cat_ny_water),
+                            title = stringResource(R.string.ny_w3_title),
+                            subtitle = stringResource(R.string.ny_w3_subtitle),
+                            description = stringResource(R.string.ny_w3_desc),
+                            details = stringResource(R.string.ny_w3_details),
                             emoji = "🚣",
                         ),
                         ExtendedLearnItem(
-                            category = "Na Yin (Astrologia Melodica)",
-                            title = "Acqua del Fiume Celeste (Tian He Shui)",
-                            subtitle = "La Via Lattea",
-                            description = "Generato dai Pilastri Bing Wu (Fuoco Yang su Cavallo) e Ding Wei (Fuoco Yin su Capra). " +
-                            "Rappresenta una natura spirituale, elevata e rigenerante, come la pioggia celeste che scende dall'alto " +
-                            "per nutrire la Terra. Le persone con questo Na Yin possiedono un carattere idealista, nobile e profondamente empatico. " +
-                            "Sono guidate da una grande visione umanitaria, amano elevare lo spirito altrui e portano sollievo e ispirazione ovunque si trovino. ",
-                            details = "Bing + Wu / Ding + Wei",
+                            category = stringResource(R.string.cat_ny_water),
+                            title = stringResource(R.string.ny_w4_title),
+                            subtitle = stringResource(R.string.ny_w4_subtitle),
+                            description = stringResource(R.string.ny_w4_desc),
+                            details = stringResource(R.string.ny_w4_details),
                             emoji = "🌧️",
                         ),
                         ExtendedLearnItem(
-                            category = "Na Yin (Astrologia Melodica)",
-                            title = "Acqua del Grande Torrente (Da Xi Shui)",
-                            subtitle = "Il grande torrente di montagna",
-                            description = "Generato dai Pilastri Jia Yin (Legno Yang su Tigre) e Yi Mao (Legno Yin su Coniglio). " +
-                            "Rappresenta una natura impetuosa, travolgente e vitale, come un grande torrente di valle che scende con forza ed energia. " +
-                            "Le persone con questo Na Yin possiedono un carattere appassionato, espressivo e carismatico. Hanno una leadership naturale, " +
-                            "comunicano con grande impatto e sanno muovere e motivare le masse verso un obiettivo comune.",
-                            details = "Jia + Yin / Yi + Mao = Acqua del Grande Torrente",
+                            category = stringResource(R.string.cat_ny_water),
+                            title = stringResource(R.string.ny_w5_title),
+                            subtitle = stringResource(R.string.ny_w5_subtitle),
+                            description = stringResource(R.string.ny_w5_desc),
+                            details = stringResource(R.string.ny_w5_details),
                             emoji = "🏞️",
                         ),
                         ExtendedLearnItem(
-                            category = "Na Yin (Astrologia Melodica)",
-                            title = "Acqua del Grande Oceano (Da Hai Shui)",
-                            subtitle = "L'immenso Oceano",
-                            description = "Generato dai Pilastri Ren Xu (Acqua Yang su Cane) e Gui Hai (Acqua Yin su Maiale). " +
-                            "Rappresenta una natura immensa, profonda e omnicomprensiva, come un grande oceano che accoglie e custodisce ogni cosa. " +
-                            "Le persone con questo Na Yin possiedono un carattere magnetico, saggio e tollerante. Hanno una visione globale della vita, " +
-                            "una grandissima resilienza emotiva e una forza interiore capace di dominare le tempeste più grandi.",
-                            details = "Ren + Xu / Gui + Hai = Acqua del Grande Oceano",
+                            category = stringResource(R.string.cat_ny_water),
+                            title = stringResource(R.string.ny_w6_title),
+                            subtitle = stringResource(R.string.ny_w6_subtitle),
+                            description = stringResource(R.string.ny_w6_desc),
+                            details = stringResource(R.string.ny_w6_details),
                             emoji = "🌊",
                         ),
                         ExtendedLearnItem(
-                            category = "Na Yin (Astrologia Melodica)",
-                            title = "Legno della Grande Foresta (Da Lin Mu)",
-                            subtitle = "Il cuore della foresta millenaria",
-                            description = "Generato dai Pilastri Wu Chen (Terra Yang su Drago) e Ji Si (Terra Yin su Serpente). " +
-                            "Rappresenta una natura solida, protettiva e rigogliosa, come una grande foresta che offre rifugio, stabilità e vita. " +
-                            "Le persone con questo Na Yin possiedono un carattere generoso, affidabile e orientato alla comunità. Si distinguono per " +
-                            "lo spirito di cooperazione, la resilienza di fronte alle avversità e il talento naturale nel sostenere e far crescere gli altri.",
-                            details = "Wu + Chen / Ji + Si = Legno della Grande Foresta",
+                            category = stringResource(R.string.cat_ny_wood),
+                            title = stringResource(R.string.ny_wd1_title),
+                            subtitle = stringResource(R.string.ny_wd1_subtitle),
+                            description = stringResource(R.string.ny_wd1_desc),
+                            details = stringResource(R.string.ny_wd1_details),
                             emoji = "🌳",
                         ),
                         ExtendedLearnItem(
-                            category = "Na Yin (Astrologia Melodica)",
+                            category = stringResource(R.string.cat_ny_wood),
                             title = "Legno del Salice Piangente (Yang Liu Mu)",
                             subtitle = "Si piega ma non si spezza",
                             description = "Generato dai Pilastri Ren Wu (Acqua Yang su Cavallo) e Gui Wei (Acqua Yin su Capra). " +
@@ -1217,7 +1176,7 @@ fun BaZiScreen() {
                             emoji = "🍃",
                         ),
                         ExtendedLearnItem(
-                            category = "Na Yin (Astrologia Melodica)",
+                            category = stringResource(R.string.cat_ny_wood),
                             title = "Legno di Pino e Cipresso (Song Bai Mu)",
                             subtitle = "Sempreverdi anche nel cuore dell'inverno",
                             description = "Generato dai Pilastri Geng Yin (Metallo Yang su Tigre) e Xin Mao (Metallo Yin su Coniglio). " +
@@ -1228,7 +1187,7 @@ fun BaZiScreen() {
                             emoji = "🌿",
                         ),
                         ExtendedLearnItem(
-                            category = "Na Yin (Astrologia Melodica)",
+                            category = stringResource(R.string.cat_ny_wood),
                             title = "Legno della Pianura (Ping Di Mu)",
                             subtitle = "Tranquillo, rigoglioso e sicuro",
                             description = "Generato dai Pilastri Wu Xu (Terra Yang su Cane) e Ji Hai (Terra Yin su Maiale). " +
@@ -1239,7 +1198,7 @@ fun BaZiScreen() {
                             emoji = "🌾",
                         ),
                         ExtendedLearnItem(
-                            category = "Na Yin (Astrologia Melodica)",
+                            category = stringResource(R.string.cat_ny_wood),
                             title = "Legno di Gelso (Sang Zhe Mu)",
                             subtitle = "Il Gelso trasforma le foglie in seta",
                             description = "Generato dai Pilastri Ren Zi (Acqua Yang su Topo) e Gui Chou (Acqua Yin su Bue). " +
@@ -1250,7 +1209,7 @@ fun BaZiScreen() {
                             emoji = "🐛",
                         ),
                         ExtendedLearnItem(
-                            category = "Na Yin (Astrologia Melodica)",
+                            category = stringResource(R.string.cat_ny_wood),
                             title = "Legno di Melograno (Shi Liu Mu)",
                             subtitle = "La fioritura vibrante e l'abbondanza interiore",
                             description = "Generato dai Pilastri Geng Shen (Metallo Yang su Scimmia) e Xin You (Metallo Yin su Gallo). " +
@@ -1261,7 +1220,7 @@ fun BaZiScreen() {
                             emoji = "🍎",
                         ),
                         ExtendedLearnItem(
-                            category = "Na Yin (Astrologia Melodica)",
+                            category = stringResource(R.string.cat_ny_fire),
                             title = "Fuoco della Fornace (Lu Zhong Huo)",
                             subtitle = "La passione intesa ed il calore trasformativo",
                             description = "Generato dai Pilastri Bing Yin (Fuoco Yang su Tigre) e Ding Mao (Fuoco Yin su Coniglio). " +
@@ -1272,7 +1231,7 @@ fun BaZiScreen() {
                             emoji = "🔥",
                         ),
                         ExtendedLearnItem(
-                            category = "Na Yin (Astrologia Melodica)",
+                            category = stringResource(R.string.cat_ny_fire),
                             title = "Fuoco sulla Cima della Montagna (Shan Tou Huo)",
                             subtitle = "L'incendio visibile che illumina il cielo",
                             description = "Generato dai Pilastri Jia Xu (Legno Yang su Cane) e Yi Hai (Legno Yin su Maiale). " +
@@ -1283,7 +1242,7 @@ fun BaZiScreen() {
                             emoji = "🌋",
                         ),
                         ExtendedLearnItem(
-                            category = "Na Yin (Astrologia Melodica)",
+                            category = stringResource(R.string.cat_ny_fire),
                             title = "Fuoco ai Piedi della Montagna (Shan Xia Huo)",
                             subtitle = "La luce discreta che riscalda e protegge",
                             description = "Generato dai Pilastri Bing Shen (Fuoco Yang su Scimmia) e Ding You (Fuoco Yin su Gallo). " +
@@ -1294,7 +1253,7 @@ fun BaZiScreen() {
                             emoji = "⛺",
                         ),
                         ExtendedLearnItem(
-                            category = "Na Yin (Astrologia Melodica)",
+                            category = stringResource(R.string.cat_ny_fire),
                             title = "Fuoco del Fulmine (Pili Huo)",
                             subtitle = "La saetta improvvisa e l'energia elettrica",
                             description = "Generato dai Pilastri Wu Zi (Terra Yang su Topo) e Ji Chou (Terra Yin su Bue). " +
@@ -1305,7 +1264,7 @@ fun BaZiScreen() {
                             emoji = "⚡",
                         ),
                         ExtendedLearnItem(
-                            category = "Na Yin (Astrologia Melodica)",
+                            category = stringResource(R.string.cat_ny_fire),
                             title = "Fuoco della Lampada (Fu Deng Huo)",
                             subtitle = "La luce della saggezza che guida nell'oscurità",
                             description = "Generato dai Pilastri Jia Chen (Terra Yang su Drago) e Yi Si (Terra Yin su Serpente). " +
@@ -1316,7 +1275,7 @@ fun BaZiScreen() {
                             emoji = "🏮",
                         ),
                         ExtendedLearnItem(
-                            category = "Na Yin (Astrologia Melodica)",
+                            category = stringResource(R.string.cat_ny_fire),
                             title = "Fuoco del Sole (Tian Shang Huo)",
                             subtitle = "La luce celestiale che illumina e dà la vita",
                             description = "Generato dai Pilastri Wu Wu (Terra Yang su Cavallo) e Ji Wei (Terra Yin su Capra). " +
@@ -1327,7 +1286,7 @@ fun BaZiScreen() {
                             emoji = "🌅",
                         ),
                         ExtendedLearnItem(
-                            category = "Na Yin (Astrologia Melodica)",
+                            category = stringResource(R.string.cat_ny_earth),
                             title = "Terra del Ciglio della Strada (Lu Bian Tu)",
                             subtitle = "La stabilità umile che sostiene il cammino",
                             description = "Generato dai Pilastri Geng Wu (Metallo Yang su Cavallo) e Xin Wei (Metallo Yin su Capra). " +
@@ -1338,7 +1297,7 @@ fun BaZiScreen() {
                             emoji = "🥾",
                         ),
                         ExtendedLearnItem(
-                            category = "Na Yin (Astrologia Melodica)",
+                            category = stringResource(R.string.cat_ny_earth),
                             title = "Terra delle Mura della Città (Cheng Tou Tu)",
                             subtitle = "La fortezza interiore e lo scudo protettivo",
                             description = "Generato dai Pilastri Wu Yin (Terra Yang su Tigre) e Ji Mao (Terra Yin su Coniglio). " +
@@ -1349,7 +1308,7 @@ fun BaZiScreen() {
                             emoji = "🏯",
                         ),
                         ExtendedLearnItem(
-                            category = "Na Yin (Astrologia Melodica)",
+                            category = stringResource(R.string.cat_ny_earth),
                             title = "Terra del Tetto (Wu Shang Tu)",
                             subtitle = "La protezione elevata che ripara dalle tempeste",
                             description = "Generato dai Pilastri Bing Xu (Fuoco Yang su Cane) e Ding Hai (Fuoco Yin su Maiale). " +
@@ -1360,7 +1319,7 @@ fun BaZiScreen() {
                             emoji = "🏚️",
                         ),
                         ExtendedLearnItem(
-                            category = "Na Yin (Astrologia Melodica)",
+                            category = stringResource(R.string.cat_ny_earth),
                             title = "Terra della Parete (Bi Shang Tu)",
                             subtitle = "Il calore domestico e la protezione dell'intimità",
                             description = "Generato dai Pilastri Geng Zi (Metallo Yang su Topo) e Xin Chou (Metallo Yin su Bue). " +
@@ -1371,25 +1330,19 @@ fun BaZiScreen() {
                             emoji = "🧱",
                         ),
                         ExtendedLearnItem(
-                            category = "Na Yin (Astrologia Melodica)",
-                            title = "Terra della Grande Autostrada (Da Yi Tu)",
-                            subtitle = "La vasta via di connessione e lo spirito d'espansione",
-                            description = "Generato dai Pilastri Wu Shen (Terra Yang su Scimmia) e Ji You (Terra Yin su Gallo). " +
-                            "Rappresenta una natura vasta, dinamica e cosmopolita, come una grande via di comunicazione che unisce mondi e culture diverse. " +
-                            "Le persone con questo Na Yin possiedono un carattere aperto, tollerante e lungimirante. Si distinguono per la grande adattabilità, " +
-                            "la passione per il movimento e il talento innato nel gestire ampi reti di relazioni.",
-                            details = "Wu + Shen / Ji + You = Terra della Grande Autostrada",
+                            category = stringResource(R.string.cat_ny_earth),
+                            title = stringResource(R.string.ny_e5_title),
+                            subtitle = stringResource(R.string.ny_e5_subtitle),
+                            description = stringResource(R.string.ny_e5_desc),
+                            details = stringResource(R.string.ny_e5_details),
                             emoji = "🛣️",
                         ),
                         ExtendedLearnItem(
-                            category = "Na Yin (Astrologia Melodica)",
-                            title = "Terra nella Sabbia (Sha Zhong Tu)",
-                            subtitle = "La fluidità dello spirito e l'intuito profondo",
-                            description = "Generato dai Pilastri Bing Chen (Fuoco Yang su Drago) e Ding Si (Fuoco Yin su Serpente). " +
-                            "Rappresenta una natura fluida, misteriosa e preziosa, come la sabbia che si adatta agli elementi e custodisce oro " +
-                            "nei suoi granelli. Le persone con questo Na Yin possiedono un carattere flessibile, intuitivo e profondo. Si distinguono per " +
-                            "la grande resilienza, l'eleganza nei modi e il talento innato nel far emergere il proprio valore unico con il tempo.",
-                            details = "Bing + Chen / Ding + Si = Terra nella Sabbia",
+                            category = stringResource(R.string.cat_ny_earth),
+                            title = stringResource(R.string.ny_e6_title),
+                            subtitle = stringResource(R.string.ny_e6_subtitle),
+                            description = stringResource(R.string.ny_e6_desc),
+                            details = stringResource(R.string.ny_e6_details),
                             emoji = "⏳",
                         ),
 
