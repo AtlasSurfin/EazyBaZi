@@ -10,18 +10,18 @@
     <string name="cat_ny_metal">Na Yin del Metallo</string>
 
     <!-- Na Yin Intro -->
-    <string name="intro_title">"Na Yin: Il Suono degli Elementi"</string>
-    <string name="intro_subtitle">"I 60 Cicli d'oro"</string>
-    <string name="intro_desc">
+    <string name="ny_intro_title">"Na Yin: Il Suono degli Elementi"</string>
+    <string name="ny_intro_subtitle">"I 60 Cicli d'oro"</string>
+    <string name="ny_intro_desc">
     "Mentre il BaZi classico analizza gli elementi singoli, il Na Yin combina il Tronco Celeste ed \n"
     "il Ramo Terrestre per creare un 'Elemento Melodico' unico (Es: 'Fuoco della Lampada', 'Legno del Melograno').\n"
     "Definisce l'atmosfera psicologica profonda e l'aura spirituale della persona.\n"
     </string>
 
     <!-- Na Yin Math -->
-    <string name="math_title">"Na Yin: La Matematica dei 5 Elementi"</string>
-    <string name="math_subtitle">"Il Calcolo dell'Elemento"</string>
-    <string name="math_desc">
+    <string name="ny_math_title">"Na Yin: La Matematica dei 5 Elementi"</string>
+    <string name="ny_math_subtitle">"Il Calcolo dell'Elemento"</string>
+    <string name="ny_math_desc">
     "Come si calcola con esattezza il Na Yin di un Pilastro ? Il calcolo si basa sull'antica numerologia cinese, in particolare\n"
     "sull'antico testo 'Suen Tzu Suan Ching' e sul ciclo sessagesimale cinese.\n"
     "Si assegnano dei valori numerici ad ogni Tronco e ad ogni Ramo. Invece i Rami vengono raggruppati in gruppi di 4, dopodichè\n"
