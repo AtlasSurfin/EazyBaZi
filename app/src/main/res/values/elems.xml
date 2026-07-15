@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">EazyBaZi</string>
+
+    <string name="cat_wood">"Legno"</string>
+    <string name="cat_earth">"Terra"</string>
+    <string name="cat_water">"Acqua"</string>
+    <string name="cat_fire">"Fuoco"</string>
+    <string name="cat_metal">"Metallo"</string>
 </resources>

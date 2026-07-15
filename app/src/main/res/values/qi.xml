@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EazyBaZi</string>
+    <string name="cat_qi">"Le 12 Fasi del Qi (Shi Er Chang Sheng)"</string>
+    <string name="cat_qi_intro">"Fasi del Qi (Qi Phase) / 12 Life Stages"</string>
+    
+    <string name = "qi_intro_title">"Le 12 Fasi di Forza del Day Master"</string>
+    <string name = "qi_intro_subtitle">"Dalla Nascita all'Imperatore, fino alla Tomba"</string>
+    <string name = "qi_intro_desc">
+    "Questo concetto misura quanto il tuo Day Master si sente forte nel Ramo Terrestre di un pilastro. \n"
+    "Va dalla fase di Nascita (piena di entusiasmo), alla fase 'Imperatore' (massimo potere) fino alla fase 'Tomba' \n" 
+    "(energia di accumulo ed introspezione). Rivela se le tue azioni avranno un impatto immediato o avranno bisogno di tempo. \n"
+    </string>
+
+    <string name = "q1_title">"Nascita (Chang Sheng)"</string>
+    <string name = "q1_subtitle">"L'energia emerge nel mondo"</string>
+    <string name = "q1_desc">
+    "Rappresenta il momento in cui il Qi prende forma e viene alla luce nel ciclo vitale. \n"
+    "È l'archetipo dell'energia fresca, della curiosità innata e della crescita vigorosa. \n"
+    "Simboleggia una fase fortunata e priva di preconcetti, dove la mente è aperta all'apprendimento \n"
+    "e il potenziale si esprime con ottimismo ed entusiasmo contagioso. Nel Pilastro indicato indica un settore della vita caratterizzato \n"
+    "da partenze fortunate, grande vitalità fisica/mentale e capacità di rigenerarsi dopo ogni crisi.\n"
+    </string>
+    <string name = "q1_details">"Forza del Qi: Molto Alta | Tratti chiave: ottimismo, capacità di rinnovamento, forte supporto da mentori."</string>
+
+    <string name = "q2_title">"Bagno (Mu Yu)"</string>
+    <string name = "q2_subtitle">"Vulnerabilità, crescita e purificazione"</string>
+    <string name = "q2_desc">
+    "Rappresenta la fase del neonato che viene lavato e purificato. È l'archetipo della vulnerabilità, della scoperta \n"
+    "di sè e dell'esposizione al mondo senza filtri. Simboleggia un momento di transizione delicato ma affascinante, legato al fascino interpersonale, \n"
+    "al romanticismo ed alla curiosità emotiva. Nel Pilastro indicato mostra un settore della vita dinamico e sensibile, dove si impara \n"
+    "attraverso la sperimentazione e gli errori, dove le relazioni e l'attrattiva giocano un ruolo centrale.\n"
+    </string>
+    <string name = "q2_details">"Forza del Qi: Medio-Bassa | Tratti chiave: sensibilità, romanticismo, esposizione pubblica, fascino naturale."</string>
+
+    <string name = "q3_title">"Adolescenza (Dai Guan)"</string>
+    <string name = "q3_subtitle">"L'ingresso nella giovinezza e l'ambizione"</string>
+    <string name = "q3_desc">
+    "Rappresenta la fase in cui il giovane indossa gli abiti della maturità, pronto a fare il suo \n"
+    "ingresso nella società. È l'archetipo dell'indipendenza, dell'esplorazione del proprio potere e dell'ambizione vigorosa. \n"
+    "Simboleggia un momento di grande determinazione e spinta verso il successo, dove la mente è focalizzata sugli obiettivi \n"
+    "e sul riconoscimento sociale. Nel Pilastro indicato mostra un settore della vita caratterizzato da un forte spirito di iniziativa, \n"
+    "competitività e il desiderio di emergere, pur con il rischio di cadere nell'impulsività o nell'ostinazione.\n"
+    </string>
+    <string name = "q3_details">"Forza del Qi: Alta | Tratti chiave: ambizione, indipendenza, determinazione, spinta all'azione."</string>
+
+    <string name = "q4_title">"Maturità (Lin Guan)"</string>
+    <string name = "q4_subtitle">"La stabilità, il lavoro e la responsabilità"</string>
+    <string name = "q4_desc">
+    "Rappresenta la fase dell'adulto che consolida la propria posizione e inizia a raccogliere i frutti del proprio \n"
+    "impegno. È l'archetipo della stabilità materiale, del senso del dovere e dell'indipendenza finanziaria. Simboleggia un \n"
+    "momento di grande equilibrio ed efficienza, in cui la persona agisce con pragmatismo, maturità e rispetto per le regole. \n"
+    "Nel Pilastro indicato mostra un settore della vita solido e costruttivo, caratterizzato da avanzamenti di carriera stabili, \n"
+    "affidabilità e la capacità di gestire responsabilità importanti senza farsi travolgere.\n"
+    </string>
+    <string name = "q4_details">"Forza del Qi: Molto Alta | Tratti chiave: pragmatismo, senso del dovere, indipendenza, affidabilità."</string>
+
+    <string name = "q5_title">"Picco (Di Wang)"</string>
+    <string name = "q5_subtitle">"Il massimo splendore e il potere assoluto"</string>
+    <string name = "q5_desc">
+    "Rappresenta il momento di massimo vigore, autorità e splendore dell'intero ciclo vitale. È l'archetipo del Sovrano, caratterizzato \n"
+    "da una forza immensa, leadership naturale e capacità di dominare le circostanze. Simboleggia il punto più alto del successo e dell'autoaffermazione, \n"
+    "ma porta con sè anche l'inizio nascosto del declino, poichè chi si trova sulla vetta può solo scendere. Nel Pilastro indicato mostra un settore \n"
+    "della vita di grande impatto, dove si gode di estrema autonomia e potere d'azione, con il rischio latente di eccessivo orgoglio o isolamento.\n"
+    </string>
+    <string name = "q5_details">"Forza del Qi: Massima | Tratti chiave: leadership, autorità, indipendenza totale, successo."</string>
+
+    <string name = "q6_title">"Declino (Shuai)"</string>
+    <string name = "q6_subtitle">"La transizione verso la saggezza e la prudenza"</string>
+    <string name = "q6_desc">
+    "Rappresenta il momento in cui l'energia inizia a ritirarsi dopo aver toccato l'apice. Non indica un crollo ma una \n"
+    "perdita di forza fisica a favore di un grande guadagno in termini di maturità, esperienza e cautela. È l'archetipo del saggio anziano \n"
+    "o del sovrano che abdica, preferendo la diplomazia e la strategia alla forza bruta. Nel Pilastro indicato mostra un settore della vita \n"
+    "caratterizzato da stabilità conservativa, dove si preferisce mantenere ciò che si ha piuttosto che rischiare in nuove avventure.\n"
+    </string>
+    <string name = "q6_details">"Forza del Qi: Medio-Alta | Tratti chiave: saggezza, prudenza, conservazione, maturità emotiva."</string>
+
+    <string name = "q7_title">"Ritiro (Bing)"</string>
+    <string name = "q7_subtitle">"L'introspezione, il ritiro e la sensibilità"</string>
+    <string name = "q7_desc">
+    "Rappresenta la fase in cui il Qi si indebolisce significativamente e si ritira dal mondo esterno. \n"
+    "È l'archetipo dell'introversione, dell'empatia profonda e della riflessione filosofica. Simboleggia un momento in cui \n"
+    "le energie fisiche calano, spingendo la mente a focalizzarsi sulla salute interiore, la spiritualità e la comprensione psicologica \n"
+    "degli altri. Nel Pilastro indicato mostra un settore della vita caratterizzato da grande sensibilità, intuito e prudenza, dove è necessario \n"
+    "agire senza fretta e ascoltare i propri ritmi biologici ed emotivi.\n"
+    </string>
+    <string name = "q7_details">"Forza del Qi: Bassa | Tratti chiave: empatia, introspezione, forte intuito, bisogno di riposo."</string>
+
+    <string name = "q8_title">"Morte (Si)"</string>
+    <string name = "q8_subtitle">"L'immobilità, la logica e la massima focalizzazione"</string>
+    <string name = "q8_desc">
+    "Rappresenta il momento in cui il Qi si ferma del tutto, raggiungendo un livello di quiete assoluta. \n"
+    "È l'archetipo del distacco emotivo, della razionalità pura e della concentrazione profonda. Simboleggia la fine dei conflitti e \n"
+    "la capacità di analizzare le cose senza l'interferenza dell'ego o delle passioni. Nel Pilastro indicato mostra un settore della vita \n"
+    "caratterizzato da grande acume intellettuale, precisione e dedizione a compiti che richiedono logica, ricerca o specializzazione, \n"
+    "sebbene possa mancare di spontaneità.\n"
+    </string>
+    <string name = "q8_details">"Forza del Qi: Molto Bassa | Tratti chiave: logica, focalizzazione, razionalità, distacco emotivo."</string>
+
+    <string name = "q9_title">"Tomba (Mu)"</string>
+    <string name = "q9_subtitle">"L'accumulo, il risparmio e la protezione"</string>
+    <string name = "q9_desc">
+    "Rappresenta la fase in cui il Qi viene sepolto e custodito all'interno della terra per essere protetto. \n"
+    "È l'archetipo del magazzino, del caveau e dei segreti. Simboleggia un momento di forte introversione, focalizzato sulla \n"
+    "sicurezza materiale, il risparmio e la conservazione delle risorse personali. Nel Pilastro indicato mostra un settore della vita \n"
+    "caratterizzato da una gestione prudente o riservata, dove si tende ad accumulare ricchezza o conoscenza e mantenere una vita privata \n"
+    "molto protetta, con la tendenza a trattenere le cose.\n"
+    </string>
+    <string name = "q9_details">"Forza del Qi: Bassa | Tratti chiave: accumulo, riservatezza, risparmio, protezione delle risorse."</string>
+
+    <string name = "q10_title">"Vuoto (Jue)"</string>
+    <string name = "q10_subtitle">"Il vuoto assoluto e la rottura con il passato"</string>
+    <string name = "q10_desc">
+    "Rappresenta il momento in cui il vecchio Qi si estingue completamente, dissolvendosi nel vuoto. È l'archetipo \n"
+    "della tabula rasa, della fine dei legami e della liberazione totale dai condizionamenti precedenti. Simboleggia un punto di svolta \n"
+    "drastico ma necessario, dove l'assenza di struttura lascia spazio all'inaspettato e alla pura potenzialità futura. \n"
+    "Nel Pilastro indicato mostra un settore della vita instabile o mutevole, caratterizzato da radicali cambiamenti, chiusure definitive \n"
+    "e la necessità di imparare a lasciare andare per ricominciare da zero.\n"
+    </string>
+    <string name = "q10_details">"Forza del Qi: Minima | Tratti chiave : distacco, fine dei cicli, potenziale invisibile, transizione radicale."</string>
+
+    <string name = "q11_title">"Concepimento (Tai)"</string>
+    <string name = "q11_subtitle">"La scintilla iniziale, la speranza e l'idea"</string>
+    <string name = "q11_desc">
+    "Rappresenta il momento in cui la nuova energia viene concepita nell'oscurità, come un embrione che inizia \n"
+    "a formarsi. È l'archetipo dell'ispirazione iniziale, del sogno e della speranza invisibile. Simboleggia una fase di vulnerabilità, \n"
+    "ma anche di grande creatività latente, dove i progetti e le idee vengono seminati e protetti dal mondo esterno. Nel Pilastro indicato \n"
+    "mostra un settore della vita caratterizzato da un costante bisogno di protezione, sogni ad occhi aperti e l'inizio silenzioso di nuove \n"
+    "e promettenti fasi esistenziali.\n"
+    </string>
+    <string name = "q11_details">"Forza del Qi: Molto Bassa | Tratti chiave: speranza, pianificazione, vulnerabilità, potenziale creativo."</string>
+
+    <string name = "q12_title">"Nutrimento (Yang)"</string>
+    <string name = "q12_subtitle">"La gestazione, l'attesa e la preparazione"</string>
+    <string name = "q12_desc">
+    "Rappresenta la fase finale del ciclo, in cui l'energia cresce e si sviluppa al sicuro all'interno dell'utero. \n"
+    "È l'archetipo della gestazione, del nutrimento e dell'attesa fiduciosa. Simboleggia un momento protetto, privo di minacce esterne, \n"
+    "dove ci si prepara a raccogliere le forze prima di venire alla luce. Nel Pilastro indicato mostra un settore della vita caratterizzato \n"
+    "da supporto costante, stabilità serena e una crescita graduale ma sicura, ideale per lo studio, la pianificazione o il consolidamento personale.\n"
+    </string>
+    <string name = "q12_details">"Forza del Qi: Media | Tratti chiave: protezione, preparazione, accumulo di forza, serenità."</string>
+
+    
+    
+</resources>
