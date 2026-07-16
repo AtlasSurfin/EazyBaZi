@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">EazyBaZi</string>
     <string name="cat_qi">"Le 12 Fasi del Qi (Shi Er Chang Sheng)"</string>
     <string name="cat_qi_intro">"Fasi del Qi (Qi Phase) / 12 Life Stages"</string>
     

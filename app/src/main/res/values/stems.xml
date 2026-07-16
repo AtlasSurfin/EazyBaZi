@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">EazyBaZi</string>
     <string name="cat_stems">"I 10 Tronchi Celesti (Heavenly Stems)"</string>
 
     <string name="st1_title">"Jia (甲) - Legno Yang"</string>

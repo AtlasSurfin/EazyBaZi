@@ -1,7 +1,399 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\main\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\main\res"><file path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">EazyBaZi</string><string name="cat_protect">Stelle di Protezione e Nobiltà</string><string name="cat_career">Stelle di Ricchezza e Carriera</string><string name="cat_love">Stelle di Fascino e Romanticismo</string><string name="star_noble_title">Nobile Celeste (Tian Yi Gui Ren)</string><string name="star_noble_subtitle">Il Nobile Celeste - La Stella del Salvatore</string><string name="star_noble_desc">"E' considerata la stella protettiva più potente del BaZi. Indica che nei momenti di massima
-    difficoltà apparirà sempre qualcuno (un mentore, un amico o uno sconosciuto) a tendere una mano."</string><string name="star_noble_effects">Effetti: Protezione dai pericoli, attrazione di mentori influenti e successo agevolato.</string><string name="star_doc_title">Medico Celeste (Tian Yi)</string><string name="star_doc_subtitle">Il Medico Celeste - La Stella del Guaritore</string><string name="star_doc_desc"/><string name="star_doc_effects"/><string name="star_car_title">Carro Dorato (Jin Yu)</string><string name="star_car_subtitle">Il Carro Dorato - La Stella della Prosperità</string><string name="star_car_desc">"Tradizionalmente legata ai viaggi dei nobili su carrozze dorate, nel BaZi moderno indica il supporto
+<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\main\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\main\res"><file path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\main\res\values\branches.xml" qualifiers=""><string name="cat_branch">"I 12 Rami Terrestri (Zodiaco Cinese)"</string><string name="br1_title">"Zi (子) - Il Topo (The Rat)"</string><string name="br1_subtitle">"Acqua Yang - L'Iniziatore"</string><string name="br1_desc">
+    "Il primo segno dello zodiaco. Rappresenta l'energia dell'inverno profondo e della notte.\n"
+    "Le persone nate con questo ramo sono intuitive, astute, piene di risorse e possiedono una saggezza nascosta.\n"
+    </string><string name="br1_details">"Elemento: Acqua | Radice: Gui (Acqua Yin)"</string><string name="br2_title">"Chou (丑) - Il Bue (The Ox)"</string><string name="br2_subtitle">"Terra Yin - Lo Stoico"</string><string name="br2_desc">
+    "Il secondo segno dello zodiaco. Rappresenta l'energia della fine dell'inverno e \n"
+    "l'ora che precede l'alba. Le persone nate con questo ramo sono resilienti, metodiche, costanti e custodi \n"
+    "di una determinazione incrollabile.\n"
+    </string><string name="br2_details">"Elemento: Terra | Radice: Ji (Terra Yin)"</string><string name="br3_title">"Yin (寅) - La Tigre (The Tiger)"</string><string name="br3_subtitle">"Legno Yang - Il Conquistatore"</string><string name="br3_desc">
+    "Il terzo segno dello zodiaco. Rappresenta l'energia dell'inizio della primavera e del risveglio \n"
+    "mattutino. Le persone nate con questo ramo sono audaci, indipendenti, passionali e animate da un forte spirito di leadership.\n"
+    </string><string name="br3_details">"Elemento: Legno | Radice: Jia (Legno Yang)"</string><string name="br4_title">"Mao (卯) - Il Coniglio (The Rabbit)"</string><string name="br4_subtitle">"Legno Yin - Il Diplomatico"</string><string name="br4_desc">
+    "Il quarto segno dello zodiaco. Rappresenta l'energia della primavera piena e del sorgere del sole. \n"
+    "Le persone nate con questo ramo sono pacifiche, sensibili, diplomatiche e dotate di uno spiccato senso artistico ed estetico.\n"
+    </string><string name="br4_details">"Elemento: Legno | Radice: Yi (Legno Yin)"</string><string name="br5_title">"Chen (辰) - Il Drago (The Dragon)"</string><string name="br5_subtitle">"Terra Yang - Il Magnate"</string><string name="br5_desc">
+    "Il quinto segno dello zodiaco. Rappresenta l'energia della fine della primavera e della prima mattinata. \n"
+    "Le persone nate con questo ramo sono carismatiche, piene di vitalità, ambiziose e mostrano un forte magnetismo ideale.\n"
+    </string><string name="br5_details">"Elemento: Terra | Radice: Wu (Terra Yang)"</string><string name="br6_title">"Si (巳) - Il Serpente (The Snake)"</string><string name="br6_subtitle">"Fuoco Yin - Il Filosofo"</string><string name="br6_desc">
+    "Il sesto segno dello zodiaco. Rappresenta l'energia dell'inizio dell'estate e della mattinata inoltrata. \n"
+    "Le persone nate con questo ramo sono acute, riflessive, enigmatiche e dotate di una profonda intelligenza analitica.\n"
+    </string><string name="br6_details">"Elemento: Fuoco | Radice: Ding (Fuoco Yin)"</string><string name="br7_title">"Wu (午) - Il Cavallo (The Horse)"</string><string name="br7_subtitle">"Fuoco Yang - Il Pioniere"</string><string name="br7_desc">
+    "Il settimo segno dello zodiaco. Rappresenta l'energia dell'estate profonda e del mezzogiorno radioso. \n"
+    "Le persone nate con questo ramo sono solari, amano la libertà, sono espansive e costantemente proiettate verso l'azione.\n"
+    </string><string name="br7_details">"Elemento: Fuoco | Radice: Bing (Fuoco Yang)"</string><string name="br8_title">"Wei (未) - La Capra (The Goat)"</string><string name="br8_subtitle">"Terra Yin - L'Artista"</string><string name="br8_desc">
+    "L' ottavo segno dello zodiaco. Rappresenta l'energia della fine dell'estate e del primo pomeriggio. \n"
+    "Le persone nate con questo ramo sono empatiche, protettive, amano l'armonia e cercano stabilità nelle relazioni personali.\n"
+    </string><string name="br8_details">"Elemento: Terra | Radice: Ji (Terra Yin)"</string><string name="br9_title">"Shen (申) - La Scimmia (The Monkey)"</string><string name="br9_subtitle">"Metallo Yang - L'Innovatore"</string><string name="br9_desc">
+    "Il nono segno dello zodiaco. Rappresenta l'energia dell'inizio dell'autunno e del tardo pomeriggio. \n"
+    "Le persone nate con questo ramo sono poliedriche, inventive, ironiche e capaci di risolvere problemi complessi con rapidità.\n"
+    </string><string name="br9_details">"Elemento: Metallo | Radice: Geng (Metallo Yang)"</string><string name="br10_title">"You (酉) - Il Gallo (The Rooster)"</string><string name="br10_subtitle">"Metallo Yin - Il Perfezionista"</string><string name="br10_desc">
+    "Il decimo segno dello zodiaco. Rappresenta l'energia dell'autunno pieno e del tramonto. \n"
+    "Le persone nate con questo ramo sono precise, franche, organizzate e hanno un naturale talento per l'osservazione e il dettaglio.\n"
+    </string><string name="br10_details">"Elemento: Metallo | Radice: Xin (Metallo Yin)"</string><string name="br11_title">"Xu (戌) - Il Cane (The Dog)"</string><string name="br11_subtitle">"Terra Yang - Il Custode"</string><string name="br11_desc">
+    "L'undicesimo segno dello zodiaco. Rappresenta l'energia della fine dell'autunno e del crepuscolo serale. \n"
+    "Le persone nate con questo ramo sono leali, protettive, dotate di un forte senso etico e molto attente alla sicurezza dei propri cari.\n"
+    </string><string name="br11_details">"Elemento: Terra | Radice: Wu (Terra Yang)"</string><string name="br12_title">"Hai (亥) - Il Maiale (The Pig)"</string><string name="br12_subtitle">"Acqua Yin - Il Filantropo"</string><string name="br12_desc">
+    "Il dodicesimo segno dello zodiaco. Rappresenta l'energia dell'inizio dell'inverno e della prima serata. \n"
+    "Le persone nate con questo ramo sono generose, sincere, tolleranti e affrontano la vita con un ottimismo calmo e pacifico.\n"
+    </string><string name="br12_details">"Elemento: Acqua | Radice: Gui (Acqua Yin)"</string></file><file path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\main\res\values\elems.xml" qualifiers=""><string name="cat_elem">"I 5 elementi del BaZi"</string><string name="fire_title"/><string name="fire_subtitle"/><string name="fire_desc"/><string name="fire_details"/><string name="water_title">"Acqua (Shuǐ)"</string><string name="water_subtitle">"L'Energia dell'Inverno e della Concentrazione"</string><string name="water_desc">
+    "Rappresenta la fluidità, l'oscurità rigenerante, il riposo, l'adattabilità e il potenziale nascosto. \n"
+    "Psicologicamente governa l'intelligenza profonda, l'intuito, la saggezza e la filosofia di vita. \n"
+    "Se in eccesso può portare a paura ed indecisione. Nel corpo è legata a Reni e Vescica.\n"
+    </string><string name="water_details">"Genera: Legno | Controlla: Fuoco | È generato da: Metallo | È controllato da: Terra"</string><string name="wood_title">"Legno (Mù)"</string><string name="wood_subtitle">"L'Energia della Primavera e della Nascita"</string><string name="wood_desc">
+    "Rappresenta l'espansione, la crescita verticale, l'idealismo e l'istinto di esplorazione. \n"
+    "Psicologicamente governa la gentilezza, la compassione e la spinta al progresso. Se in eccesso può portare a \n"
+    "rabbia e frustrazione. Nel corpo è legato a Fegato e Cistifellea.\n"
+    </string><string name="wood_details">"Genera: Fuoco | Controlla: Terra | È generato da: Acqua | È controllato da: Metallo"</string><string name="earth_title"/><string name="earth_subtitle"/><string name="earth_desc"/><string name="earth_details"/><string name="metal_title"/><string name="metal_subtitle"/><string name="metal_desc"/><string name="metal_details"/></file><file path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\main\res\values\interacts.xml" qualifiers=""><string name="cat_interacts">"Interazioni nel BaZi"</string><string name="i0_title">"Introduzione alle Interazioni"</string><string name="i0_subtitle">"La dinamica energetica della Carta Natale"</string><string name="i0_desc">
+    "Nel BaZi, i Tronchi Celesti e i Rami Terrestri non sono elementi statici ma interagiscono costantemente \n"
+    "tra loro creando combinazioni, conflitti, punizioni o distruzioni. Queste interazioni rappresentano gli eventi, i cambiamenti \n"
+    "e le dinamiche psicologiche o relazionali della persona. Le interazioni tra i Rami Terrestri (i segni dello zodiaco cinese) \n"
+    "muovono gli eventi nel mondo reale e sociale, mentre quelle tra Tronchi Celesti mostrano i cambiamenti nelle intenzioni consce e \n"
+    "nell'ambiente esterno.\n"
+    </string><string name="i0_details">"Categorie di Interazioni: Combinazioni (Armonia) | Scontri (Cambiamento) | Punizioni (Attrito) | Distruzioni (Ostacoli)"</string><string name="i1_title">"Combinazioni dei Tronchi Celesti"</string><string name="i1_subtitle">"L'unione delle polarità e la trasformazione"</string><string name="i1_desc">
+    "Rappresentano l'attrazione e l'armonia tra i Tronchi Celesti di polarità opposta (Yin e Yang). Quando due Tronchi si combinano, \n"
+    "la loro natura cambia: simboleggiano alleanze, relazioni importanti, fusioni e la capacità di trovare compromessi. \n"
+    "Se le condizioni della Carta Natale lo permettono, questa unione può dare vita a un nuovo elemento energetico. Nel Pilastro indicato \n"
+    "mostra dove la persona cerca integrazione, cooperazione o dove le sue intenzioni consce tendono a legarsi a fattori esterni.\n"
+    </string><string name="i1_details">"Tipo: Armonia | Elementi coinvolti: Tronchi Celesti (Yin + Yang) | Effetto: unione, romanticismo, patti, generazione di un nuovo elemento."</string><string name="i2_title">"Scontri tra Tronchi Celesti"</string><string name="i2_subtitle">"Attrito, sfide e cambiamenti visibili"</string><string name="i2_desc">
+    "Rappresentano i conflitti diretti tra i Tronchi Celesti, causati dall'incontro di elementi opposti con la stessa polarità (Yin/Yin o Yang/Yang). \n"
+    "Essendo i Tronchi energie visibili, questi scontri si manifestano come sfide esterne, eventi improvvisi, cambi di prospettiva e tensioni ideologiche/lavorative. \n"
+    "Non sono negativi: funzionano spesso come catalizzatori che costringono ad uscire dalla zona di comfort, stimolando l'azione e rompendo \n"
+    "situazioni stagnanti.\n"
+    </string><string name="i2_details">"Tipo: Conflitto | Elementi coinvolti: Tronchi Celesti (Stessa polarità) | Effetto: instabilità temporanea, stress, spi nte al cambiamento."</string><string name="i3_title">"Combinazioni tra Rami Terrestri"</string><string name="i3_subtitle">"Sinergia profonda e stabilità nel mondo reale"</string><string name="i3_desc">
+    "Rappresentano l'unione armonica tra due specifici Rami Terrestri che si attraggono e collaborano. Poichè i rami governano la Terra e la materia, \n"
+    "queste combinazioni indicano legami affettivi solidi, partnership professionali stabili e situazioni in cui le cose scorrono senza intoppi. \n"
+    "Agiscono come un collante energetico che protegge i settori coinvolti dagli attacchi esterni (scontri), sebbene a volte possano rendere la persona troppo \n"
+    "restia al cambiamento o conservatrice.\n"
+    </string><string name="i3_details">"Tipo: Alleanza e coppie | Elementi coinvolti: Rami Terrestri | Effetto: Protezione, stabilità, forte intesa relazionale, resistenza al cambiamento."</string><string name="i4_title">"Combinazioni Triangolari tra Rami Terrestri "</string><string name="i4_subtitle">"Massima espansione di un elemento"</string><string name="i4_desc">
+    "Rappresentano l'unione di tre specifici Rami Terrestri che, unendo le forze, generano una potentissima ondata di un singolo elemento. \n"
+    "Questa combinazione unisce l'animale che fa nascere l'elemento, quello che ne rappresenta il picco e quello che lo custodisce. Quando si attiva nella Carta \n"
+    "Natale, porta una straordinaria spinta focalizzata verso un obiettivo comune, amplificando a dismisura i significati di quell'elemento nei settori coinvolti, \n"
+    "sia in positivo che in termini di eccesso.\n"
+    </string><string name="i4_details">"Tipo: Alleanza a tre | Elementi coinvolti: Rami Terrestri | Effetto: Creazione di un elemento dominante, grande focus, eventi di vasta portata."</string><string name="i5_title">"Scontri tra Rami Terrestri"</string><string name="i5_subtitle">"Terremoti evolutivi e cambiamenti concreti"</string><string name="i5_desc">
+    "Rappresentano lo scontro frontale tra due animali situati in posizioni opposte sulla bussola energetica. Poichè i Rami governano la realtà \n"
+    "materiale, questi scontri si manifestano come eventi tangibili: rotture relazionali, cambi di lavoro improvvisi, traslochi o forti scossoni emotivi e fisici. \n"
+    "Sebbene possano generare forte stress ed instabilità temporanea, la loro funzione cosmica è distruggere le strutture stagnanti per consentire la persona a evolversi \n"
+    "ed a rinnovare la propria vita.\n"
+    </string><string name="i5_details">"Tipo: Conflitto | Elementi coinvolti: Rami Terrestri | Effetto: Rotture, mobilità geografica/professionale, sblocchi energetici radicali."</string><string name="i6_title">"Punizioni dei Rami Terrestri"</string><string name="i6_subtitle">"Attriti psicologici, autosabotaggi e nodi karmici"</string><string name="i6_desc">
+    "Rappresentano una delle interazioni più complesse e psicologiche del BaZi. A differenza degli scontri diretti, le Punizioni agiscono dall'interno, manifestandosi come \n"
+"dinamiche di autosabotaggio, sensi di colpa, ingratitudine subita/compiuta e conflitti relazionali logoranti. Spesso indicano aree in cui la persona tende a ripetere gli stessi errori \n"
+"o a subire lo stress di aspettative non soddisfatte. Nel Pilastro indicato rivelano tensioni interne nascoste che richiedono profonda consapevolezza per essere sciolte.\n"
+    </string><string name="i6_details">"Tipo: Attrito | Elementi coinvolti: Rami Terrestri | Effetto: Autosabotaggio, stress emotivo, senso di ingratitudine o ingiustizia."</string><string name="i7_title">"Danni dei Rami Terrestri"</string><string name="i7_subtitle">"Ferite emotive, malintesi e aspettative tradite"</string><string name="i7_desc">
+    "Rappresentano un'interazione indiretta che colpisce soprattutto la sfera emotiva e relazionale. Un Danno si attiva quando un Ramo sabota o si scontra con il partner ideale (la Combinazione) di un altro Ramo. \n"
+    "Nella vita reale questo si traduce in situazioni di incomprensione, aspettative non corrisposte, piccoli tradimenti o la sensazione che qualcuno stia remando contro i nostri piani. \n"
+    "Nel Pilastro indicato mostra un'area in cui la persona deve fare attenzione alla comunicazione e a non accumulare risentimenti silenziosi.\n"
+    </string><string name="i7_details">"Tipo: Attrito | Elementi coinvolti: Rami Terrestri | Effetto: Malintesi, delusioni relazionali, stress psicologico, vulnerabilità emotiva."</string><string name="i8_title">"Distruzioni dei Rami Terrestri"</string><string name="i8_subtitle">"Sfaldamento, cattive abitudini e logoramento"</string><string name="i8_desc">
+    "Rappresentano un'interazione di attrito sottile che mina la stabilità dall'interno. Più che grandi shock esterni, le Distruzioni simboleggiano \n" 
+    "il deterioramento graduale dovuto a comportamenti ripetitivi, vizi, mancanza di cura o decisioni impulsive che distruggono il lavoro fatto. Nel Pilastro indicato \n"
+    "mostra un settore della vita in cui la persona tende a perdere effiacia a causa di vecchi schemi mentali sabotanti, dove è necessario fare pulizia per evitare che le \n"
+    "risorse vadano sprecate.\n"
+    </string><string name="i8_details">"Tipo: Logoramento | Elementi coinvolti: Rami Terrestri | Effetto: Rotture di schemi, spreco di energia, necessità di eliminare il superfluo."</string></file><file path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\main\res\values\misc.xml" qualifiers=""><string name="app_name">"EazyBaZi"</string><string name="cat_cycles">"I Cicli del Qi (o Cicli dei Wu Xing)"</string><string name="cy1_title">"Il Ciclo di Generazione (Ciclo Sheng)"</string><string name="cy1_subtitle">"La Relazione Madre-Figlio"</string><string name="cy1_desc">
+    "Rappresenta il flusso armonioso, spontaneo e cooperativo dell'energia, dove ogni elemento \n"
+    "nutre, supporta e dà la vita a quello successivo. È un ciclo perenne di crescita e trasformazione positiva che permette \n"
+    "al Qi di evolversi continuamente senza sosta.\n"
+    </string><string name="cy1_details">"Flusso: Legno ➔ Fuoco ➔ Terra ➔ Metallo ➔ Acqua ➔ Legno"</string><string name="cy2_title">"Il Ciclo di Controllo (Ciclo Ke)"</string><string name="cy2_subtitle">"La Forza del Limite"</string><string name="cy2_desc">
+    "Rappresenta la forza che frena, regola, limita o domina l'elemento opposto. Non è un ciclo negativo: \n"
+    "nella filosofia del BaZi il controllo è fondamentale per mantenere l'equilibrio della carta ed evitare che un elemento \n"
+    "cresca troppo diventando distruttivo.\n"
+    </string><string name="cy2_details">"Flusso: Legno ➔ Terra ➔ Acqua ➔ Fuoco ➔ Metallo ➔ Legno"</string><string name="cat_hst">"Tronchi Celesti Nascosti (Hidden Stems)"</string><string name="hst_title">"Le Radici dei Rami Terrestri"</string><string name="hst_subtitle">"Il potenziale nascosto dentro di te"</string><string name="hst_desc">
+    "In occidente siamo abituati a vedere un solo segno zodiacale. Nel BaZi, ogni animale nasconde sotto \n"
+    "terra (nelle sue radici) da 1 a 3 Tronchi Celesti. Rappresentano i tuoi talenti nascosti, i desideri segreti e ciò che \n" 
+    "si attiverà solo in determinati momenti della tua vita. \n"
+    </string></file><file path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\main\res\values\months.xml" qualifiers=""><string-array name="months_arr">
+        <item>Gennaio</item>
+        <item>Febbraio</item>
+        <item>Marzo</item>
+        <item>Aprile</item>
+        <item>Maggio</item>
+        <item>Giugno</item>
+        <item>Luglio</item>
+        <item>Agosto</item>
+        <item>Settembre</item>
+        <item>Ottobre</item>
+        <item>Novembre</item>
+        <item>Dicembre</item>
+    </string-array></file><file path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\main\res\values\nayin.xml" qualifiers=""><string name="cat_nayin">"Na Yin (Astrologia Melodica)"</string><string name="cat_ny_wood">"Na Yin del Legno"</string><string name="cat_ny_earth">"Na Yin della Terra"</string><string name="cat_ny_water">"Na Yin dell'Acqua"</string><string name="cat_ny_fire">Na Yin del Fuoco</string><string name="cat_ny_metal">Na Yin del Metallo</string><string name="ny_intro_title">"Na Yin: Il Suono degli Elementi"</string><string name="ny_intro_subtitle">"I 60 Cicli d'oro"</string><string name="ny_intro_desc">
+    "Mentre il BaZi classico analizza gli elementi singoli, il Na Yin combina il Tronco Celeste ed \n"
+    "il Ramo Terrestre per creare un 'Elemento Melodico' unico (Es: 'Fuoco della Lampada', 'Legno del Melograno').\n"
+    "Definisce l'atmosfera psicologica profonda e l'aura spirituale della persona.\n"
+    </string><string name="ny_math_title">"Na Yin: La Matematica dei 5 Elementi"</string><string name="ny_math_subtitle">"Il Calcolo dell'Elemento"</string><string name="ny_math_desc">
+    "Come si calcola con esattezza il Na Yin di un Pilastro ? Il calcolo si basa sull'antica numerologia cinese, in particolare\n"
+    "sull'antico testo 'Suen Tzu Suan Ching' e sul ciclo sessagesimale cinese.\n"
+    "Si assegnano dei valori numerici ad ogni Tronco e ad ogni Ramo. Invece i Rami vengono raggruppati in gruppi di 4, dopodichè\n"
+    "si assegna ad ogni gruppo un valore numerico. Infine si sommano i valori di Tronco e Ramo, sottraendo 5 se la somma è maggiore\n"
+    "o uguale a 5, fino ad ottenere un valore da 0 a 4. Il numero finale indica l'elemento del Na Yin.\n\n"
+    "In figura: \n"
+    "Tronchi Celesti:\n\n"
+    "Legno: 1\n Fuoco: 2\nTerra: 3\nMetallo: 4\nAcqua: 5"
+    "Rami Terrestri:\n"
+    "Topo\Bue\Cavallo\Capra: 1\nTigre\Coniglio\Scimmia\Gallo: 2\nDrago\Serpente\Cane\Maiale: 3\n\n"
+    "Elemento Na Yin:\n"
+    "1 = Legno\n2 = Metallo \n3 = Acqua\n4 = Fuoco\n0 = Terra\n\n"
+    "Es: Topo + Ren (Acqua Yang) = 1 + 5 = 6 (- 5) = 1 cioè Legno, in questo caso si tratta di 'Legno di Gelso'\n"
+    </string><string name="ny_m1_title">"Oro del Mare (Hai Zhong Jin)"</string><string name="ny_m1_subtitle">"Il gioiello in fondo al mare"</string><string name="ny_m1_desc">
+    "Generato dai Pilastri Jia Zi (Legno Yang su Topo) e Yi Chou (Legno Yin su Bue).\n" 
+    "Rappresenta una natura profonda, flessibile e purificante come le profondità oceaniche. \n"  
+    "Le persone con questo Na Yin possiedono un carattere resiliente, capace di adattarsi alle tempeste della vita e \n" 
+    "di custodire una saggezza interiore, come un tesoro sommerso.\n"
+    </string><string name="ny_m1_details">"Jia + Zi / Yi + Chou = Oro del Mare"</string><string name="ny_m2_title">"Acciaio della Spada (Jian Feng Jin)"</string><string name="ny_m2_subtitle">La lama affilata"</string><string name="ny_m2_desc">
+    "Generato dai Pilastri Ren Shen (Acqua Yang su Scimmia) e Gui You (Acqua Yin su Gallo).\n" 
+    "Rappresenta una natura affilata, determinata e purissima, temprata per superare ogni ostacolo. \n"  
+    "Le persone con questo Na Yin possiedono un carattere risoluto e un forte senso di giustizia, capace di agire con \n" 
+    "estrema lucidità nei momenti di crisi e di tagliare i rami secchi per favorire l'evoluzione.\n"
+    </string><string name="ny_m2_details">"Ren + Shen / Gui + You = Acciaio della Spada"</string><string name="ny_m3_title">"Oro della Cera Bianca (Bai La Jin)"</string><string name="ny_m3_subtitle">"Il metallo puro e malleabile"</string><string name="ny_m3_desc">
+    "Generato dai Pilastri Geng Chen (Metallo Yang su Drago) e Xin Si (Metallo Yin su Serpente). \n"
+    "Rappresenta una natura pura, malleabile e in costante divenire, come l'oro nobile ancora liquido nel suo stampo. \n"
+    "Le persone con questo Na Yin possiedono un carattere idealista, sensibile e trasparente. Hanno talenti innati e una mente \n"
+    "brillante che necessitano però di disciplina, focus e delle giuste esperienze per essere pienamente forgiati.\n"
+    </string><string name="ny_m3_details">"Geng + Chen / Xin + Si = Oro della Cera Bianca"</string><string name="ny_m4_title">"Oro nella Sabbia (Sha Zhong Jin)"</string><string name="ny_m4_subtitle">"Nascosto nella terra"</string><string name="ny_m4_desc">
+    "Generato dai Pilastri Jia Wu (Legno Yang su Cavallo) e Yi Wei (Legno Yin su Capra). \n"
+    "Rappresenta una natura introspettiva, preziosa e nascosta, come le pagliuzze d'oro celate tra i granelli \n"
+    "di sabbia. Le persone con questo Na Yin possiedono un carattere riservato, umile e profondo. \n"
+    "Custodiscono un immenso valore interiore e talenti rari che richiedono tempo, isolamento e le giuste opportunità \n"
+    "per essere scoperti e valorizzati.\n"
+    </string><string name="ny_m4_details">"Jia + Wu / Yi + Wei = Oro nella Sabbia"</string><string name="ny_m5_title">"Oro del Gioiello (Jin Bo Jin)"</string><string name="ny_m5_subtitle">"La lamina preziosa"</string><string name="ny_m5_desc">
+    "Generato dai Pilastri Ren Yin (Acqua Yang su Tigre) e Gui Mao (Acqua Yin su Coniglio). \n"
+    "Rappresenta una natura raffinata, splendente e ornamentale, come un prezioso gioiello nato per date luce, fascino \n"
+    "e prestigio. Le persone con questo Na Yin possiedono un carattere carismatico, elegante e attento ai dettagli. \n"
+    "Hanno un talento naturale nel valorizzare chi sta intorno a loro, nel portare armonia estetica e nello splendere nei contesti sociali.\n"
+    </string><string name="ny_m5_details">"Ren + Yin / Gui + Mao = Oro del Gioiello"</string><string name="ny_m6_title">"Oro del Fermaglio Prezioso (Chai Chuan Jin)"</string><string name="ny_m6_subtitle">"Il gioiello raffinato ed elegante"</string><string name="ny_m6_desc">
+    "Generato dai Pilastri Geng Xu (Acqua Yang su Cane) e Xin Hai (Acqua Yin su Maiale). \n"
+    "Rappresenta una natura aggrazziata, preziosa e finimente rifinta, come un fermaglio d'oro nato per esaltare \n"
+    "la bellezza e lo status. Le persone con questo Na Yin possiedono un carattere magnetico, sensibile ed estetico. \n"
+    "Si distinguono per l'eleganza, il profondo senso della dignità e la capacità innata di portare armonia, stile e valore \n"
+    "nei loro legami e nel proprio ambiente.\n"
+    </string><string name="ny_m6_details">"Geng + Xu / Xin + Hai"</string><string name="ny_w1_title">"Acqua del Torrente (Jian Xia Shui)"</string><string name="ny_w1_subtitle">"L'acqua del ruscello di montagna"</string><string name="ny_w1_desc">
+    "Generato dai Pilastri Bing Zi (Fuoco Yang su Topo) e Ding Chou (Fuoco Yin su Bue). \n"
+    "Rappresenta una natura limpida, intuitiva e dinamica, come un torrente di montagna che scorre con determinazione tra le rocce. \n" 
+    "Le persone con questo Na Yin possiedono un carattere calmo ma risoluto, guidato da una profonda onestà e chiarezza mentale. \n"
+    "Hanno una spiccata capacità di fluire oltre gli ostacoli senza mai perdere la propria purezza e i propri valori originari.\n"
+    </string><string name="ny_w1_details">"Bing + Zi / Ding + Chou = Acqua del Torrente"</string><string name="ny_w2_title">"Acqua di Sorgente (Quan Zhong Shui)"</string><string name="ny_w2_subtitle">"L'acqua più pura"</string><string name="ny_w2_desc">
+    "Generato dai Pilastri Jia Shen (Legno Yang su Scimmia) e Yi You (Legno Yin su Gallo). \n"
+    "Rappresenta una natura generosa, limpida e inesauribile, come una fonte pura che sgorga per offrire nutrimento e volontà. \n"
+    "Le persone con questo Na Yin possiedono un carattere altruista, aperto e ricco di risorse. Si distinguono per la spiccata intelligenza. \n"
+    "la prontezza nel condividere le proprie idee e il talento naturale nel rigenerare gli ambienti in cui operano.\n"
+    </string><string name="ny_w2_details">"Jia + Shen / Yi + You = Spring Water"</string><string name="ny_w3_title">"Acqua del Lungo Fiume (Chang Liu Shui)"</string><string name="ny_w3_subtitle">"Il fiume che scorre verso l'oceano"</string><string name="ny_w3_desc">
+    "Generato dai Pilastri Ren Chen (Acqua Yang su Drago) e Gui Si (Acqua Yin su Serpente). \n"
+    "Rappresenta una natura vasta, inarrestabile e lungimirante, come un grande fiume che scorre verso l'oceano senza mai fermarsi. \n"
+    "Le persone con questo Na Yin possiedono un carattere tenace, ambizioso e dinamico. Guardano sempre al futuro con grande ampiezza di vedute, \n"
+    "possiedono una pazienza strategica e sanno guidare progetti a lungo termine verso il successo.\n"
+    </string><string name="ny_w3_details">"Ren + Chen / Gui + Si = Acqua del Lungo Fiume"</string><string name="ny_w4_title">"Acqua del Fiume Celeste (Tian He Shui)"</string><string name="ny_w4_subtitle">"La Via Lattea"</string><string name="ny_w4_desc">
+    "Generato dai Pilastri Bing Wu (Fuoco Yang su Cavallo) e Ding Wei (Fuoco Yin su Capra). \n"
+    "Rappresenta una natura spirituale, elevata e rigenerante, come la pioggia celeste che scende dall'alto \n"
+    "per nutrire la Terra. Le persone con questo Na Yin possiedono un carattere idealista, nobile e profondamente empatico. \n"
+    "Sono guidate da una grande visione umanitaria, amano elevare lo spirito altrui e portano sollievo e ispirazione ovunque si trovino. \n"
+    </string><string name="ny_w4_details">"Bing + Wu / Ding + Wei = Acqua del Fiume Celeste"</string><string name="ny_w5_title">"Acqua del Grande Torrente (Da Xi Shui)"</string><string name="ny_w5_subtitle">"Il grande torrente di montagna"</string><string name="ny_w5_desc">
+    "Generato dai Pilastri Jia Yin (Legno Yang su Tigre) e Yi Mao (Legno Yin su Coniglio). \n"
+    "Rappresenta una natura impetuosa, travolgente e vitale, come un grande torrente di valle che scende con forza ed energia. \n"
+    "Le persone con questo Na Yin possiedono un carattere appassionato, espressivo e carismatico. Hanno una leadership naturale, \n"
+    "comunicano con grande impatto e sanno muovere e motivare le masse verso un obiettivo comune.\n"
+    </string><string name="ny_w5_details">"Jia + Yin / Yi + Mao = Acqua del Grande Torrente"</string><string name="ny_w6_title">"Acqua del Grande Oceano (Da Hai Shui)"</string><string name="ny_w6_subtitle">"L'immenso Oceano"</string><string name="ny_w6_desc">
+    "Generato dai Pilastri Ren Xu (Acqua Yang su Cane) e Gui Hai (Acqua Yin su Maiale). \n"
+    "Rappresenta una natura immensa, profonda e omnicomprensiva, come un grande oceano che accoglie e custodisce ogni cosa. \n"
+    "Le persone con questo Na Yin possiedono un carattere magnetico, saggio e tollerante. Hanno una visione globale della vita, \n"
+    "una grandissima resilienza emotiva e una forza interiore capace di dominare le tempeste più grandi.\n"
+    </string><string name="ny_w6_details">"Ren + Xu / Gui + Hai = Acqua del Grande Oceano"</string><string name="ny_wd1_title">"Legno della Grande Foresta (Da Lin Mu)"</string><string name="ny_wd1_subtitle">"Il cuore della foresta millenaria"</string><string name="ny_wd1_desc">
+    "Generato dai Pilastri Wu Chen (Terra Yang su Drago) e Ji Si (Terra Yin su Serpente).\n"
+    "Rappresenta una natura solida, protettiva e rigogliosa, come una grande foresta che offre rifugio, stabilità e vita.\n"
+    "Le persone con questo Na Yin possiedono un carattere generoso, affidabile e orientato alla comunità. Si distinguono per\n"
+    "lo spirito di cooperazione, la resilienza di fronte alle avversità e il talento naturale nel sostenere e far crescere gli altri.\n"
+    </string><string name="ny_wd1_details">"Wu + Chen / Ji + Si = Legno della Grande Foresta"</string><string name="ny_wd2_title">"Legno del Salice Piangente (Yang Liu Mu)"</string><string name="ny_wd2_subtitle">"Si piega ma non si spezza"</string><string name="ny_wd2_desc">
+    "Generato dai Pilastri Ren Wu (Acqua Yang su Cavallo) e Gui Wei (Acqua Yin su Capra).\n"
+    "Rappresenta una natura flessibile, elegante e profondamente empatica, come un salice piangente che asseconda il vento\n"
+    "senza mai spezzarsi. Le persone con questo Na Yin possiedono un carattere dolce, diplomatico e intuitivo. Si distinguono per\n"
+    "l'eccezionale capacità di adattamento, la sensibilità emotiva e il talento nel riportare armonia e comprensione nei conflitti.\n"
+    </string><string name="ny_wd2_details">"Ren + Wu / Gui + Wei = Legno del Salice Piangente</string><string name="ny_wd3_title">"Legno di Pino e Cipresso (Song Bai Mu)"</string><string name="ny_wd3_subtitle">"Sempreverdi anche nel cuore dell'inverno"</string><string name="ny_wd3_desc">
+    "Generato dai Pilastri Geng Yin (Metallo Yang su Tigre) e Xin Mao (Metallo Yin su Coniglio). \n"
+    "Rappresenta una natura fiera, integra e profondamente resiliente, come il pino ed il cipresso che sfidano il gelo invernale. \n"
+    "Le persone con questo Na Yin possiedono un carattere forte, leale e di sani principi. Si distinguono per l'incrollabile tenacia, \n"
+    "la dignità personale e la capacità di rimanere un punto di riferimento saldo anche nei momenti più difficili.\n"
+    </string><string name="ny_wd3_details">"Geng + Yin / Xin + Mao = Legno di Pino e Cipresso"</string><string name="ny_wd4_title">"Legno della Pianura (Ping Di Mu)"</string><string name="ny_wd4_subtitle">"Tranquillo, rigoglioso e sicuro"</string><string name="ny_wd4_desc">
+    "Generato dai Pilastri Wu Xu (Terra Yang su Cane) e Ji Hai (Terra Yin su Maiale). \n"
+    "Rappresenta una natura giovane, fertile e ricca di potenziale, come la vegetazione rigogliosa della pianura. \n"
+    "Le persone con questo Na Yin possiedono un carattere genuino, gentile e laborioso. Si distinguono per l'onestà d'animo, la capacità \n"
+    "di apprendere rapidamente e un talento naturale nel seminare armonia e nuove idee.\n"
+    </string><string name="ny_wd4_details">"Wu + Xu / Ji + Hai = Legno della Pianura"</string><string name="ny_wd5_title">"Legno di Gelso (Sang Zhe Mu)"</string><string name="ny_wd5_subtitle">"Il Gelso trasforma le foglie in seta"</string><string name="ny_wd5_desc">
+    "Generato dai Pilastri Ren Zi (Acqua Yang su Topo) e Gui Chou (Acqua Yin su Bue). \n"
+    "Rappresenta una natura generosa, operosa e ricca di valore, come un albero di gelso che nutre e dà vita a frutti preziosi. \n"
+    "Le persone con questo Na Yin possiedono un carattere dedito, premuroso e concreto. Si distinguono per lo spirito di sacrificio, \n"
+    "la grande laboriosità e il talento innato nel trasformare risorse semplici in qualcosa di nobile.\n"
+    </string><string name="ny_wd5_details">"Ren + Zi / Gui + Chou = Legno di Gelso"</string><string name="ny_wd6_title">"Legno di Melograno (Shi Liu Mu)"</string><string name="ny_wd6_subtitle">"La fioritura vibrante e l'abbondanza interiore"</string><string name="ny_wd6_desc">
+    "Generato dai Pilastri Geng Shen (Metallo Yang su Scimmia) e Xin You (Metallo Yin su Gallo). \n"
+    "Rappresenta una natura tenace, vibrante e generosa, come un albero di melograno capace di fiorire e donare frutti preziosi \n"
+    "tra le rocce. Le persone con questo Na Yin possiedono un carattere determinato, creativo e appassionato. Si distinguono per \n"
+    "l'eccezionale forza di volontà, l'originalità delle proprie idee e la capacità di prosperare anche nelle avversità.\n"
+    </string><string name="ny_wd6_details">"Geng + Shen / Xin + You = Legno di Melograno"</string><string name="ny_f1_title">"Fuoco della Fornace (Lu Zhong Huo)"</string><string name="ny_f1_subtitle">"La passione intesa ed il calore trasformativo"</string><string name="ny_f1_desc">
+    "Generato dai Pilastri Bing Yin (Fuoco Yang su Tigre) e Ding Mao (Fuoco Yin su Coniglio).\n"
+    "Rappresenta una natura ardente, concentrata e trasformatrice, come il fuoco di una fornace che tempra e forgia con costanza.\n"
+    "Le persone con questo Na Yin possiedono un carattere appasionato, resiliente e di grande intensità. Si distinguono per l'immens"
+    "forza di volontà, l'entusiasmo contagioso e il talento naturale nel guidare e finalizzare progetti complessi.\n"
+    </string><string name="ny_f1_details">"Bing + Yin / Ding + Mao = Fuoco della Fornace"</string><string name="ny_f2_title">"Fuoco sulla Cima della Montagna (Shan Tou Huo)"</string><string name="ny_f2_subtitle">"L'incendio visibile che illumina il cielo"</string><string name="ny_f2_desc">
+    "Generato dai Pilastri Jia Xu (Legno Yang su Cane) e Yi Hai (Legno Yin su Maiale). \n"
+    "Rappresenta una natura radiosa, carismatica e dirompente, come un fuoco che brilla sulla vetta illuminando l'orizzonte. \n"
+    "Le persone con questo Na Yin possiedono un carattere schietto, brillante e appassionato. Si distinguono per la rapidità d'azione,\n"
+    "la leadership naturale e il talento innato nell'ispirare gli altri e farsi notare.\n"
+    </string><string name="ny_f2_details">"Jia + Xu / Yi + Hai = Fuoco sulla Cima della Montagna"</string><string name="ny_f3_title">"Fuoco ai Piedi della Montagna (Shan Xia Huo)"</string><string name="ny_f3_subtitle">"La luce discreta che riscalda e protegge"</string><string name="ny_f3_desc">
+    "Generato dai Pilastri Bing Shen (Fuoco Yang su Scimmia) e Ding You (Fuoco Yin su Gallo).\n"
+    "Rappresenta una natura intima, strategica e pragmatica, come un fuoco di valle che riscalda la terra e cova con pazienza. \n"
+    "Le persone con questo Na Yin possiedono un carattere discreto, acuto e riflessivo. Sanno agire al momento opportuno,\n"
+    "coltivano relazioni profonde e autentiche e preferiscono i risultati concreti alla visibilità fine a se stessa.\n"
+    </string><string name="ny_f3_details">"Bing + Shen  / Ding + You = Fuoco ai Piedi della Montagna"</string><string name="ny_f4_title">"Fuoco del Fulmine (Pili Huo)"</string><string name="ny_f4_subtitle">"La saetta improvvisa e l'energia elettrica"</string><string name="ny_f4_desc">
+    "Generato dai Pilastri Wu Zi (Terra Yang su Topo) e Ji Chou (Terra Yin su Bue). \n"
+    "Rappresenta una natura dirompente, istantanea e imprevedibile, come un fulmine che squarcia il cielo e trasforma la realtà. \n"
+    "Le persone con questo Na Yin possiedono un carattere magnetico, impulsivo e geniale. Si distinguono per la straordinaria prontezza \n"
+    "mentale, il coraggio nelle emergenze e la capacità di rompere gli schemi con idee rivoluzionarie.\n"
+    </string><string name="ny_f4_details">"Wu + Zi / Ji + Chou = Fuoco del Fulmine"</string><string name="ny_f5_title">"Fuoco della Lampada (Fu Deng Huo)"</string><string name="ny_f5_subtitle">"La luce della saggezza che guida nell'oscurità"</string><string name="ny_f5_desc">
+    "Generato dai Pilastri Jia Chen (Terra Yang su Drago) e Yi Si (Terra Yin su Serpente). \n"
+    "Rappresenta una natura saggia, focalizzata e intellettuale, come una lampada che illumina l'oscurità e guida i passi nel buio. \n"
+    "Le persone con questo Na Yin possiedono un carattere profondo, intuitivo e riflessivo. Si distinguono per la sete di conoscenza, \n"
+    "l'eleganza di pensiero e il talento innato nel portare chiarezza, consiglio e ispirazione nei momenti di crisi.\n"
+    </string><string name="ny_f5_details">"Jia + Chen / Yi + Si = Fuoco della Lampada"</string><string name="ny_f6_title">"Fuoco del Sole (Tian Shang Huo)"</string><string name="ny_f6_subtitle">"La luce celestiale che illumina e dà la vita"</string><string name="ny_f6_desc">
+    "Generato dai Pilastri Wu Wu (Terra Yang su Cavallo) e Ji Wei (Terra Yin su Capra). \n"
+    "Rappresenta una natura sovrana, generosa e illuminante, come il sole nel cielo che riscalda e dà vita a tutto il mondo. \n"
+    "Le persone con questo Na Yin possiedono un carattere nobile, magnanimo e carismatico. Si distinguono per l'onestà incrollabile, \n"
+    "il profondo senso di giustizia e il talento naturale nel guidare, proteggere e ispirare le masse.\n"
+    </string><string name="ny_f6_details">"Wu + Wu / Ji + Wei = Fuoco del Sole"</string><string name="ny_e1_title">"Terra del Ciglio della Strada (Lu Bian Tu)"</string><string name="ny_e1_subtitle">"La stabilità umile che sostiene il cammino"</string><string name="ny_e1_desc">
+    "Generato dai Pilastri Geng Wu (Metallo Yang su Cavallo) e Xin Wei (Metallo Yin su Capra). \n"
+    "Rappresenta una natura solida, accogliente e orientata al servizio, come la terra che costeggia e sostiene le grandi strade. \n"
+    "Le persone con questo Na Yin possiedono un carattere affidabile, paziente e pragmatico. Si distinguono per lo spirito di sacrificio, \n"
+    "la capacità di unire le persone e il talento naturale nel creare basi sicure per gli altri.\n"
+    </string><string name="ny_e1_details">"Geng + Wu / Xin + Wei = Terra del Ciglio della Strada"</string><string name="ny_e2_title">"Terra delle Mura della Città (Cheng Tou Tu)</string><string name="ny_e2_subtitle">"La fortezza interiore e lo scudo protettivo"</string><string name="ny_e2_desc">
+    "Generato dai Pilastri Wu Yin (Terra Yang su Tigre) e Ji Mao (Terra Yin su Coniglio). \n"
+    "Rappresenta una natura imponente, protettiva e incrollabile, come le mura di una città che difendono la civiltà e \n"
+    "resistono al tempo. Le persone con questo Na Yin possiedono un carattere fiero, stabile e di sani principi. Si distinguono per \n"
+    "il forte senso del dovere, l'istinto protettivo verso i propri cari e l'incrollabile capacità di mantenere la posizione nelle avversità.\n"
+    </string><string name="ny_e2_details">"Wu + Yin / Ji + Mao = Terra delle Mura della Città"</string><string name="ny_e3_title">"Terra del Tetto (Wu Shang Tu)"</string><string name="ny_e3_subtitle">"La protezione elevata che ripara dalle tempeste"</string><string name="ny_e3_desc">
+    "Generato dai Pilastri Bing Xu (Fuoco Yang su Cane) e Ding Hai (Fuoco Yin su Maiale). \n"
+    "Rappresenta una natura elevata, protettiva e resiliente, come le tegole di un tetto che offrono ripario dalle intemperie. \n"
+    "Le persone con questo Na Yin possiedono un carattere indipendente, fiero e coscienzioso. Si distinguono per il forte senso di \n"
+    "responsabilità verso la famiglia, la dignità personale e la capacità di sopportare grandi pesi per proteggere gli altri.\n"
+    </string><string name="ny_e3_details">"Bing + Xu / Ding + Hai = Terra del Tetto"</string><string name="ny_e4_title">"Terra della Parete (Bi Shang Tu)"</string><string name="ny_e4_subtitle">"Il calore domestico e la protezione dell'intimità"</string><string name="ny_e4_desc">
+    "Generato dai Pilastri Geng Zi (Metallo Yang su Topo) e Xin Chou (Metallo Yin su Bue). \n"
+    "Rappresenta una natura intima, coesiva e orientata all'armonia, come l'intonaco di una parete che unisce i materiali e abbellisce la casa. \n"
+    "Le persone con questo Na Yin possiedono un carattere sensibile, leale e costruttivo. Si distinguono per la capacità \n"
+    "di mediazione, il talento nel creare ambienti sereni e l'istinto profondo nel proteggere l'armonia familiare.\n"
+    </string><string name="ny_e4_details">"Geng + Zi / Xin + Chou = Terra della Parete"</string><string name="ny_e5_title">"Terra della Grande Autostrada (Da Yi Tu)"</string><string name="ny_e5_subtitle">"La vasta via di connessione e lo spirito d'espansione"</string><string name="ny_e5_desc">
+    "Generato dai Pilastri Wu Shen (Terra Yang su Scimmia) e Ji You (Terra Yin su Gallo). \n"
+    "Rappresenta una natura vasta, dinamica e cosmopolita, come una grande via di comunicazione che unisce mondi e culture diverse. \n"
+    "Le persone con questo Na Yin possiedono un carattere aperto, tollerante e lungimirante. Si distinguono per la grande adattabilità, \n"
+    "la passione per il movimento e il talento innato nel gestire ampi reti di relazioni.\n"
+    </string><string name="ny_e5_details">"Wu + Shen / Ji + You = Terra della Grande Autostrada"</string><string name="ny_e6_title">"Terra nella Sabbia (Sha Zhong Tu)"</string><string name="ny_e6_subtitle">"La fluidità dello spirito e l'intuito profondo"</string><string name="ny_e6_desc">
+    "Generato dai Pilastri Bing Chen (Fuoco Yang su Drago) e Ding Si (Fuoco Yin su Serpente). \n"
+    "Rappresenta una natura fluida, misteriosa e preziosa, come la sabbia che si adatta agli elementi e custodisce oro \n"
+    "nei suoi granelli. Le persone con questo Na Yin possiedono un carattere flessibile, intuitivo e profondo. Si distinguono per \n"
+    "la grande resilienza, l'eleganza nei modi e il talento innato nel far emergere il proprio valore unico con il tempo.\n"
+    </string><string name="ny_e6_details">"Bing + Chen / Ding + Si = Terra nella Sabbia"</string></file><file path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\main\res\values\qi.xml" qualifiers=""><string name="cat_qi">"Le 12 Fasi del Qi (Shi Er Chang Sheng)"</string><string name="cat_qi_intro">"Fasi del Qi (Qi Phase) / 12 Life Stages"</string><string name="qi_intro_title">"Le 12 Fasi di Forza del Day Master"</string><string name="qi_intro_subtitle">"Dalla Nascita all'Imperatore, fino alla Tomba"</string><string name="qi_intro_desc">
+    "Questo concetto misura quanto il tuo Day Master si sente forte nel Ramo Terrestre di un pilastro. \n"
+    "Va dalla fase di Nascita (piena di entusiasmo), alla fase 'Imperatore' (massimo potere) fino alla fase 'Tomba' \n" 
+    "(energia di accumulo ed introspezione). Rivela se le tue azioni avranno un impatto immediato o avranno bisogno di tempo. \n"
+    </string><string name="q1_title">"Nascita (Chang Sheng)"</string><string name="q1_subtitle">"L'energia emerge nel mondo"</string><string name="q1_desc">
+    "Rappresenta il momento in cui il Qi prende forma e viene alla luce nel ciclo vitale. \n"
+    "È l'archetipo dell'energia fresca, della curiosità innata e della crescita vigorosa. \n"
+    "Simboleggia una fase fortunata e priva di preconcetti, dove la mente è aperta all'apprendimento \n"
+    "e il potenziale si esprime con ottimismo ed entusiasmo contagioso. Nel Pilastro indicato indica un settore della vita caratterizzato \n"
+    "da partenze fortunate, grande vitalità fisica/mentale e capacità di rigenerarsi dopo ogni crisi.\n"
+    </string><string name="q1_details">"Forza del Qi: Molto Alta | Tratti chiave: ottimismo, capacità di rinnovamento, forte supporto da mentori."</string><string name="q2_title">"Bagno (Mu Yu)"</string><string name="q2_subtitle">"Vulnerabilità, crescita e purificazione"</string><string name="q2_desc">
+    "Rappresenta la fase del neonato che viene lavato e purificato. È l'archetipo della vulnerabilità, della scoperta \n"
+    "di sè e dell'esposizione al mondo senza filtri. Simboleggia un momento di transizione delicato ma affascinante, legato al fascino interpersonale, \n"
+    "al romanticismo ed alla curiosità emotiva. Nel Pilastro indicato mostra un settore della vita dinamico e sensibile, dove si impara \n"
+    "attraverso la sperimentazione e gli errori, dove le relazioni e l'attrattiva giocano un ruolo centrale.\n"
+    </string><string name="q2_details">"Forza del Qi: Medio-Bassa | Tratti chiave: sensibilità, romanticismo, esposizione pubblica, fascino naturale."</string><string name="q3_title">"Adolescenza (Dai Guan)"</string><string name="q3_subtitle">"L'ingresso nella giovinezza e l'ambizione"</string><string name="q3_desc">
+    "Rappresenta la fase in cui il giovane indossa gli abiti della maturità, pronto a fare il suo \n"
+    "ingresso nella società. È l'archetipo dell'indipendenza, dell'esplorazione del proprio potere e dell'ambizione vigorosa. \n"
+    "Simboleggia un momento di grande determinazione e spinta verso il successo, dove la mente è focalizzata sugli obiettivi \n"
+    "e sul riconoscimento sociale. Nel Pilastro indicato mostra un settore della vita caratterizzato da un forte spirito di iniziativa, \n"
+    "competitività e il desiderio di emergere, pur con il rischio di cadere nell'impulsività o nell'ostinazione.\n"
+    </string><string name="q3_details">"Forza del Qi: Alta | Tratti chiave: ambizione, indipendenza, determinazione, spinta all'azione."</string><string name="q4_title">"Maturità (Lin Guan)"</string><string name="q4_subtitle">"La stabilità, il lavoro e la responsabilità"</string><string name="q4_desc">
+    "Rappresenta la fase dell'adulto che consolida la propria posizione e inizia a raccogliere i frutti del proprio \n"
+    "impegno. È l'archetipo della stabilità materiale, del senso del dovere e dell'indipendenza finanziaria. Simboleggia un \n"
+    "momento di grande equilibrio ed efficienza, in cui la persona agisce con pragmatismo, maturità e rispetto per le regole. \n"
+    "Nel Pilastro indicato mostra un settore della vita solido e costruttivo, caratterizzato da avanzamenti di carriera stabili, \n"
+    "affidabilità e la capacità di gestire responsabilità importanti senza farsi travolgere.\n"
+    </string><string name="q4_details">"Forza del Qi: Molto Alta | Tratti chiave: pragmatismo, senso del dovere, indipendenza, affidabilità."</string><string name="q5_title">"Picco (Di Wang)"</string><string name="q5_subtitle">"Il massimo splendore e il potere assoluto"</string><string name="q5_desc">
+    "Rappresenta il momento di massimo vigore, autorità e splendore dell'intero ciclo vitale. È l'archetipo del Sovrano, caratterizzato \n"
+    "da una forza immensa, leadership naturale e capacità di dominare le circostanze. Simboleggia il punto più alto del successo e dell'autoaffermazione, \n"
+    "ma porta con sè anche l'inizio nascosto del declino, poichè chi si trova sulla vetta può solo scendere. Nel Pilastro indicato mostra un settore \n"
+    "della vita di grande impatto, dove si gode di estrema autonomia e potere d'azione, con il rischio latente di eccessivo orgoglio o isolamento.\n"
+    </string><string name="q5_details">"Forza del Qi: Massima | Tratti chiave: leadership, autorità, indipendenza totale, successo."</string><string name="q6_title">"Declino (Shuai)"</string><string name="q6_subtitle">"La transizione verso la saggezza e la prudenza"</string><string name="q6_desc">
+    "Rappresenta il momento in cui l'energia inizia a ritirarsi dopo aver toccato l'apice. Non indica un crollo ma una \n"
+    "perdita di forza fisica a favore di un grande guadagno in termini di maturità, esperienza e cautela. È l'archetipo del saggio anziano \n"
+    "o del sovrano che abdica, preferendo la diplomazia e la strategia alla forza bruta. Nel Pilastro indicato mostra un settore della vita \n"
+    "caratterizzato da stabilità conservativa, dove si preferisce mantenere ciò che si ha piuttosto che rischiare in nuove avventure.\n"
+    </string><string name="q6_details">"Forza del Qi: Medio-Alta | Tratti chiave: saggezza, prudenza, conservazione, maturità emotiva."</string><string name="q7_title">"Ritiro (Bing)"</string><string name="q7_subtitle">"L'introspezione, il ritiro e la sensibilità"</string><string name="q7_desc">
+    "Rappresenta la fase in cui il Qi si indebolisce significativamente e si ritira dal mondo esterno. \n"
+    "È l'archetipo dell'introversione, dell'empatia profonda e della riflessione filosofica. Simboleggia un momento in cui \n"
+    "le energie fisiche calano, spingendo la mente a focalizzarsi sulla salute interiore, la spiritualità e la comprensione psicologica \n"
+    "degli altri. Nel Pilastro indicato mostra un settore della vita caratterizzato da grande sensibilità, intuito e prudenza, dove è necessario \n"
+    "agire senza fretta e ascoltare i propri ritmi biologici ed emotivi.\n"
+    </string><string name="q7_details">"Forza del Qi: Bassa | Tratti chiave: empatia, introspezione, forte intuito, bisogno di riposo."</string><string name="q8_title">"Morte (Si)"</string><string name="q8_subtitle">"L'immobilità, la logica e la massima focalizzazione"</string><string name="q8_desc">
+    "Rappresenta il momento in cui il Qi si ferma del tutto, raggiungendo un livello di quiete assoluta. \n"
+    "È l'archetipo del distacco emotivo, della razionalità pura e della concentrazione profonda. Simboleggia la fine dei conflitti e \n"
+    "la capacità di analizzare le cose senza l'interferenza dell'ego o delle passioni. Nel Pilastro indicato mostra un settore della vita \n"
+    "caratterizzato da grande acume intellettuale, precisione e dedizione a compiti che richiedono logica, ricerca o specializzazione, \n"
+    "sebbene possa mancare di spontaneità.\n"
+    </string><string name="q8_details">"Forza del Qi: Molto Bassa | Tratti chiave: logica, focalizzazione, razionalità, distacco emotivo."</string><string name="q9_title">"Tomba (Mu)"</string><string name="q9_subtitle">"L'accumulo, il risparmio e la protezione"</string><string name="q9_desc">
+    "Rappresenta la fase in cui il Qi viene sepolto e custodito all'interno della terra per essere protetto. \n"
+    "È l'archetipo del magazzino, del caveau e dei segreti. Simboleggia un momento di forte introversione, focalizzato sulla \n"
+    "sicurezza materiale, il risparmio e la conservazione delle risorse personali. Nel Pilastro indicato mostra un settore della vita \n"
+    "caratterizzato da una gestione prudente o riservata, dove si tende ad accumulare ricchezza o conoscenza e mantenere una vita privata \n"
+    "molto protetta, con la tendenza a trattenere le cose.\n"
+    </string><string name="q9_details">"Forza del Qi: Bassa | Tratti chiave: accumulo, riservatezza, risparmio, protezione delle risorse."</string><string name="q10_title">"Vuoto (Jue)"</string><string name="q10_subtitle">"Il vuoto assoluto e la rottura con il passato"</string><string name="q10_desc">
+    "Rappresenta il momento in cui il vecchio Qi si estingue completamente, dissolvendosi nel vuoto. È l'archetipo \n"
+    "della tabula rasa, della fine dei legami e della liberazione totale dai condizionamenti precedenti. Simboleggia un punto di svolta \n"
+    "drastico ma necessario, dove l'assenza di struttura lascia spazio all'inaspettato e alla pura potenzialità futura. \n"
+    "Nel Pilastro indicato mostra un settore della vita instabile o mutevole, caratterizzato da radicali cambiamenti, chiusure definitive \n"
+    "e la necessità di imparare a lasciare andare per ricominciare da zero.\n"
+    </string><string name="q10_details">"Forza del Qi: Minima | Tratti chiave : distacco, fine dei cicli, potenziale invisibile, transizione radicale."</string><string name="q11_title">"Concepimento (Tai)"</string><string name="q11_subtitle">"La scintilla iniziale, la speranza e l'idea"</string><string name="q11_desc">
+    "Rappresenta il momento in cui la nuova energia viene concepita nell'oscurità, come un embrione che inizia \n"
+    "a formarsi. È l'archetipo dell'ispirazione iniziale, del sogno e della speranza invisibile. Simboleggia una fase di vulnerabilità, \n"
+    "ma anche di grande creatività latente, dove i progetti e le idee vengono seminati e protetti dal mondo esterno. Nel Pilastro indicato \n"
+    "mostra un settore della vita caratterizzato da un costante bisogno di protezione, sogni ad occhi aperti e l'inizio silenzioso di nuove \n"
+    "e promettenti fasi esistenziali.\n"
+    </string><string name="q11_details">"Forza del Qi: Molto Bassa | Tratti chiave: speranza, pianificazione, vulnerabilità, potenziale creativo."</string><string name="q12_title">"Nutrimento (Yang)"</string><string name="q12_subtitle">"La gestazione, l'attesa e la preparazione"</string><string name="q12_desc">
+    "Rappresenta la fase finale del ciclo, in cui l'energia cresce e si sviluppa al sicuro all'interno dell'utero. \n"
+    "È l'archetipo della gestazione, del nutrimento e dell'attesa fiduciosa. Simboleggia un momento protetto, privo di minacce esterne, \n"
+    "dove ci si prepara a raccogliere le forze prima di venire alla luce. Nel Pilastro indicato mostra un settore della vita caratterizzato \n"
+    "da supporto costante, stabilità serena e una crescita graduale ma sicura, ideale per lo studio, la pianificazione o il consolidamento personale.\n"
+    </string><string name="q12_details">"Forza del Qi: Media | Tratti chiave: protezione, preparazione, accumulo di forza, serenità."</string></file><file path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\main\res\values\stars.xml" qualifiers=""><string name="cat_protect">"Stelle di Protezione e Nobiltà"</string><string name="cat_career">"Stelle di Ricchezza e Carriera"</string><string name="cat_love">"Stelle di Fascino e Romanticismo"</string><string name="cat_stars">"Stelle Simboliche (Shen Sha)"</string><string name="star_intro_title">"Introduzione alle Stelle"</string><string name="star_intro_subtitle">"I modificatori speciali del destino "</string><string name="star_intro_desc">
+    "Le Stelle Simboliche (Shen Sha) sono configurazioni energetiche speciali calcolate in base alle \n"
+    "relazioni tra il Day Master (o il Ramo dell'anno) e gli altri pilastri. Non rappresentano elementi fisici ma \n"
+    "archetipi psicologici, talenti innati, fortune protettive o sfide karmiche specifiche. Agiscono come 'lenti d'ingradimento' \n"
+    "che colorano i settori della vita in cui risiedono, aggiungendo sfumature uniche alla personalità e al percorso evolutivo \n"
+    "dell'individuo. \n"
+    </string><string name="star_noble_title">"Nobile Celeste (Tian Yi Gui Ren)"</string><string name="star_noble_subtitle">"Il Nobile Celeste - La Stella del Salvatore"</string><string name="star_noble_desc">"E' considerata la stella protettiva più potente del BaZi. Indica che nei momenti di massima
+    difficoltà apparirà sempre qualcuno (un mentore, un amico o uno sconosciuto) a tendere una mano."</string><string name="star_noble_details">"Effetti: Protezione dai pericoli, attrazione di mentori influenti e successo agevolato."</string><string name="star_doc_title">"Medico Celeste (Tian Yi)"</string><string name="star_doc_subtitle">"Il Medico Celeste - La Stella del Guaritore"</string><string name="star_doc_desc"/><string name="star_doc_details"/><string name="star_car_title">"Carro Dorato (Jin Yu)"</string><string name="star_car_subtitle">"Il Carro Dorato - La Stella della Prosperità"</string><string name="star_car_desc">"Tradizionalmente legata ai viaggi dei nobili su carrozze dorate, nel BaZi moderno indica il supporto
     materiale, l'accesso ad opportunità finanziare di alto livello e uno stile di vita confortevole. Spesso indica che la persona riceverà
-    aiuti importanti nella carriera o nel matrimonio."</string><string name="star_car_effects">Effetti: Attira mentori facoltosi, successo finanziario steso nel tempo e stabilità materiale.</string><string name="star_rclouds_title">Nuvole Rosse (Hong Yan)</string><string name="star_rclouds_subtitle">Le Nuvole Rosse - La Stella del Magnetismo</string><string name="star_rclouds_desc">"Rappresenta un fascino innato, empatia profonda e un forte potere d'attrazione verso gli altri.
+    aiuti importanti nella carriera o nel matrimonio."</string><string name="star_car_details">"Effetti: Attira mentori facoltosi, successo finanziario steso nel tempo e stabilità materiale."</string><string name="star_rclouds_title">"Nuvole Rosse (Hong Yan)"</string><string name="star_rclouds_subtitle">"Le Nuvole Rosse - La Stella del Magnetismo"</string><string name="star_rclouds_desc">"Rappresenta un fascino innato, empatia profonda e un forte potere d'attrazione verso gli altri.
     A differenza di altre stelle romantiche, questa stella indica una bellezza emotiva ed un magnetismo che punta a relazioni intense,
-    sebbene a volte possa portare ad idealizzare troppo il partner."</string><string name="star_rclouds_effects">Effetti: Forte carisma personale, sensualità e predisposizione alle arti espressive.</string></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\build\generated\res\resValues\debug"/></dataSet><mergedItems/></merger>
+    sebbene a volte possa portare ad idealizzare troppo il partner."</string><string name="star_rclouds_details">"Effetti: Forte carisma personale, sensualità e predisposizione alle arti espressive."</string></file><file path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\main\res\values\stems.xml" qualifiers=""><string name="cat_stems">"I 10 Tronchi Celesti (Heavenly Stems)"</string><string name="st1_title">"Jia (甲) - Legno Yang"</string><string name="st1_subtitle">"L'Albero Secolare - Leader Nato"</string><string name="st1_desc">
+    "Rappresenta un grande albero robusto. Le persone Jia sono idealiste, progressiste, testarde ma estremamente protettive \n" 
+    "verso gli altri. Hanno una crescita costante e non amano essere controllate. \n"
+    </string><string name="st1_details">"Elemento: Legno | Polarità: Yang | Direzione: Est"</string><string name="st2_title">"Yi (乙) - Legno Yin"</string><string name="st2_subtitle">"L'Edera o l'Erba - Il Sopravvissuto"</string><string name="st2_desc">
+    "Rappresenta piante flessibili, fiori o rampicanti. Le persone Yi sono diplomatiche, incredibilmente resilienti,\n" 
+    "e sanno adattarsi a qualsiasi situazione per sopravvivere. Ottimi strateghi dietro le quinte. \n"
+    </string><string name="st2_details">"Elemento: Legno | Polarità: Yin | Direzione: Est"</string><string name="st3_title">"Wu (戊) - Terra Yang"</string><string name="st3_subtitle">"La Montagna o la Roccia - Il Protettore"</string><string name="st3_desc">
+    "Rappresenta una montagna maestosa o una roccia imponente. Le persone Wu sono stabili, affidabili, protettive e agiscono \n"
+    "come un punto di riferimento per la comunità. Possono risultare lente al cambiamento ma sono incrollabili.\n"
+    </string><string name="st3_details">"Elemento: Terra | Polarità: Yang | Direzione: Centro"</string><string name="st4_title">"Ji (己) - Terra Yin"</string><string name="st4_subtitle">"Il Giardino o la Terra Fertile - Il Nutritore"</string><string name="st4_desc">
+    "Rappresenta il terreno fertile dei campi o il giardino coltivato. Le persone Ji sono tolleranti, creative, capaci di accudire\n"
+    "gli altri e dotate di una memoria eccezionale. Trovano la propria forza nel coltivare talenti e relazioni.\n"
+    </string><string name="st4_details">"Elemento: Terra | Polarità: Yin | Direzione: Centro"</string><string name="st5_title">"Ren (壬) - Acqua Yang"</string><string name="st5_subtitle">"L'Oceano o il Fiume - Il Visionario"</string><string name="st5_desc">
+    "Rappresenta le acque dell'oceano, dei grandi fiumi o delle cascate. Le persone Ren sono dinamiche, amano la libertà, " +
+    "possiedono un'intelligenza fluida e sono in continuo movimento. Hanno una grande influenza sul proprio ambiente."
+    </string><string name="st5_details">"Elemento: Acqua | Polarità: Yang | Direzione: Nord"</string><string name="st6_title">"Gui (癸) - Acqua Yin" </string><string name="st6_subtitle">"La Rugiada o la Pioggia Leggera - L'Intuitivo"</string><string name="st6_desc">
+    "Rappresenta la pioggia leggera, la rugiada mattutina o i ruscelli di montagna. Le persone Gui sono introspettive, intuitive, \n" 
+    "gentili ma capaci di infiltrarsi ovunque con costanza. Possiedono una spiccata sensibilità psicologica.\n"
+    </string><string name="st6_details">"Elemento: Acqua | Polarità: Yin | Direzione: Nord"</string><string name="st7_title">"Bing (丙) - Fuoco Yang"</string><string name="st7_subtitle">"Il Sole - Il Magnanimo"</string><string name="st7_desc">
+    "Rappresenta la luce e il calore del sole nel cielo. Le persone Bing sono generose, passionali, piene di entusiasmo \n"
+    "e amano illuminare la vita altrui. Hanno un forte bisogno di espressione e trasparenza.\n"
+    </string><string name="st7_details">"Elemento: Fuoco | Polarità: Yang | Direzione: Sud"</string><string name="st8_title">"Ding (丙) - Fuoco Yin"</string><string name="st8_subtitle">"La Candela o la Lanterna - Il Mentore"</string><string name="st8_desc">
+    "Rappresenta la fiamma di una candela, una lanterna o un focolare. Le persone Ding sono meticolose, guidate dall'intuito, \n"
+    "profondamente stabili ma capaci di infiammarsi improvvisamente. Sono leader motivatori stabili nel tempo.\n"
+    </string><string name="st8_details">"Elemento: Fuoco | Polarità: Yin | Direzione: Sud"</string><string name="st9_title">"Geng (庚) - Metallo Yang"</string><string name="st9_subtitle">"La Spada o il Ferro Grezzo - Il Giusto"</string><string name="st9_desc">
+    "Rappresenta il metallo grezzo, la spada o l'ascia d'acciaio. Le persone Geng sono governate dal senso di giustizia, \n" 
+    "sono determinate, amano le sfide e affrontano i problemi in modo diretto. Crescono attraverso le avversità.\n"
+    </string><string name="st9_details">"Elemento: Metallo | Polarità: Yang | Direzione: Ovest"</string><string name="st10_title">"Xin (辛) - Metallo Yin"</string><string name="st10_subtitle">"Il Gioiello o lo Spillo - L'Esteta"</string><string name="st10_desc">
+    "Rappresenta l'oro lavorato, i gioielli preziosi o i metalli fini. Le persone Xin sono eleganti, sensibili ai dettagli, \n"
+    "amano risplendere e cercano la perfezione estetica. Hanno una mente acuta come uno spillo.\n"
+    </string><string name="st10_details">"Elemento: Metallo | Polarità: Yin | Direzione: Ovest"</string></file><file path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\main\res\values\tengods.xml" qualifiers=""><string name="cat_tg">"I Dieci Dei (Ten Gods)"</string><string name="tg0_title"/><string name="tg0_subtitle"/><string name="tg0_desc"/><string name="tg1_title"/><string name="tg1_subtitle"/><string name="tg1_desc"/><string name="tg1_details"/><string name="tg2_title"/><string name="tg2_subtitle"/><string name="tg2_desc"/><string name="tg2_details"/><string name="tg3_title"/><string name="tg3_subtitle"/><string name="tg3_desc"/><string name="tg3_details"/><string name="tg4_title"/><string name="tg4_subtitle"/><string name="tg4_desc"/><string name="tg4_details"/><string name="tg5_title"/><string name="tg5_subtitle"/><string name="tg5_desc"/><string name="tg5_details"/><string name="tg6_title"/><string name="tg6_subtitle"/><string name="tg6_desc"/><string name="tg6_details"/><string name="tg7_title"/><string name="tg7_subtitle"/><string name="tg7_desc"/><string name="tg7_details"/><string name="tg8_title"/><string name="tg8_subtitle"/><string name="tg8_desc"/><string name="tg8_details"/><string name="tg9_title"/><string name="tg9_subtitle"/><string name="tg9_desc"/><string name="tg9_details"/><string name="tg10_title"/><string name="tg10_subtitle"/><string name="tg10_desc"/><string name="tg10_details"/></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\build\generated\res\resValues\debug"/></dataSet><mergedItems/></merger>

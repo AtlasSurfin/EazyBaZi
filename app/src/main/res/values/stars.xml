@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">"EazyBaZi"</string>
-
     <!-- Categoria Stelle-->
     <string name="cat_protect">"Stelle di Protezione e Nobiltà"</string>
     <string name="cat_career">"Stelle di Ricchezza e Carriera"</string>

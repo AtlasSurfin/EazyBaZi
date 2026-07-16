@@ -204,7 +204,7 @@ fun BaZiScreen() {
                                         selectedCity?.let { city ->
                                             currentChartStep = ChartStep.LOADING
                                             coroutineScope.launch {
-                                                val monthNum = getMonthNum(selectedMonth)
+                                                val monthNum = getMonthNum(context, selectedMonth)
 
                                                 baziChart = getFullBaZi(
                                                     selectedYear.toInt(),
@@ -359,7 +359,7 @@ fun BaZiScreen() {
                             title = stringResource(R.string.wood_title),
                             subtitle = stringResource(R.string.wood_subtitle),
                             description = stringResource(R.string.wood_desc),
-                            details = stringResource(R.string.wood_details),,
+                            details = stringResource(R.string.wood_details),
                             emoji = "木"
                         ),
                         ExtendedLearnItem(
@@ -469,7 +469,7 @@ fun BaZiScreen() {
                             title = stringResource(R.string.st7_title),
                             subtitle = stringResource(R.string.st7_subtitle),
                             description = stringResource(R.string.st7_desc),
-                            details = stringResource(R.string.st7details),
+                            details = stringResource(R.string.st7_details),
                             emoji = "☀️"
                         ),
                         ExtendedLearnItem(
@@ -809,7 +809,7 @@ fun BaZiScreen() {
                             title = stringResource(R.string.q3_title),
                             subtitle = stringResource(R.string.q3_subtitle),
                             description = stringResource(R.string.q3_desc),
-                            details = stringResource(R.string.q3_details),,
+                            details = stringResource(R.string.q3_details),
                             emoji = "🎓"
                         ),
 
@@ -818,7 +818,7 @@ fun BaZiScreen() {
                             title = stringResource(R.string.q4_title),
                             subtitle = stringResource(R.string.q4_subtitle),
                             description = stringResource(R.string.q4_desc),
-                            details = stringResource(R.string.q4_details),,
+                            details = stringResource(R.string.q4_details),
                             emoji = "💼"
                         ),
 
@@ -932,7 +932,7 @@ fun BaZiScreen() {
                             category = stringResource(R.string.cat_ny_metal),
                             title = stringResource(R.string.ny_m3_title),
                             subtitle = stringResource(R.string.ny_m3_subtitle),
-                            description = stringResource(R.string.ny_m3.desc),
+                            description = stringResource(R.string.ny_m3_desc),
                             details = stringResource(R.string.ny_m3_details),
                             emoji = "🕯️",
                         ),
@@ -1168,7 +1168,7 @@ fun BaZiScreen() {
                             title = stringResource(R.string.star_rclouds_title),
                             subtitle = stringResource(R.string.star_rclouds_subtitle),
                             description = stringResource(R.string.star_rclouds_desc),
-                            details = stringResource(R.string.star_rclouds_effects),
+                            details = stringResource(R.string.star_rclouds_details),
                             emoji = "🌹"
                         ),
                         ExtendedLearnItem(

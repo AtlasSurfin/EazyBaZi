@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">EazyBaZi</string>
 
     <string name="cat_nayin">"Na Yin (Astrologia Melodica)"</string>
     <string name="cat_ny_wood">"Na Yin del Legno"</string>

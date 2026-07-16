@@ -1,4 +1,5 @@
 package com.fredcomms.baziapp.logic
+import com.fredcomms.baziapp.R
 import com.nlf.calendar.Solar
 import com.nlf.calendar.Lunar
 import android.os.Build
@@ -135,10 +136,10 @@ fun getTenGods(dayMaster: Stem, target: Stem): String{
     return when{
         //Output
         isProducing(dayMaster.element, target.element) ->
-            if(isSamePolarity) "Hurting Officer (Shang Guan)" else "Eating God (Pian Shi)"
+            if(isSamePolarity) "Eating God (Pian Shi)" else "Hurting Officer (Shang Guan)"
         //Wealth
         isControlling(dayMaster.element, target.element) ->
-            if(isSamePolarity) "Indirect Wealth (Pian Cai)" else "Direct Wealth (Zheng Cai)"
+            if(isSamePolarity) "Direct Wealth (Zheng Cai)" else "Indirect Wealth (Pian Cai)"
 
         //Power
         isControlling(target.element, dayMaster.element) ->
@@ -405,12 +406,21 @@ fun calculateRoleScores(chart: FullBaZiChart): RoleScores? {
     )
 }
 
-fun getMonthNum(monthName: String): Int{
+fun getMonthNum(context: Context, monthName: String): Int{
     return try {
-        val formatter = DateTimeFormatter.ofPattern("MMMM", Locale.getDefault())
+        val monthsArray = context.resources.getStringArray(R.array.months_arr)
 
-        val temporalAccessor = formatter.parse(monthName.trim().replaceFirstChar { it.uppercase() })
-        temporalAccessor.get(ChronoField.MONTH_OF_YEAR)
+        val formattedInput = monthName.trim()
+            .lowercase()
+            .replaceFirstChar { it.uppercase() }
+
+        val index = monthsArray.indexOf(formattedInput)
+
+        if(index != -1) {
+            index + 1
+        }else{
+            formattedInput.toInt()
+        }
     }catch(e: Exception){
             1 //if user input is invalid, fall back to default value (1 for Jan)
     }

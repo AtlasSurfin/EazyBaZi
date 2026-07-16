@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">EazyBaZi</string>
     <string name="cat_interacts">"Interazioni nel BaZi"</string>
 
     <string name = "i0_title">"Introduzione alle Interazioni"</string>
