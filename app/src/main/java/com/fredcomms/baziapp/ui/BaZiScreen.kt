@@ -355,683 +355,542 @@ fun BaZiScreen() {
                     val glossary = listOf(
                         //Elementi e Cicli
                         ExtendedLearnItem(
-                            category = "I 5 elementi del BaZi",
-                            title = "Legno (Mù)",
-                            subtitle = "L'Energia della Primavera e della Nascita",
-                            description = "Rappresenta l'espansione, la crescita verticale, l'idealismo e l'istinto di esplorazione. " +
-                            "Psicologicamente governa la gentilezza, la compassione e la spinta al progresso. Se in eccesso può portare a " +
-                            "rabbia e frustrazione. Nel corpo è legato a Fegato e Cistifellea.",
-                            details = "Genera: Fuoco | Controlla: Terra | È generato da: Acqua | È controllato da: Metallo",
+                            category = stringResource(R.string.cat_elem),
+                            title = stringResource(R.string.wood_title),
+                            subtitle = stringResource(R.string.wood_subtitle),
+                            description = stringResource(R.string.wood_desc),
+                            details = stringResource(R.string.wood_details),,
                             emoji = "木"
                         ),
                         ExtendedLearnItem(
-                            category = "I 5 elementi del BaZi",
-                            title = "Fuoco (Huǒ)",
-                            subtitle = "L'Energia dell'Estate e dell'Espansione",
-                            description = "Rappresenta la luminosità, il dinamismo, la passione e la visibilità sociale. " +
-                            "Psicologicamente governa l'entusiasmo, l'espressione delle emozioni, la gioia e l'intelletto brillante. " +
-                            "Se in eccesso, può portare a instabilità emotiva, ansia o aggressività. Nel corpo è legato al Cuore e all'Intestino Tenue. ",
-                            details = "Genera: Terra | Controlla: Metallo | È generato da: Legno | È controllato da: Acqua",
+                            category = stringResource(R.string.cat_elem),
+                            title = stringResource(R.string.fire_title),
+                            subtitle = stringResource(R.string.fire_subtitle),
+                            description = stringResource(R.string.fire_desc),
+                            details = stringResource(R.string.fire_details),
                             emoji = "火"
                         ),
                         ExtendedLearnItem(
-                            category = "I 5 elementi del BaZi",
-                            title = "Metallo (Jīn)",
-                            subtitle = "L'Energia dell'Autunno e della Contrazione",
-                            description = "Rappresenta l'introspezione, la purezza, la giustizia, il taglio netto e la definizione dei confini. "  +
-                            "Psicologicamente governa la disciplina, la logica affilata, il senso del dovere e il valore personale. " +
-                            "Se in eccesso può portare a freddezza, rigidità e tristezza. Nel corpo è legato a Polmoni ed Intestino Crasso.",
-                            details = "Genera: Acqua | Controlla: Legno | È generato da: Terra | È controllato da: Fuoco",
+                            category = stringResource(R.string.cat_elem),
+                            title = stringResource(R.string.metal_title),
+                            subtitle = stringResource(R.string.metal_subtitle),
+                            description = stringResource(R.string.metal_desc),
+                            details = stringResource(R.string.metal_details),
                             emoji = "金"
                         ),
                         ExtendedLearnItem(
-                            category = "I 5 elementi del BaZi",
-                            title = "Acqua (Shuǐ)",
-                            subtitle = "L'Energia dell'Inverno e della Concentrazione",
-                            description = "Rappresenta la fluidità, l'oscurità rigenerante, il riposo, l'adattabilità e il potenziale nascosto. " +
-                            "Psicologicamente governa l'intelligenza profonda, l'intuito, la saggezza e la filosofia di vita. " +
-                            "Se in eccesso può portare a paura ed indecisione. Nel corpo è legata a Reni e Vescica.",
-                            details = "Genera: Legno | Controlla: Fuoco | È generato da: Metallo | È controllato da: Terra",
+                            category = stringResource(R.string.cat_elem),
+                            title = stringResource(R.string.water_title),
+                            subtitle = stringResource(R.string.water_subtitle),
+                            description = stringResource(R.string.water_desc),
+                            details = stringResource(R.string.water_details),
                             emoji = "水"
                         ),
                         ExtendedLearnItem(
-                            category = "I 5 elementi del BaZi",
-                            title = "Terra (Tǔ)",
-                            subtitle = "L'Energia del Centro e della Stabilità",
-                            description = "Rappresenta il fulcro immobile, la nutrizione, la stabilità e la capacità di raccogliere e trasformare. " +
-                            "Psicologicamente governa la fiducia, l'onestà, la concretezza e il senso di radicamento. Se in eccesso può portare a rimuginio " +
-                            "costante, testardaggine e stagnazione. Nel corpo è legata a Milza e Stomaco.",
-                            details = "Genera: Metallo | Controlla: Acqua | È generato da: Fuoco | È controllato da: Legno",
+                            category = stringResource(R.string.cat_elem),
+                            title = stringResource(R.string.earth_title),
+                            subtitle = stringResource(R.string.earth_subtitle),
+                            description = stringResource(R.string.earth_desc),
+                            details = stringResource(R.string.earth_details),
                             emoji = "土"
                         ),
 
                         //Cicli del Qi
                         ExtendedLearnItem(
-                            category = "I Cicli del Qi (o Cicli dei Wu Xing)",
-                            title = "Il Ciclo di Generazione (Ciclo Sheng)",
-                            subtitle = "La Relazione Madre-Figlio",
-                            description = "Rappresenta il flusso armonioso, spontaneo e cooperativo dell'energia, dove ogni elemento " +
-                            "nutre, supporta e dà la vita a quello successivo. È un ciclo perenne di crescita e trasformazione positiva che permette " +
-                            "al Qi di evolversi continuamente senza sosta.",
-                            details = "Flusso: Legno ➔ Fuoco ➔ Terra ➔ Metallo ➔ Acqua ➔ Legno",
+                            category = stringResource(R.string.cat_cycles),
+                            title = stringResource(R.string.cy1_title),
+                            subtitle = stringResource(R.string.cy1_subtitle),
+                            description = stringResource(R.string.cy1_desc),
+                            details = stringResource(R.string.cy1_details),
                             emoji = "➕"
                         ),
                         ExtendedLearnItem(
-                            category = "I Cicli del Qi (o Cicli dei Wu Xing)",
-                            title = "Il Ciclo di Controllo (Ciclo Ke)",
-                            subtitle = "La Forza del Limite",
-                            description = "Rappresenta la forza che frena, regola, limita o domina l'elemento opposto. Non è un ciclo negativo: " +
-                            "nella filosofia del BaZi il controllo è fondamentale per mantenere l'equilibrio della carta ed evitare che un elemento " +
-                            "cresca troppo diventando distruttivo.",
-                            details = "Flusso: Legno ➔ Terra ➔ Acqua ➔ Fuoco ➔ Metallo ➔ Legno",
+                            category = stringResource(R.string.cat_cycles),
+                            title = stringResource(R.string.cy2_title),
+                            subtitle = stringResource(R.string.cy2_subtitle),
+                            description = stringResource(R.string.cy2_desc),
+                            details = stringResource(R.string.cy2_details),
                             emoji = "➖"
                         ),
 
 
                         //Tronchi Celesti
                         ExtendedLearnItem(
-                            category = "I 10 Tronchi Celesti (Heavenly Stems)",
-                            title = "Jia (甲) - Legno Yang",
-                            subtitle = "L'Albero Secolare - Leader Nato",
-                            description = "Rappresenta un grande albero robusto. Le persone Jia sono idealiste, progressiste, testarde ma estremamente protettive" + 
-                            "verso gli altri. Hanno una crescita costante e non amano essere controllate. ",
-                            details = "Elemento: Legno | Polarità: Yang | Direzione: Est",
+                            category = stringResource(R.string.cat_stems),
+                            title = stringResource(R.string.st1_title),
+                            subtitle = stringResource(R.string.st1_subtitle),
+                            description = stringResource(R.string.st1_desc),
+                            details = stringResource(R.string.st1_details),
                             emoji = "🌲"
                         ),
                         
                         ExtendedLearnItem(
-                            category = "I 10 Tronchi Celesti (Heavenly Stems)",
-                            title = "Yi (乙) - Legno Yin",
-                            subtitle = "L'Edera o l'Erba - Il Sopravvissuto",
-                            description = "Rappresenta piante flessibili, fiori o rampicanti. Le persone Yi sono diplomatiche, incredibilmente resilienti," + 
-                            "e sanno adattarsi a qualsiasi situazione per sopravvivere. Ottimi strateghi dietro le quinte. ",
-                            details = "Elemento: Legno | Polarità: Yin | Direzione: Est",
+                            category = stringResource(R.string.cat_stems),
+                            title = stringResource(R.string.st2_title),
+                            subtitle = stringResource(R.string.st2_subtitle),
+                            description = stringResource(R.string.st2_desc),
+                            details = stringResource(R.string.st2_details),
                             emoji = "🌸"
                         ),
                         ExtendedLearnItem(
-                            category = "I 10 Tronchi Celesti (Heavenly Stems)",
-                            title = "Wu (戊) - Terra Yang",
-                            subtitle = "La Montagna o la Roccia - Il Protettore",
-                            description = "Rappresenta una montagna maestosa o una roccia imponente. Le persone Wu sono stabili, affidabili, protettive e agiscono " +
-                            "come un punto di riferimento per la comunità. Possono risultare lente al cambiamento ma sono incrollabili.",
-                            details = "Elemento: Terra | Polarità: Yang | Direzione: Centro",
+                            category = stringResource(R.string.cat_stems),
+                            title = stringResource(R.string.st3_title),
+                            subtitle = stringResource(R.string.st3_subtitle),
+                            description = stringResource(R.string.st3_desc),
+                            details = stringResource(R.string.st3_details),
                             emoji = "⛰️"
                         ),
                         ExtendedLearnItem(
-                            category = "I 10 Tronchi Celesti (Heavenly Stems)",
-                            title = "Ji (己) - Terra Yin",
-                            subtitle = "Il Giardino o la Terra Fertile - Il Nutritore",
-                            description = "Rappresenta il terreno fertile dei campi o il giardino coltivato. Le persone Ji sono tolleranti, creative, capaci di accudire" +
-                            "gli altri e dotate di una memoria eccezionale. Trovano la propria forza nel coltivare talenti e relazioni.",
-                            details = "Elemento: Terra | Polarità: Yin | Direzione: Centro",
+                            category = stringResource(R.string.cat_stems),
+                            title = stringResource(R.string.st4_title),
+                            subtitle = stringResource(R.string.st4_subtitle),
+                            description = stringResource(R.string.st4_desc),
+                            details = stringResource(R.string.st4_details),
                             emoji = "🌱"
                         ),
                         ExtendedLearnItem(
-                            category = "I 10 Tronchi Celesti (Heavenly Stems)",
-                            title = "Ren (壬) - Acqua Yang",
-                            subtitle = "L'Oceano o il Fiume - Il Visionario",
-                            description = "Rappresenta le acque dell'oceano, dei grandi fiumi o delle cascate. Le persone Ren sono dinamiche, amano la libertà, " +
-                            "possiedono un'intelligenza fluida e sono in continuo movimento. Hanno una grande influenza sul proprio ambiente.",
-                            details = "Elemento: Acqua | Polarità: Yang | Direzione: Nord",
+                            category = stringResource(R.string.cat_stems),
+                            title = stringResource(R.string.st5_title),
+                            subtitle = stringResource(R.string.st5_subtitle),
+                            description = stringResource(R.string.st5_desc),
+                            details = stringResource(R.string.st5_details),
                             emoji = "🌊"
                         ),
                         ExtendedLearnItem(
-                            category = "I 10 Tronchi Celesti (Heavenly Stems)",
-                            title = "Gui (癸) - Acqua Yin",
-                            subtitle = "La Rugiada o la Pioggia Leggera - L'Intuitivo",
-                            description = "Rappresenta la pioggia leggera, la rugiada mattutina o i ruscelli di montagna. Le persone Gui sono introspettive, intuitive, " + 
-                            "gentili ma capaci di infiltrarsi ovunque con costanza. Possiedono una spiccata sensibilità psicologica.",
-                            details = "Elemento: Acqua | Polarità: Yin | Direzione: Nord",
+                            category = stringResource(R.string.cat_stems),
+                            title = stringResource(R.string.st6_title),
+                            subtitle = stringResource(R.string.st6_subtitle),
+                            description = stringResource(R.string.st6_desc),
+                            details = stringResource(R.string.st6_details),
                             emoji = "💧"
                         ),
                         ExtendedLearnItem(
-                            category = "I 10 Tronchi Celesti (Heavenly Stems)",
-                            title = "Bing (丙) - Fuoco Yang",
-                            subtitle = "Il Sole - Il Magnanimo",
-                            description = "Rappresenta la luce e il calore del sole nel cielo. Le persone Bing sono generose, passionali, piene di entusiasmo " +
-                            "e amano illuminare la vita altrui. Hanno un forte bisogno di espressione e trasparenza.",
-                            details = "Elemento: Fuoco | Polarità: Yang | Direzione: Sud",
+                            category = stringResource(R.string.cat_stems),
+                            title = stringResource(R.string.st7_title),
+                            subtitle = stringResource(R.string.st7_subtitle),
+                            description = stringResource(R.string.st7_desc),
+                            details = stringResource(R.string.st7details),
                             emoji = "☀️"
                         ),
                         ExtendedLearnItem(
-                            category = "I 10 Tronchi Celesti (Heavenly Stems)",
-                            title = "Ding (丙) - Fuoco Yin",
-                            subtitle = "La Candela o la Lanterna - Il Mentore",
-                            description = "Rappresenta la fiamma di una candela, una lanterna o un focolare. Le persone Ding sono meticolose, guidate dall'intuito, " +
-                            "profondamente stabili ma capaci di infiammarsi improvvisamente. Sono leader motivatori stabili nel tempo.",
-                            details = "Elemento: Fuoco | Polarità: Yin | Direzione: Sud",
+                            category = stringResource(R.string.cat_stems),
+                            title = stringResource(R.string.st8_title),
+                            subtitle = stringResource(R.string.st8_subtitle),
+                            description = stringResource(R.string.st8_desc),
+                            details = stringResource(R.string.st8_details),
                             emoji = "🕯️"
                         ),
                         ExtendedLearnItem(
-                            category = "I 10 Tronchi Celesti (Heavenly Stems)",
-                            title = "Geng (庚) - Metallo Yang",
-                            subtitle = "La Spada o il Ferro Grezzo - Il Giusto",
-                            description = "Rappresenta il metallo grezzo, la spada o l'ascia d'acciaio. Le persone Geng sono governate dal senso di giustizia, "+ 
-                            "sono determinate, amano le sfide e affrontano i problemi in modo diretto. Crescono attraverso le avversità.",
-                            details = "Elemento: Metallo | Polarità: Yang | Direzione: Ovest",
+                            category = stringResource(R.string.cat_stems),
+                            title = stringResource(R.string.st9_title),
+                            subtitle = stringResource(R.string.st9_subtitle),
+                            description = stringResource(R.string.st9_desc),
+                            details = stringResource(R.string.st9_details),
                             emoji = "🗡️"
                         ),
                         ExtendedLearnItem(
-                            category = "I 10 Tronchi Celesti (Heavenly Stems)",
-                            title = "Xin (辛) - Metallo Yin",
-                            subtitle = "Il Gioiello o lo Spillo - L'Esteta",
-                            description = "Rappresenta l'oro lavorato, i gioielli preziosi o i metalli fini. Le persone Xin sono eleganti, sensibili ai dettagli, " +
-                            "amano risplendere e cercano la perfezione estetica. Hanno una mente acuta come uno spillo.",
-                            details = "Elemento: Metallo | Polarità: Yin | Direzione: Ovest",
+                            category = stringResource(R.string.cat_stems),
+                            title = stringResource(R.string.st10_title),
+                            subtitle = stringResource(R.string.st10_subtitle),
+                            description = stringResource(R.string.st10_desc),
+                            details = stringResource(R.string.st10_details),
                             emoji = "💍"
                         ),
                         //Rami Terrestri
                         ExtendedLearnItem(
-                            category = "I 12 Rami Terrestri (Zodiaco Cinese)",
-                            title = "Zi (子) - Il Topo (The Rat)",
-                            subtitle = "Acqua Yang - L'Iniziatore",
-                            description = "Il primo segno dello zodiaco. Rappresenta l'energia dell'inverno profondo e della notte." +
-                            "Le persone nate con questo ramo sono intuitive, astute, piene di risorse e possiedono una saggezza nascosta.",
-                            details = "Elemento: Acqua | Radice: Gui (Acqua Yin)",
+                            category = stringResource(R.string.cat_branch),
+                            title = stringResource(R.string.br1_title),
+                            subtitle = stringResource(R.string.br1_subtitle),
+                            description = stringResource(R.string.br1_desc),
+                            details = stringResource(R.string.br1_details),
                             emoji = "🐭",
                         ),
                         ExtendedLearnItem(
-                            category = "I 12 Rami Terrestri (Zodiaco Cinese)",
-                            title = "Chou (丑) - Il Bue (The Ox)",
-                            subtitle = "Terra Yin - Lo Stoico",
-                            description = "Il secondo segno dello zodiaco. Rappresenta l'energia della fine dell'inverno e " +
-                            "l'ora che precede l'alba. Le persone nate con questo ramo sono resilienti, metodiche, costanti e custodi " +
-                            "di una determinazione incrollabile.",
-                            details = "Elemento: Terra | Radice: Ji (Terra Yin)",
+                            category = stringResource(R.string.cat_branch),
+                            title = stringResource(R.string.br2_title),
+                            subtitle = stringResource(R.string.br2_subtitle),
+                            description = stringResource(R.string.br2_desc),
+                            details = stringResource(R.string.br2_details),
                             emoji = "🐮"
                         ),
                         ExtendedLearnItem(
-                            category = "I 12 Rami Terrestri (Zodiaco Cinese)",
-                            title = "Yin (寅) - La Tigre (The Tiger)",
-                            subtitle = "Legno Yang - Il Conquistatore",
-                            description = "Il terzo segno dello zodiaco. Rappresenta l'energia dell'inizio della primavera e del risveglio " +
-                            "mattutino. Le persone nate con questo ramo sono audaci, indipendenti, passionali e animate da un forte spirito di leadership.",
-                            details = "Elemento: Legno | Radice: Jia (Legno Yang)",
+                            category = stringResource(R.string.cat_branch),
+                            title = stringResource(R.string.br3_title),
+                            subtitle = stringResource(R.string.br3_subtitle),
+                            description = stringResource(R.string.br3_desc),
+                            details = stringResource(R.string.br3_details),
                             emoji = "🐯"
                         ),
                         ExtendedLearnItem(
-                            category = "I 12 Rami Terrestri (Zodiaco Cinese)",
-                            title = "Mao (卯) - Il Coniglio (The Rabbit)",
-                            subtitle = "Legno Yin - Il Diplomatico",
-                            description = "Il quarto segno dello zodiaco. Rappresenta l'energia della primavera piena e del sorgere del sole. " +
-                            "Le persone nate con questo ramo sono pacifiche, sensibili, diplomatiche e dotate di uno spiccato senso artistico ed estetico.",
-                            details = "Elemento: Legno | Radice: Yi (Legno Yin)",
+                            category = stringResource(R.string.cat_branch),
+                            title = stringResource(R.string.br4_title),
+                            subtitle = stringResource(R.string.br4_subtitle),
+                            description = stringResource(R.string.br4_desc),
+                            details = stringResource(R.string.br4_details),
                             emoji = "🐰"
                         ),
                         ExtendedLearnItem(
-                            category = "I 12 Rami Terrestri (Zodiaco Cinese)",
-                            title = "Chen (辰) - Il Drago (The Dragon)",
-                            subtitle = "Terra Yang - Il Magnate",
-                            description = "Il quinto segno dello zodiaco. Rappresenta l'energia della fine della primavera e della prima mattinata. " +
-                            "Le persone nate con questo ramo sono carismatiche, piene di vitalità, ambiziose e mostrano un forte magnetismo ideale.",
-                            details = "Elemento: Terra | Radice: Wu (Terra Yang)",
+                            category = stringResource(R.string.cat_branch),
+                            title = stringResource(R.string.br5_title),
+                            subtitle = stringResource(R.string.br5_subtitle),
+                            description = stringResource(R.string.br5_desc),
+                            details = stringResource(R.string.br5_details),
                             emoji = "🐲"
                         ),
                         ExtendedLearnItem(
-                            category = "I 12 Rami Terrestri (Zodiaco Cinese)",
-                            title = "Si (巳) - Il Serpente (The Snake)",
-                            subtitle = "Fuoco Yin - Il Filosofo",
-                            description = "Il sesto segno dello zodiaco. Rappresenta l'energia dell'inizio dell'estate e della mattinata inoltrata. " +
-                            "Le persone nate con questo ramo sono acute, riflessive, enigmatiche e dotate di una profonda intelligenza analitica.",
-                            details = "Elemento: Fuoco | Radice: Ding (Fuoco Yin)",
+                            category = stringResource(R.string.cat_branch),
+                            title = stringResource(R.string.br6_title),
+                            subtitle = stringResource(R.string.br6_subtitle),
+                            description = stringResource(R.string.br6_desc),
+                            details = stringResource(R.string.br6_details),
                             emoji = "🐍"
                         ),
                         ExtendedLearnItem(
-                            category = "I 12 Rami Terrestri (Zodiaco Cinese)",
-                            title = "Wu (午) - Il Cavallo (The Horse)",
-                            subtitle = "Fuoco Yang - Il Pioniere",
-                            description = "Il settimo segno dello zodiaco. Rappresenta l'energia dell'estate profonda e del mezzogiorno radioso. " +
-                            "Le persone nate con questo ramo sono solari, amano la libertà, sono espansive e costantemente proiettate verso l'azione.",
-                            details = "Elemento: Fuoco | Radice: Bing (Fuoco Yang)",
+                            category = stringResource(R.string.cat_branch),
+                            title = stringResource(R.string.br7_title),
+                            subtitle = stringResource(R.string.br7_subtitle),
+                            description = stringResource(R.string.br7_desc),
+                            details = stringResource(R.string.br7_details),
                             emoji = "🐴"
                         ),
                         ExtendedLearnItem(
-                            category = "I 12 Rami Terrestri (Zodiaco Cinese)",
-                            title = "Wei (未) - La Capra (The Goat)",
-                            subtitle = "Terra Yin - L'Artista",
-                            description = "L' ottavo segno dello zodiaco. Rappresenta l'energia della fine dell'estate e del primo pomeriggio. " +
-                            "Le persone nate con questo ramo sono empatiche, protettive, amano l'armonia e cercano stabilità nelle relazioni personali.",
-                            details = "Elemento: Terra | Radice: Ji (Terra Yin)",
+                            category = stringResource(R.string.cat_branch),
+                            title = stringResource(R.string.br8_title),
+                            subtitle = stringResource(R.string.br8_subtitle),
+                            description = stringResource(R.string.br8_desc),
+                            details = stringResource(R.string.br8_details),
                             emoji = "🐐"
                         ),
                         ExtendedLearnItem(
-                            category = "I 12 Rami Terrestri (Zodiaco Cinese)",
-                            title = "Shen (申) - La Scimmia (The Monkey)",
-                            subtitle = "Metallo Yang - L'Innovatore",
-                            description = "Il nono segno dello zodiaco. Rappresenta l'energia dell'inizio dell'autunno e del tardo pomeriggio. " +
-                            "Le persone nate con questo ramo sono poliedriche, inventive, ironiche e capaci di risolvere problemi complessi con rapidità.",
-                            details = "Elemento: Metallo | Radice: Geng (Metallo Yang)",
+                            category = stringResource(R.string.cat_branch),
+                            title = stringResource(R.string.br9_title),
+                            subtitle = stringResource(R.string.br9_subtitle),
+                            description = stringResource(R.string.br9_desc),
+                            details = stringResource(R.string.br9_details),
                             emoji = "🐵"
                         ),
                         ExtendedLearnItem(
-                            category = "I 12 Rami Terrestri (Zodiaco Cinese)",
-                            title = "You (酉) - Il Gallo (The Rooster)",
-                            subtitle = "Metallo Yin - Il Perfezionista",
-                            description = "Il decimo segno dello zodiaco. Rappresenta l'energia dell'autunno pieno e del tramonto. " +
-                            "Le persone nate con questo ramo sono precise, franche, organizzate e hanno un naturale talento per l'osservazione e il dettaglio.",
-                            details = "Elemento: Metallo | Radice: Xin (Metallo Yin)",
+                            category = stringResource(R.string.cat_branch),
+                            title = stringResource(R.string.br10_title),
+                            subtitle = stringResource(R.string.br10_subtitle),
+                            description = stringResource(R.string.br10_desc),
+                            details = stringResource(R.string.br10_details),
                             emoji = "🐔"
                         ),
                         ExtendedLearnItem(
-                            category = "I 12 Rami Terrestri (Zodiaco Cinese)",
-                            title = "Xu (戌) - Il Cane (The Dog)",
-                            subtitle = "Terra Yang - Il Custode",
-                            description = "L'undicesimo segno dello zodiaco. Rappresenta l'energia della fine dell'autunno e del crepuscolo serale. " +
-                            "Le persone nate con questo ramo sono leali, protettive, dotate di un forte senso etico e molto attente alla sicurezza dei propri cari.",
-                            details = "Elemento: Terra | Radice: Wu (Terra Yang)",
+                            category = stringResource(R.string.cat_branch),
+                            title = stringResource(R.string.br11_title),
+                            subtitle = stringResource(R.string.br11_subtitle),
+                            description = stringResource(R.string.br11_desc),
+                            details = stringResource(R.string.br11_details),
                             emoji = "🐶"
                         ),
                         ExtendedLearnItem(
-                            category = "I 12 Rami Terrestri (Zodiaco Cinese)",
-                            title = "Hai (亥) - Il Maiale (The Pig)",
-                            subtitle = "Acqua Yin - Il Filantropo",
-                            description = "Il dodicesimo segno dello zodiaco. Rappresenta l'energia dell'inizio dell'inverno e della prima serata. " +
-                            "Le persone nate con questo ramo sono generose, sincere, tolleranti e affrontano la vita con un ottimismo calmo e pacifico.",
-                            details = "Elemento: Acqua | Radice: Gui (Acqua Yin)",
+                            category = stringResource(R.string.cat_branch),
+                            title = stringResource(R.string.br12_title),
+                            subtitle = stringResource(R.string.br12_subtitle),
+                            description = stringResource(R.string.br12_desc),
+                            details = stringResource(R.string.br12_details),
                             emoji = "🐷"
                         ),
                         //I Dieci Dei
 
                         ExtendedLearnItem(
-                            category = "I Dieci Dei (Ten Gods)",
-                            title = "Il Sistema delle Dieci Relazioni",
-                            subtitle = "Le relazioni tra il DM e gli elementi restanti",
-                            description = "Nel BaZi si utilizza il sistema dei Dieci Dei o delle Dieci Relazioni per analizzare le interazioni " +
-                            "tra l'elemento del Day Master e tutti gli elementi rimasti degli altri Tronchi e/o Rami. Queste sono determinate dal " +
-                            "Ciclo di Generazione e dal Ciclo di Distruzione, assieme alle polarità Yin/Yang.",
+                            category = stringResource(R.string.cat_tg),
+                            title = stringResource(R.string.tg0_title),
+                            subtitle = stringResource(R.string.tg0_subtitle),
+                            description = stringResource(R.string.tg0_desc),
                             emoji = "🔟",
                         ),
 
                         ExtendedLearnItem(
-                            category = "I Dieci Dei (Ten Gods)",
-                            title = "Friend (Bi Jian)",
-                            subtitle = "L'Amico / Il Pari",
-                            description = "Rappresenta un elemento della carta che ha lo stesso elemento e la stessa polarità del Day Master. " + 
-                            "Simboleggia i pari, i colleghi ed il supporto reciproco. Nella personalità indica fiducia in sè stessi, indipendenza, " +
-                            "forte ego e capacità di collaborare alla pari senza farsi sottomettere.",
-                            details = "Es: (DM)Wood Yang + Wood Yang = Friend",
+                            category = stringResource(R.string.cat_tg),
+                            title = stringResource(R.string.tg1_title),
+                            subtitle = stringResource(R.string.tg1_subtitle),
+                            description = stringResource(R.string.tg1_desc),
+                            details = stringResource(R.string.tg1_details),
                             emoji = "🤝",
                         ),
 
                         ExtendedLearnItem(
-                            category = "I Dieci Dei (Ten Gods)",
-                            title = "Rob Wealth (Jie Cai)",
-                            subtitle = "Il Concorrente / Il Ladro di Ricchezze",
-                            description = "Si attiva quando un elemento nella carta è uguale al Day Master ma ha polarità opposta. " +
-                            "Rappresenta i rivali, i competitor o partner d'affari molto determinati. Nella personalità dona un carisma immenso, " +
-                            "capacità di leadership, abilità sociali e una natura competitiva, ma può spingere a spendere troppo o a subire perdite " +
-                            "finanziarie a causa degli altri.",
-                            details = "Es: Wood Yang + Wood Yin = Rob Wealth",
+                            category = stringResource(R.string.cat_tg),
+                            title = stringResource(R.string.tg2_title),
+                            subtitle = stringResource(R.string.tg2_subtitle),
+                            description = stringResource(R.string.tg2_desc),
+                            details = stringResource(R.string.tg2_details),
                             emoji = "💰",
                         ),
 
                         ExtendedLearnItem(
-                            category = "I Dieci Dei (Ten Gods)",
-                            title = "Eating God (Shi Shen)",
-                            subtitle = "Lo Spirito del Nutrimento",
-                            description = "Rappresenta l'elemento generato dal Day Master con la stessa polarità. " +
-                            "È la stella del benessere, dell'espressione artistica rilassata e del godersi la vita. " +
-                            "Indica una mente profonda, amore per il cibo, la cultura e l'estetica, orientata a creare un puro piacere personale.",
-                            details = "Es: Wood Yang + Fire Yang = Eating God",
+                            category = stringResource(R.string.cat_tg),
+                            title = stringResource(R.string.tg3_title),
+                            subtitle = stringResource(R.string.tg3_subtitle),
+                            description = stringResource(R.string.tg3_desc),
+                            details = stringResource(R.string.tg3_details),
                             emoji = "🎨",
                         ),
 
                         ExtendedLearnItem(
-                            category = "I Dieci Dei (Ten Gods)",
-                            title = "Hurting Officer (Shang Guan)",
-                            subtitle = "L'Ufficiale Ribelle",
-                            description = "Rappresenta l'elemento generato dal Day Master ma con polarità opposta." +
-                            "È la stella della ribellione, del talento visibile e dell'anticonformismo. " +
-                            "Dona una grande intelligenza critica, abilità oratorie, carisma da palcoscenico e il desiderio di sfidare l'autorità " +
-                            "e lo status quo.",
-                            details = "Es: Wood Yang + Fire Yin = Hurting Officer",
+                            category = stringResource(R.string.cat_tg),
+                            title = stringResource(R.string.tg4_title),
+                            subtitle = stringResource(R.string.tg4_subtitle),
+                            description = stringResource(R.string.tg4_desc),
+                            details = stringResource(R.string.tg4_details),
                             emoji = "📣",
                         ),
 
                         ExtendedLearnItem(
-                            category = "I Dieci Dei (Ten Gods)",
-                            title = "Direct Wealth (Zheng Cai)",
-                            subtitle = "La Ricchezza Diretta",
-                            description = "Rappresenta l'elemento controllato dal Day Master con polarità opposta. " +
-                            "Simboleggia il denaro guadagnato con il duro lavoro, la stabilità finanziaria e i beni tangibili. " +
-                            "Nella personalità indica realismo, forte senso di responsabilità, onestà, disciplina ed un approccio oculato " +
-                            "nella gestione delle risorse.",
-                            details = "Es: Wood Yang + Earth Yin = Direct Wealth",
+                            category = stringResource(R.string.cat_tg),
+                            title = stringResource(R.string.tg5_title),
+                            subtitle = stringResource(R.string.tg5_subtitle),
+                            description = stringResource(R.string.tg5_desc),
+                            details = stringResource(R.string.tg5_details),
                             emoji = "💼",
                         ),
 
                         ExtendedLearnItem(
-                            category = "I Dieci Dei (Ten Gods)",
-                            title = "Indirect Wealth (Pian Cai)",
-                            subtitle = "La Ricchezza indiretta",
-                            description = "Rappresenta l'elemento controllato dal Day Master con la stessa polarità. " +
-                            "Simboleggia le entrate improvvise, la fortuna negli affari, gli investimenti e lo spirito imprenditoriale. " +
-                            "Indica una mente audace, generosa, amante del rischio e capace di vedere opportunità di profitto dove gli altri " +
-                            "non vedono nulla.",
-                            details = "Es: Wood Yang + Earth Yang = Indirect Wealth",
+                            category = stringResource(R.string.cat_tg),
+                            title = stringResource(R.string.tg6_title),
+                            subtitle = stringResource(R.string.tg6_subtitle),
+                            description = stringResource(R.string.tg6_desc),
+                            details = stringResource(R.string.tg6_details),
                             emoji = "🎲",
                         ),
 
                         ExtendedLearnItem(
-                            category = "I Dieci Dei (Ten Gods)",
-                            title = "Direct Officer (Zheng Guan)",
-                            subtitle = "L'Ufficiale Legittimo",
-                            description = "Rappresenta l'elemento che controlla il Day Master con polarità opposta. " +
-                            "È la stella del potere benevolo, dello status sociale, della legge e del dovere. " +
-                            "Dona un forte senso della giustizia, rispetto per le tradizioni, autocontrollo, affidabilità e la naturale " +
-                            "predisposizione a ricoprire ruoli istituzionali.",
-                            details = "Es: Wood Yang + Metal Yin = Direct Officer",
+                            category = stringResource(R.string.cat_tg),
+                            title = stringResource(R.string.tg7_title),
+                            subtitle = stringResource(R.string.tg7_subtitle),
+                            description = stringResource(R.string.tg7_desc),
+                            details = stringResource(R.string.tg7_details),
                             emoji = "⚖️",
                         ),
                         ExtendedLearnItem(
-                            category = "I Dieci Dei (Ten Gods)",
-                            title = "7 Killings (Qi Sha)",
-                            subtitle = "Il Potere Aggressivo",
-                            description = "Rappresenta l'elemento che controlla il Day Master con stessa polarità. " +
-                            "È la stella del coraggio, dell'azione tempestiva e della resilienza estrema di fronte alle crisi. " +
-                            "Indica una personalità autoritaria, determinata e combattiva, capace di imporsi e prendere decisioni difficili " +
-                            "sotto forte pressione.",
-                            details = "Es : Wood Yang + Metal Yang = 7 Killings",
+                            category = stringResource(R.string.cat_tg),
+                            title = stringResource(R.string.tg8_title),
+                            subtitle = stringResource(R.string.tg8_subtitle),
+                            description = stringResource(R.string.tg8_desc),
+                            details = stringResource(R.string.tg8_details),
                             emoji = "🎯",
                         ),
                         ExtendedLearnItem(
-                            category = "I Dieci Dei (Ten Gods)",
-                            title = "Direct Resource (Zheng Yin)",
-                            subtitle = "La Risorsa Diretta",
-                            description = "Rappresenta l'elemento che nutre il Day Master con polarità opposta. " +
-                            "Simboleggia la figura materna, la protezione, la salute e la conoscenza accademica tradizionale. " +
-                            "Rende la persona riflessiva, compassionevole, incline allo studio, bisognosa di sicurezza e " +
-                            "dotata di un forte intuito morale.",
-                            details = "Es: Wood Yang + Water Yin = Direct Resource",
+                            category = stringResource(R.string.cat_tg),
+                            title = stringResource(R.string.tg9_title),
+                            subtitle = stringResource(R.string.tg9_subtitle),
+                            description = stringResource(R.string.tg9_desc),
+                            details = stringResource(R.string.tg9_details),
                             emoji = "📚",
                         ),
                         ExtendedLearnItem(
-                            category = "I Dieci Dei (Ten Gods)",
-                            title = "Indirect Resource (Pian Yin)",
-                            subtitle = "La Risorsa Indiretta",
-                            description = "Rappresenta l'elemento che nutre il Day Master con stessa polarità. " +
-                            "È la stella dell'intuito puro, del pensiero non convenzionale e del sesto senso. " +
-                            "Indica una mente analitica, solitaria, fortemente attratta dalla spiritualità, dalla psicologia, " +
-                            "dall'astrologia e dai segreti nascosti del mondo.",
-                            details = "Es: Wood Yang + Water Yang = Indirect Resource",
+                            category = stringResource(R.string.cat_tg),
+                            title = stringResource(R.string.tg10_title),
+                            subtitle = stringResource(R.string.tg10_subtitle),
+                            description = stringResource(R.string.tg10_desc),
+                            details = stringResource(R.string.tg10_details),
                             emoji = "🔮",
                         ),
 
                         ExtendedLearnItem(
-                            category = "Tronchi Celesti Nascosti (Hidden Stems)",
-                            title = "Le Radici dei Rami Terrestri",
-                            subtitle = "Il potenziale nascosto dentro di te",
-                            description = "In occidente siamo abituati a vedere un solo segno zodiacale. Nel BaZi, ogni animale nasconde sotto " + 
-                            "terra (nelle sue radici) da 1 a 3 Tronchi Celesti. Rappresentano i tuoi talenti nascosti, i desideri segreti e ciò che " + 
-                            "si attiverà solo in determinati momenti della tua vita.",
+                            category = stringResource(R.string.cat_hst),
+                            title = stringResource(R.string.hst_title),
+                            subtitle = stringResource(R.string.hst_subtitle),
+                            description = stringResource(R.string.hst_desc),
                             emoji = "🕳️",
                         ),
 
                         //Interazioni
                         ExtendedLearnItem(
-                            category = "Interazioni nel BaZi",
-                            title = "Introduzione alle Interazioni",
-                            subtitle = "La dinamica energetica della Carta Natale",
-                            description = "Nel BaZi, i Tronchi Celesti e i Rami Terrestri non sono elementi statici ma interagiscono costantemente " +
-                            "tra loro creando combinazioni, conflitti, punizioni o distruzioni. Queste interazioni rappresentano gli eventi, i cambiamenti " +
-                            "e le dinamiche psicologiche o relazionali della persona. Le interazioni tra i Rami Terrestri (i segni dello zodiaco cinese) " +
-                            "muovono gli eventi nel mondo reale e sociale, mentre quelle tra Tronchi Celesti mostrano i cambiamenti nelle intenzioni consce e " +
-                            "nell'ambiente esterno.",
-                            details = "Categorie di Interazioni: Combinazioni (Armonia) | Scontri (Cambiamento) | Punizioni (Attrito) | Distruzioni (Ostacoli)",
+                            category = stringResource(R.string.cat_interacts),
+                            title = stringResource(R.string.i0_title),
+                            subtitle = stringResource(R.string.i0_subtitle),
+                            description = stringResource(R.string.i0_desc),
+                            details = stringResource(R.string.i0_details),
                             emoji = "🔄",
                         ),
 
                         ExtendedLearnItem(
-                            category = "Interazioni nel BaZi",
-                            title = "Combinazioni dei Tronchi Celesti",
-                            subtitle = "L'unione delle polarità e la trasformazione",
-                            description = "Rappresentano l'attrazione e l'armonia tra i Tronchi Celesti di polarità opposta (Yin e Yang). Quando due Tronchi si combinano, " +
-                            "la loro natura cambia: simboleggiano alleanze, relazioni importanti, fusioni e la capacità di trovare compromessi. " +
-                            "Se le condizioni della Carta Natale lo permettono, questa unione può dare vita a un nuovo elemento energetico. Nel Pilastro indicato " +
-                            "mostra dove la persona cerca integrazione, cooperazione o dove le sue intenzioni consce tendono a legarsi a fattori esterni.",
-                            details = "Tipo: Armonia | Elementi coinvolti: Tronchi Celesti (Yin + Yang) | Effetto: unione, romanticismo, patti, generazione di un nuovo elemento.",
+                            category = stringResource(R.string.cat_interacts),
+                            title = stringResource(R.string.i1_title),
+                            subtitle = stringResource(R.string.i1_subtitle),
+                            description = stringResource(R.string.i1_desc),
+                            details = stringResource(R.string.i1_details),
                             emoji = "🤝"
                         ),
                         
                         ExtendedLearnItem(
-                            category = "Interazioni nel BaZi",
-                            title = "Scontri tra Tronchi Celesti",
-                            subtitle = "Attrito, sfide e cambiamenti visibili",
-                            description = "Rappresentano i conflitti diretti tra i Tronchi Celesti, causati dall'incontro di elementi opposti con la stessa polarità (Yin/Yin o Yang/Yang). " +
-                            "Essendo i Tronchi energie visibili, questi scontri si manifestano come sfide esterne, eventi improvvisi, cambi di prospettiva e tensioni ideologiche/lavorative. " +
-                            "Non sono negativi: funzionano spesso come catalizzatori che costringono ad uscire dalla zona di comfort, stimolando l'azione e rompendo " +
-                            "situazioni stagnanti.",
-                            details = "Tipo: Conflitto | Elementi coinvolti: Tronchi Celesti (Stessa polarità) | Effetto: instabilità temporanea, stress, spinte al cambiamento.",
+                            category = stringResource(R.string.cat_interacts),
+                            title = stringResource(R.string.i2_title),
+                            subtitle = stringResource(R.string.i2_subtitle),
+                            description = stringResource(R.string.i2_desc),
+                            details = stringResource(R.string.i2_details),
                             emoji = "⚡"
                         ),
 
                         ExtendedLearnItem(
-                            category = "Interazioni nel BaZi",
-                            title = "Combinazioni tra Rami Terrestri",
-                            subtitle = "Sinergia profonda e stabilità nel mondo reale",
-                            description = "Rappresentano l'unione armonica tra due specifici Rami Terrestri che si attraggono e collaborano. Poichè i rami governano la Terra e la materia, " +
-                            "queste combinazioni indicano legami affettivi solidi, partnership professionali stabili e situazioni in cui le cose scorrono senza intoppi. " +
-                            "Agiscono come un collante energetico che protegge i settori coinvolti dagli attacchi esterni (scontri), sebbene a volte possano rendere la persona troppo " +
-                            "restia al cambiamento o conservatrice.",
-                            details = "Tipo: Alleanza e coppie | Elementi coinvolti: Rami Terrestri | Effetto: Protezione, stabilità, forte intesa relazionale, resistenza al cambiamento.",
+                            category = stringResource(R.string.cat_interacts),
+                            title = stringResource(R.string.i3_title),
+                            subtitle = stringResource(R.string.i3_subtitle),
+                            description = stringResource(R.string.i3_desc),
+                            details = stringResource(R.string.i3_details),
                             emoji = "👥"
                         ),
 
                         ExtendedLearnItem(
-                            category = "Interazioni nel BaZi",
-                            title = "Combinazioni Triangolari tra Rami Terrestri ",
-                            subtitle = "Massima espansione di un elemento",
-                            description = "Rappresentano l'unione di tre specifici Rami Terrestri che, unendo le forze, generano una potentissima ondata di un singolo elemento. " +
-                            "Questa combinazione unisce l'animale che fa nascere l'elemento, quello che ne rappresenta il picco e quello che lo custodisce. Quando si attiva nella Carta " +
-                            "Natale, porta una straordinaria spinta focalizzata verso un obiettivo comune, amplificando a dismisura i significati di quell'elemento nei settori coinvolti, " +
-                            "sia in positivo che in termini di eccesso.",
-                            details = "Tipo: Alleanza a tre | Elementi coinvolti: Rami Terrestri | Effetto: Creazione di un elemento dominante, grande focus, eventi di vasta portata.",
+                            category = stringResource(R.string.cat_interacts),
+                            title = stringResource(R.string.i4_title),
+                            subtitle = stringResource(R.string.i4_subtitle),
+                            description = stringResource(R.string.i4_desc),
+                            details = stringResource(R.string.i4_details),
                             emoji = "🔺"
                         ),
                         ExtendedLearnItem(
-                            category = "Interazioni nel BaZi",
-                            title = "Scontri tra Rami Terrestri",
-                            subtitle = "Terremoti evolutivi e cambiamenti concreti",
-                            description = "Rappresentano lo scontro frontale tra due animali situati in posizioni opposte sulla bussola energetica. Poichè i Rami governano la realtà " +
-                            "materiale, questi scontri si manifestano come eventi tangibili: rotture relazionali, cambi di lavoro improvvisi, traslochi o forti scossoni emotivi e fisici. " +
-                            "Sebbene possano generare forte stress ed instabilità temporanea, la loro funzione cosmica è distruggere le strutture stagnanti per consentire la persona a evolversi " +
-                            "ed a rinnovare la propria vita.",
-                            details = "Tipo: Conflitto | Elementi coinvolti: Rami Terrestri | Effetto: Rotture, mobilità geografica/professionale, sblocchi energetici radicali.",
+                            category = stringResource(R.string.cat_interacts),
+                            title = stringResource(R.string.i5_title),
+                            subtitle = stringResource(R.string.i5_subtitle),
+                            description = stringResource(R.string.i5_desc),
+                            details = stringResource(R.string.i5_details),
                             emoji = "💥"
                         ),
                         ExtendedLearnItem(
-                            category = "Interazioni nel BaZi",
-                            title = "Punizioni dei Rami Terrestri",
-                            subtitle = "Attriti psicologici, autosabotaggi e nodi karmici",
-                            description = "Rappresentano una delle interazioni più complesse e psicologiche del BaZi. A differenza degli scontri diretti, le Punizioni agiscono dall'interno, manifestandosi come " +
-                            "dinamiche di autosabotaggio, sensi di colpa, ingratitudine subita/compiuta e conflitti relazionali logoranti. Spesso indicano aree in cui la persona tende a ripetere gli stessi errori " +
-                            "o a subire lo stress di aspettative non soddisfatte. Nel Pilastro indicato rivelano tensioni interne nascoste che richiedono profonda consapevolezza per essere sciolte." ,
-                            details = "Tipo: Attrito | Elementi coinvolti: Rami Terrestri | Effetto: Autosabotaggio, stress emotivo, senso di ingratitudine o ingiustizia.",
+                            category = stringResource(R.string.cat_interacts),
+                            title = stringResource(R.string.i6_title),
+                            subtitle = stringResource(R.string.i6_subtitle),
+                            description = stringResource(R.string.i6_desc),
+                            details = stringResource(R.string.i6_details),
                             emoji = "⏳"
                         ),
                         ExtendedLearnItem(
-                            category = "Interazioni nel BaZi",
-                            title = "Danni dei Rami Terrestri",
-                            subtitle = "Ferite emotive, malintesi e aspettative tradite",
-                            description = "Rappresentano un'interazione indiretta che colpisce soprattutto la sfera emotiva e relazionale. Un Danno si attiva quando un Ramo sabota o si scontra con il partner ideale (la Combinazione) di un altro Ramo. " +
-                            "Nella vita reale questo si traduce in situazioni di incomprensione, aspettative non corrisposte, piccoli tradimenti o la sensazione che qualcuno stia remando contro i nostri piani. " +
-                            "Nel Pilastro indicato mostra un'area in cui la persona deve fare attenzione alla comunicazione e a non accumulare risentimenti silenziosi.",
-                            details = "Tipo: Attrito | Elementi coinvolti: Rami Terrestri | Effetto: Malintesi, delusioni relazionali, stress psicologico, vulnerabilità emotiva.",
+                            category = stringResource(R.string.cat_interacts),
+                            title = stringResource(R.string.i7_title),
+                            subtitle = stringResource(R.string.i7_subtitle),
+                            description = stringResource(R.string.i7_desc),
+                            details = stringResource(R.string.i7_details),
                             emoji = "💔"
                         ),
                         ExtendedLearnItem(
-                            category = "Interazioni nel BaZi",
-                            title = "Distruzioni dei Rami Terrestri",
-                            subtitle = "Sfaldamento, cattive abitudini e logoramento",
-                            description = "Rappresentano un'interazione di attrito sottile che mina la stabilità dall'interno. Più che grandi shock esterni, le Distruzioni simboleggiano " + 
-                            "il deterioramento graduale dovuto a comportamenti ripetitivi, vizi, mancanza di cura o decisioni impulsive che distruggono il lavoro fatto. Nel Pilastro indicato " +
-                            "mostra un settore della vita in cui la persona tende a perdere effiacia a causa di vecchi schemi mentali sabotanti, dove è necessario fare pulizia per evitare che le " +
-                            "risorse vadano sprecate.",
-                            details = "Tipo: Logoramento | Elementi coinvolti: Rami Terrestri | Effetto: Rotture di schemi, spreco di energia, necessità di eliminare il superfluo.",
+                            category = stringResource(R.string.cat_interacts),
+                            title = stringResource(R.string.i8_title),
+                            subtitle = stringResource(R.string.i8_subtitle),
+                            description = stringResource(R.string.i8_desc),
+                            details = stringResource(R.string.i8_details),
                             emoji = "🗑️"
                         ),
 
                         //Fasi del Qi
 
                         ExtendedLearnItem(
-                            category = "Fasi del Qi (Qi Phase) / 12 Life Stages",
-                            title = "Le 12 Fasi di Forza del Day Master",
-                            subtitle = "Dalla Nascita all'Imperatore, fino alla Tomba",
-                            description = "Questo concetto misura quanto il tuo Day Master si sente forte nel Ramo Terrestre di un pilastro. " + 
-                            "Va dalla fase di Nascita (piena di entusiasmo), alla fase 'Imperatore' (massimo potere) fino alla fase 'Tomba' "+ 
-                            "(energia di accumulo ed introspezione). Rivela se le tue azioni avranno un impatto immediato o avranno bisogno di tempo.",
+                            category = stringResource(R.string.cat_qi_intro),
+                            title = stringResource(R.string.qi_intro_title),
+                            subtitle = stringResource(R.string.qi_intro_subtitle),
+                            description = stringResource(R.string.qi_intro_desc),
                             emoji = "☯️",
                         ),
 
                         ExtendedLearnItem(
-                            category = "Le 12 Fasi del Qi (Shi Er Chang Sheng)",
-                            title = "Nascita (Chang Sheng)",
-                            subtitle = "L'energia emerge nel mondo",
-                            description = "Rappresenta il momento in cui il Qi prende forma e viene alla luce nel ciclo vitale. " + 
-                            "È l'archetipo dell'energia fresca, della curiosità innata e della crescita vigorosa. " +
-                            "Simboleggia una fase fortunata e priva di preconcetti, dove la mente è aperta all'apprendimento " +
-                            "e il potenziale si esprime con ottimismo ed entusiasmo contagioso. Nel Pilastro indicato indica un settore della vita caratterizzato " +
-                            "da partenze fortunate, grande vitalità fisica/mentale e capacità di rigenerarsi dopo ogni crisi.",
-                            details = "Forza del Qi: Molto Alta | Tratti chiave: ottimismo, capacità di rinnovamento, forte supporto da mentori.",
+                            category = stringResource(R.string.cat_qi),
+                            title = stringResource(R.string.q1_title),
+                            subtitle = stringResource(R.string.q1_subtitle),
+                            description = stringResource(R.string.q1_desc),
+                            details = stringResource(R.string.q1_details),
                             emoji = "🤱"
                         ),
 
                         ExtendedLearnItem(
-                            category = "Le 12 Fasi del Qi (Shi Er Chang Sheng)",
-                            title = "Bagno (Mu Yu)",
-                            subtitle = "Vulnerabilità, crescita e purificazione",
-                            description = "Rappresenta la fase del neonato che viene lavato e purificato. È l'archetipo della vulnerabilità, della scoperta " +
-                            "di sè e dell'esposizione al mondo senza filtri. Simboleggia un momento di transizione delicato ma affascinante, legato al fascino interpersonale, " +
-                            "al romanticismo ed alla curiosità emotiva. Nel Pilastro indicato mostra un settore della vita dinamico e sensibile, dove si impara " +
-                            "attraverso la sperimentazione e gli errori, dove le relazioni e l'attrattiva giocano un ruolo centrale.",
-                            details = "Forza del Qi: Medio-Bassa | Tratti chiave: sensibilità, romanticismo, esposizione pubblica, fascino naturale.",
+                            category = stringResource(R.string.cat_qi),
+                            title = stringResource(R.string.q2_title),
+                            subtitle = stringResource(R.string.q2_subtitle),
+                            description = stringResource(R.string.q2_desc),
+                            details = stringResource(R.string.q2_details),
                             emoji = "👶"
                         ),
 
                         ExtendedLearnItem(
-                            category = "Le 12 Fasi del Qi (Shi Er Chang Sheng)",
-                            title = "Adolescenza (Dai Guan)",
-                            subtitle = "L'ingresso nella giovinezza e l'ambizione",
-                            description = "Rappresenta la fase in cui il giovane indossa gli abiti della maturità, pronto a fare il suo " +
-                            "ingresso nella società. È l'archetipo dell'indipendenza, dell'esplorazione del proprio potere e dell'ambizione vigorosa. " +
-                            "Simboleggia un momento di grande determinazione e spinta verso il successo, dove la mente è focalizzata sugli obiettivi " +
-                            "e sul riconoscimento sociale. Nel Pilastro indicato mostra un settore della vita caratterizzato da un forte spirito di iniziativa, " +
-                            "competitività e il desiderio di emergere, pur con il rischio di cadere nell'impulsività o nell'ostinazione.",
-                            details = "Forza del Qi: Alta | Tratti chiave: ambizione, indipendenza, determinazione, spinta all'azione.",
+                            category = stringResource(R.string.cat_qi),
+                            title = stringResource(R.string.q3_title),
+                            subtitle = stringResource(R.string.q3_subtitle),
+                            description = stringResource(R.string.q3_desc),
+                            details = stringResource(R.string.q3_details),,
                             emoji = "🎓"
                         ),
 
                         ExtendedLearnItem(
-                            category = "Le 12 Fasi del Qi (Shi Er Chang Sheng)",
-                            title = "Maturità (Lin Guan)",
-                            subtitle = "La stabilità, il lavoro e la responsabilità",
-                            description = "Rappresenta la fase dell'adulto che consolida la propria posizione e inizia a raccogliere i frutti del proprio " +
-                            "impegno. È l'archetipo della stabilità materiale, del senso del dovere e dell'indipendenza finanziaria. Simboleggia un " +
-                            "momento di grande equilibrio ed efficienza, in cui la persona agisce con pragmatismo, maturità e rispetto per le regole. " +
-                            "Nel Pilastro indicato mostra un settore della vita solido e costruttivo, caratterizzato da avanzamenti di carriera stabili, " +
-                            "affidabilità e la capacità di gestire responsabilità importanti senza farsi travolgere.",
-                            details = "Forza del Qi: Molto Alta | Tratti chiave: pragmatismo, senso del dovere, indipendenza, affidabilità.",
+                            category = stringResource(R.string.cat_qi),
+                            title = stringResource(R.string.q4_title),
+                            subtitle = stringResource(R.string.q4_subtitle),
+                            description = stringResource(R.string.q4_desc),
+                            details = stringResource(R.string.q4_details),,
                             emoji = "💼"
                         ),
 
                         ExtendedLearnItem(
-                            category = "Le 12 Fasi del Qi (Shi Er Chang Sheng)",
-                            title = "Picco (Di Wang)",
-                            subtitle = "Il massimo splendore e il potere assoluto",
-                            description = "Rappresenta il momento di massimo vigore, autorità e splendore dell'intero ciclo vitale. È l'archetipo del Sovrano, caratterizzato " +
-                            "da una forza immensa, leadership naturale e capacità di dominare le circostanze. Simboleggia il punto più alto del successo e dell'autoaffermazione, " +
-                            "ma porta con sè anche l'inizio nascosto del declino, poichè chi si trova sulla vetta può solo scendere. Nel Pilastro indicato mostra un settore " +
-                            "della vita di grande impatto, dove si gode di estrema autonomia e potere d'azione, con il rischio latente di eccessivo orgoglio o isolamento.",
-                            details = "Forza del Qi: Massima | Tratti chiave: leadership, autorità, indipendenza totale, successo.",
+                            category = stringResource(R.string.cat_qi),
+                            title = stringResource(R.string.q5_title),
+                            subtitle = stringResource(R.string.q5_subtitle),
+                            description = stringResource(R.string.q5_desc),
+                            details = stringResource(R.string.q5_details),
                             emoji = "👑"
                         ),
 
                         ExtendedLearnItem(
-                            category = "Le 12 Fasi del Qi (Shi Er Chang Sheng)",
-                            title = "Declino (Shuai)",
-                            subtitle = "La transizione verso la saggezza e la prudenza",
-                            description = "Rappresenta il momento in cui l'energia inizia a ritirarsi dopo aver toccato l'apice. Non indica un crollo ma una " +
-                            "perdita di forza fisica a favore di un grande guadagno in termini di maturità, esperienza e cautela. È l'archetipo del saggio anziano " +
-                            "o del sovrano che abdica, preferendo la diplomazia e la strategia alla forza bruta. Nel Pilastro indicato mostra un settore della vita " +
-                            "caratterizzato da stabilità conservativa, dove si preferisce mantenere ciò che si ha piuttosto che rischiare in nuove avventure.",
-                            details = "Forza del Qi: Medio-Alta | Tratti chiave: saggezza, prudenza, conservazione, maturità emotiva.",
+                            category = stringResource(R.string.cat_qi),
+                            title = stringResource(R.string.q6_title),
+                            subtitle = stringResource(R.string.q6_subtitle),
+                            description = stringResource(R.string.q6_desc),
+                            details = stringResource(R.string.q6_details),
                             emoji = "👴"
                         ),
 
                         ExtendedLearnItem(
-                            category = "Le 12 Fasi del Qi (Shi Er Chang Sheng)",
-                            title = "Ritiro (Bing)",
-                            subtitle = "L'introspezione, il ritiro e la sensibilità",
-                            description = "Rappresenta la fase in cui il Qi si indebolisce significativamente e si ritira dal mondo esterno. " +
-                            "È l'archetipo dell'introversione, dell'empatia profonda e della riflessione filosofica. Simboleggia un momento in cui " +
-                            "le energie fisiche calano, spingendo la mente a focalizzarsi sulla salute interiore, la spiritualità e la comprensione psicologica " +
-                            "degli altri. Nel Pilastro indicato mostra un settore della vita caratterizzato da grande sensibilità, intuito e prudenza, dove è necessario " +
-                            "agire senza fretta e ascoltare i propri ritmi biologici ed emotivi.",
-                            details = "Forza del Qi: Bassa | Tratti chiave: empatia, introspezione, forte intuito, bisogno di riposo.",
+                            category = stringResource(R.string.cat_qi),
+                            title = stringResource(R.string.q7_title),
+                            subtitle = stringResource(R.string.q7_subtitle),
+                            description = stringResource(R.string.q7_desc),
+                            details = stringResource(R.string.q7_details),
                             emoji = "🛌"
                         ),
 
                         ExtendedLearnItem(
-                            category = "Le 12 Fasi del Qi (Shi Er Chang Sheng)",
-                            title = "Morte (Si)",
-                            subtitle = "L'immobilità, la logica e la massima focalizzazione",
-                            description = "Rappresenta il momento in cui il Qi si ferma del tutto, raggiungendo un livello di quiete assoluta. " + 
-                            "È l'archetipo del distacco emotivo, della razionalità pura e della concentrazione profonda. Simboleggia la fine dei conflitti e " +
-                            "la capacità di analizzare le cose senza l'interferenza dell'ego o delle passioni. Nel Pilastro indicato mostra un settore della vita " +
-                            "caratterizzato da grande acume intellettuale, precisione e dedizione a compiti che richiedono logica, ricerca o specializzazione, " +
-                            "sebbene possa mancare di spontaneità.",
-                            details = "Forza del Qi: Molto Bassa | Tratti chiave: logica, focalizzazione, razionalità, distacco emotivo.",
+                            category = stringResource(R.string.cat_qi),
+                            title = stringResource(R.string.q8_title),
+                            subtitle = stringResource(R.string.q8_subtitle),
+                            description = stringResource(R.string.q8_desc),
+                            details = stringResource(R.string.q8_details),
                             emoji = "🧘"
                         ),
 
                         ExtendedLearnItem(
-                            category = "Le 12 Fasi del Qi (Shi Er Chang Sheng)",
-                            title = "Tomba (Mu)",
-                            subtitle = "L'accumulo, il risparmio e la protezione",
-                            description = "Rappresenta la fase in cui il Qi viene sepolto e custodito all'interno della terra per essere protetto. " +
-                            "È l'archetipo del magazzino, del caveau e dei segreti. Simboleggia un momento di forte introversione, focalizzato sulla " +
-                            "sicurezza materiale, il risparmio e la conservazione delle risorse personali. Nel Pilastro indicato mostra un settore della vita " +
-                            "caratterizzato da una gestione prudente o riservata, dove si tende ad accumulare ricchezza o conoscenza e mantenere una vita privata " +
-                            "molto protetta, con la tendenza a trattenere le cose.",
-                            details = "Forza del Qi: Bassa | Tratti chiave: accumulo, riservatezza, risparmio, protezione delle risorse.",
+                            category = stringResource(R.string.cat_qi),
+                            title = stringResource(R.string.q9_title),
+                            subtitle = stringResource(R.string.q9_subtitle),
+                            description = stringResource(R.string.q9_desc),
+                            details = stringResource(R.string.q9_details),
                             emoji = "📦"
                         ),
 
                         ExtendedLearnItem(
-                            category = "Le 12 Fasi del Qi (Shi Er Chang Sheng)",
-                            title = "Vuoto (Jue)",
-                            subtitle = "Il vuoto assoluto e la rottura con il passato",
-                            description = "Rappresenta il momento in cui il vecchio Qi si estingue completamente, dissolvendosi nel vuoto. È l'archetipo " +
-                            "della tabula rasa, della fine dei legami e della liberazione totale dai condizionamenti precedenti. Simboleggia un punto di svolta " +
-                            "drastico ma necessario, dove l'assenza di struttura lascia spazio all'inaspettato e alla pura potenzialità futura. " +
-                            "Nel Pilastro indicato mostra un settore della vita instabile o mutevole, caratterizzato da radicali cambiamenti, chiusure definitive " +
-                            "e la necessità di imparare a lasciare andare per ricominciare da zero.",
-                            details = "Forza del Qi: Minima | Tratti chiave : distacco, fine dei cicli, potenziale invisibile, transizione radicale.",
+                            category = stringResource(R.string.cat_qi),
+                            title = stringResource(R.string.q10_title),
+                            subtitle = stringResource(R.string.q10_subtitle),
+                            description = stringResource(R.string.q10_desc),
+                            details = stringResource(R.string.q10_details),
                             emoji = "🕳️"
                         ),
 
                         ExtendedLearnItem(
-                            category = "Le 12 Fasi del Qi (Shi Er Chang Sheng)",
-                            title = "Concepimento (Tai)",
-                            subtitle = "La scintilla iniziale, la speranza e l'idea",
-                            description = "Rappresenta il momento in cui la nuova energia viene concepita nell'oscurità, come un embrione che inizia " +
-                            "a formarsi. È l'archetipo dell'ispirazione iniziale, del sogno e della speranza invisibile. Simboleggia una fase di vulnerabilità, " +
-                            "ma anche di grande creatività latente, dove i progetti e le idee vengono seminati e protetti dal mondo esterno. Nel Pilastro indicato " +
-                            "mostra un settore della vita caratterizzato da un costante bisogno di protezione, sogni ad occhi aperti e l'inizio silenzioso di nuove " +
-                            "e promettenti fasi esistenziali.",
-                            details = "Forza del Qi: Molto Bassa | Tratti chiave: speranza, pianificazione, vulnerabilità, potenziale creativo.",
+                            category = stringResource(R.string.cat_qi),
+                            title = stringResource(R.string.q11_title),
+                            subtitle = stringResource(R.string.q11_subtitle),
+                            description = stringResource(R.string.q11_desc),
+                            details = stringResource(R.string.q11_details),
                             emoji = "🌱"
                         ),
 
                         ExtendedLearnItem(
-                            category = "Le 12 Fasi del Qi (Shi Er Chang Sheng)",
-                            title = "Nutrimento (Yang)",
-                            subtitle = "La gestazione, l'attesa e la preparazione",
-                            description = "Rappresenta la fase finale del ciclo, in cui l'energia cresce e si sviluppa al sicuro all'interno dell'utero. " +
-                            "È l'archetipo della gestazione, del nutrimento e dell'attesa fiduciosa. Simboleggia un momento protetto, privo di minacce esterne, " +
-                            "dove ci si prepara a raccogliere le forze prima di venire alla luce. Nel Pilastro indicato mostra un settore della vita caratterizzato " +
-                            "da supporto costante, stabilità serena e una crescita graduale ma sicura, ideale per lo studio, la pianificazione o il consolidamento personale.",
-                            details = "Forza del Qi: Media | Tratti chiave: protezione, preparazione, accumulo di forza, serenità.",
+                            category = stringResource(R.string.cat_qi),
+                            title = stringResource(R.string.q12_title),
+                            subtitle = stringResource(R.string.q12_subtitle),
+                            description = stringResource(R.string.q12_desc),
+                            details = stringResource(R.string.q12_details),
                             emoji = "🥚"
                         ),
                         
@@ -1297,14 +1156,10 @@ fun BaZiScreen() {
                         //Stelle simboliche
 
                         ExtendedLearnItem(
-                            category = "Stelle Simboliche (Shen Sha)",
-                            title = "Introduzione alle Stelle",
-                            subtitle = "I modificatori speciali del destino ",
-                            description = "Le Stelle Simboliche (Shen Sha) sono configurazioni energetiche speciali calcolate in base alle " +
-                            "relazioni tra il Day Master (o il Ramo dell'anno) e gli altri pilastri. Non rappresentano elementi fisici ma " +
-                            "archetipi psicologici, talenti innati, fortune protettive o sfide karmiche specifiche. Agiscono come 'lenti d'ingradimento' " +
-                            "che colorano i settori della vita in cui risiedono, aggiungendo sfumature uniche alla personalità e al percorso evolutivo " +
-                            "dell'individuo. ",
+                            category = stringResource(R.string.cat_stars),
+                            title = stringResource(R.string.star_intro_title),
+                            subtitle = stringResource(R.string.star_intro_subtitle),
+                            description = stringResource(R.string.star_intro_desc),
                             emoji = "✨"
                         ),
 
@@ -1317,23 +1172,19 @@ fun BaZiScreen() {
                             emoji = "🌹"
                         ),
                         ExtendedLearnItem(
-                            category = "Stelle di Ricchezza e Carriera",
-                            title = "Carro Dorato (Jin Yu)",
-                            subtitle = "La stella della prosperità e dello status sociale",
-                            description = "Tradizionalmente legata ai viaggi dei nobili su carrozze dorate, nel BaZi moderno indica il " +
-                            "supporto materiale, l'accesso a opportunità finanziarie di alto livello e uno stile di vita confortevole. " +
-                            "Spesso indica che la persona riceverà aiuti importanti nella carriera o nel matrimonio.",
-                            details = "Effetti: Attira mentori facoltosi, successo finanziario steso nel tempo e stabilità materiale.",
+                            category = stringResource(R.string.cat_career),
+                            title = stringResource(R.string.star_car_title),
+                            subtitle = stringResource(R.string.star_car_subtitle),
+                            description = stringResource(R.string.star_car_desc),
+                            details = stringResource(R.string.star_car_details),
                             emoji = "👑"
                         ),
                         ExtendedLearnItem(
-                            category = "Stelle di Protezione e Nobiltà",
-                            title = "Medico Celeste (Tian Yi)",
-                            subtitle = "La stella della guarigione e dell'intuito medico",
-                            description = "Tradizionalmente legata ai viaggi dei nobili su carrozze dorate, nel BaZi moderno indica il " +
-                            "supporto materiale, l'accesso a opportunità finanziarie di alto livello e uno stile di vita confortevole. " +
-                            "Spesso indica che la persona riceverà aiuti importanti nella carriera o nel matrimonio.",
-                            details = "Effetti: Capacità di autoguarigione, talento nelle professioni di cura ed empatia terapeutica.",
+                            category = stringResource(R.string.cat_protect),
+                            title = stringResource(R.string.star_doc_title),
+                            subtitle = stringResource(R.string.star_doc_subtitle),
+                            description = stringResource(R.string.star_doc_desc),
+                            details = stringResource(R.string.star_doc_details),
                             emoji = "🏥"
                         ),
                         

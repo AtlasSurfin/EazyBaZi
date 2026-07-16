@@ -1,0 +1,38 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<resources>
+    <string name="app_name">"EazyBaZi"</string>
+
+    <!-- Cicli del Qi -->
+    <string name="cat_cycles">"I Cicli del Qi (o Cicli dei Wu Xing)"</string>
+
+    <string name="cy1_title">"Il Ciclo di Generazione (Ciclo Sheng)"</string>
+    <string name="cy1_subtitle">"La Relazione Madre-Figlio"</string>
+    <string name="cy1_desc">
+    "Rappresenta il flusso armonioso, spontaneo e cooperativo dell'energia, dove ogni elemento \n"
+    "nutre, supporta e dà la vita a quello successivo. È un ciclo perenne di crescita e trasformazione positiva che permette \n"
+    "al Qi di evolversi continuamente senza sosta.\n"
+    </string>
+    <string name="cy1_details">"Flusso: Legno ➔ Fuoco ➔ Terra ➔ Metallo ➔ Acqua ➔ Legno"</string>
+
+    <string name="cy2_title">"Il Ciclo di Controllo (Ciclo Ke)"</string>
+    <string name="cy2_subtitle">"La Forza del Limite"</string>
+    <string name="cy2_desc">
+    "Rappresenta la forza che frena, regola, limita o domina l'elemento opposto. Non è un ciclo negativo: \n"
+    "nella filosofia del BaZi il controllo è fondamentale per mantenere l'equilibrio della carta ed evitare che un elemento \n"
+    "cresca troppo diventando distruttivo.\n"
+    </string>
+    <string name="cy2_details">"Flusso: Legno ➔ Terra ➔ Acqua ➔ Fuoco ➔ Metallo ➔ Legno"</string>
+
+    <!-- Tronchi Celesti Nascosti -->
+    <string name="cat_hst">"Tronchi Celesti Nascosti (Hidden Stems)"</string>
+
+    <string name="hst_title">"Le Radici dei Rami Terrestri"</string>
+    <string name="hst_subtitle">"Il potenziale nascosto dentro di te"</string>
+    <string name="hst_desc">
+    "In occidente siamo abituati a vedere un solo segno zodiacale. Nel BaZi, ogni animale nasconde sotto \n"
+    "terra (nelle sue radici) da 1 a 3 Tronchi Celesti. Rappresentano i tuoi talenti nascosti, i desideri segreti e ciò che \n" 
+    "si attiverà solo in determinati momenti della tua vita. \n"
+    </string>
+    
+
+</resources>

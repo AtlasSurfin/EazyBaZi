@@ -2,9 +2,39 @@
 <resources>
     <string name="app_name">EazyBaZi</string>
 
-    <string name="cat_wood">"Legno"</string>
-    <string name="cat_earth">"Terra"</string>
-    <string name="cat_water">"Acqua"</string>
-    <string name="cat_fire">"Fuoco"</string>
-    <string name="cat_metal">"Metallo"</string>
+    <string name="cat_elem">"I 5 elementi del BaZi"</string>
+
+    <string name="fire_title"></string>
+    <string name="fire_subtitle"></string>
+    <string name="fire_desc"></string>
+    <string name="fire_details"></string>
+
+    <string name="water_title">"Acqua (Shuǐ)"</string>
+    <string name="water_subtitle">"L'Energia dell'Inverno e della Concentrazione"</string>
+    <string name="water_desc">
+    "Rappresenta la fluidità, l'oscurità rigenerante, il riposo, l'adattabilità e il potenziale nascosto. \n"
+    "Psicologicamente governa l'intelligenza profonda, l'intuito, la saggezza e la filosofia di vita. \n"
+    "Se in eccesso può portare a paura ed indecisione. Nel corpo è legata a Reni e Vescica.\n"
+    </string>
+    <string name="water_details">"Genera: Legno | Controlla: Fuoco | È generato da: Metallo | È controllato da: Terra"</string>
+
+    <string name="wood_title">"Legno (Mù)"</string>
+    <string name="wood_subtitle">"L'Energia della Primavera e della Nascita"</string>
+    <string name="wood_desc">
+    "Rappresenta l'espansione, la crescita verticale, l'idealismo e l'istinto di esplorazione. \n"
+    "Psicologicamente governa la gentilezza, la compassione e la spinta al progresso. Se in eccesso può portare a \n"
+    "rabbia e frustrazione. Nel corpo è legato a Fegato e Cistifellea.\n"
+    </string>
+    <string name="wood_details">"Genera: Fuoco | Controlla: Terra | È generato da: Acqua | È controllato da: Metallo"</string>
+
+    <string name="earth_title"></string>
+    <string name="earth_subtitle"></string>
+    <string name="earth_desc"></string>
+    <string name="earth_details"></string>
+
+    <string name="metal_title"></string>
+    <string name="metal_subtitle"></string>
+    <string name="metal_desc"></string>
+    <string name="metal_details"></string>
+
 </resources>

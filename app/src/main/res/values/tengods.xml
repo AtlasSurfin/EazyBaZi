@@ -3,8 +3,58 @@
     <string name="app_name">EazyBaZi</string>
     <string name="cat_tg">"I Dieci Dei (Ten Gods)"</string>
 
-    <string name = ""></string>
-    <string name = ""></string>
-    <string name = ""></string>
-    <string name = ""></string>
+    <string name = "tg0_title"></string>
+    <string name = "tg0_subtitle"></string>
+    <string name = "tg0_desc"></string>
+
+    <string name = "tg1_title"></string>
+    <string name = "tg1_subtitle"></string>
+    <string name = "tg1_desc"></string>
+    <string name = "tg1_details"></string>
+
+    <string name = "tg2_title"></string>
+    <string name = "tg2_subtitle"></string>
+    <string name = "tg2_desc"></string>
+    <string name = "tg2_details"></string>
+
+    <string name = "tg3_title"></string>
+    <string name = "tg3_subtitle"></string>
+    <string name = "tg3_desc"></string>
+    <string name = "tg3_details"></string>
+
+    <string name = "tg4_title"></string>
+    <string name = "tg4_subtitle"></string>
+    <string name = "tg4_desc"></string>
+    <string name = "tg4_details"></string>
+
+    <string name = "tg5_title"></string>
+    <string name = "tg5_subtitle"></string>
+    <string name = "tg5_desc"></string>
+    <string name = "tg5_details"></string>
+
+    <string name = "tg6_title"></string>
+    <string name = "tg6_subtitle"></string>
+    <string name = "tg6_desc"></string>
+    <string name = "tg6_details"></string>
+
+    <string name = "tg7_title"></string>
+    <string name = "tg7_subtitle"></string>
+    <string name = "tg7_desc"></string>
+    <string name = "tg7_details"></string>
+
+    <string name = "tg8_title"></string>
+    <string name = "tg8_subtitle"></string>
+    <string name = "tg8_desc"></string>
+    <string name = "tg8_details"></string>
+
+    <string name = "tg9_title"></string>
+    <string name = "tg9_subtitle"></string>
+    <string name = "tg9_desc"></string>
+    <string name = "tg9_details"></string>
+
+    <string name = "tg10_title"></string>
+    <string name = "tg10_subtitle"></string>
+    <string name = "tg10_desc"></string>
+    <string name = "tg10_details"></string>
+
 </resources>

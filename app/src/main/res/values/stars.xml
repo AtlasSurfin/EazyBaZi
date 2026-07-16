@@ -7,6 +7,18 @@
     <string name="cat_career">"Stelle di Ricchezza e Carriera"</string>
     <string name="cat_love">"Stelle di Fascino e Romanticismo"</string>
 
+    <!-- Introduzione alle Stelle-->
+    <string name="cat_stars">"Stelle Simboliche (Shen Sha)"</string>
+    <string name="star_intro_title">"Introduzione alle Stelle"</string>
+    <string name="star_intro_subtitle">"I modificatori speciali del destino "</string>
+    <string name="star_intro_desc">
+    "Le Stelle Simboliche (Shen Sha) sono configurazioni energetiche speciali calcolate in base alle \n"
+    "relazioni tra il Day Master (o il Ramo dell'anno) e gli altri pilastri. Non rappresentano elementi fisici ma \n"
+    "archetipi psicologici, talenti innati, fortune protettive o sfide karmiche specifiche. Agiscono come 'lenti d'ingradimento' \n"
+    "che colorano i settori della vita in cui risiedono, aggiungendo sfumature uniche alla personalità e al percorso evolutivo \n"
+    "dell'individuo. \n"
+    </string>
+
     <!-- Nobile Celeste -->
     <string name="star_noble_title">"Nobile Celeste (Tian Yi Gui Ren)"</string>
     <string name="star_noble_subtitle">"Il Nobile Celeste - La Stella del Salvatore"</string>
