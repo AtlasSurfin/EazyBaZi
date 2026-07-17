@@ -43,6 +43,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.Modifier
@@ -141,9 +142,9 @@ fun BaZiScreen() {
                                     modifier = Modifier.fillMaxWidth(),
                                     horizontalArrangement = Arrangement.spacedBy(8.dp)
                                 ){
-                                    BaZiDropdown("Giorno", days, selectedDay, { selectedDay = it }, Modifier.weight(1.0f))
-                                    BaZiDropdown("Mese", months, selectedMonth, { selectedMonth = it }, Modifier.weight(1.8f))
-                                    BaZiDropdown("Anno", years, selectedYear, { selectedYear = it }, Modifier.weight(1.2f))
+                                    BaZiDropdown("Giorno", days, selectedDay, { selectedDay = it }, Modifier.weight(0.9f))
+                                    BaZiDropdown("Mese", months, selectedMonth, { selectedMonth = it }, Modifier.weight(1.5f))
+                                    BaZiDropdown("Anno", years, selectedYear, { selectedYear = it }, Modifier.weight(1.1f))
                                 }
 
 
@@ -1310,10 +1311,25 @@ fun BaZiDropdown(
                 onValueChange = {},
                 readOnly = true,
                 enabled = true,
-                label = { Text(label) },
-                trailingIcon = { 
-                    Text(if (expanded) "🔼" else "🔽", modifier = Modifier.padding(end = 8.dp))
+                label = { 
+                    Text(
+                        text = label,
+                        fontSize = 11.sp,
+                        maxLines = 1
+                    ) 
                 },
+                trailingIcon = { 
+                    Text(
+                        text = if (expanded) "🔼" else "🔽",
+                        fontSize = 10.sp, 
+                        modifier = Modifier.padding(end = 4.dp)
+                    )
+                },
+                maxLines = 1,
+                textStyle = TextStyle(
+                    fontSize = 13.sp,
+                    color = Color.White,
+                ),
                 modifier = Modifier
                     .fillMaxWidth()
                     .onGloballyPositioned { coordinates ->
@@ -1369,7 +1385,8 @@ fun BaZiDropdown(
                         Text(
                             text = option,
                             color = if (isSelected) Color(0xFFFFCA28) else Color.White,
-                            fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal
+                            fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal,
+                            fontSize = 14.sp
                         )
                     }
                 }

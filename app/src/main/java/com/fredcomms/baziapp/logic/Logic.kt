@@ -406,6 +406,71 @@ fun calculateRoleScores(chart: FullBaZiChart): RoleScores? {
     )
 }
 
+fun Branch.getHiddenStems(): List<Stem> {
+    return when (this) {
+        Branch.ZI -> listOf(Stem.GUI)
+        Branch.CHOU -> listOf(Stem.JI, Stem.XIN, Stem.GUI)
+        Branch.YIN -> listOf(Stem.JIA, Stem.BING, Stem.WU)
+        Branch.MAO -> listOf(Stem.YI)
+        Branch.CHEN -> listOf(Stem.WU, Stem.YI, Stem.GUI)
+        Branch.SI -> listOf(Stem.BING, Stem.GENG, Stem.WU)
+        Branch.WU -> listOf(Stem.DING, Stem.JI)
+        Branch.WEI -> listOf(Stem.JI, Stem.DING, Stem.YI)
+        Branch.SHEN -> listOf(Stem.GENG, Stem.REN, Stem.WU)
+        Branch.YOU -> listOf(Stem.XIN)
+        Branch.XU -> listOf(Stem.WU, Stem.XIN, Stem.DING)
+        Branch.HAI -> listOf(Stem.REN, Stem.JIA)
+    }
+}
+
+fun Pillar.getNaYinName(): String{
+    val s = this.stem ?: return ""
+    val b = this.branch ?: return ""
+
+    return when(s){
+        Stem.JIA, Stem.YI -> when (b) {
+            Branch.ZI, Branch.CHOU -> "Oro del Mare"
+            Branch.YIN, Branch.MAO -> "Acqua del Grande Torrente"
+            Branch.CHEN, Branch.SI -> "Fuoco della Lampada"
+            Branch.WU, Branch.WEI -> "Oro nella Sabbia"
+            Branch.SHEN, Branch.YOU -> "Acqua di Sorgente"
+            Branch.XU, Branch.HAI -> "Fuoco sulla Cima della Montagna"
+        }
+        Stem.BING, Stem.DING -> when (b) {
+            Branch.ZI, Branch.CHOU -> "Acqua del Torrente"
+            Branch.YIN, Branch.MAO -> "Fuoco della Fornace"
+            Branch.CHEN, Branch.SI -> "Terra nella Sabbia"
+            Branch.WU, Branch.WEI -> "Acqua del Fiume Celeste"
+            Branch.SHEN, Branch.YOU -> "Fuoco ai Piedi della Montagna"
+            Branch.XU, Branch.HAI -> "Terra del Tetto"
+        }
+        Stem.WU, Stem.JI -> when (b) {
+            Branch.ZI, Branch.CHOU -> "Fuoco del Fulmine"
+            Branch.YIN, Branch.MAO -> "Terra delle Mura della Città"
+            Branch.CHEN, Branch.SI -> "Legno della Grande Foresta"
+            Branch.WU, Branch.WEI -> "Fuoco del Sole"
+            Branch.SHEN, Branch.YOU -> "Terra della Grande Autostrada"
+            Branch.XU, Branch.HAI -> "Legno della Pianura"
+        }
+        Stem.GENG, Stem.XIN -> when (b) {
+            Branch.ZI, Branch.CHOU -> "Terra della Parete"
+            Branch.YIN, Branch.MAO -> "Legno di Pino e Cipresso"
+            Branch.CHEN, Branch.SI -> "Oro della Cera Bianca"
+            Branch.WU, Branch.WEI -> "Terra del Ciglio della Strada"
+            Branch.SHEN, Branch.YOU -> "Legno di Melograno"
+            Branch.XU, Branch.HAI -> "Oro del Fermaglio Prezioso"
+        }
+        Stem.REN, Stem.GUI -> when (b) {
+            Branch.ZI, Branch.CHOU -> "Legno di Gelso"
+            Branch.YIN, Branch.MAO -> "Oro del Gioiello"
+            Branch.CHEN, Branch.SI -> "Acqua del Lungo Fiume"
+            Branch.WU, Branch.WEI -> "Legno del Salice Piangente"
+            Branch.SHEN, Branch.YOU -> "Acciaio della Spada"
+            Branch.XU, Branch.HAI -> "Acqua del Grande Oceano"
+        }
+    }
+}
+
 fun getMonthNum(context: Context, monthName: String): Int{
     return try {
         val monthsArray = context.resources.getStringArray(R.array.months_arr)

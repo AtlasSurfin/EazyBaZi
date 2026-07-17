@@ -135,14 +135,22 @@
     <string name="cy2_details">"Flusso: Legno ➔ Terra ➔ Acqua ➔ Fuoco ➔ Metallo ➔ Legno"</string>
     <string name="cy2_subtitle">"La Forza del Limite"</string>
     <string name="cy2_title">"Il Ciclo di Controllo (Ciclo Ke)"</string>
-    <string name="earth_desc"/>
-    <string name="earth_details"/>
-    <string name="earth_subtitle"/>
-    <string name="earth_title"/>
-    <string name="fire_desc"/>
-    <string name="fire_details"/>
-    <string name="fire_subtitle"/>
-    <string name="fire_title"/>
+    <string name="earth_desc">
+    "Rappresenta il nutrimento, la concretezza solida, la pazienza, l'accoglienza e la capacità di trasformazione. \n"
+    "Psicologicamente governa l'affidabilità, l'onestà, il radicamento e la stabilità metodica.\n"
+    "Se in eccesso può portare a rimuginio mentale e testardaggine. Nel corpo è legata a Milza e Stomaco.\n"
+    </string>
+    <string name="earth_details">"Genera: Metallo | Controlla: Acqua | E' generato da: Fuoco | E' controllato da: Legno"</string>
+    <string name="earth_subtitle">"L'Energia del Centro e della Stabilità"</string>
+    <string name="earth_title">"Terra (Tŭ)"</string>
+    <string name="fire_desc">
+    "Rappresenta la passione, la luminosità dirompente, il dinamismo, l'espressività e il calore comunicativo. \n"
+    "Psicologicamente governa l'intuizione rapida, il carisma, la gioia e la capacità di ispirare gli altri. \n"
+    "Se in eccesso può portare ad impulsività ed ansia. Nel corpo è legato a Cuore e Intestino Tenute.\n"
+    </string>
+    <string name="fire_details">"Genera: Terra | Controlla: Metallo | E' generato da: Legno | E' controllato da: Acqua"</string>
+    <string name="fire_subtitle">"L'Energia dell'Estate e della Massima Espansione"</string>
+    <string name="fire_title">"Fuoco (Huŏ)"</string>
     <string name="hst_desc">
     "In occidente siamo abituati a vedere un solo segno zodiacale. Nel BaZi, ogni animale nasconde sotto \n"
     "terra (nelle sue radici) da 1 a 3 Tronchi Celesti. Rappresentano i tuoi talenti nascosti, i desideri segreti e ciò che \n" 
@@ -230,10 +238,14 @@
     <string name="i8_details">"Tipo: Logoramento | Elementi coinvolti: Rami Terrestri | Effetto: Rotture di schemi, spreco di energia, necessità di eliminare il superfluo."</string>
     <string name="i8_subtitle">"Sfaldamento, cattive abitudini e logoramento"</string>
     <string name="i8_title">"Distruzioni dei Rami Terrestri"</string>
-    <string name="metal_desc"/>
-    <string name="metal_details"/>
-    <string name="metal_subtitle"/>
-    <string name="metal_title"/>
+    <string name="metal_desc">
+    "Rappresenta la struttura, la purezza del cristallo, la giustizia, la disciplina e la capacità di tagliare il superfluo.\n"
+    "Psicologicamente governa il senso del dovere, la logica affilata, la resilienza e il distacco emotivo.\n"
+    "Se in eccesso può portare a rigidità inflessibile e tristezza. Nel corpo è legato a Polmoni e Colon.\n"
+    </string>
+    <string name="metal_details">"Genera: Acqua | Controlla: Legno | E' generato da: Terra | E' controllato da: Fuoco"</string>
+    <string name="metal_subtitle">"L'Energia dell'Autunno e della Contrazione"</string>
+    <string name="metal_title">"Metallo (Jīn)"</string>
     <string name="ny_e1_desc">
     "Generato dai Pilastri Geng Wu (Metallo Yang su Cavallo) e Xin Wei (Metallo Yin su Capra). \n"
     "Rappresenta una natura solida, accogliente e orientata al servizio, come la terra che costeggia e sostiene le grandi strade. \n"
@@ -402,7 +414,7 @@
     "Si distinguono per l'eleganza, il profondo senso della dignità e la capacità innata di portare armonia, stile e valore \n"
     "nei loro legami e nel proprio ambiente.\n"
     </string>
-    <string name="ny_m6_details">"Geng + Xu / Xin + Hai"</string>
+    <string name="ny_m6_details">"Geng + Xu / Xin + Hai = Oro del Fermaglio Prezioso"</string>
     <string name="ny_m6_subtitle">"Il gioiello raffinato ed elegante"</string>
     <string name="ny_m6_title">"Oro del Fermaglio Prezioso (Chai Chuan Jin)"</string>
     <string name="ny_math_desc">
@@ -437,7 +449,7 @@
     "Le persone con questo Na Yin possiedono un carattere altruista, aperto e ricco di risorse. Si distinguono per la spiccata intelligenza. \n"
     "la prontezza nel condividere le proprie idee e il talento naturale nel rigenerare gli ambienti in cui operano.\n"
     </string>
-    <string name="ny_w2_details">"Jia + Shen / Yi + You = Spring Water"</string>
+    <string name="ny_w2_details">"Jia + Shen / Yi + You = Acqua di Sorgente"</string>
     <string name="ny_w2_subtitle">"L'acqua più pura"</string>
     <string name="ny_w2_title">"Acqua di Sorgente (Quan Zhong Shui)"</string>
     <string name="ny_w3_desc">
@@ -753,49 +765,93 @@
     <string name="star_rclouds_details">"Effetti: Forte carisma personale, sensualità e predisposizione alle arti espressive."</string>
     <string name="star_rclouds_subtitle">"Le Nuvole Rosse - La Stella del Magnetismo"</string>
     <string name="star_rclouds_title">"Nuvole Rosse (Hong Yan)"</string>
-    <string name="tg0_desc"/>
-    <string name="tg0_subtitle"/>
-    <string name="tg0_title"/>
-    <string name="tg10_desc"/>
-    <string name="tg10_details"/>
-    <string name="tg10_subtitle"/>
-    <string name="tg10_title"/>
-    <string name="tg1_desc"/>
-    <string name="tg1_details"/>
-    <string name="tg1_subtitle"/>
-    <string name="tg1_title"/>
-    <string name="tg2_desc"/>
-    <string name="tg2_details"/>
-    <string name="tg2_subtitle"/>
-    <string name="tg2_title"/>
-    <string name="tg3_desc"/>
-    <string name="tg3_details"/>
-    <string name="tg3_subtitle"/>
-    <string name="tg3_title"/>
-    <string name="tg4_desc"/>
-    <string name="tg4_details"/>
-    <string name="tg4_subtitle"/>
-    <string name="tg4_title"/>
-    <string name="tg5_desc"/>
-    <string name="tg5_details"/>
-    <string name="tg5_subtitle"/>
-    <string name="tg5_title"/>
-    <string name="tg6_desc"/>
-    <string name="tg6_details"/>
-    <string name="tg6_subtitle"/>
-    <string name="tg6_title"/>
-    <string name="tg7_desc"/>
-    <string name="tg7_details"/>
-    <string name="tg7_subtitle"/>
-    <string name="tg7_title"/>
-    <string name="tg8_desc"/>
-    <string name="tg8_details"/>
-    <string name="tg8_subtitle"/>
-    <string name="tg8_title"/>
-    <string name="tg9_desc"/>
-    <string name="tg9_details"/>
-    <string name="tg9_subtitle"/>
-    <string name="tg9_title"/>
+    <string name="tg0_desc">
+    "I 'Dieci Dei' non sono divinità religiose ma le dieci diverse sfumature della tua personalità e del tuo potenziale. \n"
+    "Nascono dalla relazione dinamica tra il tuo Day Master e gli altri elementi della carta natale. \n"
+    "Rivelano come ti muovi nel mondo, come gestisci il successo, le relazioni ed i tuoi talenti nascosti. \n"
+    </string>
+    <string name="tg0_subtitle">"I Dieci Archetipi della tua Mappa Energetica"</string>
+    <string name="tg0_title">"I Dieci Dei (Shí Shén)"</string>
+    <string name="tg10_desc">
+    "Rappresenta la conoscenza accademica, la saggezza ereditata, la stabilità emotiva e la capacità di accogliere e proteggere. \n"
+    "Dona una mente portata per lo studio profondo, per l'insegnamento e una grande sensibilità ed empatia verso il prossimo. \n"
+    "La sfida consiste nel non adagiarsi troppo nel proprio comfort, stimolando lo spirito d'iniziativa. \n"
+    </string>
+    <string name="tg10_details">"Punti di Forza: Empatia, Cultura e Stabilità | Sfida: Vincere la pigriza ed agire"</string>
+    <string name="tg10_subtitle">"Elemento Nutriente e Polarità Opposta"</string>
+    <string name="tg10_title">"Direct Resource - La Guida Saggia (Zhèng Yĭn)"</string>
+    <string name="tg1_desc">
+    "Rappresenta la tua forza interiore, l'autostima e la capacità di contare sulle tue forze.\n"
+    "Chi ha questo aspetto possiede una forte identità, ama l'indipendenza e sa lavorare alla pari con gli altri .\n"
+    "La sfida sta nel trovare l'equilibrio tra la ferma determinazione e l'apertura ai consigli altrui.\n"
+    </string>
+    <string name="tg1_details">"Punti di Forza: Autonomia e resilienza | Sfida: Evitare ostinazione"</string>
+    <string name="tg1_subtitle">"Stesso Elemento e Stessa Polarità"</string>
+    <string name="tg1_title">"Friend - L'Amico (Bi Jiān)"</string>
+    <string name="tg2_desc">
+    "Rappresenta l'intelligenza sociale, l'abilità nel coltivare conoscenze ed il magnetismo verso le masse. \n"
+    "Ti dona una spiccata capacità di persuasione, rendendoti eccellente nelle pubbliche relazioni e nel lavoro di squadra. \n"
+    "La sfida consiste nel canalizzare questa energia competitiva senza farsi travolgere da spese impulsive.\n"
+    </string>
+    <string name="tg2_details">"Punti di Forza: Carisma e Leadership sociale | Sfida: Gestione oculata delle finanze"</string>
+    <string name="tg2_subtitle">"Stesso Elemento e Polarità Opposta"</string>
+    <string name="tg2_title">"Rob Wealth - Il Leader Carismatico (Jiè Cái)"</string>
+    <string name="tg3_desc">
+    "Rappresenta l'ispirazione profonda, l'immaginazione ed il piacere di godersi la bellezza della vita. \n"
+    "Dona un intelletto raffinato, amore per la cultura, il buon cibo e l'espressione di sè genuina. \n"
+    "La sfida è tradurre questa meravigliosa moltitudine di idee in azioni concrete, superando la tendenza a procrastinare. \n"
+    </string>
+    <string name="tg3_details">"Punti di Forza: Creatività e armonia interiore | Sfida: Concretezza e focus"</string>
+    <string name="tg3_subtitle">"Elemento Prodotto e Stessa Polarità"</string>
+    <string name="tg3_title">"Eating God - Il Creativo Intuitivo (Shí Shén)"</string>
+    <string name="tg4_desc">
+    "Rappresenta l'anticonformismo, l'intelligenza brillante e il desiderio di rompere gli schemi obsoleti. \n"
+    "Dona uno straordinario talento oratorio e una mente che brilla sotto i riflettori, perfetta per ispirare cambiamento. \n"
+    "La sfida consiste nel dosare la franchezza per evitare risposte taglienti e conflitti non necessari.\n"
+    </string>
+    <string name="tg4_details">"Punti di Forza: Genialità e carisma comunicativo | Sfida: Diplomazia e tatto"</string>
+    <string name="tg4_subtitle">"Elemento Prodotto e Polarità Opposta"</string>
+    <string name="tg4_title">"Hurting Officer - L'Innovatore Ribelle (Shāng Guān)"</string>
+    <string name="tg5_desc">
+    "Rappresenta il fiuto per gli affari, l'intraprendenza, la gestione di grandi progetti ed il calcolo del rischio. \n"
+    "Dona una visione macroscopica e la capacità di vedere mercati, investimenti o soluzioni dove altri vedono ostacoli. \n"
+    "La sfida sta nel non farsi prendere dal brivido dell'azzardo, mantenendo un solido ancoraggio alla realtà. \n"
+    </string>
+    <string name="tg5_details">"Punti di Forza: Risoluzione di problemi e audacia | Sfida: Valutazione realistica del rischio"</string>
+    <string name="tg5_subtitle">"Elemento Controllato e Stessa Polarità"</string>
+    <string name="tg5_title">"Indirect Wealth - La Mente Imprenditoriale(Pián Cái)"</string>
+    <string name="tg6_desc">
+    "Rappresenta il successo costruito con dedizione, l'affidabilità, la precisione e il rispetto del valore delle risorse. \n"
+    "Ti dona un forte senso del dovere, realismo e la capacità di stabilizzare le finanze ed i progetti a lungo termine. \n"
+    "La sfida è evitare che il desiderio di sicurezza si trasformi in ansia per il controllo o in eccessiva rigidità. \n"
+    </string>
+    <string name="tg6_details">"Punti di Forza: Pragmatismo e affidabilità assoluta | Sfida: Apertura alle novità"</string>
+    <string name="tg6_subtitle">"Elemento Controllato e Polarità Opposta"</string>
+    <string name="tg6_title">"Direct Wealth - Il Costruttore Costante (Zhèng Cái)"</string>
+    <string name="tg7_desc">
+    "A differenza del nome tradizionale, rappresenta la resilienza pura, l'audacia di fronte al pericolo e lo spirito d'azione. \n"
+    "Forgia individui capaci di prendere decisioni cruciali sotto pressione, eccellendo nel comando e nelle emergenze. \n"
+    "La sfida consiste nel saper disattivare la modalità 'lotta' per non accumulare eccessivo stress interno. \n"
+    </string>
+    <string name="tg7_details">"Punti di Forza: Coraggio e risoluzione strategica | Sfida: Gestione dello stress"</string>
+    <string name="tg7_subtitle">"Elemento Controllante e Stessa Polarità"</string>
+    <string name="tg7_title">"7 Killings - Il Guerriero Strategico (Qī Shā)"</string>
+    <string name="tg8_desc">
+    "Rappresenta l'onestà intellettuale, il rispetto per la comunità, il senso civico e la leadership strutturata. \n"
+    "Dona una naturale attitudine nel guidare attraverso l'esempio, guadagnandosi il rispetto e la stima sociale per i propri meriti. \n"
+    "La sfida è non diventare schiavi del giudizio altrui o di eccessivo perfezionismo. \n"
+    </string>
+    <string name="tg8_details">"Punti di Forza: Integrità morale ed autorevolezza | Sfida: Superare le paure di sbagliare"</string>
+    <string name="tg8_subtitle">"Elemento Controllante e Polarità Opposta"</string>
+    <string name="tg8_title">"Direct Officer - Il Custode dell'Ordine (Zhèng Guān)"</string>
+    <string name="tg9_desc">
+    "Rappresenta l'attrazione verso i saperi antichi, la spiritualità, l'astrologia, la psicologia ed il pensiero d'avanguardia. \n"
+    "Dona un intuito eccezionale, capace di decifrare segnali che sfuggono alla logica ordinaria e di trovare risposte uniche. \n"
+    "La sfida sta nel mantenere i piedi per terra, evitando di isolarsi nel proprio mondo mentale. \n"
+    </string>
+    <string name="tg9_details">"Punti di Forza: Intuito formidabile e originalità | Sfida: Evitare l'isolamento"</string>
+    <string name="tg9_subtitle">"Elemento Nutriente e Stessa Polarità"</string>
+    <string name="tg9_title">"Indirect Resource - Il Pensatore Laterale (Pián Yĭn)"</string>
     <string name="water_desc">
     "Rappresenta la fluidità, l'oscurità rigenerante, il riposo, l'adattabilità e il potenziale nascosto. \n"
     "Psicologicamente governa l'intelligenza profonda, l'intuito, la saggezza e la filosofia di vita. \n"

@@ -3,10 +3,14 @@
 
     <string name="cat_elem">"I 5 elementi del BaZi"</string>
 
-    <string name="fire_title"></string>
-    <string name="fire_subtitle"></string>
-    <string name="fire_desc"></string>
-    <string name="fire_details"></string>
+    <string name="fire_title">"Fuoco (Huŏ)"</string>
+    <string name="fire_subtitle">"L'Energia dell'Estate e della Massima Espansione"</string>
+    <string name="fire_desc">
+    "Rappresenta la passione, la luminosità dirompente, il dinamismo, l'espressività e il calore comunicativo. \n"
+    "Psicologicamente governa l'intuizione rapida, il carisma, la gioia e la capacità di ispirare gli altri. \n"
+    "Se in eccesso può portare ad impulsività ed ansia. Nel corpo è legato a Cuore e Intestino Tenute.\n"
+    </string>
+    <string name="fire_details">"Genera: Terra | Controlla: Metallo | E' generato da: Legno | E' controllato da: Acqua"</string>
 
     <string name="water_title">"Acqua (Shuǐ)"</string>
     <string name="water_subtitle">"L'Energia dell'Inverno e della Concentrazione"</string>
@@ -26,14 +30,22 @@
     </string>
     <string name="wood_details">"Genera: Fuoco | Controlla: Terra | È generato da: Acqua | È controllato da: Metallo"</string>
 
-    <string name="earth_title"></string>
-    <string name="earth_subtitle"></string>
-    <string name="earth_desc"></string>
-    <string name="earth_details"></string>
+    <string name="metal_title">"Metallo (Jīn)"</string>
+    <string name="metal_subtitle">"L'Energia dell'Autunno e della Contrazione"</string>
+    <string name="metal_desc">
+    "Rappresenta la struttura, la purezza del cristallo, la giustizia, la disciplina e la capacità di tagliare il superfluo.\n"
+    "Psicologicamente governa il senso del dovere, la logica affilata, la resilienza e il distacco emotivo.\n"
+    "Se in eccesso può portare a rigidità inflessibile e tristezza. Nel corpo è legato a Polmoni e Colon.\n"
+    </string>
+    <string name="metal_details">"Genera: Acqua | Controlla: Legno | E' generato da: Terra | E' controllato da: Fuoco"</string>
 
-    <string name="metal_title"></string>
-    <string name="metal_subtitle"></string>
-    <string name="metal_desc"></string>
-    <string name="metal_details"></string>
+    <string name="earth_title">"Terra (Tŭ)"</string>
+    <string name="earth_subtitle">"L'Energia del Centro e della Stabilità"</string>
+    <string name="earth_desc">
+    "Rappresenta il nutrimento, la concretezza solida, la pazienza, l'accoglienza e la capacità di trasformazione. \n"
+    "Psicologicamente governa l'affidabilità, l'onestà, il radicamento e la stabilità metodica.\n"
+    "Se in eccesso può portare a rimuginio mentale e testardaggine. Nel corpo è legata a Milza e Stomaco.\n"
+    </string>
+    <string name="earth_details">"Genera: Metallo | Controlla: Acqua | E' generato da: Fuoco | E' controllato da: Legno"</string>
 
 </resources>
