@@ -423,52 +423,69 @@ fun Branch.getHiddenStems(): List<Stem> {
     }
 }
 
-fun Pillar.getNaYinName(): String{
+fun Pillar.getNaYinKey(): String{
     val s = this.stem ?: return ""
     val b = this.branch ?: return ""
 
     return when(s){
         Stem.JIA, Stem.YI -> when (b) {
-            Branch.ZI, Branch.CHOU -> "Oro del Mare"
-            Branch.YIN, Branch.MAO -> "Acqua del Grande Torrente"
-            Branch.CHEN, Branch.SI -> "Fuoco della Lampada"
-            Branch.WU, Branch.WEI -> "Oro nella Sabbia"
-            Branch.SHEN, Branch.YOU -> "Acqua di Sorgente"
-            Branch.XU, Branch.HAI -> "Fuoco sulla Cima della Montagna"
+            Branch.ZI, Branch.CHOU -> "ny_m1"
+            Branch.YIN, Branch.MAO -> "ny_w5"
+            Branch.CHEN, Branch.SI -> "ny_f5"
+            Branch.WU, Branch.WEI -> "ny_m4"
+            Branch.SHEN, Branch.YOU -> "ny_w2"
+            Branch.XU, Branch.HAI -> "ny_f2"
         }
         Stem.BING, Stem.DING -> when (b) {
-            Branch.ZI, Branch.CHOU -> "Acqua del Torrente"
-            Branch.YIN, Branch.MAO -> "Fuoco della Fornace"
-            Branch.CHEN, Branch.SI -> "Terra nella Sabbia"
-            Branch.WU, Branch.WEI -> "Acqua del Fiume Celeste"
-            Branch.SHEN, Branch.YOU -> "Fuoco ai Piedi della Montagna"
-            Branch.XU, Branch.HAI -> "Terra del Tetto"
+            Branch.ZI, Branch.CHOU -> "ny_w1"
+            Branch.YIN, Branch.MAO -> "ny_f1"
+            Branch.CHEN, Branch.SI -> "ny_e6"
+            Branch.WU, Branch.WEI -> "ny_w4"
+            Branch.SHEN, Branch.YOU -> "ny_f3"
+            Branch.XU, Branch.HAI -> "ny_e3"
         }
         Stem.WU, Stem.JI -> when (b) {
-            Branch.ZI, Branch.CHOU -> "Fuoco del Fulmine"
-            Branch.YIN, Branch.MAO -> "Terra delle Mura della Città"
-            Branch.CHEN, Branch.SI -> "Legno della Grande Foresta"
-            Branch.WU, Branch.WEI -> "Fuoco del Sole"
-            Branch.SHEN, Branch.YOU -> "Terra della Grande Autostrada"
-            Branch.XU, Branch.HAI -> "Legno della Pianura"
+            Branch.ZI, Branch.CHOU -> "ny_f4"
+            Branch.YIN, Branch.MAO -> "ny_e2"
+            Branch.CHEN, Branch.SI -> "ny_wd1"
+            Branch.WU, Branch.WEI -> "ny_f6"
+            Branch.SHEN, Branch.YOU -> "ny_e5"
+            Branch.XU, Branch.HAI -> "ny_wd4"
         }
         Stem.GENG, Stem.XIN -> when (b) {
-            Branch.ZI, Branch.CHOU -> "Terra della Parete"
-            Branch.YIN, Branch.MAO -> "Legno di Pino e Cipresso"
-            Branch.CHEN, Branch.SI -> "Oro della Cera Bianca"
-            Branch.WU, Branch.WEI -> "Terra del Ciglio della Strada"
-            Branch.SHEN, Branch.YOU -> "Legno di Melograno"
-            Branch.XU, Branch.HAI -> "Oro del Fermaglio Prezioso"
+            Branch.ZI, Branch.CHOU -> "ny_e4"
+            Branch.YIN, Branch.MAO -> "ny_wd3"
+            Branch.CHEN, Branch.SI -> "ny_m3"
+            Branch.WU, Branch.WEI -> "ny_e1"
+            Branch.SHEN, Branch.YOU -> "ny_wd6"
+            Branch.XU, Branch.HAI -> "ny_m6"
         }
         Stem.REN, Stem.GUI -> when (b) {
-            Branch.ZI, Branch.CHOU -> "Legno di Gelso"
-            Branch.YIN, Branch.MAO -> "Oro del Gioiello"
-            Branch.CHEN, Branch.SI -> "Acqua del Lungo Fiume"
-            Branch.WU, Branch.WEI -> "Legno del Salice Piangente"
-            Branch.SHEN, Branch.YOU -> "Acciaio della Spada"
-            Branch.XU, Branch.HAI -> "Acqua del Grande Oceano"
+            Branch.ZI, Branch.CHOU -> "ny_wd5"
+            Branch.YIN, Branch.MAO -> "ny_m5"
+            Branch.CHEN, Branch.SI -> "ny_w3"
+            Branch.WU, Branch.WEI -> "ny_wd2"
+            Branch.SHEN, Branch.YOU -> "ny_m2"
+            Branch.XU, Branch.HAI -> "ny_w6"
         }
     }
+}
+
+@Composable
+fun getNaYinTitle(key: String?): String{
+    if (key.isNullOrEmpty()) return ""
+
+    val context = LocalContext.current
+    val resName = "${key}_title"
+
+    val resId = context.resources.getIdentifier(resName, "string", context.packageName)
+
+    if (resId != 0){
+        val fullTitle = stringResource(resId)
+        return fullTitle.substringBefore(" (").trim()
+    }
+
+    return ""
 }
 
 fun getMonthNum(context: Context, monthName: String): Int{

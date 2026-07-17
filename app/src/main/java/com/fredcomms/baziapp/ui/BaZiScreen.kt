@@ -1400,7 +1400,7 @@ fun BaZiDropdown(
 fun PillarDisplay(label: String, pillar: Pillar, dayMaster: Stem?){
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
-        modifier = Modifier.padding(horizontal = 0.dp)
+        modifier = Modifier.padding(horizontal = 4.dp)
     ){
         //Etichetta del Pilastro
         Text(
@@ -1459,6 +1459,105 @@ fun PillarDisplay(label: String, pillar: Pillar, dayMaster: Stem?){
             extendedText = branchDescription, 
             element = pillar.branch?.element
         )
+
+        Spacer(modifier = Modifier.height(8.dp))
+
+        val hiddenStems = pillar.branch?.hiddenStems ?: emptyList()
+
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.spacedBy(2.dp),
+            modifier = Modifier.width(80.dp)
+        ){
+            Text(
+                text = "Nascosti",
+                style = MaterialTheme.typography.labelSmall.copy(fontSize = 9.sp),
+                color = Color.Gray
+            )
+
+            if(hiddenStems.isEmpty()){
+                Text(text = "-", color = Color.DarkGray, style = MaterialTheme.typography.bodySmall)
+            }else{
+                hiddenStems.forEach { hiddenStem ->
+                    Row(
+                        horizontalArrangement = Arrangement.Center,
+                        verticalAlignment = Alignment.CenterVertically,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .background(
+                                color = Color(getElementColor(hiddenStem.element)).copy(alpha = 0.15f),
+                                shape = RoundedCornerShape(4.dp)
+                            )
+                            .padding(vertical = 2.dp, horizontal = 4.dp)
+                    ){
+                        Text(
+                            text = hiddenStem.chinese ?: "",
+                            fontSize = 11.sp,
+                            fontWeight = FontWeight.Bold,
+                            color = Color(getElementColor(hiddenStem.element))
+                        )
+                        Spacer(modifier = Modifier.width(4.dp))
+                        Text(
+                            text = formatToLowercase(hiddenStem.name),
+                            fontSize = 9.sp,
+                            color = Color.LightGray
+                        )
+                    }
+                }
+            }
+        }
+
+        Spacer(modifier = Modifier.height(8.dp))
+
+        val naYinKey = pillar.getNaYinKey()
+
+        val naYinTitle = getNaYinTitle(pillar.naYinKey)
+
+        if (naYinTitle.isNotEmpty()){
+            Box(
+                modifier = Modifier
+                    .width(80.dp)
+                    .background(Color(0xFF2C2C2C), shape = RoundedCornerShape(6.dp))
+                    .border(0.5.dp, Color.Gray.copy(alpha = 0.4f), shape = RoundedCornerShape(6.dp))
+                    .padding(vertical = 4.dp, horizontal = 2.dp),
+                contentAlignment = Alignment.Center
+            ){
+                Text(
+                    text = naYinTitle,
+                    style = TextStyle(
+                        fontFamily = FontFamily.Serif,
+                        fontStyle = FontStyle.Italic,
+                        fontSize = 10.sp,
+                        fontWeight = FontWeight.Medium
+                    ),
+                    color = Color(0xFFFFCA28),
+                    maxLines = 1,
+                    textAlign = TextAlign.Center
+                )
+            }
+        }
+
+        Box(
+            modifier = Modifier
+                .width(80.dp)
+                .background(Color(0xFF2C2C2C), shape = RoundedCornerShape(6.dp))
+                .border(0.5.dp, Color.Gray.copy(alpha = 0.5f), shape = RoundedCornerShape(6.dp))
+                .padding(vertical = 4.dp, horizontal = 2.dp),
+            contentAlignment = Alignment.Center
+        ){
+            Text(
+                text = naYinText,
+                style = TextStyle(
+                    fontFamily = fontFamily.Serif,
+                    fontStyle = FontStyle.Italic,
+                    fontSize = 10.sp,
+                    fontWeight = FontWeight.Medium
+                ),
+                color = Color(0xFFFFCA28),
+                maxLines = 1,
+                textAlign = TextAlign.Center
+            )
+        }
     }
 }
 
