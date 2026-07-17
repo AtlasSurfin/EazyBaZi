@@ -21,6 +21,7 @@ import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.gestures.detectTapGestures
+import androidx.compose.foundation.border
 import androidx.compose.material3.*
 import androidx.compose.material3.ExposedDropdownMenuBox
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -43,6 +44,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalDensity
@@ -139,8 +141,8 @@ fun BaZiScreen() {
                                     modifier = Modifier.fillMaxWidth(),
                                     horizontalArrangement = Arrangement.spacedBy(8.dp)
                                 ){
-                                    BaZiDropdown("Giorno", days, selectedDay, { selectedDay = it }, Modifier.weight(0.8f))
-                                    BaZiDropdown("Mese", months, selectedMonth, { selectedMonth = it }, Modifier.weight(1.6f))
+                                    BaZiDropdown("Giorno", days, selectedDay, { selectedDay = it }, Modifier.weight(1.0f))
+                                    BaZiDropdown("Mese", months, selectedMonth, { selectedMonth = it }, Modifier.weight(1.8f))
                                     BaZiDropdown("Anno", years, selectedYear, { selectedYear = it }, Modifier.weight(1.2f))
                                 }
 
@@ -1303,31 +1305,31 @@ fun BaZiDropdown(
     var textFieldWidth by remember { mutableStateOf(0) }
 
     Box(modifier = modifier){
-        OutlinedTextField(
-            value = selectedOption,
-            onValueChange = {},
-            readOnly = true,
-            enabled = true,
-            label = { Text(label) },
-            trailingIcon = { 
-                Text(if (expanded) "🔼" else "🔽", modifier = Modifier.padding(end = 8.dp))
-            },
-            modifier = Modifier
-                .fillMaxWidth()
-                .onGloballyPositioned { coordinates ->
-                    textFieldWidth = coordinates.size.width
+            OutlinedTextField(
+                value = selectedOption,
+                onValueChange = {},
+                readOnly = true,
+                enabled = true,
+                label = { Text(label) },
+                trailingIcon = { 
+                    Text(if (expanded) "🔼" else "🔽", modifier = Modifier.padding(end = 8.dp))
                 },
-            colors = OutlinedTextFieldDefaults.colors(
-                focusedTextColor = Color.White,
-                unfocusedTextColor = Color.White,
-                focusedLabelColor = Color.LightGray,
-                unfocusedLabelColor = Color.LightGray,
-                focusedBorderColor = Color(0xFFFFCA28),
-                unfocusedBorderColor = Color.Gray,
-                focusedTrailingIconColor = Color.White,
-                unfocusedTrailingIconColor = Color.Gray
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .onGloballyPositioned { coordinates ->
+                        textFieldWidth = coordinates.size.width
+                    },
+                colors = OutlinedTextFieldDefaults.colors(
+                    focusedTextColor = Color.White,
+                    unfocusedTextColor = Color.White,
+                    focusedLabelColor = Color.LightGray,
+                    unfocusedLabelColor = Color.LightGray,
+                    focusedBorderColor = Color(0xFFFFCA28),
+                    unfocusedBorderColor = Color.Gray,
+                    focusedTrailingIconColor = Color.White,
+                    unfocusedTrailingIconColor = Color.Gray
+                )
             )
-        )
 
         Box(
             modifier = Modifier
@@ -1339,28 +1341,43 @@ fun BaZiDropdown(
             expanded = expanded,
             onDismissRequest = { expanded = false },
             modifier = Modifier
-                .width(with(LocalDensity.current){ textFieldWidth.toDp() })
-                .background(Color(0xFF1E1E1E))
+                    .width(with(LocalDensity.current){ textFieldWidth.toDp() })
+                    .background(Color(0xFF1E1E1E))
         ){
-            options.forEach { option ->
-                DropdownMenuItem(
-                    text = { 
+            val isLongList = options.size > 12
+            val menuHeight = if (isLongList) 240.dp else 400.dp
+
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(menuHeight)
+                    .verticalScroll(rememberScrollState())
+            ){
+                options.forEach { option ->
+                    val isSelected = (option == selectedOption)
+
+                    Box(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .background(if (isSelected) Color(0xFF2C2C2C) else Color(0xFF1E1E1E))
+                            .clickable{
+                                onOptionSelected(option)
+                                expanded = false
+                            }
+                            .padding(vertical = 12.dp, horizontal = 16.dp)
+                    ){
                         Text(
-                            text = option, 
-                            color = Color.White,
-                            modifier = Modifier.padding(vertical = 4.dp)
-                        ) 
-                    },
-                    onClick = {
-                        onOptionSelected(option)
-                        expanded = false
-                    },
-                    modifier = Modifier.background(Color(0xFF1E1E1E))
-                )
+                            text = option,
+                            color = if (isSelected) Color(0xFFFFCA28) else Color.White,
+                            fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal
+                        )
+                    }
+                }
             }
         }
     }
 }
+
 
 @Composable
 fun PillarDisplay(label: String, pillar: Pillar, dayMaster: Stem?){

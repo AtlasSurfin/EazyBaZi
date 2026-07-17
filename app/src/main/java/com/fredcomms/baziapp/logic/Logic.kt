@@ -224,8 +224,8 @@ fun getTenGodName(dayMaster: Element, target: Element, dayMasterPolarity: Polari
     return when{
         dayMaster == target && dayMasterPolarity == targetPolarity -> "Friends"
         dayMaster == target && dayMasterPolarity != targetPolarity -> "Rob Wealth"
-        isProducing(dayMaster, target) && dayMasterPolarity == targetPolarity -> "Hurting Officer"
-        isProducing(dayMaster, target) && dayMasterPolarity != targetPolarity -> "Eating God"
+        isProducing(dayMaster, target) && dayMasterPolarity == targetPolarity -> "Eating God"
+        isProducing(dayMaster, target) && dayMasterPolarity != targetPolarity -> "Hurting Officer"
         isProducing(target, dayMaster) && dayMasterPolarity == targetPolarity -> "Indirect Resource"
         isProducing(target, dayMaster) && dayMasterPolarity != targetPolarity -> "Direct Resource"
         isControlling(dayMaster, target) && dayMasterPolarity == targetPolarity -> "Indirect Wealth"
