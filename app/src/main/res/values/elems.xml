@@ -6,46 +6,46 @@
     <string name="fire_title">"Fuoco (Huŏ)"</string>
     <string name="fire_subtitle">"L'Energia dell'Estate e della Massima Espansione"</string>
     <string name="fire_desc">
-    "Rappresenta la passione, la luminosità dirompente, il dinamismo, l'espressività e il calore comunicativo. \n"
-    "Psicologicamente governa l'intuizione rapida, il carisma, la gioia e la capacità di ispirare gli altri. \n"
-    "Se in eccesso può portare ad impulsività ed ansia. Nel corpo è legato a Cuore e Intestino Tenute.\n"
+    "Rappresenta la passione, la luminosità\ndirompente, il dinamismo,\nl'espressività e il calore comunicativo.\n"
+    "Psicologicamente governa l'intuizione rapida, il carisma, la gioia e la capacità di ispirare gli altri.\n"
+    "Se in eccesso può portare ad impulsività ed ansia.\nNel corpo è legato a Cuore e Intestino Tenute.\n"
     </string>
-    <string name="fire_details">"Genera: Terra | Controlla: Metallo | E' generato da: Legno | E' controllato da: Acqua"</string>
+    <string name="fire_details">"Genera: Terra | Controlla: Metallo\n| E' generato da: Legno | E' controllato da: Acqua"</string>
 
     <string name="water_title">"Acqua (Shuǐ)"</string>
     <string name="water_subtitle">"L'Energia dell'Inverno e della Concentrazione"</string>
     <string name="water_desc">
-    "Rappresenta la fluidità, l'oscurità rigenerante, il riposo, l'adattabilità e il potenziale nascosto. \n"
-    "Psicologicamente governa l'intelligenza profonda, l'intuito, la saggezza e la filosofia di vita. \n"
-    "Se in eccesso può portare a paura ed indecisione. Nel corpo è legata a Reni e Vescica.\n"
+    "Rappresenta la fluidità, l'oscurità rigenerante, il riposo, l'adattabilità e il potenziale nascosto.\n"
+    "Psicologicamente governa l'intelligenza profonda, l'intuito, la saggezza e la filosofia di vita.\n"
+    "Se in eccesso può portare a paura ed indecisione.\nNel corpo è legata a Reni e Vescica.\n"
     </string>
-    <string name="water_details">"Genera: Legno | Controlla: Fuoco | È generato da: Metallo | È controllato da: Terra"</string>
+    <string name="water_details">"Genera: Legno | Controlla: Fuoco\n| È generato da: Metallo | È controllato da: Terra"</string>
 
     <string name="wood_title">"Legno (Mù)"</string>
     <string name="wood_subtitle">"L'Energia della Primavera e della Nascita"</string>
     <string name="wood_desc">
-    "Rappresenta l'espansione, la crescita verticale, l'idealismo e l'istinto di esplorazione. \n"
-    "Psicologicamente governa la gentilezza, la compassione e la spinta al progresso. Se in eccesso può portare a \n"
-    "rabbia e frustrazione. Nel corpo è legato a Fegato e Cistifellea.\n"
+    "Rappresenta l'espansione, la crescita verticale, l'idealismo e l'istinto di esplorazione.\n"
+    "Psicologicamente governa la gentilezza, la compassione e la spinta al progresso. Se in eccesso può portare a\n"
+    "rabbia e frustrazione.\nNel corpo è legato a Fegato e Cistifellea.\n"
     </string>
-    <string name="wood_details">"Genera: Fuoco | Controlla: Terra | È generato da: Acqua | È controllato da: Metallo"</string>
+    <string name="wood_details">"Genera: Fuoco | Controlla: Terra\n| È generato da: Acqua | È controllato da: Metallo"</string>
 
     <string name="metal_title">"Metallo (Jīn)"</string>
     <string name="metal_subtitle">"L'Energia dell'Autunno e della Contrazione"</string>
     <string name="metal_desc">
-    "Rappresenta la struttura, la purezza del cristallo, la giustizia, la disciplina e la capacità di tagliare il superfluo.\n"
+    "Rappresenta la struttura, la purezza del cristallo,\nla giustizia, la disciplina e la capacità di tagliare il superfluo.\n"
     "Psicologicamente governa il senso del dovere, la logica affilata, la resilienza e il distacco emotivo.\n"
-    "Se in eccesso può portare a rigidità inflessibile e tristezza. Nel corpo è legato a Polmoni e Colon.\n"
+    "Se in eccesso può portare a rigidità inflessibile e tristezza.\nNel corpo è legato a Polmoni e Colon.\n"
     </string>
-    <string name="metal_details">"Genera: Acqua | Controlla: Legno | E' generato da: Terra | E' controllato da: Fuoco"</string>
+    <string name="metal_details">"Genera: Acqua | Controlla: Legno\n| E' generato da: Terra | E' controllato da: Fuoco"</string>
 
     <string name="earth_title">"Terra (Tŭ)"</string>
     <string name="earth_subtitle">"L'Energia del Centro e della Stabilità"</string>
     <string name="earth_desc">
-    "Rappresenta il nutrimento, la concretezza solida, la pazienza, l'accoglienza e la capacità di trasformazione. \n"
+    "Rappresenta il nutrimento, la concretezza solida, la pazienza, l'accoglienza e la capacità di trasformazione.\n"
     "Psicologicamente governa l'affidabilità, l'onestà, il radicamento e la stabilità metodica.\n"
-    "Se in eccesso può portare a rimuginio mentale e testardaggine. Nel corpo è legata a Milza e Stomaco.\n"
+    "Se in eccesso può portare a rimuginio mentale e testardaggine.\n Nel corpo è legata a Milza e Stomaco.\n"
     </string>
-    <string name="earth_details">"Genera: Metallo | Controlla: Acqua | E' generato da: Fuoco | E' controllato da: Legno"</string>
+    <string name="earth_details">"Genera: Metallo | Controlla: Acqua\n| E' generato da: Fuoco | E' controllato da: Legno"</string>
 
 </resources>

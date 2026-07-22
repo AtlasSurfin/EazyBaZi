@@ -359,51 +359,88 @@ fun getCurrentLocation(context: Context, onLocationFetched: (CityData?) -> Unit)
     }
 }
 
+fun getHiddenStemWeight(totStems: Int, index: Int): Float{
+    return when(totStems){
+        1 -> 100f
+        2 -> if(index == 0) 70f else 30f
+        3 -> when(index){
+            0 -> 60f
+            1 -> 30f
+            else -> 10f
+        }
+        else -> 0f
+    }
+}
+
 fun calculateRoleScores(chart: FullBaZiChart): RoleScores? {
-    val dmStem = chart.day.stem ?: return null
-    val dmElement = dmStem.element
-    val dmPolarity = dmStem.polarity
+    val dayMaster = chart.day?.stem ?: return RoleScores()
+    val dmElement = dayMaster.element
+    val dmPolarity = dayMaster.polarity
 
-    var friend = 0
-    var robWealth = 0
-    var output = 0
-    var wealth = 0
-    var officer = 0
-    var resource = 0
+    val monthBranchElem = chart.month?.branch?.element
+    val map = mutableMapOf<BaZiRole, Float>()
     
-    val components = listOfNotNull(
-        chart.year.stem, chart.year.branch,
-        chart.month.stem, chart.month.branch,
-        chart.day.stem, chart.day.branch,
-        chart.hour.stem, chart.hour.branch
-    )
+    val pillars = listOfNotNull(chart.year, chart.month, chart.day, chart.hour)
 
-    for(comp in components) {
+    for (pillar in pillars){
+        pillar.stem?.let { stem ->
+            val isDM = (pillar == chart.day && stem == chart.day?.stem)
 
-        val element = comp.element
-        val polarity = comp.polarity
-        val isSamePolarity = (polarity == dmPolarity)
+            if(!isDM){
+                val role = getRoleForStem(dmElement, dmPolarity, stem)
+                val seasonMult = getSeasonMultiplier(stem.element, monthBranchElem)
+                val basePoints = 100f
 
-        when {
-            element == dmElement -> {
-                if (isSamePolarity) friend++ else robWealth++
+                map[role] = (map[role] ?: 0f) + (basePoints * seasonMult)
             }
+            
+        }
 
-            isProducing(dmElement, element) -> output++
-            isControlling(dmElement, element) -> wealth++
-            isProducing(element, dmElement) -> resource++
-            isControlling(element, dmElement) -> officer++
+        val hiddenStems = pillar.branch?.getHiddenStems() ?: emptyList()
+        val totHidden = hiddenStems.size
+
+        hiddenStems.forEachIndexed { index, hiddenStem ->
+            val basePoints = getHiddenStemWeight(totHidden, index)
+            val role = getRoleForStem(dmElement, dmPolarity, hiddenStem)
+            val seasonMult = getSeasonMultiplier(hiddenStem.element, monthBranchElem)
+            map[role] = (map[role] ?: 0f) + (basePoints * seasonMult)
         }
     }
 
     return RoleScores(
-        friend = friend,
-        robWealth = robWealth,
-        output = output,
-        wealth = wealth,
-        resource = resource,
-        officer = officer
+        friend = (map[BaZiRole.FRIEND] ?: 0f).toInt(),
+        robWealth = (map[BaZiRole.ROB_WEALTH] ?: 0f).toInt(),
+        output = (map[BaZiRole.OUTPUT] ?: 0f).toInt(),
+        wealth = (map[BaZiRole.WEALTH] ?: 0f).toInt(),
+        officer = (map[BaZiRole.OFFICER] ?: 0f).toInt(),
+        resource = (map[BaZiRole.RESOURCE] ?: 0f).toInt()
     )
+}
+
+private fun getSeasonMultiplier(element: Element, monthElem: Element?): Float{
+    if(monthElem == null) return 1.0f
+
+    return when {
+        element == monthElem || isProducing(monthElem, element) -> 1.5f
+        isControlling(monthElem, element) -> 0.6f
+        else -> 1.0f
+    }
+}
+
+private fun getRoleForStem(dmElement: Element, dmPolarity: Polarity, targetStem: Stem, ): BaZiRole {
+    val targetElem = targetStem.element
+    val samePolarity = (dmPolarity == targetStem.polarity)
+
+    return when {
+        targetElem == dmElement -> {
+            if (samePolarity) BaZiRole.FRIEND else BaZiRole.ROB_WEALTH
+        }
+        isProducing(dmElement, targetElem) -> BaZiRole.OUTPUT
+        isControlling(dmElement, targetElem) -> BaZiRole.WEALTH
+        isControlling(targetElem, dmElement) -> BaZiRole.OFFICER
+        isProducing(targetElem, dmElement) -> BaZiRole.RESOURCE
+        else -> BaZiRole.FRIEND
+    }
 }
 
 fun Branch.getHiddenStems(): List<Stem> {
@@ -447,46 +484,30 @@ fun Pillar.getNaYinKey(): String{
         Stem.WU, Stem.JI -> when (b) {
             Branch.ZI, Branch.CHOU -> "ny_f4"
             Branch.YIN, Branch.MAO -> "ny_e2"
-            Branch.CHEN, Branch.SI -> "ny_wd1"
+            Branch.CHEN, Branch.SI -> "ny_d1"
             Branch.WU, Branch.WEI -> "ny_f6"
             Branch.SHEN, Branch.YOU -> "ny_e5"
-            Branch.XU, Branch.HAI -> "ny_wd4"
+            Branch.XU, Branch.HAI -> "ny_d4"
         }
         Stem.GENG, Stem.XIN -> when (b) {
             Branch.ZI, Branch.CHOU -> "ny_e4"
-            Branch.YIN, Branch.MAO -> "ny_wd3"
+            Branch.YIN, Branch.MAO -> "ny_d3"
             Branch.CHEN, Branch.SI -> "ny_m3"
             Branch.WU, Branch.WEI -> "ny_e1"
-            Branch.SHEN, Branch.YOU -> "ny_wd6"
+            Branch.SHEN, Branch.YOU -> "ny_d6"
             Branch.XU, Branch.HAI -> "ny_m6"
         }
         Stem.REN, Stem.GUI -> when (b) {
-            Branch.ZI, Branch.CHOU -> "ny_wd5"
+            Branch.ZI, Branch.CHOU -> "ny_d5"
             Branch.YIN, Branch.MAO -> "ny_m5"
             Branch.CHEN, Branch.SI -> "ny_w3"
-            Branch.WU, Branch.WEI -> "ny_wd2"
+            Branch.WU, Branch.WEI -> "ny_d2"
             Branch.SHEN, Branch.YOU -> "ny_m2"
             Branch.XU, Branch.HAI -> "ny_w6"
         }
     }
 }
 
-@Composable
-fun getNaYinTitle(key: String?): String{
-    if (key.isNullOrEmpty()) return ""
-
-    val context = LocalContext.current
-    val resName = "${key}_title"
-
-    val resId = context.resources.getIdentifier(resName, "string", context.packageName)
-
-    if (resId != 0){
-        val fullTitle = stringResource(resId)
-        return fullTitle.substringBefore(" (").trim()
-    }
-
-    return ""
-}
 
 fun getMonthNum(context: Context, monthName: String): Int{
     return try {
@@ -510,4 +531,28 @@ fun getMonthNum(context: Context, monthName: String): Int{
 
 fun formatToLowercase(text: String): String {
     return text.lowercase().replaceFirstChar {it.uppercase()}
+}
+
+
+
+fun getNYBgColorHex(key: String): Long{
+    return when {
+        key.contains("_m") -> 0xFFE0E0E0
+        key.contains("_w") -> 0xFF1E3A8A
+        key.contains("_d") -> 0xFF1B4332
+        key.contains("_f") -> 0xFFB91C1C
+        key.contains("_e") -> 0xFF78350F
+        else -> 0xFF2C2C2C
+    }
+}
+
+fun getNYTextColorHex(key: String): Long{
+    return when {
+        key.contains("_m") -> 0xFF000000
+        key.contains("_w") -> 0xFFFFFFFF
+        key.contains("_d") -> 0xFFFFCA28
+        key.contains("_f") -> 0xFF000000
+        key.contains("_e") -> 0xFFFFCA28
+        else -> 0xFFFFCA28
+    }
 }

@@ -1,62 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\main\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\main\res"><file path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\main\res\values\branches.xml" qualifiers=""><string name="cat_branch">"I 12 Rami Terrestri (Zodiaco Cinese)"</string><string name="br1_title">"Zi (子) - Il Topo (The Rat)"</string><string name="br1_subtitle">"Acqua Yang - L'Iniziatore"</string><string name="br1_desc">
-    "Il primo segno dello zodiaco. Rappresenta l'energia dell'inverno profondo e della notte.\n"
-    "Le persone nate con questo ramo sono intuitive, astute, piene di risorse e possiedono una saggezza nascosta.\n"
+    "Il primo segno dello zodiaco.\nRappresenta l'energia dell'inverno profondo e della notte.\n"
+    "Le persone nate con questo ramo sono\nintuitive, astute, piene di risorse e possiedono una saggezza nascosta.\n"
     </string><string name="br1_details">"Elemento: Acqua | Radice: Gui (Acqua Yin)"</string><string name="br2_title">"Chou (丑) - Il Bue (The Ox)"</string><string name="br2_subtitle">"Terra Yin - Lo Stoico"</string><string name="br2_desc">
-    "Il secondo segno dello zodiaco. Rappresenta l'energia della fine dell'inverno e \n"
-    "l'ora che precede l'alba. Le persone nate con questo ramo sono resilienti, metodiche, costanti e custodi \n"
-    "di una determinazione incrollabile.\n"
+    "Il secondo segno dello zodiaco.\nRappresenta l'energia della fine dell'inverno e"
+    "l'ora che precede l'alba.\nLe persone nate con questo ramo sono resilienti, metodiche, costanti\n"
+    " e custodi di una determinazione incrollabile.\n"
     </string><string name="br2_details">"Elemento: Terra | Radice: Ji (Terra Yin)"</string><string name="br3_title">"Yin (寅) - La Tigre (The Tiger)"</string><string name="br3_subtitle">"Legno Yang - Il Conquistatore"</string><string name="br3_desc">
-    "Il terzo segno dello zodiaco. Rappresenta l'energia dell'inizio della primavera e del risveglio \n"
-    "mattutino. Le persone nate con questo ramo sono audaci, indipendenti, passionali e animate da un forte spirito di leadership.\n"
+    "Il terzo segno dello zodiaco.\nRappresenta l'energia dell'inizio della primavera e\n"
+    "del risveglio mattutino.\nLe persone nate con questo ramo sono audaci, indipendenti,\npassionali e animate da un forte spirito di leadership.\n"
     </string><string name="br3_details">"Elemento: Legno | Radice: Jia (Legno Yang)"</string><string name="br4_title">"Mao (卯) - Il Coniglio (The Rabbit)"</string><string name="br4_subtitle">"Legno Yin - Il Diplomatico"</string><string name="br4_desc">
-    "Il quarto segno dello zodiaco. Rappresenta l'energia della primavera piena e del sorgere del sole. \n"
-    "Le persone nate con questo ramo sono pacifiche, sensibili, diplomatiche e dotate di uno spiccato senso artistico ed estetico.\n"
+    "Il quarto segno dello zodiaco.\nRappresenta l'energia della primavera piena e del sorgere del sole.\n"
+    "Le persone nate con questo ramo sono pacifiche, sensibili,\ndiplomatiche e dotate di uno spiccato senso artistico ed estetico.\n"
     </string><string name="br4_details">"Elemento: Legno | Radice: Yi (Legno Yin)"</string><string name="br5_title">"Chen (辰) - Il Drago (The Dragon)"</string><string name="br5_subtitle">"Terra Yang - Il Magnate"</string><string name="br5_desc">
-    "Il quinto segno dello zodiaco. Rappresenta l'energia della fine della primavera e della prima mattinata. \n"
-    "Le persone nate con questo ramo sono carismatiche, piene di vitalità, ambiziose e mostrano un forte magnetismo ideale.\n"
+    "Il quinto segno dello zodiaco.\nRappresenta l'energia della fine della primavera e della prima mattinata.\n"
+    "Le persone nate con questo ramo sono\ncarismatiche, piene di vitalità, ambiziose\ne mostrano un forte magnetismo ideale.\n"
     </string><string name="br5_details">"Elemento: Terra | Radice: Wu (Terra Yang)"</string><string name="br6_title">"Si (巳) - Il Serpente (The Snake)"</string><string name="br6_subtitle">"Fuoco Yin - Il Filosofo"</string><string name="br6_desc">
-    "Il sesto segno dello zodiaco. Rappresenta l'energia dell'inizio dell'estate e della mattinata inoltrata. \n"
-    "Le persone nate con questo ramo sono acute, riflessive, enigmatiche e dotate di una profonda intelligenza analitica.\n"
+    "Il sesto segno dello zodiaco.\nRappresenta l'energia dell'inizio dell'estate e della mattinata inoltrata.\n"
+    "Le persone nate con questo ramo sono acute, riflessive, enigmatiche\ne dotate di una profonda intelligenza analitica.\n"
     </string><string name="br6_details">"Elemento: Fuoco | Radice: Ding (Fuoco Yin)"</string><string name="br7_title">"Wu (午) - Il Cavallo (The Horse)"</string><string name="br7_subtitle">"Fuoco Yang - Il Pioniere"</string><string name="br7_desc">
-    "Il settimo segno dello zodiaco. Rappresenta l'energia dell'estate profonda e del mezzogiorno radioso. \n"
-    "Le persone nate con questo ramo sono solari, amano la libertà, sono espansive e costantemente proiettate verso l'azione.\n"
+    "Il settimo segno dello zodiaco.\nRappresenta l'energia dell'estate profonda e del mezzogiorno radioso.\n"
+    "Le persone nate con questo ramo sono solari,\namano la libertà, sono espansive e costantemente proiettate verso l'azione.\n"
     </string><string name="br7_details">"Elemento: Fuoco | Radice: Bing (Fuoco Yang)"</string><string name="br8_title">"Wei (未) - La Capra (The Goat)"</string><string name="br8_subtitle">"Terra Yin - L'Artista"</string><string name="br8_desc">
-    "L' ottavo segno dello zodiaco. Rappresenta l'energia della fine dell'estate e del primo pomeriggio. \n"
-    "Le persone nate con questo ramo sono empatiche, protettive, amano l'armonia e cercano stabilità nelle relazioni personali.\n"
+    "L' ottavo segno dello zodiaco.\nRappresenta l'energia della fine dell'estate e del primo pomeriggio.\n"
+    "Le persone nate con questo ramo sono empatiche, protettive,\namano l'armonia e cercano stabilità nelle relazioni personali.\n"
     </string><string name="br8_details">"Elemento: Terra | Radice: Ji (Terra Yin)"</string><string name="br9_title">"Shen (申) - La Scimmia (The Monkey)"</string><string name="br9_subtitle">"Metallo Yang - L'Innovatore"</string><string name="br9_desc">
-    "Il nono segno dello zodiaco. Rappresenta l'energia dell'inizio dell'autunno e del tardo pomeriggio. \n"
-    "Le persone nate con questo ramo sono poliedriche, inventive, ironiche e capaci di risolvere problemi complessi con rapidità.\n"
+    "Il nono segno dello zodiaco.\nRappresenta l'energia dell'inizio dell'autunno e del tardo pomeriggio.\n"
+    "Le persone nate con questo ramo sono poliedriche, inventive,\nironiche e capaci di risolvere problemi complessi con rapidità.\n"
     </string><string name="br9_details">"Elemento: Metallo | Radice: Geng (Metallo Yang)"</string><string name="br10_title">"You (酉) - Il Gallo (The Rooster)"</string><string name="br10_subtitle">"Metallo Yin - Il Perfezionista"</string><string name="br10_desc">
-    "Il decimo segno dello zodiaco. Rappresenta l'energia dell'autunno pieno e del tramonto. \n"
-    "Le persone nate con questo ramo sono precise, franche, organizzate e hanno un naturale talento per l'osservazione e il dettaglio.\n"
+    "Il decimo segno dello zodiaco.\nRappresenta l'energia dell'autunno pieno e del tramonto.\n"
+    "Le persone nate con questo ramo sono precise, franche, organizzate\ne hanno un naturale talento per l'osservazione e il dettaglio.\n"
     </string><string name="br10_details">"Elemento: Metallo | Radice: Xin (Metallo Yin)"</string><string name="br11_title">"Xu (戌) - Il Cane (The Dog)"</string><string name="br11_subtitle">"Terra Yang - Il Custode"</string><string name="br11_desc">
-    "L'undicesimo segno dello zodiaco. Rappresenta l'energia della fine dell'autunno e del crepuscolo serale. \n"
-    "Le persone nate con questo ramo sono leali, protettive, dotate di un forte senso etico e molto attente alla sicurezza dei propri cari.\n"
+    "L'undicesimo segno dello zodiaco.\nRappresenta l'energia della fine dell'autunno e del crepuscolo serale.\n"
+    "Le persone nate con questo ramo sono leali, protettive, dotate di un forte senso etico\ne molto attente alla sicurezza dei propri cari.\n"
     </string><string name="br11_details">"Elemento: Terra | Radice: Wu (Terra Yang)"</string><string name="br12_title">"Hai (亥) - Il Maiale (The Pig)"</string><string name="br12_subtitle">"Acqua Yin - Il Filantropo"</string><string name="br12_desc">
-    "Il dodicesimo segno dello zodiaco. Rappresenta l'energia dell'inizio dell'inverno e della prima serata. \n"
-    "Le persone nate con questo ramo sono generose, sincere, tolleranti e affrontano la vita con un ottimismo calmo e pacifico.\n"
+    "Il dodicesimo segno dello zodiaco.\nRappresenta l'energia dell'inizio dell'inverno e della prima serata.\n"
+    "Le persone nate con questo ramo sono generose, sincere, tolleranti\ne affrontano la vita con un ottimismo calmo e pacifico.\n"
     </string><string name="br12_details">"Elemento: Acqua | Radice: Gui (Acqua Yin)"</string></file><file path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\main\res\values\elems.xml" qualifiers=""><string name="cat_elem">"I 5 elementi del BaZi"</string><string name="fire_title">"Fuoco (Huŏ)"</string><string name="fire_subtitle">"L'Energia dell'Estate e della Massima Espansione"</string><string name="fire_desc">
-    "Rappresenta la passione, la luminosità dirompente, il dinamismo, l'espressività e il calore comunicativo. \n"
-    "Psicologicamente governa l'intuizione rapida, il carisma, la gioia e la capacità di ispirare gli altri. \n"
-    "Se in eccesso può portare ad impulsività ed ansia. Nel corpo è legato a Cuore e Intestino Tenute.\n"
-    </string><string name="fire_details">"Genera: Terra | Controlla: Metallo | E' generato da: Legno | E' controllato da: Acqua"</string><string name="water_title">"Acqua (Shuǐ)"</string><string name="water_subtitle">"L'Energia dell'Inverno e della Concentrazione"</string><string name="water_desc">
-    "Rappresenta la fluidità, l'oscurità rigenerante, il riposo, l'adattabilità e il potenziale nascosto. \n"
-    "Psicologicamente governa l'intelligenza profonda, l'intuito, la saggezza e la filosofia di vita. \n"
-    "Se in eccesso può portare a paura ed indecisione. Nel corpo è legata a Reni e Vescica.\n"
-    </string><string name="water_details">"Genera: Legno | Controlla: Fuoco | È generato da: Metallo | È controllato da: Terra"</string><string name="wood_title">"Legno (Mù)"</string><string name="wood_subtitle">"L'Energia della Primavera e della Nascita"</string><string name="wood_desc">
-    "Rappresenta l'espansione, la crescita verticale, l'idealismo e l'istinto di esplorazione. \n"
-    "Psicologicamente governa la gentilezza, la compassione e la spinta al progresso. Se in eccesso può portare a \n"
-    "rabbia e frustrazione. Nel corpo è legato a Fegato e Cistifellea.\n"
-    </string><string name="wood_details">"Genera: Fuoco | Controlla: Terra | È generato da: Acqua | È controllato da: Metallo"</string><string name="earth_title">"Terra (Tŭ)"</string><string name="earth_subtitle">"L'Energia del Centro e della Stabilità"</string><string name="earth_desc">
-    "Rappresenta il nutrimento, la concretezza solida, la pazienza, l'accoglienza e la capacità di trasformazione. \n"
+    "Rappresenta la passione, la luminosità\ndirompente, il dinamismo,\nl'espressività e il calore comunicativo.\n"
+    "Psicologicamente governa l'intuizione rapida, il carisma, la gioia e la capacità di ispirare gli altri.\n"
+    "Se in eccesso può portare ad impulsività ed ansia.\nNel corpo è legato a Cuore e Intestino Tenute.\n"
+    </string><string name="fire_details">"Genera: Terra | Controlla: Metallo\n| E' generato da: Legno | E' controllato da: Acqua"</string><string name="water_title">"Acqua (Shuǐ)"</string><string name="water_subtitle">"L'Energia dell'Inverno e della Concentrazione"</string><string name="water_desc">
+    "Rappresenta la fluidità, l'oscurità rigenerante, il riposo, l'adattabilità e il potenziale nascosto.\n"
+    "Psicologicamente governa l'intelligenza profonda, l'intuito, la saggezza e la filosofia di vita.\n"
+    "Se in eccesso può portare a paura ed indecisione.\nNel corpo è legata a Reni e Vescica.\n"
+    </string><string name="water_details">"Genera: Legno | Controlla: Fuoco\n| È generato da: Metallo | È controllato da: Terra"</string><string name="wood_title">"Legno (Mù)"</string><string name="wood_subtitle">"L'Energia della Primavera e della Nascita"</string><string name="wood_desc">
+    "Rappresenta l'espansione, la crescita verticale, l'idealismo e l'istinto di esplorazione.\n"
+    "Psicologicamente governa la gentilezza, la compassione e la spinta al progresso. Se in eccesso può portare a\n"
+    "rabbia e frustrazione.\nNel corpo è legato a Fegato e Cistifellea.\n"
+    </string><string name="wood_details">"Genera: Fuoco | Controlla: Terra\n| È generato da: Acqua | È controllato da: Metallo"</string><string name="earth_title">"Terra (Tŭ)"</string><string name="earth_subtitle">"L'Energia del Centro e della Stabilità"</string><string name="earth_desc">
+    "Rappresenta il nutrimento, la concretezza solida, la pazienza, l'accoglienza e la capacità di trasformazione.\n"
     "Psicologicamente governa l'affidabilità, l'onestà, il radicamento e la stabilità metodica.\n"
-    "Se in eccesso può portare a rimuginio mentale e testardaggine. Nel corpo è legata a Milza e Stomaco.\n"
-    </string><string name="earth_details">"Genera: Metallo | Controlla: Acqua | E' generato da: Fuoco | E' controllato da: Legno"</string><string name="metal_title">"Metallo (Jīn)"</string><string name="metal_subtitle">"L'Energia dell'Autunno e della Contrazione"</string><string name="metal_desc">
-    "Rappresenta la struttura, la purezza del cristallo, la giustizia, la disciplina e la capacità di tagliare il superfluo.\n"
+    "Se in eccesso può portare a rimuginio mentale e testardaggine.\n Nel corpo è legata a Milza e Stomaco.\n"
+    </string><string name="earth_details">"Genera: Metallo | Controlla: Acqua\n| E' generato da: Fuoco | E' controllato da: Legno"</string><string name="metal_title">"Metallo (Jīn)"</string><string name="metal_subtitle">"L'Energia dell'Autunno e della Contrazione"</string><string name="metal_desc">
+    "Rappresenta la struttura, la purezza del cristallo,\nla giustizia, la disciplina e la capacità di tagliare il superfluo.\n"
     "Psicologicamente governa il senso del dovere, la logica affilata, la resilienza e il distacco emotivo.\n"
-    "Se in eccesso può portare a rigidità inflessibile e tristezza. Nel corpo è legato a Polmoni e Colon.\n"
-    </string><string name="metal_details">"Genera: Acqua | Controlla: Legno | E' generato da: Terra | E' controllato da: Fuoco"</string></file><file path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\main\res\values\interacts.xml" qualifiers=""><string name="cat_interacts">"Interazioni nel BaZi"</string><string name="i0_title">"Introduzione alle Interazioni"</string><string name="i0_subtitle">"La dinamica energetica della Carta Natale"</string><string name="i0_desc">
+    "Se in eccesso può portare a rigidità inflessibile e tristezza.\nNel corpo è legato a Polmoni e Colon.\n"
+    </string><string name="metal_details">"Genera: Acqua | Controlla: Legno\n| E' generato da: Terra | E' controllato da: Fuoco"</string></file><file path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\main\res\values\interacts.xml" qualifiers=""><string name="cat_interacts">"Interazioni nel BaZi"</string><string name="i0_title">"Introduzione alle Interazioni"</string><string name="i0_subtitle">"La dinamica energetica della Carta Natale"</string><string name="i0_desc">
     "Nel BaZi, i Tronchi Celesti e i Rami Terrestri non sono elementi statici ma interagiscono costantemente \n"
     "tra loro creando combinazioni, conflitti, punizioni o distruzioni. Queste interazioni rappresentano gli eventi, i cambiamenti \n"
     "e le dinamiche psicologiche o relazionali della persona. Le interazioni tra i Rami Terrestri (i segni dello zodiaco cinese) \n"
@@ -101,17 +101,17 @@
     "mostra un settore della vita in cui la persona tende a perdere effiacia a causa di vecchi schemi mentali sabotanti, dove è necessario fare pulizia per evitare che le \n"
     "risorse vadano sprecate.\n"
     </string><string name="i8_details">"Tipo: Logoramento | Elementi coinvolti: Rami Terrestri | Effetto: Rotture di schemi, spreco di energia, necessità di eliminare il superfluo."</string></file><file path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\main\res\values\misc.xml" qualifiers=""><string name="app_name">"EazyBaZi"</string><string name="cat_cycles">"I Cicli del Qi (o Cicli dei Wu Xing)"</string><string name="cy1_title">"Il Ciclo di Generazione (Ciclo Sheng)"</string><string name="cy1_subtitle">"La Relazione Madre-Figlio"</string><string name="cy1_desc">
-    "Rappresenta il flusso armonioso, spontaneo e cooperativo dell'energia, dove ogni elemento \n"
-    "nutre, supporta e dà la vita a quello successivo. È un ciclo perenne di crescita e trasformazione positiva che permette \n"
-    "al Qi di evolversi continuamente senza sosta.\n"
-    </string><string name="cy1_details">"Flusso: Legno ➔ Fuoco ➔ Terra ➔ Metallo ➔ Acqua ➔ Legno"</string><string name="cy2_title">"Il Ciclo di Controllo (Ciclo Ke)"</string><string name="cy2_subtitle">"La Forza del Limite"</string><string name="cy2_desc">
-    "Rappresenta la forza che frena, regola, limita o domina l'elemento opposto. Non è un ciclo negativo: \n"
-    "nella filosofia del BaZi il controllo è fondamentale per mantenere l'equilibrio della carta ed evitare che un elemento \n"
+    "Rappresenta il flusso armonioso, spontaneo e cooperativo dell'energia, dove ogni\nelemento "
+    "nutre, supporta e dà la vita a quello successivo.\nÈ un ciclo perenne di crescita e trasformazione\npositiva che permette "
+    "al Qi di\nevolversi continuamente senza sosta.\n"
+    </string><string name="cy1_details">"Flusso:\nLegno ➔ Fuoco ➔ Terra ➔ Metallo ➔ Acqua ➔ Legno"</string><string name="cy2_title">"Il Ciclo di Controllo (Ciclo Ke)"</string><string name="cy2_subtitle">"La Forza del Limite"</string><string name="cy2_desc">
+    "Rappresenta la forza che frena, regola, limita o domina l'elemento opposto.\nNon è un ciclo negativo: nella filosofia\n"
+    "del BaZi il controllo è fondamentale per mantenere l'equilibrio della carta ed\nevitare che un elemento "
     "cresca troppo diventando distruttivo.\n"
-    </string><string name="cy2_details">"Flusso: Legno ➔ Terra ➔ Acqua ➔ Fuoco ➔ Metallo ➔ Legno"</string><string name="cat_hst">"Tronchi Celesti Nascosti (Hidden Stems)"</string><string name="hst_title">"Le Radici dei Rami Terrestri"</string><string name="hst_subtitle">"Il potenziale nascosto dentro di te"</string><string name="hst_desc">
-    "In occidente siamo abituati a vedere un solo segno zodiacale. Nel BaZi, ogni animale nasconde sotto \n"
-    "terra (nelle sue radici) da 1 a 3 Tronchi Celesti. Rappresentano i tuoi talenti nascosti, i desideri segreti e ciò che \n" 
-    "si attiverà solo in determinati momenti della tua vita. \n"
+    </string><string name="cy2_details">"Flusso:\nLegno ➔ Terra ➔ Acqua ➔ Fuoco ➔ Metallo ➔ Legno"</string><string name="cat_hst">"Tronchi Celesti Nascosti (Hidden Stems)"</string><string name="hst_title">"Le Radici dei Rami Terrestri"</string><string name="hst_subtitle">"Il potenziale nascosto dentro di te"</string><string name="hst_desc">
+    "In occidente siamo abituati a vedere un solo segno zodiacale.\nNel BaZi, ogni animale nasconde sotto"
+    "terra (nelle sue radici) da 1 a 3 Tronchi Celesti.\nRappresentano i tuoi talenti nascosti, i desideri\n" 
+    "segreti e ciò che si attiverà solo\nin determinati momenti della tua vita.\n"
     </string></file><file path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\main\res\values\months.xml" qualifiers=""><string-array name="months_arr">
         <item>Gennaio</item>
         <item>Febbraio</item>
@@ -205,37 +205,7 @@
     "Rappresenta una natura immensa, profonda e omnicomprensiva, come un grande oceano che accoglie e custodisce ogni cosa. \n"
     "Le persone con questo Na Yin possiedono un carattere magnetico, saggio e tollerante. Hanno una visione globale della vita, \n"
     "una grandissima resilienza emotiva e una forza interiore capace di dominare le tempeste più grandi.\n"
-    </string><string name="ny_w6_details">"Ren + Xu / Gui + Hai = Acqua del Grande Oceano"</string><string name="ny_wd1_title">"Legno della Grande Foresta (Da Lin Mu)"</string><string name="ny_wd1_subtitle">"Il cuore della foresta millenaria"</string><string name="ny_wd1_desc">
-    "Generato dai Pilastri Wu Chen (Terra Yang su Drago) e Ji Si (Terra Yin su Serpente).\n"
-    "Rappresenta una natura solida, protettiva e rigogliosa, come una grande foresta che offre rifugio, stabilità e vita.\n"
-    "Le persone con questo Na Yin possiedono un carattere generoso, affidabile e orientato alla comunità. Si distinguono per\n"
-    "lo spirito di cooperazione, la resilienza di fronte alle avversità e il talento naturale nel sostenere e far crescere gli altri.\n"
-    </string><string name="ny_wd1_details">"Wu + Chen / Ji + Si = Legno della Grande Foresta"</string><string name="ny_wd2_title">"Legno del Salice Piangente (Yang Liu Mu)"</string><string name="ny_wd2_subtitle">"Si piega ma non si spezza"</string><string name="ny_wd2_desc">
-    "Generato dai Pilastri Ren Wu (Acqua Yang su Cavallo) e Gui Wei (Acqua Yin su Capra).\n"
-    "Rappresenta una natura flessibile, elegante e profondamente empatica, come un salice piangente che asseconda il vento\n"
-    "senza mai spezzarsi. Le persone con questo Na Yin possiedono un carattere dolce, diplomatico e intuitivo. Si distinguono per\n"
-    "l'eccezionale capacità di adattamento, la sensibilità emotiva e il talento nel riportare armonia e comprensione nei conflitti.\n"
-    </string><string name="ny_wd2_details">"Ren + Wu / Gui + Wei = Legno del Salice Piangente</string><string name="ny_wd3_title">"Legno di Pino e Cipresso (Song Bai Mu)"</string><string name="ny_wd3_subtitle">"Sempreverdi anche nel cuore dell'inverno"</string><string name="ny_wd3_desc">
-    "Generato dai Pilastri Geng Yin (Metallo Yang su Tigre) e Xin Mao (Metallo Yin su Coniglio). \n"
-    "Rappresenta una natura fiera, integra e profondamente resiliente, come il pino ed il cipresso che sfidano il gelo invernale. \n"
-    "Le persone con questo Na Yin possiedono un carattere forte, leale e di sani principi. Si distinguono per l'incrollabile tenacia, \n"
-    "la dignità personale e la capacità di rimanere un punto di riferimento saldo anche nei momenti più difficili.\n"
-    </string><string name="ny_wd3_details">"Geng + Yin / Xin + Mao = Legno di Pino e Cipresso"</string><string name="ny_wd4_title">"Legno della Pianura (Ping Di Mu)"</string><string name="ny_wd4_subtitle">"Tranquillo, rigoglioso e sicuro"</string><string name="ny_wd4_desc">
-    "Generato dai Pilastri Wu Xu (Terra Yang su Cane) e Ji Hai (Terra Yin su Maiale). \n"
-    "Rappresenta una natura giovane, fertile e ricca di potenziale, come la vegetazione rigogliosa della pianura. \n"
-    "Le persone con questo Na Yin possiedono un carattere genuino, gentile e laborioso. Si distinguono per l'onestà d'animo, la capacità \n"
-    "di apprendere rapidamente e un talento naturale nel seminare armonia e nuove idee.\n"
-    </string><string name="ny_wd4_details">"Wu + Xu / Ji + Hai = Legno della Pianura"</string><string name="ny_wd5_title">"Legno di Gelso (Sang Zhe Mu)"</string><string name="ny_wd5_subtitle">"Il Gelso trasforma le foglie in seta"</string><string name="ny_wd5_desc">
-    "Generato dai Pilastri Ren Zi (Acqua Yang su Topo) e Gui Chou (Acqua Yin su Bue). \n"
-    "Rappresenta una natura generosa, operosa e ricca di valore, come un albero di gelso che nutre e dà vita a frutti preziosi. \n"
-    "Le persone con questo Na Yin possiedono un carattere dedito, premuroso e concreto. Si distinguono per lo spirito di sacrificio, \n"
-    "la grande laboriosità e il talento innato nel trasformare risorse semplici in qualcosa di nobile.\n"
-    </string><string name="ny_wd5_details">"Ren + Zi / Gui + Chou = Legno di Gelso"</string><string name="ny_wd6_title">"Legno di Melograno (Shi Liu Mu)"</string><string name="ny_wd6_subtitle">"La fioritura vibrante e l'abbondanza interiore"</string><string name="ny_wd6_desc">
-    "Generato dai Pilastri Geng Shen (Metallo Yang su Scimmia) e Xin You (Metallo Yin su Gallo). \n"
-    "Rappresenta una natura tenace, vibrante e generosa, come un albero di melograno capace di fiorire e donare frutti preziosi \n"
-    "tra le rocce. Le persone con questo Na Yin possiedono un carattere determinato, creativo e appassionato. Si distinguono per \n"
-    "l'eccezionale forza di volontà, l'originalità delle proprie idee e la capacità di prosperare anche nelle avversità.\n"
-    </string><string name="ny_wd6_details">"Geng + Shen / Xin + You = Legno di Melograno"</string><string name="ny_f1_title">"Fuoco della Fornace (Lu Zhong Huo)"</string><string name="ny_f1_subtitle">"La passione intesa ed il calore trasformativo"</string><string name="ny_f1_desc">
+    </string><string name="ny_w6_details">"Ren + Xu / Gui + Hai = Acqua del Grande Oceano"</string><string name="ny_f1_title">"Fuoco della Fornace (Lu Zhong Huo)"</string><string name="ny_f1_subtitle">"La passione intesa ed il calore trasformativo"</string><string name="ny_f1_desc">
     "Generato dai Pilastri Bing Yin (Fuoco Yang su Tigre) e Ding Mao (Fuoco Yin su Coniglio).\n"
     "Rappresenta una natura ardente, concentrata e trasformatrice, come il fuoco di una fornace che tempra e forgia con costanza.\n"
     "Le persone con questo Na Yin possiedono un carattere appasionato, resiliente e di grande intensità. Si distinguono per l'immens"
@@ -295,7 +265,37 @@
     "Rappresenta una natura fluida, misteriosa e preziosa, come la sabbia che si adatta agli elementi e custodisce oro \n"
     "nei suoi granelli. Le persone con questo Na Yin possiedono un carattere flessibile, intuitivo e profondo. Si distinguono per \n"
     "la grande resilienza, l'eleganza nei modi e il talento innato nel far emergere il proprio valore unico con il tempo.\n"
-    </string><string name="ny_e6_details">"Bing + Chen / Ding + Si = Terra nella Sabbia"</string></file><file path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\main\res\values\qi.xml" qualifiers=""><string name="cat_qi">"Le 12 Fasi del Qi (Shi Er Chang Sheng)"</string><string name="cat_qi_intro">"Fasi del Qi (Qi Phase) / 12 Life Stages"</string><string name="qi_intro_title">"Le 12 Fasi di Forza del Day Master"</string><string name="qi_intro_subtitle">"Dalla Nascita all'Imperatore, fino alla Tomba"</string><string name="qi_intro_desc">
+    </string><string name="ny_e6_details">"Bing + Chen / Ding + Si = Terra nella Sabbia"</string><string name="ny_d1_subtitle">"Il cuore della foresta millenaria"</string><string name="ny_d4_subtitle">"Tranquillo, rigoglioso e sicuro"</string><string name="ny_d3_title">"Legno di Pino e Cipresso (Song Bai Mu)"</string><string name="ny_d6_desc">
+    "Generato dai Pilastri Geng Shen (Metallo Yang su Scimmia) e Xin You (Metallo Yin su Gallo). \n"
+    "Rappresenta una natura tenace, vibrante e generosa, come un albero di melograno capace di fiorire e donare frutti preziosi \n"
+    "tra le rocce. Le persone con questo Na Yin possiedono un carattere determinato, creativo e appassionato. Si distinguono per \n"
+    "l'eccezionale forza di volontà, l'originalità delle proprie idee e la capacità di prosperare anche nelle avversità.\n"
+    </string><string name="ny_d3_desc">
+    "Generato dai Pilastri Geng Yin (Metallo Yang su Tigre) e Xin Mao (Metallo Yin su Coniglio). \n"
+    "Rappresenta una natura fiera, integra e profondamente resiliente, come il pino ed il cipresso che sfidano il gelo invernale. \n"
+    "Le persone con questo Na Yin possiedono un carattere forte, leale e di sani principi. Si distinguono per l'incrollabile tenacia, \n"
+    "la dignità personale e la capacità di rimanere un punto di riferimento saldo anche nei momenti più difficili.\n"
+    </string><string name="ny_d5_title">"Legno di Gelso (Sang Zhe Mu)"</string><string name="ny_d1_desc">
+    "Generato dai Pilastri Wu Chen (Terra Yang su Drago) e Ji Si (Terra Yin su Serpente).\n"
+    "Rappresenta una natura solida, protettiva e rigogliosa, come una grande foresta che offre rifugio, stabilità e vita.\n"
+    "Le persone con questo Na Yin possiedono un carattere generoso, affidabile e orientato alla comunità. Si distinguono per\n"
+    "lo spirito di cooperazione, la resilienza di fronte alle avversità e il talento naturale nel sostenere e far crescere gli altri.\n"
+    </string><string name="ny_d2_title">"Legno del Salice Piangente (Yang Liu Mu)"</string><string name="ny_d4_desc">
+    "Generato dai Pilastri Wu Xu (Terra Yang su Cane) e Ji Hai (Terra Yin su Maiale). \n"
+    "Rappresenta una natura giovane, fertile e ricca di potenziale, come la vegetazione rigogliosa della pianura. \n"
+    "Le persone con questo Na Yin possiedono un carattere genuino, gentile e laborioso. Si distinguono per l'onestà d'animo, la capacità \n"
+    "di apprendere rapidamente e un talento naturale nel seminare armonia e nuove idee.\n"
+    </string><string name="ny_d6_subtitle">"La fioritura vibrante e l'abbondanza interiore"</string><string name="ny_d6_details">"Geng + Shen / Xin + You = Legno di Melograno"</string><string name="ny_d5_subtitle">"Il Gelso trasforma le foglie in seta"</string><string name="ny_d6_title">"Legno di Melograno (Shi Liu Mu)"</string><string name="ny_d1_details">"Wu + Chen / Ji + Si = Legno della Grande Foresta"</string><string name="ny_d4_details">"Wu + Xu / Ji + Hai = Legno della Pianura"</string><string name="ny_d1_title">"Legno della Grande Foresta (Da Lin Mu)"</string><string name="ny_d2_subtitle">"Si piega ma non si spezza"</string><string name="ny_d2_desc">
+    "Generato dai Pilastri Ren Wu (Acqua Yang su Cavallo) e Gui Wei (Acqua Yin su Capra).\n"
+    "Rappresenta una natura flessibile, elegante e profondamente empatica, come un salice piangente che asseconda il vento\n"
+    "senza mai spezzarsi. Le persone con questo Na Yin possiedono un carattere dolce, diplomatico e intuitivo. Si distinguono per\n"
+    "l'eccezionale capacità di adattamento, la sensibilità emotiva e il talento nel riportare armonia e comprensione nei conflitti.\n"
+    </string><string name="ny_d2_details">"Ren + Wu / Gui + Wei = Legno del Salice Piangente</string><string name="ny_d5_details">"Ren + Zi / Gui + Chou = Legno di Gelso"</string><string name="ny_d3_subtitle">"Sempreverdi anche nel cuore dell'inverno"</string><string name="ny_d3_details">"Geng + Yin / Xin + Mao = Legno di Pino e Cipresso"</string><string name="ny_d5_desc">
+    "Generato dai Pilastri Ren Zi (Acqua Yang su Topo) e Gui Chou (Acqua Yin su Bue). \n"
+    "Rappresenta una natura generosa, operosa e ricca di valore, come un albero di gelso che nutre e dà vita a frutti preziosi. \n"
+    "Le persone con questo Na Yin possiedono un carattere dedito, premuroso e concreto. Si distinguono per lo spirito di sacrificio, \n"
+    "la grande laboriosità e il talento innato nel trasformare risorse semplici in qualcosa di nobile.\n"
+    </string><string name="ny_d4_title">"Legno della Pianura (Ping Di Mu)"</string></file><file path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\main\res\values\qi.xml" qualifiers=""><string name="cat_qi">"Le 12 Fasi del Qi (Shi Er Chang Sheng)"</string><string name="cat_qi_intro">"Fasi del Qi (Qi Phase) / 12 Life Stages"</string><string name="qi_intro_title">"Le 12 Fasi di Forza del Day Master"</string><string name="qi_intro_subtitle">"Dalla Nascita all'Imperatore, fino alla Tomba"</string><string name="qi_intro_desc">
     "Questo concetto misura quanto il tuo Day Master si sente forte nel Ramo Terrestre di un pilastro. \n"
     "Va dalla fase di Nascita (piena di entusiasmo), alla fase 'Imperatore' (massimo potere) fino alla fase 'Tomba' \n" 
     "(energia di accumulo ed introspezione). Rivela se le tue azioni avranno un impatto immediato o avranno bisogno di tempo. \n"
@@ -379,77 +379,77 @@
     aiuti importanti nella carriera o nel matrimonio."</string><string name="star_car_details">"Effetti: Attira mentori facoltosi, successo finanziario steso nel tempo e stabilità materiale."</string><string name="star_rclouds_title">"Nuvole Rosse (Hong Yan)"</string><string name="star_rclouds_subtitle">"Le Nuvole Rosse - La Stella del Magnetismo"</string><string name="star_rclouds_desc">"Rappresenta un fascino innato, empatia profonda e un forte potere d'attrazione verso gli altri.
     A differenza di altre stelle romantiche, questa stella indica una bellezza emotiva ed un magnetismo che punta a relazioni intense,
     sebbene a volte possa portare ad idealizzare troppo il partner."</string><string name="star_rclouds_details">"Effetti: Forte carisma personale, sensualità e predisposizione alle arti espressive."</string></file><file path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\main\res\values\stems.xml" qualifiers=""><string name="cat_stems">"I 10 Tronchi Celesti (Heavenly Stems)"</string><string name="st1_title">"Jia (甲) - Legno Yang"</string><string name="st1_subtitle">"L'Albero Secolare - Leader Nato"</string><string name="st1_desc">
-    "Rappresenta un grande albero robusto. Le persone Jia sono idealiste, progressiste, testarde ma estremamente protettive \n" 
-    "verso gli altri. Hanno una crescita costante e non amano essere controllate. \n"
+    "Rappresenta un grande albero robusto. Le persone Jia sono idealiste, progressiste, testarde\nma estremamente protettive verso gli altri.\n" 
+    "Hanno una crescita costante e non amano essere controllate. \n"
     </string><string name="st1_details">"Elemento: Legno | Polarità: Yang | Direzione: Est"</string><string name="st2_title">"Yi (乙) - Legno Yin"</string><string name="st2_subtitle">"L'Edera o l'Erba - Il Sopravvissuto"</string><string name="st2_desc">
-    "Rappresenta piante flessibili, fiori o rampicanti. Le persone Yi sono diplomatiche, incredibilmente resilienti,\n" 
-    "e sanno adattarsi a qualsiasi situazione per sopravvivere. Ottimi strateghi dietro le quinte. \n"
+    "Rappresenta piante flessibili, fiori o rampicanti.\nLe persone Yi sono diplomatiche, incredibilmente\nresilienti," 
+    "e sanno adattarsi a qualsiasi situazione per sopravvivere.\nOttimi strateghi dietro le quinte. \n"
     </string><string name="st2_details">"Elemento: Legno | Polarità: Yin | Direzione: Est"</string><string name="st3_title">"Wu (戊) - Terra Yang"</string><string name="st3_subtitle">"La Montagna o la Roccia - Il Protettore"</string><string name="st3_desc">
-    "Rappresenta una montagna maestosa o una roccia imponente. Le persone Wu sono stabili, affidabili, protettive e agiscono \n"
-    "come un punto di riferimento per la comunità. Possono risultare lente al cambiamento ma sono incrollabili.\n"
+    "Rappresenta una montagna maestosa o una roccia imponente. Le persone Wu sono stabili,\naffidabili, protettive e agiscono come un punto\n"
+    "di riferimento per la comunità.\nPossono risultare lente al cambiamenton\nma sono incrollabili.\n"
     </string><string name="st3_details">"Elemento: Terra | Polarità: Yang | Direzione: Centro"</string><string name="st4_title">"Ji (己) - Terra Yin"</string><string name="st4_subtitle">"Il Giardino o la Terra Fertile - Il Nutritore"</string><string name="st4_desc">
-    "Rappresenta il terreno fertile dei campi o il giardino coltivato. Le persone Ji sono tolleranti, creative, capaci di accudire\n"
-    "gli altri e dotate di una memoria eccezionale. Trovano la propria forza nel coltivare talenti e relazioni.\n"
+    "Rappresenta il terreno fertile dei campi o il giardino coltivato.\nLe persone Ji sono tolleranti, creative,\ncapaci di accudire"
+    "gli altri e dotate di una memoria eccezionale.\nTrovano la propria forza nel coltivare talenti e relazioni.\n"
     </string><string name="st4_details">"Elemento: Terra | Polarità: Yin | Direzione: Centro"</string><string name="st5_title">"Ren (壬) - Acqua Yang"</string><string name="st5_subtitle">"L'Oceano o il Fiume - Il Visionario"</string><string name="st5_desc">
-    "Rappresenta le acque dell'oceano, dei grandi fiumi o delle cascate. Le persone Ren sono dinamiche, amano la libertà, " +
-    "possiedono un'intelligenza fluida e sono in continuo movimento. Hanno una grande influenza sul proprio ambiente."
+    "Rappresenta le acque dell'oceano, dei grandi fiumi o delle cascate. Le persone Ren sono dinamiche, amano la libertà, "
+    "possiedono un'intelligenza fluida e sono in continuo movimento.\nHanno una grande influenza sul proprio ambiente."
     </string><string name="st5_details">"Elemento: Acqua | Polarità: Yang | Direzione: Nord"</string><string name="st6_title">"Gui (癸) - Acqua Yin" </string><string name="st6_subtitle">"La Rugiada o la Pioggia Leggera - L'Intuitivo"</string><string name="st6_desc">
-    "Rappresenta la pioggia leggera, la rugiada mattutina o i ruscelli di montagna. Le persone Gui sono introspettive, intuitive, \n" 
-    "gentili ma capaci di infiltrarsi ovunque con costanza. Possiedono una spiccata sensibilità psicologica.\n"
+    "Rappresenta la pioggia leggera, la rugiada mattutina o i ruscelli di montagna.\nLe persone Gui sono introspettive, intuitive,\n" 
+    "gentili, capaci di infiltrarsi ovunque con costanza.\nPossiedono una spiccata sensibilità psicologica.\n"
     </string><string name="st6_details">"Elemento: Acqua | Polarità: Yin | Direzione: Nord"</string><string name="st7_title">"Bing (丙) - Fuoco Yang"</string><string name="st7_subtitle">"Il Sole - Il Magnanimo"</string><string name="st7_desc">
-    "Rappresenta la luce e il calore del sole nel cielo. Le persone Bing sono generose, passionali, piene di entusiasmo \n"
-    "e amano illuminare la vita altrui. Hanno un forte bisogno di espressione e trasparenza.\n"
+    "Rappresenta la luce e il calore del sole nel cielo. Le persone Bing sono generose, passionali,\n"
+    "piene di entusiasmo e amano illuminare la vita altrui.\nHanno un forte bisogno di espressione e trasparenza.\n"
     </string><string name="st7_details">"Elemento: Fuoco | Polarità: Yang | Direzione: Sud"</string><string name="st8_title">"Ding (丙) - Fuoco Yin"</string><string name="st8_subtitle">"La Candela o la Lanterna - Il Mentore"</string><string name="st8_desc">
-    "Rappresenta la fiamma di una candela, una lanterna o un focolare. Le persone Ding sono meticolose, guidate dall'intuito, \n"
-    "profondamente stabili ma capaci di infiammarsi improvvisamente. Sono leader motivatori stabili nel tempo.\n"
+    "Rappresenta la fiamma di una candela, una lanterna o un focolare.\nLe persone Ding sono meticolose,\nguidate dall'intuito,"
+    "profondamente stabili ma capaci di infiammarsi improvvisamente.\nSono leader motivatori stabili nel tempo.\n"
     </string><string name="st8_details">"Elemento: Fuoco | Polarità: Yin | Direzione: Sud"</string><string name="st9_title">"Geng (庚) - Metallo Yang"</string><string name="st9_subtitle">"La Spada o il Ferro Grezzo - Il Giusto"</string><string name="st9_desc">
-    "Rappresenta il metallo grezzo, la spada o l'ascia d'acciaio. Le persone Geng sono governate dal senso di giustizia, \n" 
-    "sono determinate, amano le sfide e affrontano i problemi in modo diretto. Crescono attraverso le avversità.\n"
+    "Rappresenta il metallo grezzo, la spada o l'ascia d'acciaio.\nLe persone Geng sono governate dal senso di giustizia,\n" 
+    "sono determinate, amano le sfide e affrontano i problemi in modo diretto.\nCrescono attraverso le avversità.\n"
     </string><string name="st9_details">"Elemento: Metallo | Polarità: Yang | Direzione: Ovest"</string><string name="st10_title">"Xin (辛) - Metallo Yin"</string><string name="st10_subtitle">"Il Gioiello o lo Spillo - L'Esteta"</string><string name="st10_desc">
-    "Rappresenta l'oro lavorato, i gioielli preziosi o i metalli fini. Le persone Xin sono eleganti, sensibili ai dettagli, \n"
-    "amano risplendere e cercano la perfezione estetica. Hanno una mente acuta come uno spillo.\n"
+    "Rappresenta l'oro lavorato, i gioielli preziosi o i metalli fini.\nLe persone Xin sono eleganti, sensibili ai dettagli,"
+    "amano risplendere e cercano la perfezione estetica.\nHanno una mente acuta come uno spillo.\n"
     </string><string name="st10_details">"Elemento: Metallo | Polarità: Yin | Direzione: Ovest"</string></file><file path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\main\res\values\tengods.xml" qualifiers=""><string name="cat_tg">"I Dieci Dei (Ten Gods)"</string><string name="tg0_title">"I Dieci Dei (Shí Shén)"</string><string name="tg0_subtitle">"I Dieci Archetipi della tua Mappa Energetica"</string><string name="tg0_desc">
-    "I 'Dieci Dei' non sono divinità religiose ma le dieci diverse sfumature della tua personalità e del tuo potenziale. \n"
-    "Nascono dalla relazione dinamica tra il tuo Day Master e gli altri elementi della carta natale. \n"
-    "Rivelano come ti muovi nel mondo, come gestisci il successo, le relazioni ed i tuoi talenti nascosti. \n"
+    "I 'Dieci Dei' non sono divinità religiose ma le dieci\ndiverse sfumature della tua personalità e del tuo potenziale.\n"
+    "Nascono dalla relazione dinamica tra il tuo Day Master e gli altri elementi della carta natale.\n"
+    "Rivelano come ti muovi nel mondo, come gestisci\nil successo, le relazioni ed i tuoi talenti nascosti. \n"
     </string><string name="tg1_title">"Friend - L'Amico (Bi Jiān)"</string><string name="tg1_subtitle">"Stesso Elemento e Stessa Polarità"</string><string name="tg1_desc">
-    "Rappresenta la tua forza interiore, l'autostima e la capacità di contare sulle tue forze.\n"
-    "Chi ha questo aspetto possiede una forte identità, ama l'indipendenza e sa lavorare alla pari con gli altri .\n"
-    "La sfida sta nel trovare l'equilibrio tra la ferma determinazione e l'apertura ai consigli altrui.\n"
-    </string><string name="tg1_details">"Punti di Forza: Autonomia e resilienza | Sfida: Evitare ostinazione"</string><string name="tg2_title">"Rob Wealth - Il Leader Carismatico (Jiè Cái)"</string><string name="tg2_subtitle">"Stesso Elemento e Polarità Opposta"</string><string name="tg2_desc">
-    "Rappresenta l'intelligenza sociale, l'abilità nel coltivare conoscenze ed il magnetismo verso le masse. \n"
-    "Ti dona una spiccata capacità di persuasione, rendendoti eccellente nelle pubbliche relazioni e nel lavoro di squadra. \n"
-    "La sfida consiste nel canalizzare questa energia competitiva senza farsi travolgere da spese impulsive.\n"
-    </string><string name="tg2_details">"Punti di Forza: Carisma e Leadership sociale | Sfida: Gestione oculata delle finanze"</string><string name="tg3_title">"Eating God - Il Creativo Intuitivo (Shí Shén)"</string><string name="tg3_subtitle">"Elemento Prodotto e Stessa Polarità"</string><string name="tg3_desc">
-    "Rappresenta l'ispirazione profonda, l'immaginazione ed il piacere di godersi la bellezza della vita. \n"
-    "Dona un intelletto raffinato, amore per la cultura, il buon cibo e l'espressione di sè genuina. \n"
-    "La sfida è tradurre questa meravigliosa moltitudine di idee in azioni concrete, superando la tendenza a procrastinare. \n"
-    </string><string name="tg3_details">"Punti di Forza: Creatività e armonia interiore | Sfida: Concretezza e focus"</string><string name="tg4_title">"Hurting Officer - L'Innovatore Ribelle (Shāng Guān)"</string><string name="tg4_subtitle">"Elemento Prodotto e Polarità Opposta"</string><string name="tg4_desc">
-    "Rappresenta l'anticonformismo, l'intelligenza brillante e il desiderio di rompere gli schemi obsoleti. \n"
-    "Dona uno straordinario talento oratorio e una mente che brilla sotto i riflettori, perfetta per ispirare cambiamento. \n"
-    "La sfida consiste nel dosare la franchezza per evitare risposte taglienti e conflitti non necessari.\n"
-    </string><string name="tg4_details">"Punti di Forza: Genialità e carisma comunicativo | Sfida: Diplomazia e tatto"</string><string name="tg5_title">"Indirect Wealth - La Mente Imprenditoriale(Pián Cái)"</string><string name="tg5_subtitle">"Elemento Controllato e Stessa Polarità"</string><string name="tg5_desc">
-    "Rappresenta il fiuto per gli affari, l'intraprendenza, la gestione di grandi progetti ed il calcolo del rischio. \n"
-    "Dona una visione macroscopica e la capacità di vedere mercati, investimenti o soluzioni dove altri vedono ostacoli. \n"
-    "La sfida sta nel non farsi prendere dal brivido dell'azzardo, mantenendo un solido ancoraggio alla realtà. \n"
-    </string><string name="tg5_details">"Punti di Forza: Risoluzione di problemi e audacia | Sfida: Valutazione realistica del rischio"</string><string name="tg6_title">"Direct Wealth - Il Costruttore Costante (Zhèng Cái)"</string><string name="tg6_subtitle">"Elemento Controllato e Polarità Opposta"</string><string name="tg6_desc">
-    "Rappresenta il successo costruito con dedizione, l'affidabilità, la precisione e il rispetto del valore delle risorse. \n"
-    "Ti dona un forte senso del dovere, realismo e la capacità di stabilizzare le finanze ed i progetti a lungo termine. \n"
-    "La sfida è evitare che il desiderio di sicurezza si trasformi in ansia per il controllo o in eccessiva rigidità. \n"
-    </string><string name="tg6_details">"Punti di Forza: Pragmatismo e affidabilità assoluta | Sfida: Apertura alle novità"</string><string name="tg7_title">"7 Killings - Il Guerriero Strategico (Qī Shā)"</string><string name="tg7_subtitle">"Elemento Controllante e Stessa Polarità"</string><string name="tg7_desc">
-    "A differenza del nome tradizionale, rappresenta la resilienza pura, l'audacia di fronte al pericolo e lo spirito d'azione. \n"
-    "Forgia individui capaci di prendere decisioni cruciali sotto pressione, eccellendo nel comando e nelle emergenze. \n"
-    "La sfida consiste nel saper disattivare la modalità 'lotta' per non accumulare eccessivo stress interno. \n"
-    </string><string name="tg7_details">"Punti di Forza: Coraggio e risoluzione strategica | Sfida: Gestione dello stress"</string><string name="tg8_title">"Direct Officer - Il Custode dell'Ordine (Zhèng Guān)"</string><string name="tg8_subtitle">"Elemento Controllante e Polarità Opposta"</string><string name="tg8_desc">
-    "Rappresenta l'onestà intellettuale, il rispetto per la comunità, il senso civico e la leadership strutturata. \n"
-    "Dona una naturale attitudine nel guidare attraverso l'esempio, guadagnandosi il rispetto e la stima sociale per i propri meriti. \n"
-    "La sfida è non diventare schiavi del giudizio altrui o di eccessivo perfezionismo. \n"
-    </string><string name="tg8_details">"Punti di Forza: Integrità morale ed autorevolezza | Sfida: Superare le paure di sbagliare"</string><string name="tg9_title">"Indirect Resource - Il Pensatore Laterale (Pián Yĭn)"</string><string name="tg9_subtitle">"Elemento Nutriente e Stessa Polarità"</string><string name="tg9_desc">
-    "Rappresenta l'attrazione verso i saperi antichi, la spiritualità, l'astrologia, la psicologia ed il pensiero d'avanguardia. \n"
-    "Dona un intuito eccezionale, capace di decifrare segnali che sfuggono alla logica ordinaria e di trovare risposte uniche. \n"
-    "La sfida sta nel mantenere i piedi per terra, evitando di isolarsi nel proprio mondo mentale. \n"
-    </string><string name="tg9_details">"Punti di Forza: Intuito formidabile e originalità | Sfida: Evitare l'isolamento"</string><string name="tg10_title">"Direct Resource - La Guida Saggia (Zhèng Yĭn)"</string><string name="tg10_subtitle">"Elemento Nutriente e Polarità Opposta"</string><string name="tg10_desc">
-    "Rappresenta la conoscenza accademica, la saggezza ereditata, la stabilità emotiva e la capacità di accogliere e proteggere. \n"
-    "Dona una mente portata per lo studio profondo, per l'insegnamento e una grande sensibilità ed empatia verso il prossimo. \n"
-    "La sfida consiste nel non adagiarsi troppo nel proprio comfort, stimolando lo spirito d'iniziativa. \n"
-    </string><string name="tg10_details">"Punti di Forza: Empatia, Cultura e Stabilità | Sfida: Vincere la pigriza ed agire"</string></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\build\generated\res\resValues\debug"/></dataSet><mergedItems/></merger>
+    "Rappresenta la tua forza interiore, l'autostima e\nla capacità di contare sulle tue forze.\n"
+    "Chi ha questo aspetto possiede una forte identità,\nama l'indipendenza e sa lavorare alla pari con gli altri.\n"
+    "La sfida sta nel trovare l'equilibrio tra la ferma\ndeterminazione e l'apertura ai consigli altrui.\n"
+    </string><string name="tg1_details">"Punti di Forza: Autonomia e resilienza |\nSfida: Evitare ostinazione"</string><string name="tg2_title">"Rob Wealth - Il Leader Carismatico (Jiè Cái)"</string><string name="tg2_subtitle">"Stesso Elemento e Polarità Opposta"</string><string name="tg2_desc">
+    "Rappresenta l'intelligenza sociale, l'abilità nel\ncoltivare conoscenze ed il magnetismo\nverso le masse.\n"
+    "Ti dona una spiccata capacità di persuasione,\nrendendoti eccellente nelle pubbliche relazioni\ne nel lavoro di squadra."
+    "La sfida consiste nel canalizzare questa energia\ncompetitiva senza farsi travolgere da spese impulsive.\n"
+    </string><string name="tg2_details">"Punti di Forza: Carisma e Leadership sociale |\n Sfida: Gestione oculata delle finanze"</string><string name="tg3_title">"Eating God - Il Creativo Intuitivo (Shí Shén)"</string><string name="tg3_subtitle">"Elemento Prodotto e Stessa Polarità"</string><string name="tg3_desc">
+    "Rappresenta l'ispirazione profonda, l'immaginazione\ned il piacere di godersi la bellezza della vita.\n"
+    "Dona un intelletto raffinato, amore per la cultura,\nil buon cibo e l'espressione di sè genuina.\n"
+    "La sfida è tradurre questa meravigliosa moltitudine\ndi idee in azioni concrete, superando la tendenza a procrastinare.\n"
+    </string><string name="tg3_details">"Punti di Forza: Creatività e armonia interiore |\nSfida: Concretezza e focus"</string><string name="tg4_title">"Hurting Officer - L'Innovatore Ribelle (Shāng Guān)"</string><string name="tg4_subtitle">"Elemento Prodotto e Polarità Opposta"</string><string name="tg4_desc">
+    "Rappresenta l'anticonformismo, l'intelligenza brillante e\nil desiderio di rompere gli schemi obsoleti.\n"
+    "Dona uno straordinario talento oratorio e\nuna mente che brilla sotto i riflettori, perfetta\n"
+    "per ispirare cambiamento. La sfida consiste nel dosare la franchezza\nper evitare risposte taglienti e conflitti non necessari.\n"
+    </string><string name="tg4_details">"Punti di Forza: Genialità e carisma comunicativo |\nSfida: Diplomazia e tatto"</string><string name="tg5_title">"Indirect Wealth - La Mente Imprenditoriale(Pián Cái)"</string><string name="tg5_subtitle">"Elemento Controllato e Stessa Polarità"</string><string name="tg5_desc">
+    "Rappresenta il fiuto per gli affari, l'intraprendenza,\nla gestione di grandi progetti ed il calcolo del rischio.\n"
+    "Dona una visione macroscopica e la capacità di\nvedere mercati, investimenti o soluzioni dove\naltri vedono ostacoli.\n"
+    "La sfida sta nel non farsi prendere dal brivido\ndell'azzardo, mantenendo un solido ancoraggio alla realtà.\n"
+    </string><string name="tg5_details">"Punti di Forza: Risoluzione di problemi e audacia |\nSfida: Valutazione realistica del rischio"</string><string name="tg6_title">"Direct Wealth - Il Costruttore Costante (Zhèng Cái)"</string><string name="tg6_subtitle">"Elemento Controllato e Polarità Opposta"</string><string name="tg6_desc">
+    "Rappresenta il successo costruito con dedizione,\nl'affidabilità, la precisione e il rispetto del valore delle risorse.\n"
+    "Ti dona un forte senso del dovere, realismo e la\ncapacità di stabilizzare le finanze ed i progetti a lungo termine.\n"
+    "La sfida è evitare che il desiderio di sicurezza\nsi trasformi in ansia per il controllo o in eccessiva rigidità.\n"
+    </string><string name="tg6_details">"Punti di Forza: Pragmatismo e affidabilità assoluta |\nSfida: Apertura alle novità"</string><string name="tg7_title">"7 Killings - Il Guerriero Strategico (Qī Shā)"</string><string name="tg7_subtitle">"Elemento Controllante e Stessa Polarità"</string><string name="tg7_desc">
+    "A differenza del nome tradizionale, rappresenta\nla resilienza pura, l'audacia di fronte al pericolo e lo spirito d'azione.\n"
+    "Forgia individui capaci di prendere decisioni cruciali\nsotto pressione, eccellendo nel comando e nelle emergenze.\n"
+    "La sfida consiste nel saper disattivare la modalità\n'lotta' per non accumulare eccessivo stress interno.\n"
+    </string><string name="tg7_details">"Punti di Forza: Coraggio e risoluzione strategica |\nSfida: Gestione dello stress"</string><string name="tg8_title">"Direct Officer - Il Custode dell'Ordine (Zhèng Guān)"</string><string name="tg8_subtitle">"Elemento Controllante e Polarità Opposta"</string><string name="tg8_desc">
+    "Rappresenta l'onestà intellettuale, il rispetto per\nla comunità, il senso civico e la leadership strutturata.\n"
+    "Dona una naturale attitudine nel guidare\nattraverso l'esempio, guadagnandosi il rispetto\ne la stima sociale per i propri meriti.\n"
+    "La sfida è non diventare schiavi del giudizio\naltrui o di eccessivo perfezionismo.\n"
+    </string><string name="tg8_details">"Punti di Forza: Integrità morale ed autorevolezza |\nSfida: Superare le paure di sbagliare"</string><string name="tg9_title">"Indirect Resource - Il Pensatore Laterale (Pián Yĭn)"</string><string name="tg9_subtitle">"Elemento Nutriente e Stessa Polarità"</string><string name="tg9_desc">
+    "Rappresenta l'attrazione verso i saperi antichi,\nla spiritualità, l'astrologia, la psicologia\n"
+    "ed il pensiero d'avanguardia.\nDona un intuito eccezionale, capace di decifrare segnali\nche sfuggono alla logica ordinaria e di trovare risposte uniche.\n"
+    "La sfida sta nel mantenere i piedi per terra, evitando di isolarsi nel proprio mondo mentale.\n"
+    </string><string name="tg9_details">"Punti di Forza: Intuito formidabile e originalità |\nSfida: Evitare l'isolamento"</string><string name="tg10_title">"Direct Resource - La Guida Saggia (Zhèng Yĭn)"</string><string name="tg10_subtitle">"Elemento Nutriente e Polarità Opposta"</string><string name="tg10_desc">
+    "Rappresenta la conoscenza accademica,\nla saggezza ereditata, la stabilità emotiva e\nla capacità di accogliere e proteggere.\n"
+    "Dona una mente portata per lo studio profondo,\nper l'insegnamento e una grande sensibilità\ned empatia verso il prossimo.\n"
+    "La sfida consiste nel non adagiarsi troppo\nnel proprio comfort, stimolando lo spirito d'iniziativa.\n"
+    </string><string name="tg10_details">"Punti di Forza: Empatia, Cultura e Stabilità |\nSfida: Vincere la pigriza ed agire"</string></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\User\Desktop\Workspace\Repos\EazyBaZi\app\build\generated\res\resValues\debug"/></dataSet><mergedItems/></merger>

@@ -163,65 +163,65 @@
     
     <!-- Na Yin Legno -->
 
-    <string name="ny_wd1_title">"Legno della Grande Foresta (Da Lin Mu)"</string>
-    <string name="ny_wd1_subtitle">"Il cuore della foresta millenaria"</string>
-    <string name="ny_wd1_desc">
+    <string name="ny_d1_title">"Legno della Grande Foresta (Da Lin Mu)"</string>
+    <string name="ny_d1_subtitle">"Il cuore della foresta millenaria"</string>
+    <string name="ny_d1_desc">
     "Generato dai Pilastri Wu Chen (Terra Yang su Drago) e Ji Si (Terra Yin su Serpente).\n"
     "Rappresenta una natura solida, protettiva e rigogliosa, come una grande foresta che offre rifugio, stabilità e vita.\n"
     "Le persone con questo Na Yin possiedono un carattere generoso, affidabile e orientato alla comunità. Si distinguono per\n"
     "lo spirito di cooperazione, la resilienza di fronte alle avversità e il talento naturale nel sostenere e far crescere gli altri.\n"
     </string>
-    <string name="ny_wd1_details">"Wu + Chen / Ji + Si = Legno della Grande Foresta"</string>
+    <string name="ny_d1_details">"Wu + Chen / Ji + Si = Legno della Grande Foresta"</string>
 
-    <string name="ny_wd2_title">"Legno del Salice Piangente (Yang Liu Mu)"</string>
-    <string name="ny_wd2_subtitle">"Si piega ma non si spezza"</string>
-    <string name="ny_wd2_desc">
+    <string name="ny_d2_title">"Legno del Salice Piangente (Yang Liu Mu)"</string>
+    <string name="ny_d2_subtitle">"Si piega ma non si spezza"</string>
+    <string name="ny_d2_desc">
     "Generato dai Pilastri Ren Wu (Acqua Yang su Cavallo) e Gui Wei (Acqua Yin su Capra).\n"
     "Rappresenta una natura flessibile, elegante e profondamente empatica, come un salice piangente che asseconda il vento\n"
     "senza mai spezzarsi. Le persone con questo Na Yin possiedono un carattere dolce, diplomatico e intuitivo. Si distinguono per\n"
     "l'eccezionale capacità di adattamento, la sensibilità emotiva e il talento nel riportare armonia e comprensione nei conflitti.\n"
     </string>
-    <string name="ny_wd2_details">"Ren + Wu / Gui + Wei = Legno del Salice Piangente</string>
+    <string name="ny_d2_details">"Ren + Wu / Gui + Wei = Legno del Salice Piangente</string>
 
-    <string name="ny_wd3_title">"Legno di Pino e Cipresso (Song Bai Mu)"</string>
-    <string name="ny_wd3_subtitle">"Sempreverdi anche nel cuore dell'inverno"</string>
-    <string name="ny_wd3_desc">
+    <string name="ny_d3_title">"Legno di Pino e Cipresso (Song Bai Mu)"</string>
+    <string name="ny_d3_subtitle">"Sempreverdi anche nel cuore dell'inverno"</string>
+    <string name="ny_d3_desc">
     "Generato dai Pilastri Geng Yin (Metallo Yang su Tigre) e Xin Mao (Metallo Yin su Coniglio). \n"
     "Rappresenta una natura fiera, integra e profondamente resiliente, come il pino ed il cipresso che sfidano il gelo invernale. \n"
     "Le persone con questo Na Yin possiedono un carattere forte, leale e di sani principi. Si distinguono per l'incrollabile tenacia, \n"
     "la dignità personale e la capacità di rimanere un punto di riferimento saldo anche nei momenti più difficili.\n"
     </string>
-    <string name="ny_wd3_details">"Geng + Yin / Xin + Mao = Legno di Pino e Cipresso"</string>
+    <string name="ny_d3_details">"Geng + Yin / Xin + Mao = Legno di Pino e Cipresso"</string>
 
-    <string name="ny_wd4_title">"Legno della Pianura (Ping Di Mu)"</string>
-    <string name="ny_wd4_subtitle">"Tranquillo, rigoglioso e sicuro"</string>
-    <string name="ny_wd4_desc">
+    <string name="ny_d4_title">"Legno della Pianura (Ping Di Mu)"</string>
+    <string name="ny_d4_subtitle">"Tranquillo, rigoglioso e sicuro"</string>
+    <string name="ny_d4_desc">
     "Generato dai Pilastri Wu Xu (Terra Yang su Cane) e Ji Hai (Terra Yin su Maiale). \n"
     "Rappresenta una natura giovane, fertile e ricca di potenziale, come la vegetazione rigogliosa della pianura. \n"
     "Le persone con questo Na Yin possiedono un carattere genuino, gentile e laborioso. Si distinguono per l'onestà d'animo, la capacità \n"
     "di apprendere rapidamente e un talento naturale nel seminare armonia e nuove idee.\n"
     </string>
-    <string name="ny_wd4_details">"Wu + Xu / Ji + Hai = Legno della Pianura"</string>
+    <string name="ny_d4_details">"Wu + Xu / Ji + Hai = Legno della Pianura"</string>
 
-    <string name="ny_wd5_title">"Legno di Gelso (Sang Zhe Mu)"</string>
-    <string name="ny_wd5_subtitle">"Il Gelso trasforma le foglie in seta"</string>
-    <string name="ny_wd5_desc">
+    <string name="ny_d5_title">"Legno di Gelso (Sang Zhe Mu)"</string>
+    <string name="ny_d5_subtitle">"Il Gelso trasforma le foglie in seta"</string>
+    <string name="ny_d5_desc">
     "Generato dai Pilastri Ren Zi (Acqua Yang su Topo) e Gui Chou (Acqua Yin su Bue). \n"
     "Rappresenta una natura generosa, operosa e ricca di valore, come un albero di gelso che nutre e dà vita a frutti preziosi. \n"
     "Le persone con questo Na Yin possiedono un carattere dedito, premuroso e concreto. Si distinguono per lo spirito di sacrificio, \n"
     "la grande laboriosità e il talento innato nel trasformare risorse semplici in qualcosa di nobile.\n"
     </string>
-    <string name="ny_wd5_details">"Ren + Zi / Gui + Chou = Legno di Gelso"</string>
+    <string name="ny_d5_details">"Ren + Zi / Gui + Chou = Legno di Gelso"</string>
 
-    <string name="ny_wd6_title">"Legno di Melograno (Shi Liu Mu)"</string>
-    <string name="ny_wd6_subtitle">"La fioritura vibrante e l'abbondanza interiore"</string>
-    <string name="ny_wd6_desc">
+    <string name="ny_d6_title">"Legno di Melograno (Shi Liu Mu)"</string>
+    <string name="ny_d6_subtitle">"La fioritura vibrante e l'abbondanza interiore"</string>
+    <string name="ny_d6_desc">
     "Generato dai Pilastri Geng Shen (Metallo Yang su Scimmia) e Xin You (Metallo Yin su Gallo). \n"
     "Rappresenta una natura tenace, vibrante e generosa, come un albero di melograno capace di fiorire e donare frutti preziosi \n"
     "tra le rocce. Le persone con questo Na Yin possiedono un carattere determinato, creativo e appassionato. Si distinguono per \n"
     "l'eccezionale forza di volontà, l'originalità delle proprie idee e la capacità di prosperare anche nelle avversità.\n"
     </string>
-    <string name="ny_wd6_details">"Geng + Shen / Xin + You = Legno di Melograno"</string>
+    <string name="ny_d6_details">"Geng + Shen / Xin + You = Legno di Melograno"</string>
 
     <!-- Na Yin Fuoco -->
 

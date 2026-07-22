@@ -46,6 +46,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.font.FontStyle
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalDensity
@@ -89,7 +91,7 @@ fun BaZiScreen() {
         }
     }
 
-    var years = remember { (1926..2036).map { it.toString() }.reversed() }
+    var years = remember { (1946..2030).map { it.toString() }.reversed() }
     var days = remember { (1..31).map { it.toString()} }
     var hours = remember { (0..23).map { it.toString().padStart(2, '0')} }
     var minutes = remember { (0..55 step 5).map { it.toString().padStart(2, '0')} }
@@ -1013,50 +1015,50 @@ fun BaZiScreen() {
                         ),
                         ExtendedLearnItem(
                             category = stringResource(R.string.cat_ny_wood),
-                            title = stringResource(R.string.ny_wd1_title),
-                            subtitle = stringResource(R.string.ny_wd1_subtitle),
-                            description = stringResource(R.string.ny_wd1_desc),
-                            details = stringResource(R.string.ny_wd1_details),
+                            title = stringResource(R.string.ny_d1_title),
+                            subtitle = stringResource(R.string.ny_d1_subtitle),
+                            description = stringResource(R.string.ny_d1_desc),
+                            details = stringResource(R.string.ny_d1_details),
                             emoji = "🌳",
                         ),
                         ExtendedLearnItem(
                             category = stringResource(R.string.cat_ny_wood),
-                            title = stringResource(R.string.ny_wd2_title),
-                            subtitle = stringResource(R.string.ny_wd2_subtitle),
-                            description = stringResource(R.string.ny_wd2_desc),
-                            details = stringResource(R.string.ny_wd2_details),
+                            title = stringResource(R.string.ny_d2_title),
+                            subtitle = stringResource(R.string.ny_d2_subtitle),
+                            description = stringResource(R.string.ny_d2_desc),
+                            details = stringResource(R.string.ny_d2_details),
                             emoji = "🍃",
                         ),
                         ExtendedLearnItem(
                             category = stringResource(R.string.cat_ny_wood),
-                            title = stringResource(R.string.ny_wd3_title),
-                            subtitle = stringResource(R.string.ny_wd3_subtitle),
-                            description = stringResource(R.string.ny_wd3_desc),
-                            details = stringResource(R.string.ny_wd3_details),
+                            title = stringResource(R.string.ny_d3_title),
+                            subtitle = stringResource(R.string.ny_d3_subtitle),
+                            description = stringResource(R.string.ny_d3_desc),
+                            details = stringResource(R.string.ny_d3_details),
                             emoji = "🌿",
                         ),
                         ExtendedLearnItem(
                             category = stringResource(R.string.cat_ny_wood),
-                            title = stringResource(R.string.ny_wd4_title),
-                            subtitle = stringResource(R.string.ny_wd4_subtitle),
-                            description = stringResource(R.string.ny_wd4_desc),
-                            details = stringResource(R.string.ny_wd4_details),
+                            title = stringResource(R.string.ny_d4_title),
+                            subtitle = stringResource(R.string.ny_d4_subtitle),
+                            description = stringResource(R.string.ny_d4_desc),
+                            details = stringResource(R.string.ny_d4_details),
                             emoji = "🌾",
                         ),
                         ExtendedLearnItem(
                             category = stringResource(R.string.cat_ny_wood),
-                            title = stringResource(R.string.ny_wd5_title),
-                            subtitle = stringResource(R.string.ny_wd5_subtitle),
-                            description = stringResource(R.string.ny_wd5_desc),
-                            details = stringResource(R.string.ny_wd5_details),
+                            title = stringResource(R.string.ny_d5_title),
+                            subtitle = stringResource(R.string.ny_d5_subtitle),
+                            description = stringResource(R.string.ny_d5_desc),
+                            details = stringResource(R.string.ny_d5_details),
                             emoji = "🐛",
                         ),
                         ExtendedLearnItem(
                             category = stringResource(R.string.cat_ny_wood),
-                            title = stringResource(R.string.ny_wd6_title),
-                            subtitle = stringResource(R.string.ny_wd6_subtitle),
-                            description = stringResource(R.string.ny_wd6_desc),
-                            details = stringResource(R.string.ny_wd6_details),
+                            title = stringResource(R.string.ny_d6_title),
+                            subtitle = stringResource(R.string.ny_d6_subtitle),
+                            description = stringResource(R.string.ny_d6_desc),
+                            details = stringResource(R.string.ny_d6_details),
                             emoji = "🍎",
                         ),
                         ExtendedLearnItem(
@@ -1415,7 +1417,7 @@ fun PillarDisplay(label: String, pillar: Pillar, dayMaster: Stem?){
             "Day Master"
         } else if (dayMaster != null && pillar.stem != null){
             getTenGodName(dayMaster.element, pillar.stem.element, dayMaster.polarity, pillar.stem.polarity)
-        }else ""
+        } else ""
 
         Text(
             text = tenGod,
@@ -1462,7 +1464,7 @@ fun PillarDisplay(label: String, pillar: Pillar, dayMaster: Stem?){
 
         Spacer(modifier = Modifier.height(8.dp))
 
-        val hiddenStems = pillar.branch?.hiddenStems ?: emptyList()
+        val hiddenStems = pillar.branch?.getHiddenStems() ?: emptyList()
 
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
@@ -1477,10 +1479,58 @@ fun PillarDisplay(label: String, pillar: Pillar, dayMaster: Stem?){
 
             if(hiddenStems.isEmpty()){
                 Text(text = "-", color = Color.DarkGray, style = MaterialTheme.typography.bodySmall)
-            }else{
-                hiddenStems.forEach { hiddenStem ->
+            } else {
+                if(dayMaster != null){
+                    for (hiddenStem in hiddenStems) {                    
+                    val fullNameHTG = getTenGods(dayMaster, hiddenStem)
+                    val tgAbbr = if (fullNameHTG.startsWith("7")){
+                        "7K"
+                    } else {
+                        fullNameHTG.substringBefore(" (")
+                            .split(" ")
+                            .map { it.first() }
+                            .joinToString("")
+                            .uppercase()
+                    }
+                    
                     Row(
-                        horizontalArrangement = Arrangement.Center,
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .background(
+                                color = Color(getElementColor(hiddenStem.element)).copy(alpha = 0.15f),
+                                shape = RoundedCornerShape(4.dp)
+                            )
+                            .padding(vertical = 2.dp, horizontal = 4.dp)
+                    ){
+                        Row(verticalAlignment = Alignment.CenterVertically){
+                            Text(
+                                text = hiddenStem.chinese ?: "",
+                                fontSize = 11.sp,
+                                fontWeight = FontWeight.Bold,
+                                color = Color(getElementColor(hiddenStem.element))
+                            )
+                            Spacer(modifier = Modifier.width(4.dp))
+                            Text(
+                                text = formatToLowercase(hiddenStem.name),
+                                fontSize = 9.sp,
+                                color = Color.LightGray
+                            )
+                        }
+
+                        Text(
+                            text = tgAbbr,
+                            fontSize = 9.sp,
+                            fontWeight = FontWeight.Bold,
+                            color = Color.White.copy(alpha = 0.7f)
+                        )
+                    }
+                }
+            } else {
+                for(hiddenStem in hiddenStems){
+                    Row(
+                        horizontalArrangement = Arrangement.Start,
                         verticalAlignment = Alignment.CenterVertically,
                         modifier = Modifier
                             .fillMaxWidth()
@@ -1506,57 +1556,41 @@ fun PillarDisplay(label: String, pillar: Pillar, dayMaster: Stem?){
                 }
             }
         }
+    }
 
-        Spacer(modifier = Modifier.height(8.dp))
+    Spacer(modifier = Modifier.height(8.dp))
 
-        val naYinKey = pillar.getNaYinKey()
+    val naYinKey = pillar.getNaYinKey()
+    val naYinTitle = getNaYinTitle(naYinKey)
 
-        val naYinTitle = getNaYinTitle(pillar.naYinKey)
+    if (naYinTitle.isNotEmpty()){
+        val bgColor = Color(getNYBgColorHex(naYinKey).toInt())
+        val textColor = Color(getNYTextColorHex(naYinKey).toInt())
 
-        if (naYinTitle.isNotEmpty()){
-            Box(
-                modifier = Modifier
-                    .width(80.dp)
-                    .background(Color(0xFF2C2C2C), shape = RoundedCornerShape(6.dp))
-                    .border(0.5.dp, Color.Gray.copy(alpha = 0.4f), shape = RoundedCornerShape(6.dp))
-                    .padding(vertical = 4.dp, horizontal = 2.dp),
-                contentAlignment = Alignment.Center
-            ){
-                Text(
-                    text = naYinTitle,
-                    style = TextStyle(
-                        fontFamily = FontFamily.Serif,
-                        fontStyle = FontStyle.Italic,
-                        fontSize = 10.sp,
-                        fontWeight = FontWeight.Medium
-                    ),
-                    color = Color(0xFFFFCA28),
-                    maxLines = 1,
-                    textAlign = TextAlign.Center
-                )
-            }
-        }
 
         Box(
             modifier = Modifier
                 .width(80.dp)
-                .background(Color(0xFF2C2C2C), shape = RoundedCornerShape(6.dp))
-                .border(0.5.dp, Color.Gray.copy(alpha = 0.5f), shape = RoundedCornerShape(6.dp))
-                .padding(vertical = 4.dp, horizontal = 2.dp),
+                .background(bgColor, shape = RoundedCornerShape(6.dp))
+                .border(0.5.dp, Color.Gray.copy(alpha = 0.3f), shape = RoundedCornerShape(6.dp))
+                .padding(vertical = 6.dp, horizontal = 2.dp),
             contentAlignment = Alignment.Center
         ){
             Text(
-                text = naYinText,
+                text = naYinTitle,
                 style = TextStyle(
-                    fontFamily = fontFamily.Serif,
+                    fontFamily = FontFamily.Serif,
                     fontStyle = FontStyle.Italic,
-                    fontSize = 10.sp,
-                    fontWeight = FontWeight.Medium
+                    fontSize = 9.sp,
+                    fontWeight = FontWeight.Bold
                 ),
-                color = Color(0xFFFFCA28),
-                maxLines = 1,
-                textAlign = TextAlign.Center
-            )
+
+                color = textColor,
+                maxLines = 3,
+                textAlign = TextAlign.Center,
+                lineHeight = 10.sp
+                )
+            }
         }
     }
 }
@@ -1660,7 +1694,7 @@ fun BaZiPieChart(scores: RoleScores, dmElement: Element){
 
 @Composable
 fun RoleRow(label: String, count: Int, max: Int, color: Color){
-    val percentage = if (max > 0) (count.toFloat() / max.toFloat() * 100).toInt() else 0
+    val percentage = if (max > 0) (count * 100f / max).toInt() else 0
 
     Column(modifier = Modifier.fillMaxWidth().padding(vertical = 6.dp)){
         Row(
@@ -1668,7 +1702,7 @@ fun RoleRow(label: String, count: Int, max: Int, color: Color){
             horizontalArrangement = Arrangement.SpaceBetween
         ){
             Text(text = label, style = MaterialTheme.typography.bodyMedium, color = Color.White)
-            Text(text = "$count Caratteri ($percentage%)", style = MaterialTheme.typography.bodySmall, color = Color.LightGray)
+            Text(text = "$count pts (${percentage}%)", style = MaterialTheme.typography.bodySmall, color = Color.LightGray)
         }
 
         Spacer(modifier = Modifier.height(4.dp))
@@ -1801,3 +1835,19 @@ fun InteractiveLearnCard(
     }
 }
 
+@Composable
+fun getNaYinTitle(key: String?): String{
+    if (key.isNullOrEmpty()) return ""
+
+    val context = LocalContext.current
+    val resName = "${key}_title"
+
+    val resId = context.resources.getIdentifier(resName, "string", context.packageName)
+
+    if (resId != 0){
+        val fullTitle = stringResource(resId)
+        return fullTitle.substringBefore(" (").trim()
+    }
+
+    return ""
+}
