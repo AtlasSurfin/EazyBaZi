@@ -110,32 +110,31 @@
     <string name = "q10_title">"Vuoto (Jue)"</string>
     <string name = "q10_subtitle">"Il vuoto assoluto e la rottura con il passato"</string>
     <string name = "q10_desc">
-    "Rappresenta il momento in cui il vecchio Qi si estingue completamente, dissolvendosi nel vuoto. È l'archetipo \n"
-    "della tabula rasa, della fine dei legami e della liberazione totale dai condizionamenti precedenti. Simboleggia un punto di svolta \n"
-    "drastico ma necessario, dove l'assenza di struttura lascia spazio all'inaspettato e alla pura potenzialità futura. \n"
-    "Nel Pilastro indicato mostra un settore della vita instabile o mutevole, caratterizzato da radicali cambiamenti, chiusure definitive \n"
-    "e la necessità di imparare a lasciare andare per ricominciare da zero.\n"
+    "Rappresenta il momento in cui il vecchio Qi si estingue completamente, dissolvendosi nel vuoto."
+    "È l'archetipo della tabula rasa, della fine dei legami e della liberazione totale dai condizionamenti precedenti."
+    "Simboleggia un punto di svolta drastico ma necessario, dove l'assenza di struttura lascia spazio all'inaspettato e alla pura potenzialità futura."
+    "Nel Pilastro indicato mostra un settore della vita instabile o mutevole, caratterizzato da radicali"
+    "cambiamenti, chiusure definitive e la necessità di imparare a lasciare andare per ricominciare da zero."
     </string>
     <string name = "q10_details">"Forza del Qi: Minima | Tratti chiave : distacco, fine dei cicli, potenziale invisibile, transizione radicale."</string>
 
     <string name = "q11_title">"Concepimento (Tai)"</string>
     <string name = "q11_subtitle">"La scintilla iniziale, la speranza e l'idea"</string>
     <string name = "q11_desc">
-    "Rappresenta il momento in cui la nuova energia viene concepita nell'oscurità, come un embrione che inizia \n"
-    "a formarsi. È l'archetipo dell'ispirazione iniziale, del sogno e della speranza invisibile. Simboleggia una fase di vulnerabilità, \n"
-    "ma anche di grande creatività latente, dove i progetti e le idee vengono seminati e protetti dal mondo esterno. Nel Pilastro indicato \n"
-    "mostra un settore della vita caratterizzato da un costante bisogno di protezione, sogni ad occhi aperti e l'inizio silenzioso di nuove \n"
-    "e promettenti fasi esistenziali.\n"
+    "Rappresenta il momento in cui la nuova energia viene concepita nell'oscurità, come un embrione che inizia a formarsi."
+    "È l'archetipo dell'ispirazione iniziale, del sogno e della speranza invisibile."
+    "Simboleggia una fase di vulnerabilità, ma anche di grande creatività latente, dove i progetti e le idee vengono seminati e protetti dal mondo esterno."
+    "Nel Pilastro indicato mostra un settore della vita caratterizzato da un costante bisogno di protezione, sogni ad occhi aperti e l'inizio silenzioso di nuove e promettenti fasi esistenziali."
     </string>
     <string name = "q11_details">"Forza del Qi: Molto Bassa | Tratti chiave: speranza, pianificazione, vulnerabilità, potenziale creativo."</string>
 
     <string name = "q12_title">"Nutrimento (Yang)"</string>
     <string name = "q12_subtitle">"La gestazione, l'attesa e la preparazione"</string>
     <string name = "q12_desc">
-    "Rappresenta la fase finale del ciclo, in cui l'energia cresce e si sviluppa al sicuro all'interno dell'utero. \n"
-    "È l'archetipo della gestazione, del nutrimento e dell'attesa fiduciosa. Simboleggia un momento protetto, privo di minacce esterne, \n"
-    "dove ci si prepara a raccogliere le forze prima di venire alla luce. Nel Pilastro indicato mostra un settore della vita caratterizzato \n"
-    "da supporto costante, stabilità serena e una crescita graduale ma sicura, ideale per lo studio, la pianificazione o il consolidamento personale.\n"
+    "Rappresenta la fase finale del ciclo, in cui l'energia cresce e si sviluppa al sicuro all'interno dell'utero."
+    "È l'archetipo della gestazione, del nutrimento e dell'attesa fiduciosa."
+    "Simboleggia un momento protetto, privo di minacce esterne, dove ci si prepara a raccogliere le forze prima di venire alla luce."
+    "Nel Pilastro indicato mostra un settore della vita caratterizzato da supporto costante, stabilità serena e una crescita graduale ma sicura, ideale per lo studio, la pianificazione o il consolidamento personale."
     </string>
     <string name = "q12_details">"Forza del Qi: Media | Tratti chiave: protezione, preparazione, accumulo di forza, serenità."</string>
 

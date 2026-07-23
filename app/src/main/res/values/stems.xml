@@ -5,80 +5,90 @@
     <string name="st1_title">"Jia (甲) - Legno Yang"</string>
     <string name="st1_subtitle">"L'Albero Secolare - Leader Nato"</string>
     <string name="st1_desc">
-    "Rappresenta un grande albero robusto. Le persone Jia sono idealiste, progressiste, testarde\nma estremamente protettive verso gli altri.\n" 
-    "Hanno una crescita costante e non amano essere controllate. \n"
+    "Rappresenta un grande albero robusto."
+    "Le persone Jia sono idealiste, progressiste, testarde ma estremamente protettive verso gli altri." 
+    "Hanno una crescita costante e non amano essere controllate."
     </string>
     <string name="st1_details">"Elemento: Legno | Polarità: Yang | Direzione: Est"</string>
 
     <string name="st2_title">"Yi (乙) - Legno Yin"</string>
     <string name="st2_subtitle">"L'Edera o l'Erba - Il Sopravvissuto"</string>
     <string name="st2_desc">
-    "Rappresenta piante flessibili, fiori o rampicanti.\nLe persone Yi sono diplomatiche, incredibilmente\nresilienti," 
-    "e sanno adattarsi a qualsiasi situazione per sopravvivere.\nOttimi strateghi dietro le quinte. \n"
+    "Rappresenta piante flessibili, fiori o rampicanti."
+    "Le persone Yi sono diplomatiche, incredibilmente resilienti e sanno adattarsi a qualsiasi situazione per sopravvivere." 
+    "Ottimi strateghi dietro le quinte."
     </string>
     <string name="st2_details">"Elemento: Legno | Polarità: Yin | Direzione: Est"</string>
     
     <string name="st3_title">"Wu (戊) - Terra Yang"</string>
     <string name="st3_subtitle">"La Montagna o la Roccia - Il Protettore"</string>
     <string name="st3_desc">
-    "Rappresenta una montagna maestosa o una roccia imponente. Le persone Wu sono stabili,\naffidabili, protettive e agiscono come un punto\n"
-    "di riferimento per la comunità.\nPossono risultare lente al cambiamenton\nma sono incrollabili.\n"
+    "Rappresenta una montagna maestosa o una roccia imponente."
+    "Le persone Wu sono stabili, affidabili, protettive e agiscono come un punto di riferimento per la comunità."
+    "Possono risultare lente al cambiamento nma sono incrollabili."
     </string>
     <string name="st3_details">"Elemento: Terra | Polarità: Yang | Direzione: Centro"</string>
 
     <string name="st4_title">"Ji (己) - Terra Yin"</string>
     <string name="st4_subtitle">"Il Giardino o la Terra Fertile - Il Nutritore"</string>
     <string name="st4_desc">
-    "Rappresenta il terreno fertile dei campi o il giardino coltivato.\nLe persone Ji sono tolleranti, creative,\ncapaci di accudire"
-    "gli altri e dotate di una memoria eccezionale.\nTrovano la propria forza nel coltivare talenti e relazioni.\n"
+    "Rappresenta il terreno fertile dei campi o il giardino coltivato."
+    "Le persone Ji sono tolleranti, creative, capaci di accudire gli altri e dotate di una memoria eccezionale."
+    "Trovano la propria forza nel coltivare talenti e relazioni."
     </string>
     <string name="st4_details">"Elemento: Terra | Polarità: Yin | Direzione: Centro"</string>
 
     <string name="st5_title">"Ren (壬) - Acqua Yang"</string>
     <string name="st5_subtitle">"L'Oceano o il Fiume - Il Visionario"</string>
     <string name="st5_desc">
-    "Rappresenta le acque dell'oceano, dei grandi fiumi o delle cascate. Le persone Ren sono dinamiche, amano la libertà, "
-    "possiedono un'intelligenza fluida e sono in continuo movimento.\nHanno una grande influenza sul proprio ambiente."
+    "Rappresenta le acque dell'oceano, dei grandi fiumi o delle cascate."
+    "Le persone Ren sono dinamiche, amano la libertà, possiedono un'intelligenza fluida e sono in continuo movimento."
+    "Hanno una grande influenza sul proprio ambiente."
     </string>
     <string name="st5_details">"Elemento: Acqua | Polarità: Yang | Direzione: Nord"</string>
 
     <string name="st6_title">"Gui (癸) - Acqua Yin" </string>
     <string name="st6_subtitle">"La Rugiada o la Pioggia Leggera - L'Intuitivo"</string>
     <string name="st6_desc">
-    "Rappresenta la pioggia leggera, la rugiada mattutina o i ruscelli di montagna.\nLe persone Gui sono introspettive, intuitive,\n" 
-    "gentili, capaci di infiltrarsi ovunque con costanza.\nPossiedono una spiccata sensibilità psicologica.\n"
+    "Rappresenta la pioggia leggera, la rugiada mattutina o i ruscelli di montagna."
+    "Le persone Gui sono introspettive, intuitive, gentili, capaci di infiltrarsi ovunque con costanza." 
+    "Possiedono una spiccata sensibilità psicologica."
     </string>
     <string name="st6_details">"Elemento: Acqua | Polarità: Yin | Direzione: Nord"</string>
 
     <string name="st7_title">"Bing (丙) - Fuoco Yang"</string>
     <string name="st7_subtitle">"Il Sole - Il Magnanimo"</string>
     <string name="st7_desc">
-    "Rappresenta la luce e il calore del sole nel cielo. Le persone Bing sono generose, passionali,\n"
-    "piene di entusiasmo e amano illuminare la vita altrui.\nHanno un forte bisogno di espressione e trasparenza.\n"
+    "Rappresenta la luce e il calore del sole nel cielo."
+    "Le persone Bing sono generose, passionali, piene di entusiasmo e amano illuminare la vita altrui."
+    "Hanno un forte bisogno di espressione e trasparenza."
     </string>
     <string name="st7_details">"Elemento: Fuoco | Polarità: Yang | Direzione: Sud"</string>
 
     <string name="st8_title">"Ding (丙) - Fuoco Yin"</string>
     <string name="st8_subtitle">"La Candela o la Lanterna - Il Mentore"</string>
     <string name="st8_desc">
-    "Rappresenta la fiamma di una candela, una lanterna o un focolare.\nLe persone Ding sono meticolose,\nguidate dall'intuito,"
-    "profondamente stabili ma capaci di infiammarsi improvvisamente.\nSono leader motivatori stabili nel tempo.\n"
+    "Rappresenta la fiamma di una candela, una lanterna o un focolare."
+    "Le persone Ding sono meticolose, guidate dall'intuito, profondamente stabili ma capaci di infiammarsi improvvisamente."
+    "Sono leader motivatori stabili nel tempo."
     </string>
     <string name="st8_details">"Elemento: Fuoco | Polarità: Yin | Direzione: Sud"</string>
 
     <string name="st9_title">"Geng (庚) - Metallo Yang"</string>
     <string name="st9_subtitle">"La Spada o il Ferro Grezzo - Il Giusto"</string>
     <string name="st9_desc">
-    "Rappresenta il metallo grezzo, la spada o l'ascia d'acciaio.\nLe persone Geng sono governate dal senso di giustizia,\n" 
-    "sono determinate, amano le sfide e affrontano i problemi in modo diretto.\nCrescono attraverso le avversità.\n"
+    "Rappresenta il metallo grezzo, la spada o l'ascia d'acciaio."
+    "Le persone Geng sono governate dal senso di giustizia, sono determinate, amano le sfide e affrontano i problemi in modo diretto." 
+    "Crescono attraverso le avversità."
     </string>
     <string name="st9_details">"Elemento: Metallo | Polarità: Yang | Direzione: Ovest"</string>
 
     <string name="st10_title">"Xin (辛) - Metallo Yin"</string>
     <string name="st10_subtitle">"Il Gioiello o lo Spillo - L'Esteta"</string>
     <string name="st10_desc">
-    "Rappresenta l'oro lavorato, i gioielli preziosi o i metalli fini.\nLe persone Xin sono eleganti, sensibili ai dettagli,"
-    "amano risplendere e cercano la perfezione estetica.\nHanno una mente acuta come uno spillo.\n"
+    "Rappresenta l'oro lavorato, i gioielli preziosi o i metalli fini."
+    "Le persone Xin sono eleganti, sensibili ai dettagli, amano risplendere e cercano la perfezione estetica."
+    "Hanno una mente acuta come uno spillo."
     </string>
     <string name="st10_details">"Elemento: Metallo | Polarità: Yin | Direzione: Ovest"</string>
 

@@ -5,97 +5,108 @@
     <string name = "br1_title">"Zi (子) - Il Topo (The Rat)"</string>
     <string name = "br1_subtitle">"Acqua Yang - L'Iniziatore"</string>
     <string name = "br1_desc">
-    "Il primo segno dello zodiaco.\nRappresenta l'energia dell'inverno profondo e della notte.\n"
-    "Le persone nate con questo ramo sono\nintuitive, astute, piene di risorse e possiedono una saggezza nascosta.\n"
+    "Il primo segno dello zodiaco."
+    "Rappresenta l'energia dell'inverno profondo e della notte."
+    "Le persone nate con questo ramo sono intuitive, astute, piene di risorse e possiedono una saggezza nascosta."
     </string>
     <string name = "br1_details">"Elemento: Acqua | Radice: Gui (Acqua Yin)"</string>
 
     <string name = "br2_title">"Chou (丑) - Il Bue (The Ox)"</string>
     <string name = "br2_subtitle">"Terra Yin - Lo Stoico"</string>
     <string name = "br2_desc">
-    "Il secondo segno dello zodiaco.\nRappresenta l'energia della fine dell'inverno e"
-    "l'ora che precede l'alba.\nLe persone nate con questo ramo sono resilienti, metodiche, costanti\n"
-    " e custodi di una determinazione incrollabile.\n"
+    "Il secondo segno dello zodiaco."
+    "Rappresenta l'energia della fine dell'inverno e l'ora che precede l'alba."
+    "Le persone nate con questo ramo sono resilienti, metodiche, costanti e custodi di una determinazione incrollabile."
     </string>
     <string name = "br2_details">"Elemento: Terra | Radice: Ji (Terra Yin)"</string>
 
     <string name = "br3_title">"Yin (寅) - La Tigre (The Tiger)"</string>
     <string name = "br3_subtitle">"Legno Yang - Il Conquistatore"</string>
     <string name = "br3_desc">
-    "Il terzo segno dello zodiaco.\nRappresenta l'energia dell'inizio della primavera e\n"
-    "del risveglio mattutino.\nLe persone nate con questo ramo sono audaci, indipendenti,\npassionali e animate da un forte spirito di leadership.\n"
+    "Il terzo segno dello zodiaco."
+    "Rappresenta l'energia dell'inizio della primavera e del risveglio mattutino."
+    "Le persone nate con questo ramo sono audaci, indipendenti, passionali e animate da un forte spirito di leadership."
     </string>
     <string name = "br3_details">"Elemento: Legno | Radice: Jia (Legno Yang)"</string>
 
     <string name = "br4_title">"Mao (卯) - Il Coniglio (The Rabbit)"</string>
     <string name = "br4_subtitle">"Legno Yin - Il Diplomatico"</string>
     <string name = "br4_desc">
-    "Il quarto segno dello zodiaco.\nRappresenta l'energia della primavera piena e del sorgere del sole.\n"
-    "Le persone nate con questo ramo sono pacifiche, sensibili,\ndiplomatiche e dotate di uno spiccato senso artistico ed estetico.\n"
+    "Il quarto segno dello zodiaco."
+    "Rappresenta l'energia della primavera piena e del sorgere del sole."
+    "Le persone nate con questo ramo sono pacifiche, sensibili, diplomatiche e dotate di uno spiccato senso artistico ed estetico."
     </string>
     <string name = "br4_details">"Elemento: Legno | Radice: Yi (Legno Yin)"</string>
 
     <string name = "br5_title">"Chen (辰) - Il Drago (The Dragon)"</string>
     <string name = "br5_subtitle">"Terra Yang - Il Magnate"</string>
     <string name = "br5_desc">
-    "Il quinto segno dello zodiaco.\nRappresenta l'energia della fine della primavera e della prima mattinata.\n"
-    "Le persone nate con questo ramo sono\ncarismatiche, piene di vitalità, ambiziose\ne mostrano un forte magnetismo ideale.\n"
+    "Il quinto segno dello zodiaco."
+    "Rappresenta l'energia della fine della primavera e della prima mattinata."
+    "Le persone nate con questo ramo sono carismatiche, piene di vitalità, ambiziose e mostrano un forte magnetismo ideale."
     </string>
     <string name = "br5_details">"Elemento: Terra | Radice: Wu (Terra Yang)"</string>
 
     <string name = "br6_title">"Si (巳) - Il Serpente (The Snake)"</string>
     <string name = "br6_subtitle">"Fuoco Yin - Il Filosofo"</string>
     <string name = "br6_desc">
-    "Il sesto segno dello zodiaco.\nRappresenta l'energia dell'inizio dell'estate e della mattinata inoltrata.\n"
-    "Le persone nate con questo ramo sono acute, riflessive, enigmatiche\ne dotate di una profonda intelligenza analitica.\n"
+    "Il sesto segno dello zodiaco."
+    "Rappresenta l'energia dell'inizio dell'estate e della mattinata inoltrata."
+    "Le persone nate con questo ramo sono acute, riflessive, enigmatiche e dotate di una profonda intelligenza analitica."
     </string>
     <string name = "br6_details">"Elemento: Fuoco | Radice: Ding (Fuoco Yin)"</string>
 
     <string name = "br7_title">"Wu (午) - Il Cavallo (The Horse)"</string>
     <string name = "br7_subtitle">"Fuoco Yang - Il Pioniere"</string>
     <string name = "br7_desc">
-    "Il settimo segno dello zodiaco.\nRappresenta l'energia dell'estate profonda e del mezzogiorno radioso.\n"
-    "Le persone nate con questo ramo sono solari,\namano la libertà, sono espansive e costantemente proiettate verso l'azione.\n"
+    "Il settimo segno dello zodiaco."
+    "Rappresenta l'energia dell'estate profonda e del mezzogiorno radioso."
+    "Le persone nate con questo ramo sono solari, amano la libertà, sono espansive e costantemente proiettate verso l'azione."
     </string>
     <string name = "br7_details">"Elemento: Fuoco | Radice: Bing (Fuoco Yang)"</string>
 
     <string name = "br8_title">"Wei (未) - La Capra (The Goat)"</string>
     <string name = "br8_subtitle">"Terra Yin - L'Artista"</string>
     <string name = "br8_desc">
-    "L' ottavo segno dello zodiaco.\nRappresenta l'energia della fine dell'estate e del primo pomeriggio.\n"
-    "Le persone nate con questo ramo sono empatiche, protettive,\namano l'armonia e cercano stabilità nelle relazioni personali.\n"
+    "L' ottavo segno dello zodiaco."
+    "Rappresenta l'energia della fine dell'estate e del primo pomeriggio."
+    "Le persone nate con questo ramo sono empatiche, protettive, amano l'armonia e cercano stabilità nelle relazioni personali."
     </string>
     <string name = "br8_details">"Elemento: Terra | Radice: Ji (Terra Yin)"</string>
 
     <string name = "br9_title">"Shen (申) - La Scimmia (The Monkey)"</string>
     <string name = "br9_subtitle">"Metallo Yang - L'Innovatore"</string>
     <string name = "br9_desc">
-    "Il nono segno dello zodiaco.\nRappresenta l'energia dell'inizio dell'autunno e del tardo pomeriggio.\n"
-    "Le persone nate con questo ramo sono poliedriche, inventive,\nironiche e capaci di risolvere problemi complessi con rapidità.\n"
+    "Il nono segno dello zodiaco."
+    "Rappresenta l'energia dell'inizio dell'autunno e del tardo pomeriggio."
+    "Le persone nate con questo ramo sono poliedriche, inventive, ironiche e capaci di risolvere problemi complessi con rapidità."
     </string>
     <string name = "br9_details">"Elemento: Metallo | Radice: Geng (Metallo Yang)"</string>
 
     <string name = "br10_title">"You (酉) - Il Gallo (The Rooster)"</string>
     <string name = "br10_subtitle">"Metallo Yin - Il Perfezionista"</string>
     <string name = "br10_desc">
-    "Il decimo segno dello zodiaco.\nRappresenta l'energia dell'autunno pieno e del tramonto.\n"
-    "Le persone nate con questo ramo sono precise, franche, organizzate\ne hanno un naturale talento per l'osservazione e il dettaglio.\n"
+    "Il decimo segno dello zodiaco."
+    "Rappresenta l'energia dell'autunno pieno e del tramonto."
+    "Le persone nate con questo ramo sono precise, franche, organizzate e hanno un naturale talento per l'osservazione e il dettaglio."
     </string>
     <string name = "br10_details">"Elemento: Metallo | Radice: Xin (Metallo Yin)"</string>
 
     <string name = "br11_title">"Xu (戌) - Il Cane (The Dog)"</string>
     <string name = "br11_subtitle">"Terra Yang - Il Custode"</string>
     <string name = "br11_desc">
-    "L'undicesimo segno dello zodiaco.\nRappresenta l'energia della fine dell'autunno e del crepuscolo serale.\n"
-    "Le persone nate con questo ramo sono leali, protettive, dotate di un forte senso etico\ne molto attente alla sicurezza dei propri cari.\n"
+    "L'undicesimo segno dello zodiaco."
+    "Rappresenta l'energia della fine dell'autunno e del crepuscolo serale."
+    "Le persone nate con questo ramo sono leali, protettive, dotate di un forte senso etico e molto attente alla sicurezza dei propri cari."
     </string>
     <string name = "br11_details">"Elemento: Terra | Radice: Wu (Terra Yang)"</string>
 
     <string name = "br12_title">"Hai (亥) - Il Maiale (The Pig)"</string>
     <string name = "br12_subtitle">"Acqua Yin - Il Filantropo"</string>
     <string name = "br12_desc">
-    "Il dodicesimo segno dello zodiaco.\nRappresenta l'energia dell'inizio dell'inverno e della prima serata.\n"
-    "Le persone nate con questo ramo sono generose, sincere, tolleranti\ne affrontano la vita con un ottimismo calmo e pacifico.\n"
+    "Il dodicesimo segno dello zodiaco."
+    "Rappresenta l'energia dell'inizio dell'inverno e della prima serata."
+    "Le persone nate con questo ramo sono generose, sincere, tolleranti e affrontano la vita con un ottimismo calmo e pacifico."
     </string>
     <string name = "br12_details">"Elemento: Acqua | Radice: Gui (Acqua Yin)"</string>
 

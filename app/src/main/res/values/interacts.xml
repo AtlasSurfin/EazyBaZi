@@ -5,89 +5,86 @@
     <string name = "i0_title">"Introduzione alle Interazioni"</string>
     <string name = "i0_subtitle">"La dinamica energetica della Carta Natale"</string>
     <string name = "i0_desc">
-    "Nel BaZi, i Tronchi Celesti e i Rami Terrestri non sono elementi statici ma interagiscono costantemente \n"
-    "tra loro creando combinazioni, conflitti, punizioni o distruzioni. Queste interazioni rappresentano gli eventi, i cambiamenti \n"
-    "e le dinamiche psicologiche o relazionali della persona. Le interazioni tra i Rami Terrestri (i segni dello zodiaco cinese) \n"
-    "muovono gli eventi nel mondo reale e sociale, mentre quelle tra Tronchi Celesti mostrano i cambiamenti nelle intenzioni consce e \n"
-    "nell'ambiente esterno.\n"
+    "Nel BaZi, i Tronchi Celesti e i Rami Terrestri non sono elementi statici ma interagiscono costantemente tra loro creando combinazioni, conflitti, punizioni o distruzioni."
+    "Queste interazioni rappresentano gli eventi, i cambiamenti e le dinamiche psicologiche o relazionali della persona."
+    "Le interazioni tra i Rami Terrestri (i segni dello zodiaco cinese) muovono gli eventi nel mondo reale e sociale, mentre quelle tra Tronchi Celesti"
+    "mostrano i cambiamenti nelle intenzioni consce e nell'ambiente esterno."
     </string>
     <string name = "i0_details">"Categorie di Interazioni: Combinazioni (Armonia) | Scontri (Cambiamento) | Punizioni (Attrito) | Distruzioni (Ostacoli)"</string>
 
     <string name = "i1_title">"Combinazioni dei Tronchi Celesti"</string>
     <string name = "i1_subtitle">"L'unione delle polarità e la trasformazione"</string>
     <string name = "i1_desc">
-    "Rappresentano l'attrazione e l'armonia tra i Tronchi Celesti di polarità opposta (Yin e Yang). Quando due Tronchi si combinano, \n"
-    "la loro natura cambia: simboleggiano alleanze, relazioni importanti, fusioni e la capacità di trovare compromessi. \n"
-    "Se le condizioni della Carta Natale lo permettono, questa unione può dare vita a un nuovo elemento energetico. Nel Pilastro indicato \n"
-    "mostra dove la persona cerca integrazione, cooperazione o dove le sue intenzioni consce tendono a legarsi a fattori esterni.\n"
+    "Rappresentano l'attrazione e l'armonia tra i Tronchi Celesti di polarità opposta (Yin e Yang)."
+    " Quando due Tronchi si combinano, la loro natura cambia: simboleggiano alleanze, relazioni importanti, fusioni e la capacità di trovare compromessi."
+    "Se le condizioni della Carta Natale lo permettono, questa unione può dare vita a un nuovo elemento energetico."
+    "Nel Pilastro indicato mostra dove la persona cerca integrazione, cooperazione o dove le sue intenzioni consce tendono a legarsi a fattori esterni."
     </string>
     <string name = "i1_details">"Tipo: Armonia | Elementi coinvolti: Tronchi Celesti (Yin + Yang) | Effetto: unione, romanticismo, patti, generazione di un nuovo elemento."</string>
 
     <string name = "i2_title">"Scontri tra Tronchi Celesti"</string>
     <string name = "i2_subtitle">"Attrito, sfide e cambiamenti visibili"</string>
     <string name = "i2_desc">
-    "Rappresentano i conflitti diretti tra i Tronchi Celesti, causati dall'incontro di elementi opposti con la stessa polarità (Yin/Yin o Yang/Yang). \n"
-    "Essendo i Tronchi energie visibili, questi scontri si manifestano come sfide esterne, eventi improvvisi, cambi di prospettiva e tensioni ideologiche/lavorative. \n"
-    "Non sono negativi: funzionano spesso come catalizzatori che costringono ad uscire dalla zona di comfort, stimolando l'azione e rompendo \n"
-    "situazioni stagnanti.\n"
+    "Rappresentano i conflitti diretti tra i Tronchi Celesti, causati dall'incontro di elementi opposti con la stessa polarità (Yin/Yin o Yang/Yang)."
+    "Essendo i Tronchi energie visibili, questi scontri si manifestano come sfide esterne, eventi improvvisi, cambi di prospettiva e tensioni ideologiche/lavorative."
+    "Non sono negativi: funzionano spesso come catalizzatori che costringono ad uscire dalla zona di comfort, stimolando l'azione e rompendo situazioni stagnanti."
     </string>
     <string name = "i2_details">"Tipo: Conflitto | Elementi coinvolti: Tronchi Celesti (Stessa polarità) | Effetto: instabilità temporanea, stress, spi nte al cambiamento."</string>
 
     <string name = "i3_title">"Combinazioni tra Rami Terrestri"</string>
     <string name = "i3_subtitle">"Sinergia profonda e stabilità nel mondo reale"</string>
     <string name = "i3_desc">
-    "Rappresentano l'unione armonica tra due specifici Rami Terrestri che si attraggono e collaborano. Poichè i rami governano la Terra e la materia, \n"
-    "queste combinazioni indicano legami affettivi solidi, partnership professionali stabili e situazioni in cui le cose scorrono senza intoppi. \n"
-    "Agiscono come un collante energetico che protegge i settori coinvolti dagli attacchi esterni (scontri), sebbene a volte possano rendere la persona troppo \n"
-    "restia al cambiamento o conservatrice.\n"
+    "Rappresentano l'unione armonica tra due specifici Rami Terrestri che si attraggono e collaborano."
+    "Poichè i rami governano la Terra e la materia, queste combinazioni indicano legami affettivi solidi, partnership professionali stabili e situazioni in cui le cose scorrono senza intoppi."
+    "Agiscono come un collante energetico che protegge i settori coinvolti dagli attacchi esterni (scontri), sebbene a volte possano rendere la persona troppo restia al cambiamento o conservatrice."
     </string>
     <string name = "i3_details">"Tipo: Alleanza e coppie | Elementi coinvolti: Rami Terrestri | Effetto: Protezione, stabilità, forte intesa relazionale, resistenza al cambiamento."</string>
 
     <string name = "i4_title">"Combinazioni Triangolari tra Rami Terrestri "</string>
     <string name = "i4_subtitle">"Massima espansione di un elemento"</string>
     <string name = "i4_desc">
-    "Rappresentano l'unione di tre specifici Rami Terrestri che, unendo le forze, generano una potentissima ondata di un singolo elemento. \n"
-    "Questa combinazione unisce l'animale che fa nascere l'elemento, quello che ne rappresenta il picco e quello che lo custodisce. Quando si attiva nella Carta \n"
-    "Natale, porta una straordinaria spinta focalizzata verso un obiettivo comune, amplificando a dismisura i significati di quell'elemento nei settori coinvolti, \n"
-    "sia in positivo che in termini di eccesso.\n"
+    "Rappresentano l'unione di tre specifici Rami Terrestri che, unendo le forze, generano una potentissima ondata di un singolo elemento."
+    "Questa combinazione unisce l'animale che fa nascere l'elemento, quello che ne rappresenta il picco e quello che lo custodisce."
+    "Quando si attiva nella Carta Natale, porta una straordinaria spinta focalizzata verso un obiettivo comune, amplificando a dismisura"
+    "i significati di quell'elemento nei settori coinvolti, sia in positivo che in termini di eccesso."
     </string>
     <string name = "i4_details">"Tipo: Alleanza a tre | Elementi coinvolti: Rami Terrestri | Effetto: Creazione di un elemento dominante, grande focus, eventi di vasta portata."</string>
     
     <string name = "i5_title">"Scontri tra Rami Terrestri"</string>
     <string name = "i5_subtitle">"Terremoti evolutivi e cambiamenti concreti"</string>
     <string name = "i5_desc">
-    "Rappresentano lo scontro frontale tra due animali situati in posizioni opposte sulla bussola energetica. Poichè i Rami governano la realtà \n"
-    "materiale, questi scontri si manifestano come eventi tangibili: rotture relazionali, cambi di lavoro improvvisi, traslochi o forti scossoni emotivi e fisici. \n"
-    "Sebbene possano generare forte stress ed instabilità temporanea, la loro funzione cosmica è distruggere le strutture stagnanti per consentire la persona a evolversi \n"
-    "ed a rinnovare la propria vita.\n"
+    "Rappresentano lo scontro frontale tra due animali situati in posizioni opposte sulla bussola energetica."
+    "Poichè i Rami governano la realtà materiale, questi scontri si manifestano come eventi tangibili: rotture relazionali, cambi di lavoro improvvisi, traslochi o forti scossoni emotivi e fisici."
+    "Sebbene possano generare forte stress ed instabilità temporanea, la loro funzione cosmica è distruggere le strutture stagnanti per consentire la persona a evolversi ed a rinnovare la propria vita."
     </string>
     <string name = "i5_details">"Tipo: Conflitto | Elementi coinvolti: Rami Terrestri | Effetto: Rotture, mobilità geografica/professionale, sblocchi energetici radicali."</string>
 
     <string name = "i6_title">"Punizioni dei Rami Terrestri"</string>
     <string name = "i6_subtitle">"Attriti psicologici, autosabotaggi e nodi karmici"</string>
     <string name = "i6_desc">
-    "Rappresentano una delle interazioni più complesse e psicologiche del BaZi. A differenza degli scontri diretti, le Punizioni agiscono dall'interno, manifestandosi come \n"
-"dinamiche di autosabotaggio, sensi di colpa, ingratitudine subita/compiuta e conflitti relazionali logoranti. Spesso indicano aree in cui la persona tende a ripetere gli stessi errori \n"
-"o a subire lo stress di aspettative non soddisfatte. Nel Pilastro indicato rivelano tensioni interne nascoste che richiedono profonda consapevolezza per essere sciolte.\n"
+    "Rappresentano una delle interazioni più complesse e psicologiche del BaZi."
+    "A differenza degli scontri diretti, le Punizioni agiscono dall'interno, manifestandosi come dinamiche di autosabotaggio, sensi di colpa, ingratitudine subita/compiuta e conflitti relazionali logoranti."
+    "Spesso indicano aree in cui la persona tende a ripetere gli stessi errori o a subire lo stress di aspettative non soddisfatte."
+    "Nel Pilastro indicato rivelano tensioni interne nascoste che richiedono profonda consapevolezza per essere sciolte."
     </string>
     <string name = "i6_details">"Tipo: Attrito | Elementi coinvolti: Rami Terrestri | Effetto: Autosabotaggio, stress emotivo, senso di ingratitudine o ingiustizia."</string>
 
     <string name = "i7_title">"Danni dei Rami Terrestri"</string>
     <string name = "i7_subtitle">"Ferite emotive, malintesi e aspettative tradite"</string>
     <string name = "i7_desc">
-    "Rappresentano un'interazione indiretta che colpisce soprattutto la sfera emotiva e relazionale. Un Danno si attiva quando un Ramo sabota o si scontra con il partner ideale (la Combinazione) di un altro Ramo. \n"
-    "Nella vita reale questo si traduce in situazioni di incomprensione, aspettative non corrisposte, piccoli tradimenti o la sensazione che qualcuno stia remando contro i nostri piani. \n"
-    "Nel Pilastro indicato mostra un'area in cui la persona deve fare attenzione alla comunicazione e a non accumulare risentimenti silenziosi.\n"
+    "Rappresentano un'interazione indiretta che colpisce soprattutto la sfera emotiva e relazionale."
+    "Un Danno si attiva quando un Ramo sabota o si scontra con il partner ideale (la Combinazione) di un altro Ramo."
+    "Nella vita reale questo si traduce in situazioni di incomprensione, aspettative non corrisposte, piccoli tradimenti o la sensazione che qualcuno stia remando contro i nostri piani."
+    "Nel Pilastro indicato mostra un'area in cui la persona deve fare attenzione alla comunicazione e a non accumulare risentimenti silenziosi."
     </string>
     <string name = "i7_details">"Tipo: Attrito | Elementi coinvolti: Rami Terrestri | Effetto: Malintesi, delusioni relazionali, stress psicologico, vulnerabilità emotiva."</string>
 
     <string name = "i8_title">"Distruzioni dei Rami Terrestri"</string>
     <string name = "i8_subtitle">"Sfaldamento, cattive abitudini e logoramento"</string>
     <string name = "i8_desc">
-    "Rappresentano un'interazione di attrito sottile che mina la stabilità dall'interno. Più che grandi shock esterni, le Distruzioni simboleggiano \n" 
-    "il deterioramento graduale dovuto a comportamenti ripetitivi, vizi, mancanza di cura o decisioni impulsive che distruggono il lavoro fatto. Nel Pilastro indicato \n"
-    "mostra un settore della vita in cui la persona tende a perdere effiacia a causa di vecchi schemi mentali sabotanti, dove è necessario fare pulizia per evitare che le \n"
-    "risorse vadano sprecate.\n"
+    "Rappresentano un'interazione di attrito sottile che mina la stabilità dall'interno."
+    "Più che grandi shock esterni, le Distruzioni simboleggiano il deterioramento graduale dovuto a comportamenti ripetitivi, vizi, mancanza di cura o decisioni impulsive che distruggono il lavoro fatto." 
+    "Nel Pilastro indicato mostra un settore della vita in cui la persona tende a perdere effiacia a causa di vecchi schemi mentali sabotanti, dove è necessario fare pulizia per evitare che le risorse vadano sprecate."
     </string>
     <string name = "i8_details">"Tipo: Logoramento | Elementi coinvolti: Rami Terrestri | Effetto: Rotture di schemi, spreco di energia, necessità di eliminare il superfluo."</string>
 
